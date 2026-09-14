@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-09-14</title>
+<style>
+body{font-family:-apple-system,"Microsoft YaHei",sans-serif;margin:0;
+     background:#fff;color:#1a1a1a;padding:0 12px 18px;max-width:660px;
+     margin:0 auto;font-size:15.5px;line-height:1.62}
+.topbar{text-align:center;padding:14px 0 4px;font-size:1.15em;font-weight:700}
+.subhead{text-align:center;color:#999;font-size:.8em;margin-bottom:6px}
+.note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px;
+      padding:7px 10px;font-size:.85em;color:#7a6208;margin-bottom:4px}
+h2.sect{font-size:1.02em;margin:16px 0 8px;color:#1a1a1a}
+.hot{padding:9px 0;border-bottom:1px solid #f5f5f5}
+.hot .reason{color:#555;font-size:.9em;margin:2px 0 0}
+.badge{display:inline-block;min-width:20px;text-align:center;
+       background:#6e40c9;color:#fff;border-radius:4px;font-weight:700;
+       font-size:.85em;padding:1px 5px;margin-right:8px;vertical-align:2px}
+.card{padding:12px 0 14px;border-bottom:1px solid #f0f0f0}
+.pname{font-weight:700;font-size:1.05em}
+.pname a{color:#1a4f9c;text-decoration:none}
+.meta{color:#9a9a9a;font-size:.82em;margin:4px 0 6px}
+.meta .star{color:#b7791f;font-weight:600}
+.times{background:#f8f9fb;border-radius:6px;padding:6px 10px;
+       font-size:.8em;color:#57606a;margin:6px 0}
+.times b{color:#333}
+.tag{display:inline-block;background:#eef4ff;color:#2f6fdd;border-radius:3px;
+     padding:0 6px;font-size:.78em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.95em;color:#6e40c9}
+.card p{margin:4px 0;text-align:justify}
+.plink{display:inline-block;margin-top:6px}
+.plink a{color:#2f6fdd;text-decoration:none;font-size:.9em;font-weight:600}
+.summary-card{background:#fffbe8;border:1px solid #f0e2a0;border-radius:8px;
+              padding:10px 12px;line-height:1.65;text-align:justify}
+</style></head><body>
+<div class="topbar">🐙 GitHub 每日热门</div>
+<div class="subhead">2026-09-14 周一 ｜ Trending 日榜 TOP10 ｜ 每项深度介绍</div>
+
+
+<h2 class="sect">🎯 今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/colibri" >colibri</a></span>
+<div class="reason">Colibri是一个运行前沿MoE（多模态扩展）模型的项目，它允许用户在个人硬件上运行这些大型模型，特别适合需要高效处理大规模数据集的审计师。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/gods-eye-view" >gods-eye-view</a></span>
+<div class="reason">God&#39;s Eye View提供了一个逼真的3D地球，实时显示各种地理信息，对于审计师分析地理分布数据、评估经济活动非常有用。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/system_prompts_leaks" >system_prompts_leaks</a></span>
+<div class="reason">system_prompts_leaks收集了多个AI模型的系统提示，有助于审计师分析AI模型生成的报告或文档中的潜在问题，提高审计的准确性和效率。</div></div>
+
+
+<h2 class="sect">📦 今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/JustVugg/colibri">colibri</a></span>
+  　<span class="meta">JustVugg</span></div>
+  <div class="meta"><span class="star">⭐ 29903</span>（今日 +868） · C</div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2026/07/01 20:27</b> ｜ 最近提交 <b>2026/09/14 08:59</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>Colibri是一个运行前沿MoE（多模态扩展）模型的项目，它允许用户在个人硬件上运行这些大型模型。这个项目特别之处在于它使用纯C语言编写，无需任何额外的依赖库，通过将存储、RAM和VRAM视为一个单一的推理层次结构（AI内存多级存储），实现了高效的模型运行。Colibri支持从744B到2.8T参数的多个模型，包括GLM-5.2/5.3、GLM-5.3-Flash、Inkling、Kimi K3、DeepSeek V4 Flash和DeepSeek V4.1 Flash等。这对于那些希望在个人设备上处理大规模数据集的审计师来说非常有用，尤其是在进行复杂的数据分析和模式识别时。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>Colibri项目采用纯C语言编写，这意味着它具有高性能和低资源消耗的特点。其核心架构是处理存储、RAM和VRAM作为单一推理层次结构，这种设计允许模型在有限的硬件资源上运行，同时保持高效性。技术栈主要是C语言，没有额外的依赖库，这使得项目更加轻量级。Colibri的亮点设计在于其AI内存多级存储，这种设计可以有效地利用硬件资源，使得大型模型能够在普通硬件上运行。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的TensorFlow或PyTorch，但专门针对大型MoE模型在个人硬件上的运行进行了优化。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，Colibri项目可以帮助他们进行更复杂的数据分析，尤其是在处理大量数据时，它能够提供高效的数据处理能力。这对于审计工作中的数据挖掘和模式识别非常有帮助。同时，由于它是开源的，审计师可以根据自己的需求进行定制和优化。</p>
+  <span class="plink">🔗 <a href="https://github.com/JustVugg/colibri">github.com/JustVugg/colibri</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/ever-co/ever-gauzy">ever-gauzy</a></span>
+  　<span class="meta">ever-co</span></div>
+  <div class="meta"><span class="star">⭐ 5120</span>（今日 +191） · TypeScript · <span class="tag">accounting</span><span class="tag">billing</span><span class="tag">bookkeeping</span><span class="tag">crm</span><span class="tag">crm-platform</span><span class="tag">erp</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2019/06/02 17:47</b> ｜ 最近提交 <b>2026/09/14 09:39</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>Ever® Gauzy™ 是一个开放的企业管理平台，它集成了ERP、CRM、HRM、ATS和PM等功能。这个平台旨在解决企业在日常运营中遇到的各种管理问题，如客户关系管理、人力资源管理、项目管理等。对于审计师来说，它可以用来追踪和分析企业的财务数据，确保财务报告的准确性和合规性。对于备考公务员的朋友，这个平台可以帮助他们更好地管理时间，提高工作效率。典型使用场景包括：审计师使用Gauzy来监控和审计企业的财务流程；公务员考生利用Gauzy进行时间管理和任务追踪，提高备考效率。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>Ever Gauzy 平台使用TypeScript编写，采用模块化设计，核心架构包括前端和后端两部分。前端使用React框架，后端则基于Node.js和Express。平台的工作机制是通过RESTful API提供数据交互，支持多种数据库。亮点设计包括：高度可定制化的用户界面，支持多语言；灵活的模块化架构，便于扩展和集成；强大的数据分析和报告功能，有助于审计师进行深入的数据挖掘。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Odoo或Salesforce，提供全面的企业管理解决方案。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，Ever Gauzy 平台可以帮助他们更有效地进行财务审计和合规性检查。它提供的数据追踪和分析功能，有助于审计师发现潜在的风险点。对于公务员考生，虽然平台的主要功能不是针对考试准备，但其时间管理和任务追踪功能可以帮助考生提高学习效率。</p>
+  <span class="plink">🔗 <a href="https://github.com/ever-co/ever-gauzy">github.com/ever-co/ever-gauzy</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/bilawalsidhu/gods-eye-view">gods-eye-view</a></span>
+  　<span class="meta">bilawalsidhu</span></div>
+  <div class="meta"><span class="star">⭐ 31962</span>（今日 +2680） · JavaScript · <span class="tag">3d-globe</span><span class="tag">cesium</span><span class="tag">flight-tracking</span><span class="tag">geospatial</span><span class="tag">geospatial-intelligence</span><span class="tag">gis</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2026/06/23 07:37</b> ｜ 最近提交 <b>2026/09/14 09:35</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这是一个在浏览器中运行的间谍卫星模拟器，但它使用的是真实数据。它提供了一个逼真的3D地球，实时显示飞机、船只、卫星、地震、交通和公共摄像头。这个项目类似于一个开源的实时空间智能平台，用户可以通过语音控制进行操作，体验无死角的全景视图。对于审计师来说，这个工具可以用来分析地理分布的数据，比如监控特定区域的交通流量、卫星覆盖范围等，对于财务分析，可以用来评估不同地区的经济活动，而对于备考公务员的朋友，可以用来了解不同地区的地理分布和资源情况，从而在考试中更好地理解政策背景和地理信息。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>该项目使用JavaScript编写，基于WebGL和Three.js库构建了一个3D地球模型。核心架构包括数据获取模块、实时渲染引擎和用户交互界面。数据获取模块从多个公共数据源获取实时数据，如卫星图像、交通数据等。实时渲染引擎负责将数据渲染到3D地球模型上，用户交互界面则允许用户通过鼠标和键盘进行操作。亮点设计包括实时数据更新、高度优化的渲染性能和直观的用户界面。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Google Earth或Bing Maps，但提供了更多的实时数据和交互功能。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，可以用来分析地理分布的数据，监控特定区域的财务活动；对于财务专业背景的人来说，可以用来评估不同地区的经济状况；对于备考公务员的朋友，可以用来了解不同地区的地理分布和资源情况，从而在考试中更好地理解政策背景和地理信息。</p>
+  <span class="plink">🔗 <a href="https://github.com/bilawalsidhu/gods-eye-view">github.com/bilawalsidhu/gods-eye-view</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/tech-leads-club/agent-skills">agent-skills</a></span>
+  　<span class="meta">tech-leads-club</span></div>
+  <div class="meta"><span class="star">⭐ 5671</span>（今日 +265） · TypeScript · <span class="tag">agent</span><span class="tag">ai</span><span class="tag">antigravity</span><span class="tag">claude-code</span><span class="tag">copilot</span><span class="tag">cursor</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2026/01/19 21:21</b> ｜ 最近提交 <b>2026/09/12 23:29</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>agent-skills是一个专为专业AI编码代理设计的技能注册库。它提供了一种安全、验证过的技能注册方式，可以增强Antigravity、Claude Code、Cursor、Copilot等工具的功能。这个项目旨在解决在AI编码过程中，如何确保技能的可靠性和安全性，以及如何高效地管理和扩展AI代理的技能。对于审计师来说，它可以用来验证AI代理的技能是否符合既定的标准和规范，确保自动化流程的准确性和合规性。对于备考公务员的朋友，它可以作为一个工具来辅助学习和练习编程技能，提高工作效率。典型使用场景包括：审计师在审查自动化财务报告时，使用agent-skills来验证AI代理的财务分析技能；公务员在备考编程相关考试时，利用agent-skills来扩展自己的编程技能库。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>agent-skills项目使用TypeScript编写，基于Node.js环境。它采用了模块化的设计，通过定义技能接口和实现类，实现了技能的注册、管理和调用。核心架构包括技能注册模块、技能验证模块和技能调用模块。亮点设计包括：技能验证机制，确保所有注册的技能都经过严格的验证；技能扩展机制，允许用户自定义和扩展技能；以及Nx Cloud支持，提供云服务以支持大规模的技能管理和调用。这些设计使得agent-skills既安全又灵活，能够满足不同用户的需求。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的AI技能管理平台，如AI Studio或TensorFlow Extended（TFX）</p>
+  <h3>💼 与你的关联</h3>
+  <p>agent-skills可以帮助审计师验证AI代理的技能，确保自动化审计流程的准确性和合规性。对于财务专业背景的审计师来说，它可以用来评估AI在财务分析方面的能力，提高审计效率。对于备考公务员的朋友，它可以帮助扩展编程技能，提高在公务员考试中的竞争力。</p>
+  <span class="plink">🔗 <a href="https://github.com/tech-leads-club/agent-skills">github.com/tech-leads-club/agent-skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/melgarafael/DeskcommCRM">DeskcommCRM</a></span>
+  　<span class="meta">melgarafael</span></div>
+  <div class="meta"><span class="star">⭐ 2204</span>（今日 +432） · TypeScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">chatbot</span><span class="tag">crm</span><span class="tag">customer-support</span><span class="tag">ecommerce</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2026/04/29 04:00</b> ｜ 最近提交 <b>2026/09/13 03:40</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>DeskcommCRM是一个开源的AI销售操作系统，它是一个自托管的CRM系统，集成了本地的AI代理和WhatsApp功能。这个项目旨在为任何通过聊天销售的企业提供一个开放的选择，作为Kommo、Octadesk和Intercom的替代品。它支持多租户，符合MCP标准，并遵守LGPD规定。DeskcommCRM允许企业在其服务器上运行，无需支付月费，所有数据都由企业自行管理，这对于审计师来说意味着可以更好地控制数据安全和合规性。典型使用场景包括销售团队使用AI代理在WhatsApp上自动回复客户、进行客户资格筛选和销售过程管理。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>DeskcommCRM使用TypeScript编写，基于Next.js框架构建，并集成了Supabase的Postgres、Auth和Storage服务。其核心架构包括AI代理、CRM功能和WhatsApp集成。AI代理使用机器学习算法来分析客户对话，提供自动回复和资格筛选。CRM功能允许用户管理客户信息、销售漏斗和交易历史。亮点设计包括自托管模式，确保数据安全；多租户支持，便于企业内部不同部门使用；以及符合多个数据保护法规，如LGPD。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Intercom</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，DeskcommCRM可以帮助审计销售流程的自动化和合规性，尤其是在数据管理和客户信息处理方面。审计师可以利用这个工具来评估企业的数据安全措施和CRM系统的合规性。</p>
+  <span class="plink">🔗 <a href="https://github.com/melgarafael/DeskcommCRM">github.com/melgarafael/DeskcommCRM</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/calesthio/OpenMontage">OpenMontage</a></span>
+  　<span class="meta">calesthio</span></div>
+  <div class="meta"><span class="star">⭐ 58471</span>（今日 +380） · Python · <span class="tag">agent</span><span class="tag">agentic-ai</span><span class="tag">ai</span><span class="tag">claude</span><span class="tag">copilot</span><span class="tag">cursor</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2026/03/29 23:23</b> ｜ 最近提交 <b>2026/09/06 13:02</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>OpenMontage是一个开源的视频制作系统，它将AI编码助手转变为一个完整的视频制作工作室。它提供了12个制作流程、100多个工具和700多个代理技能和制作知识文件。对于审计师来说，这个项目可以帮助他们理解和评估视频制作过程中的数据管理和合规性，尤其是在审计涉及多媒体内容的项目时。例如，审计师可以使用OpenMontage来检查视频内容的真实性、合规性和财务报告的准确性。对于备考公务员的朋友来说，这个工具可以用于制作宣传视频或培训材料，提高他们的工作效率和效果。典型使用场景包括制作审计报告的视频摘要、财务数据的可视化展示以及公务员考试的培训视频制作。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>OpenMontage使用Python编写，其核心架构包括一个模块化的设计，允许用户根据需要添加或删除组件。技术栈包括但不限于视频处理库、AI模型集成和用户界面。核心工作机制是通过代理技能和知识文件来驱动视频制作流程，这些代理可以执行从视频剪辑到特效添加的各种任务。亮点设计包括高度可定制的工作流程和强大的AI集成，使得即使是非技术用户也能轻松创建专业级别的视频内容。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Adobe Premiere Pro或Final Cut Pro，但更专注于AI辅助的视频制作和编辑。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，OpenMontage可以帮助他们评估视频内容的真实性、合规性和财务报告的准确性。它可以用于检查审计报告的视觉部分，确保所有展示的数据和图像都符合审计标准。对于备考公务员的朋友，它可以用于提高视频制作效率，确保宣传和培训材料的质量。</p>
+  <span class="plink">🔗 <a href="https://github.com/calesthio/OpenMontage">github.com/calesthio/OpenMontage</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/asgeirtj/system_prompts_leaks">system_prompts_leaks</a></span>
+  　<span class="meta">asgeirtj</span></div>
+  <div class="meta"><span class="star">⭐ 66065</span>（今日 +706） · JavaScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">ai-prompts</span><span class="tag">anthropic</span><span class="tag">chatbot</span><span class="tag">chatgpt</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2025/05/03 10:43</b> ｜ 最近提交 <b>2026/09/14 03:18</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这个项目名为system_prompts_leaks，它主要用于提取和分析来自不同AI模型的系统提示。这些系统提示是AI模型在接收到用户消息之前所接收到的隐藏指令和规则。项目收集了Anthropic、OpenAI、Google和xAI等多个知名AI模型的数据，包括ChatGPT、Claude、Gemini、Grok等。这些数据可以帮助研究人员和开发者更好地理解AI模型的内部工作机制，以及它们是如何生成回答的。对于审计师来说，这个项目可以用来分析AI模型生成的报告或文档中的潜在偏见和错误，从而提高审计的准确性和效率。对于备考公务员的朋友来说，这个项目可以帮助他们了解AI在公共事务中的应用，以及如何评估AI系统的透明度和可靠性。典型使用场景包括：审计AI生成的财务报告，分析AI在政策制定过程中的作用，以及评估AI在公共安全领域的应用效果。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>该项目使用JavaScript编写，其核心架构包括数据提取、处理和分析模块。数据提取模块负责从不同的AI模型中提取系统提示；处理模块负责清洗和格式化这些数据；分析模块则对数据进行深入分析，提取有价值的信息。项目的亮点设计包括：1）支持多种AI模型的系统提示提取；2）提供丰富的数据可视化工具，帮助用户直观地理解数据；3）定期更新数据，确保用户获取到最新的AI模型信息。这些设计使得该项目在AI模型分析和数据可视化方面具有很高的实用价值。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的AI模型数据集，帮助用户快速了解不同AI模型的工作原理和性能表现。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，该项目可以帮助他们分析AI模型生成的报告或文档中的潜在问题，提高审计的准确性和效率。对于备考公务员的朋友来说，该项目有助于他们了解AI在公共事务中的应用，以及如何评估AI系统的透明度和可靠性。</p>
+  <span class="plink">🔗 <a href="https://github.com/asgeirtj/system_prompts_leaks">github.com/asgeirtj/system_prompts_leaks</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/vxcontrol/pentagi">PentAGI</a></span>
+  　<span class="meta">vxcontrol</span></div>
+  <div class="meta"><span class="star">⭐ 23991</span>（今日 +590） · Go · <span class="tag">ai-agents</span><span class="tag">ai-security-tool</span><span class="tag">anthropic</span><span class="tag">autonomous-agents</span><span class="tag">golang</span><span class="tag">gpt</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2025/01/07 06:22</b> ｜ 最近提交 <b>2026/09/10 13:45</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>PentAGI是一个完全自主的AI代理系统，它能够执行复杂的渗透测试任务。这个系统旨在自动化渗透测试的过程，帮助安全研究人员和道德黑客更高效地发现和利用安全漏洞。对于审计师来说，PentAGI可以作为一个强大的工具来模拟攻击，评估系统的安全性，并帮助识别可能被忽视的安全风险。在财务领域，它可以用来测试网络和系统的安全性，保护敏感的财务数据不受未授权访问。对于备考公务员的朋友，虽然直接关联不大，但了解这类技术可以帮助他们理解网络安全的重要性，这在现代社会是一个越来越重要的议题。典型使用场景包括：审计师进行网络安全审计，财务部门进行系统安全评估，以及网络安全爱好者进行技术研究和实践。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>PentAGI使用Go语言编写，其核心架构包括多个AI代理，这些代理可以独立执行任务，并通过一个集中的控制台进行管理。技术栈包括机器学习、自然语言处理和网络安全技术。核心亮点设计包括：高级代理监督机制，允许用户自定义代理的行为和决策；模块化设计，使得系统易于扩展和维护；以及社区支持，通过Discord和Telegram等渠道，用户可以获取帮助、分享见解并了解最新的系统更新。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的OWASP ZAP或Nessus，但更专注于AI驱动的自动化渗透测试。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，PentAGI可以帮助他们更全面地评估网络安全，特别是在自动化测试和模拟攻击方面。它可以作为审计工具的一部分，用于评估信息系统的安全性。对于财务专业背景的审计师，PentAGI可以帮助他们识别和评估与财务数据相关的安全风险。</p>
+  <span class="plink">🔗 <a href="https://github.com/vxcontrol/pentagi">github.com/vxcontrol/PentAGI</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/multimodal-art-projection/YuE">YuE</a></span>
+  　<span class="meta">multimodal-art-projection</span></div>
+  <div class="meta"><span class="star">⭐ 7772</span>（今日 +487） · Python · <span class="tag">ai</span><span class="tag">audio-generation</span><span class="tag">deep-learning</span><span class="tag">foundation-models</span><span class="tag">gpt</span><span class="tag">huggingface</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2025/01/23 14:21</b> ｜ 最近提交 <b>2026/09/12 01:37</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>YuE2是一个前沿的音乐生成项目，它结合了符号规划和零样本封面，以及具有代理编辑能力的音乐编辑。这个项目旨在通过符号来创作音乐，将抽象的符号转化为具体的声音。它解决的问题是如何在没有大量数据的情况下，生成高质量的音乐。典型的使用场景包括音乐创作、音乐编辑和音乐研究。对于审计师来说，虽然直接应用场景不多，但理解音乐生成的技术原理有助于在涉及数据分析和处理的项目中，对数据生成和处理的流程有更深入的理解。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>YuE2使用Python编写，其技术栈包括深度学习框架和音乐处理库。核心架构包括符号规划模块、音频生成模块和代理编辑模块。符号规划模块负责将符号转化为音乐结构，音频生成模块负责生成音乐内容，代理编辑模块则允许用户对生成的音乐进行编辑。亮点设计包括零样本封面技术，允许生成与给定符号完全不同的音乐风格，以及代理编辑能力，使得用户可以像编辑文本一样编辑音乐。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的音乐生成工具，如AIVA或Amper Music，但更专注于符号规划和代理编辑功能。</p>
+  <h3>💼 与你的关联</h3>
+  <p>与审计师工作的关联较弱，但理解音乐生成的技术原理有助于审计师在处理涉及数据分析和处理的项目时，对数据生成和处理的流程有更深入的理解。</p>
+  <span class="plink">🔗 <a href="https://github.com/multimodal-art-projection/YuE">github.com/multimodal-art-projection/YuE</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/yuliskov/SmartTube">SmartTube</a></span>
+  　<span class="meta">yuliskov</span></div>
+  <div class="meta"><span class="star">⭐ 33459</span>（今日 +233） · Java · <span class="tag">android</span><span class="tag">android-tv</span><span class="tag">android-tv-box</span><span class="tag">java</span><span class="tag">kotlin</span><span class="tag">retrofit2</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/09/14 09:40</b> ｜ 仓库创建 <b>2020/07/28 20:53</b> ｜ 最近提交 <b>2026/09/14 07:50</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>SmartTube是一个适用于Android TV的媒体内容浏览器，它允许用户根据自己设定的规则来浏览媒体内容。这个项目解决了在Android TV平台上，用户想要个性化浏览体验的问题。它能够用来帮助用户快速找到他们感兴趣的媒体内容，例如电影、电视节目和音乐等。典型使用场景包括：审计师在审查公司内部视频资料库时，可以通过SmartTube快速定位到特定类型的视频内容；财务专业人士在研究市场趋势时，可以通过SmartTube浏览相关财经视频；备考公务员的朋友在复习时，可以利用SmartTube浏览相关的教育视频资源。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>SmartTube使用Java语言开发，其技术栈包括Android TV框架和相关的媒体播放库。核心架构是围绕用户自定义规则来组织媒体内容，用户可以通过设置过滤条件、排序规则等来自定义浏览体验。亮点设计包括：支持多种媒体格式播放，提供简洁直观的用户界面，以及通过F-Droid和GitHub提供的安全更新渠道。这些设计使得SmartTube在保证功能性的同时，也注重用户体验和安全性。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Android TV媒体播放器</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，SmartTube可以帮助他们更高效地浏览和分析大量的视频资料；对于财务专业人士，它可以帮助他们跟踪市场动态和财经新闻；对于备考公务员的朋友，SmartTube提供了丰富的学习资源，有助于他们的备考过程。尽管SmartTube与审计师的工作关联性不强，但它作为一个工具，可以在日常生活中提高效率，间接地与审计师的工作产生联系。</p>
+  <span class="plink">🔗 <a href="https://github.com/yuliskov/SmartTube">github.com/yuliskov/SmartTube</a></span>
+</div>
+
+
+<h2 class="sect">📋 今日总结</h2>
+<div class="summary-card">今日项目列表中，Colibri、God&#39;s Eye View和system_prompts_leaks在语言分布和star增长方面表现突出。Colibri使用C语言，God&#39;s Eye View使用JavaScript，system_prompts_leaks使用JavaScript。Colibri和God&#39;s Eye View的stars_today增长显著，system_prompts_leaks的stars增长稳定。</div>
+</body></html>
