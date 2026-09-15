@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日新闻日报 2026-09-15</title>
+<style>
+body{font-family:-apple-system,"Microsoft YaHei",sans-serif;margin:0;
+     background:#fff;color:#1a1a1a;padding:0 12px 18px;max-width:660px;
+     margin:0 auto;font-size:15.5px;line-height:1.6}
+.topbar{text-align:center;padding:14px 0 4px;font-size:1.15em;font-weight:700}
+.subhead{text-align:center;color:#999;font-size:.8em;margin-bottom:6px}
+.tabs{display:flex;gap:16px;border-bottom:1px solid #f0f0f0;
+      padding:6px 0 8px;color:#666;font-size:.92em;overflow-x:auto;
+      white-space:nowrap}
+.tabs b{color:#e03328;border-bottom:2px solid #e03328;padding-bottom:6px;
+        margin-bottom:-9px}
+.nav{position:sticky;top:0;background:#fff;z-index:20;display:flex;
+     gap:15px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;
+     border-bottom:1px solid #f0f0f0;padding:9px 2px;
+     -webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:#444;text-decoration:none;font-size:.92em;flex:0 0 auto}
+h2.sect{font-size:1.02em;margin:16px 0 8px;color:#1a1a1a}
+.item{padding:10px 0 12px;border-bottom:1px solid #f5f5f5}
+.item:last-child{border-bottom:none}
+.headline{font-weight:700;font-size:1.02em;margin:0}
+.meta{color:#9a9a9a;font-size:.82em;margin:4px 0 6px}
+.meta .src{color:#6f6f6f}
+.tag{display:inline-block;border-radius:3px;padding:0 5px;font-size:.78em;
+     margin-right:6px;vertical-align:1px}
+.tag.auth{background:#fdecec;color:#d6392f}
+.tag.aux{background:#eef4ff;color:#2f6fdd}
+.item p{margin:6px 0}
+.item p.sig{color:#444;background:#f8f8f8;border-radius:6px;padding:7px 10px}
+.item a{color:#2f6fdd;text-decoration:none;font-size:.88em}
+.badge{display:inline-block;min-width:20px;text-align:center;
+       background:#e03328;color:#fff;border-radius:4px;font-weight:700;
+       font-size:.85em;padding:1px 5px;margin-right:8px;vertical-align:2px}
+.badge.o{background:#f08c00}
+.badge.y{background:#e8b400}
+.hot{padding:10px 0;border-bottom:1px solid #f5f5f5}
+.hot:last-child{border-bottom:none}
+.hot .meta{margin:3px 0 2px}
+.hot .reason{color:#555;font-size:.9em;margin:2px 0 0}
+.item .meta{display:flex;flex-wrap:wrap;gap:2px 0}
+.item .meta .tlink{margin-left:4px}
+.pcard{background:#fafafa;border:1px solid #f0f0f0;border-radius:8px;
+       padding:10px 12px;margin-bottom:8px}
+.pcard h3{margin:0 0 4px;font-size:.95em;color:#e03328}
+.pcard p{margin:0;line-height:1.62;text-align:justify}
+.summary-card{background:#fffbe8;border:1px solid #f0e2a0;border-radius:8px;
+              padding:10px 12px;line-height:1.65;text-align:justify}
+.lang-card{background:#faf6fd;border:1px solid #ecdcf5;border-radius:8px;
+           padding:10px 12px;margin-bottom:8px}
+.lang-card h3{margin:0 0 6px;font-size:.95em;color:#7a3fa0}
+.lang-card p{margin:5px 0;line-height:1.6}
+.mini{font-size:.85em;color:#777}
+.sub{font-size:.85em;color:#b0500e;margin:10px 0 2px;font-weight:700}
+.sub.intl{color:#0f6b3e}
+.hotlist{border-top:1px solid #f5f5f5}
+.hrow{display:flex;align-items:center;gap:8px;padding:7px 0;
+      border-bottom:1px solid #f7f7f7}
+.hno{flex:0 0 20px;text-align:center;color:#f08c00;font-weight:700;
+     font-size:.9em}
+.hno.top{color:#e03328}
+.hno.zh{color:#2f6fdd}
+.htitle{flex:1;color:#1a4f9c;text-decoration:none;font-size:.95em}
+.hval{flex:0 0 auto;color:#b0b0b0;font-size:.78em}
+.xitem{padding:9px 0;border-bottom:1px solid #f7f7f7}
+.xitem:last-child{border-bottom:none}
+.xitem .xhead{display:flex;align-items:center;gap:8px}
+.xtext{margin:6px 0 0;color:#333;font-size:.92em;line-height:1.7;
+      text-align:justify}
+.wprops{margin:4px 0}
+.wprop{display:flex;gap:8px;padding:5px 0;border-bottom:1px dashed #ecdcf5}
+.wprop:last-child{border-bottom:none}
+.wprop b{flex:0 0 4.2em;color:#7a3fa0;font-size:.88em}
+.wprop span{flex:1;font-size:.92em;line-height:1.65}
+.idiom-grid{display:grid;grid-template-columns:1fr;gap:2px}
+.idiom-row{display:flex;gap:10px;padding:4px 0;border-bottom:1px dashed #f0eaf5}
+.idiom-row b{flex:0 0 5.5em;color:#7a3fa0}
+.idiom-row span{flex:1;font-size:.92em;color:#444}
+.word-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}
+@media(max-width:420px){.word-grid{grid-template-columns:1fr}}
+.word-row{display:flex;gap:8px;padding:3px 0;
+          border-bottom:1px dashed #e8e2f2;font-size:.88em}
+.word-row a{flex:0 0 6em;color:#2f6fdd;text-decoration:none;font-weight:600}
+.word-row span{flex:1;color:#555}
+.tlink{color:#1a4f9c;text-decoration:none;font-size:.98em}
+.lang-card .mini a{color:#7a3fa0}
+.mkt{display:flex;gap:14px;overflow-x:auto;white-space:nowrap;
+     scrollbar-width:none;padding:6px 0 8px;font-size:.85em;color:#555;
+     border-bottom:1px solid #f0f0f0;-webkit-overflow-scrolling:touch}
+.mkt::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto}
+.mchip b{font-weight:700}
+.mchip.up{color:#d6392f}
+.mchip.dn{color:#0f6b3e}
+</style></head><body>
+<div class="topbar">📰 每日新闻日报</div>
+<div class="subhead">2026-09-15 周二 ｜ 政治·考公 ｜ 经济·考公+审计 ｜ 科技·AI/机器人 ｜ 文学·语言与思维 ｜ 医学·养生</div>
+
+<div class="nav"><a href="#top3">🎯必看</a><a href="#lang">🗣️语言</a><a href="#words">📘单词</a><a href="#persp">🧭视角</a></div>
+
+<h2 class="sect" id="top3">🎯 今日必看 TOP3</h2>
+
+
+<h2 class="sect" id="weibo">🔥 微博热搜榜</h2>
+
+
+
+
+
+
+
+<h2 class="sect" id="lang">🗣️ 每日语言 · 十个常用成语</h2>
+
+<div class="lang-card">
+  <div class="idiom-grid">
+  
+  <div class="idiom-row"><b>格物致知</b><span></span></div>
+  
+  <div class="idiom-row"><b>知行合一</b><span></span></div>
+  
+  <div class="idiom-row"><b>洞若观火</b><span></span></div>
+  
+  <div class="idiom-row"><b>明察秋毫</b><span></span></div>
+  
+  <div class="idiom-row"><b>提纲挈领</b><span></span></div>
+  
+  <div class="idiom-row"><b>相辅相成</b><span></span></div>
+  
+  <div class="idiom-row"><b>因地制宜</b><span></span></div>
+  
+  <div class="idiom-row"><b>因势利导</b><span></span></div>
+  
+  <div class="idiom-row"><b>水到渠成</b><span></span></div>
+  
+  <div class="idiom-row"><b>循名责实</b><span></span></div>
+  
+  </div>
+</div>
+
+
+<h2 class="sect" id="words">📘 每日背单词 · 50 个常用词（点击看音标释义）</h2>
+<div class="lang-card">
+  <div class="word-grid">
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=preference">preference</a><span>n.偏好</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prejudice">prejudice</a><span>n.偏见</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=preliminary">preliminary</a><span>adj.初步的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=premium">premium</a><span>n.保费、溢价</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prepare">prepare</a><span>v.准备</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prescribe">prescribe</a><span>v.规定、开处方</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=present">present</a><span>adj.当前的 v.呈现</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=preserve">preserve</a><span>v.保存、保护</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=pressure">pressure</a><span>n.压力</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=pretend">pretend</a><span>v.假装</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prevail">prevail</a><span>v.盛行、获胜</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=previous">previous</a><span>adj.先前的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=primary">primary</a><span>adj.主要的、初级的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prime">prime</a><span>adj.首要的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=principal">principal</a><span>adj.主要的 n.本金</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=principle">principle</a><span>n.原则、原理</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=priority">priority</a><span>n.优先事项</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=privacy">privacy</a><span>n.隐私</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=procedure">procedure</a><span>n.程序、手续</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=proceed">proceed</a><span>v.继续进行</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=process">process</a><span>n.过程 v.处理</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=proclaim">proclaim</a><span>v.宣告</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=profession">profession</a><span>n.职业</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=proficient">proficient</a><span>adj.熟练的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=profile">profile</a><span>n.简介、轮廓</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=profit">profit</a><span>n.利润</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=profound">profound</a><span>adj.深刻的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=progress">progress</a><span>n.进步</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prohibit">prohibit</a><span>v.禁止</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=project">project</a><span>n.项目 v.投射</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prominent">prominent</a><span>adj.杰出的、显著的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=promote">promote</a><span>v.促进、晋升</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prompt">prompt</a><span>adj.及时的 v.促使</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=proof">proof</a><span>n.证明</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=property">property</a><span>n.财产、性质</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=proportion">proportion</a><span>n.比例</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prospect">prospect</a><span>n.前景</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prosperity">prosperity</a><span>n.繁荣</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=protect">protect</a><span>v.保护</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=protest">protest</a><span>n./v.抗议</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=prove">prove</a><span>v.证明</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=provide">provide</a><span>v.提供</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=provoke">provoke</a><span>v.激怒、激起</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=publicize">publicize</a><span>v.宣传、公开</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=purchase">purchase</a><span>n./v.购买</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=pursue">pursue</a><span>v.追求、从事</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=qualify">qualify</a><span>v.使合格</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=quality">quality</a><span>n.质量、品质</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=quantity">quantity</a><span>n.数量</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://cn.bing.com/dict/search?q=quote">quote</a><span>v.引用 n.报价</span></div>
+  
+  </div>
+  <p class="mini">链接为必应词典（含音标/释义/例句/发音）；词表 879 词约 18 天轮换不重复。</p>
+</div>
+
+
+
+<div class="lang-card">
+  <h3>维特根斯坦《逻辑哲学论》 命题组 §6.431–7 · 死亡、不可说与沉默</h3>
+  <div class="wprops">
+  
+  <div class="wprop"><b>6.431</b><span>正如在死这件事上，世界不是改变的，而是终止的。</span></div>
+  
+  <div class="wprop"><b>6.4311</b><span>死不是生活中的事件：我们不会活着体验死。如果永恒不是指时间的无限延续，而是指无时间性，那么永恒地活着就意味着活在当下。我们的生命没有终点，正如我们的视野没有界限。</span></div>
+  
+  <div class="wprop"><b>6.522</b><span>确实有不可说的东西。它们显示自己。这是神秘的东西。</span></div>
+  
+  <div class="wprop"><b>6.53</b><span>哲学的正确方法应当是这样：除了能够说出的东西，即自然科学的命题——也就是与哲学无关的东西——之外，就什么也不说……</span></div>
+  
+  <div class="wprop"><b>6.54</b><span>我的命题是以如下的方式起阐明作用的：理解我的人，当他通过这些命题、根据这些命题、越过这些命题（可以说在爬上梯子之后），终于认识到它们是无意义的。</span></div>
+  
+  <div class="wprop"><b>7</b><span>对于不可说的东西，我们必须保持沉默。</span></div>
+  
+  </div>
+  
+  <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
+</div>
+
+
+<div class="lang-card">
+  <h3>🌿 黄帝内经 · 素问·脉解篇第四十九</h3>
+  <p class="mini">原文：脉解篇第四十九【题解】脉解，即解脉，脉之解说。本篇具体阐述了三阴三阳经脉之气各有所主之时，并从时令阴阳变化的角度，解释了阴阳经气盛衰而致经脉病变的症状和机理，故名为《脉解》。篇中介绍了六经与月份的配合以及相应的月建，分析了四时阴阳盛衰与六经病变的关系，详细解释了六经病变症候的机理。本篇从写作形式看是解经的传文，“所谓·…</p>
+  
+  <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="F:\初创AI\定时推送新闻\黄帝内经（上）.pdf">📖 本章全文（ctext 中国哲学书电子化计划）</a> ｜ 白话解读为 AI 生成，原文出自姚春鹏《黄帝内经》译本</p>
+</div>
+
+
+
+
+<h2 class="sect" id="persp">🧭 五大视角汇总</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="sect" id="summary">📋 今日总结</h2>
+<div class="summary-card"></div>
+<script>
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+</script>
+</body></html>
