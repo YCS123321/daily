@@ -247,6 +247,9 @@ function ttsToggle(){
   speechSynthesis.cancel();
   parts.forEach(function(p){
     var u=new SpeechSynthesisUtterance(p);
+    var vs=speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+    var pv=vs.filter(function(v){return /晓晓|xiaoxiao|晓伊|Xiaoyi|婷婷|Huihui|Yaoyao|云希|female|女/i.test(v.name);});
+    u.voice=pv[0]||vs[0]||null;
     u.lang="zh-CN";u.rate=1;
     speechSynthesis.speak(u);
   });
