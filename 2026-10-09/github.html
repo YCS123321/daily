@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-10-09</title>
+<style>
+body{font-family:-apple-system,"Microsoft YaHei",sans-serif;margin:0;
+     background:#fff;color:#1a1a1a;padding:0 12px 18px;max-width:660px;
+     margin:0 auto;font-size:15.5px;line-height:1.62}
+.topbar{text-align:center;padding:14px 0 4px;font-size:1.15em;font-weight:700}
+.subhead{text-align:center;color:#999;font-size:.8em;margin-bottom:6px}
+.note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px;
+      padding:7px 10px;font-size:.85em;color:#7a6208;margin-bottom:4px}
+h2.sect{font-size:1.02em;margin:16px 0 8px;color:#1a1a1a}
+.hot{padding:9px 0;border-bottom:1px solid #f5f5f5}
+.hot .reason{color:#555;font-size:.9em;margin:2px 0 0}
+.badge{display:inline-block;min-width:20px;text-align:center;
+       background:#6e40c9;color:#fff;border-radius:4px;font-weight:700;
+       font-size:.85em;padding:1px 5px;margin-right:8px;vertical-align:2px}
+.card{padding:12px 0 14px;border-bottom:1px solid #f0f0f0}
+.pname{font-weight:700;font-size:1.05em}
+.pname a{color:#1a4f9c;text-decoration:none}
+.meta{color:#9a9a9a;font-size:.82em;margin:4px 0 6px}
+.meta .star{color:#b7791f;font-weight:600}
+.times{background:#f8f9fb;border-radius:6px;padding:6px 10px;
+       font-size:.8em;color:#57606a;margin:6px 0}
+.times b{color:#333}
+.tag{display:inline-block;background:#eef4ff;color:#2f6fdd;border-radius:3px;
+     padding:0 6px;font-size:.78em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.95em;color:#6e40c9}
+.card p{margin:4px 0;text-align:justify}
+.plink{display:inline-block;margin-top:6px}
+.plink a{color:#2f6fdd;text-decoration:none;font-size:.9em;font-weight:600}
+.summary-card{background:#fffbe8;border:1px solid #f0e2a0;border-radius:8px;
+              padding:10px 12px;line-height:1.65;text-align:justify}
+</style></head><body>
+<div class="topbar">🐙 GitHub 每日热门 <button id="ttsBtn" onclick="return ttsToggle()" style="border:none;border-radius:22px;background:#e03328;color:#fff;font-size:.8em;padding:4px 12px;cursor:pointer;vertical-align:4px">🔊 朗读</button></div>
+<div class="subhead">2026-10-09 周五 ｜ Trending 日榜 TOP9 ｜ 每项深度介绍</div>
+
+
+<h2 class="sect">🎯 今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/AnyPS5" >AnyPS5</a></span>
+<div class="reason">提供了一种高效的方法将PS5游戏和软件移植到Linux和Windows系统，对跨平台开发者尤其有用。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/diagram-design" >diagram-design</a></span>
+<div class="reason">为多种平台提供丰富的图表类型，有助于创建和展示复杂的系统结构和流程。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/rea" >rea</a></span>
+<div class="reason">一个强大的逆向工程工具，可以帮助开发者深入理解软件的内部工作原理。</div></div>
+
+
+<h2 class="sect">📦 今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/boykopovar/AnyPS5">AnyPS5</a></span>
+  　<span class="meta">boykopovar</span></div>
+  <div class="meta"><span class="star">⭐ 15930</span>（今日 +4669） · C++ · <span class="tag">anyps5</span><span class="tag">dynamic-library</span><span class="tag">game-porting</span><span class="tag">ps5</span><span class="tag">ps5-tools</span><span class="tag">spir-v</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2026/08/04 05:30</b> ｜ 最近提交 <b>2026/10/09 06:46</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>AnyPS5是一个用于自动将PS5可执行文件移植到Linux和Windows的工具。它通过一个重连器（relinker）将可执行文件转换为目标系统的本地格式，并实现了适用于动态链接的系统PRX库。这个工具不需要仿真或单独的运行时进程。对于审计师来说，这个工具可以帮助他们理解不同操作系统的兼容性问题，尤其是在进行跨平台审计时。例如，审计师可能会使用这个工具来检查一个游戏或软件在不同操作系统上的运行情况，以确保其财务报告的准确性。对于备考公务员的朋友来说，这个工具可能不是直接相关的，但了解这类技术可以帮助他们扩展知识面，尤其是在处理与信息技术相关的政策或法规时。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>AnyPS5使用C++语言编写，其核心架构包括一个重连器（relinker）和系统PRX库的实现。重连器负责将PS5的可执行文件转换为Linux和Windows的本地格式，而系统PRX库则提供了必要的动态链接功能。这个项目的亮点设计在于其无需仿真或额外运行时进程，直接在目标系统上运行，提高了移植效率和兼容性。此外，项目的README中提供了详细的架构图和代码风格规范，有助于开发者理解其工作机制。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的PS2到PC移植工具，如PCSX2，但专注于PS5到Linux和Windows的移植。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，AnyPS5可以帮助他们评估跨平台软件的兼容性和稳定性，这对于确保财务报告的准确性至关重要。对于备考公务员的朋友，了解这类技术有助于他们在未来可能涉及信息技术监管或政策制定的工作中发挥作用。</p>
+  <span class="plink">🔗 <a href="https://github.com/boykopovar/AnyPS5">github.com/boykopovar/AnyPS5</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/cathrynlavery/diagram-design">diagram-design</a></span>
+  　<span class="meta">cathrynlavery</span></div>
+  <div class="meta"><span class="star">⭐ 46413</span>（今日 +1160） · HTML · <span class="tag">agent-skills</span><span class="tag">claude-code</span><span class="tag">codex</span><span class="tag">data-visualization</span><span class="tag">diagrams</span><span class="tag">drawio</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2026/04/17 02:01</b> ｜ 最近提交 <b>2026/10/08 09:34</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这个项目是一个编辑式图表设计工具，专门为Claude Code、Codex、GitHub Copilot、Factory Droid和Pi等平台设计。它提供了42种图表类型，使用自包含的HTML和SVG格式，没有阴影，也不需要使用Mermaid语法。这个工具可以帮助用户创建各种编辑式图表，如架构图、循环图、语义系统模式图等，适用于需要可视化展示复杂系统结构和流程的场景。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>这个项目的技术栈主要是HTML，通过SVG实现图表的绘制。其核心架构包括一个图表类型库，用户可以通过选择不同的图表类型来创建所需的图表。项目的工作机制是用户通过配置参数来生成图表，然后可以将生成的图表嵌入到网页或文档中。项目的亮点设计包括丰富的图表类型、自包含的格式以及无需额外依赖的特点。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Visio或Lucidchart，帮助用户轻松创建和编辑图表。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，这个工具可以用来创建和展示审计流程图、组织结构图等，帮助审计工作更加直观和高效。对于备考公务员的朋友来说，这个工具可以用来绘制政策流程图、组织架构图等，有助于理解复杂的政策体系和组织结构。</p>
+  <span class="plink">🔗 <a href="https://github.com/cathrynlavery/diagram-design">github.com/cathrynlavery/diagram-design</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/morluto/rea">rea</a></span>
+  　<span class="meta">morluto</span></div>
+  <div class="meta"><span class="star">⭐ 27083</span>（今日 +7738） · TypeScript · <span class="tag">agent-skills</span><span class="tag">ai-agents</span><span class="tag">binary-analysis</span><span class="tag">claude-code</span><span class="tag">cli</span><span class="tag">codex</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2026/04/14 08:51</b> ｜ 最近提交 <b>2026/10/09 09:37</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>REA是一个用于逆向工程的工具，它可以帮助用户从应用行为到原生二进制文件进行逆向工程。这个项目旨在提供一个统一的接口，用于跨二进制、应用程序和运行时行为进行逆向工程。对于审计师来说，这可能意味着能够更深入地理解软件的内部工作原理，从而在审计过程中发现潜在的问题。例如，审计师可以使用REA来检查软件的代码，确保它符合财务报告的准确性要求。对于备考公务员的朋友来说，这种工具可能有助于他们理解复杂的系统架构，这在公共管理职位中是一个重要的技能。典型使用场景包括分析软件漏洞、验证软件合规性以及研究软件行为模式。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>REA项目使用TypeScript编写，其核心架构包括一个多功能的控制面板（MCP），用于统一管理逆向工程过程。技术栈包括Node.js和npm，这为项目提供了强大的社区支持和丰富的库资源。核心工作机制是通过代理（agents）来执行逆向工程任务，这些代理可以针对不同的目标进行定制。亮点设计包括跨平台的兼容性、易于使用的API以及丰富的文档资源。由于README中没有详细的技术细节，以下是对核心架构的概述：REA通过代理技术实现了对各种软件组件的深入分析，这些代理可以嵌入到目标系统中，收集必要的信息，然后返回给用户。这种设计允许审计师和公务员在不需要深入了解底层编程语言的情况下，对软件进行逆向工程。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的IDA Pro或OllyDbg</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，REA可以帮助他们更深入地理解软件的内部逻辑，从而在审计过程中发现潜在的风险和违规行为。对于备考公务员的朋友，REA可以作为一种工具来帮助他们理解复杂的系统架构，这对于公共管理职位来说是一个重要的技能。虽然REA的关联性可能不如一些专门的审计工具强，但它仍然是一个有用的工具，可以帮助专业人士提高工作效率。</p>
+  <span class="plink">🔗 <a href="https://github.com/morluto/rea">github.com/morluto/rea</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/mattpocock/skills">skills</a></span>
+  　<span class="meta">mattpocock</span></div>
+  <div class="meta"><span class="star">⭐ 281147</span>（今日 +1774） · Shell</div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2026/02/03 19:15</b> ｜ 最近提交 <b>2026/10/08 16:49</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这个项目是一个Shell脚本集合，旨在帮助真正的工程师在日常工作中提高效率。它包含了一系列实用的技能，比如GSD（Get Shit Done，快速完成任务）、BMAD（Build, Measure, Adapt，构建、度量、适应）和Spec-Kit等，这些技能可以帮助工程师更好地管理项目流程，减少错误，并提高工作效率。对于审计师来说，这些技能可以帮助他们在处理大量数据时，更加高效地完成审计任务。而对于备考公务员的朋友，这些技能可以帮助他们更好地管理时间，提高学习效率。典型使用场景包括：审计师在审计过程中使用这些脚本自动化一些重复性工作，公务员在备考时利用这些脚本管理学习进度和任务。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>这个项目使用Shell脚本编写，技术栈主要是Shell脚本。核心架构是提供一系列可复用的脚本，这些脚本可以根据需要进行组合和定制。项目的亮点设计在于其模块化和可组合性，使得工程师可以根据自己的需求灵活地使用这些脚本。这些脚本基于多年的工程经验，旨在帮助工程师解决实际工作中遇到的问题。概述来说，这个项目的设计理念是提供简单、实用、可定制的工具，帮助工程师提高工作效率。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的自动化工具集，如Ansible或Puppet，但更专注于Shell脚本的使用。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们自动化一些审计流程，提高工作效率。例如，可以编写脚本来自动化数据收集、分析和报告生成等任务。对于备考公务员的朋友，这个项目可以帮助他们管理学习计划，提高学习效率。</p>
+  <span class="plink">🔗 <a href="https://github.com/mattpocock/skills">github.com/mattpocock/skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></span>
+  　<span class="meta">thedotmack</span></div>
+  <div class="meta"><span class="star">⭐ 98496</span>（今日 +670） · TypeScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">ai-memory</span><span class="tag">anthropic</span><span class="tag">artificial-intelligence</span><span class="tag">chromadb</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2025/09/01 04:50</b> ｜ 最近提交 <b>2026/10/09 02:58</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>Claude-Mem是一个用于跨会话持久化上下文的项目，它能够捕捉代理在会话期间所做的所有操作，并使用AI进行压缩，然后将相关的上下文注入到未来的会话中。这个项目与多个AI工具兼容，如Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode等。对于审计师来说，它可以用来记录和分析会话中的操作，类似于审计过程中的日志记录和分析，帮助审计师更好地理解和追踪数据流。对于备考公务员的朋友来说，它可以作为一个辅助工具，帮助他们在学习过程中记录和回顾重要信息，就像在学习时做笔记一样，但更加高效和智能。典型使用场景包括审计过程中的数据追踪、学习过程中的知识管理、以及日常工作中信息的快速检索和回顾。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>Claude-Mem使用TypeScript编写，其核心架构包括数据捕捉、AI压缩和上下文注入三个部分。数据捕捉模块负责记录代理在会话中的所有操作；AI压缩模块使用机器学习算法对数据进行压缩，以提高存储效率；上下文注入模块则根据压缩后的数据，在未来的会话中提供相关的上下文信息。这个项目的亮点设计在于其跨会话的持久化能力，以及与多种AI工具的兼容性，使得它能够适应不同的使用场景。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的AI笔记工具，帮助用户在会话中记录和回顾信息。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，Claude-Mem可以帮助记录和分析审计过程中的数据流，类似于审计日志的功能。对于备考公务员的朋友，它可以作为一个辅助工具，帮助他们在学习过程中记录和回顾重要信息，类似于学习笔记的功能。</p>
+  <span class="plink">🔗 <a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/EpicGames/raddebugger">raddebugger</a></span>
+  　<span class="meta">EpicGames</span></div>
+  <div class="meta"><span class="star">⭐ 8122</span>（今日 +279） · C</div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2024/01/11 03:24</b> ｜ 最近提交 <b>2026/10/08 04:56</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>raddebugger是一个由EpicGames开发的本地用户模式多进程图形调试器。它主要用于在Windows x64系统上对本地机器进行调试，支持PDB符号文件。目前处于alpha测试阶段，主要功能是提供图形化的调试界面，帮助开发者更直观地查看和调试程序。这个工具可以解决开发者调试复杂程序时的问题，比如多进程调试、内存泄漏检测等。对于审计师来说，它可以用来检查软件的运行状态，确保软件的稳定性和安全性。对于备考公务员的朋友，它可以帮助他们理解计算机程序的工作原理，提高编程能力，这在公务员考试中也是一个加分项。典型使用场景包括：调试游戏开发中的复杂问题、分析软件性能瓶颈、进行安全漏洞检测等。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>raddebugger使用C语言编写，采用图形用户界面，支持多进程调试。它的技术栈包括C++、Qt等。核心架构包括调试引擎、图形界面和用户交互模块。亮点设计包括：支持多进程调试、提供丰富的调试功能、易于使用的图形界面。此外，它还计划在未来扩展到支持Linux调试和DWARF调试信息。由于README中未提供具体的技术细节，以上内容为概述。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Visual Studio Debugger</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，raddebugger可以帮助他们检查软件的运行状态，确保软件的稳定性和安全性。对于备考公务员的朋友，它可以帮助他们提高编程能力，这在公务员考试中也是一个加分项。</p>
+  <span class="plink">🔗 <a href="https://github.com/EpicGames/raddebugger">github.com/EpicGames/raddebugger</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/anthropics/knowledge-work-plugins">知识工作插件库</a></span>
+  　<span class="meta">anthropics</span></div>
+  <div class="meta"><span class="star">⭐ 27604</span>（今日 +392） · Python</div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2026/01/24 04:11</b> ｜ 最近提交 <b>2026/10/08 23:35</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这个项目是一个开源的插件库，主要面向知识工作者，旨在用于Claude Cowork平台。它通过一系列插件将Claude转换为你角色、团队和公司的专业助手。这些插件适用于Claude Cowork和Claude Code平台。插件的作用在于让Claude能够更好地理解你的工作需求，包括你喜欢的完成工作的方式、需要使用的工具和数据、如何处理关键工作流程以及可以使用的快捷命令，从而让你的团队能够获得更好、更一致的工作成果。每个插件都包含特定工作职能的技能、连接器、快捷命令和子代理，为Claude提供一个强大的起点。通过为你的公司定制这些插件——包括你的工具、术语和流程——Claude可以像为你的团队量身定制一样工作。这些插件适用于管理任务、日历、日常工作流程、个人上下文等，帮助你更高效地完成工作。对于审计师来说，这些插件可以帮助他们更有效地管理日常的工作流程和任务，提高工作效率。对于备考公务员的朋友来说，这些插件可以帮助他们更好地组织学习计划和日常学习任务，提高学习效率。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>这个项目使用Python语言编写，其技术栈包括但不限于插件开发框架、API接口和数据库管理。核心架构包括插件市场、插件管理器、插件执行引擎和用户界面。插件市场提供了一系列预构建的插件，插件管理器负责插件的安装、更新和管理，插件执行引擎负责执行插件中的任务，用户界面则提供用户与插件交互的界面。亮点设计包括插件的可定制性、跨平台兼容性和强大的扩展性，使得Claude能够适应不同用户的需求。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Microsoft Office插件库，帮助用户通过插件扩展和定制办公软件的功能。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，这些插件可以帮助他们更有效地管理日常的工作流程和任务，提高工作效率。例如，通过插件可以自动收集和整理审计数据，生成审计报告，减少人工工作量。对于备考公务员的朋友来说，这些插件可以帮助他们更好地组织学习计划和日常学习任务，提高学习效率。例如，通过插件可以设置学习提醒、管理学习进度和收集学习资料。</p>
+  <span class="plink">🔗 <a href="https://github.com/anthropics/knowledge-work-plugins">github.com/anthropics/知识工作插件库</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/storytold/artcraft">artcraft</a></span>
+  　<span class="meta">storytold</span></div>
+  <div class="meta"><span class="star">⭐ 8068</span>（今日 +2103） · Rust · <span class="tag">3d-graphics</span><span class="tag">ai</span><span class="tag">aivideo</span><span class="tag">filmmaking</span><span class="tag">imagegeneration</span></div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2022/04/01 07:19</b> ｜ 最近提交 <b>2026/10/07 08:56</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>ArtCraft是一个专为艺术家、设计师和电影制作人设计的创作引擎。它旨在提供一个直观、高效的工具，帮助用户在数字艺术创作中实现复杂的效果和场景。对于审计师来说，ArtCraft可能不是直接相关的工具，但可以类比为一种高级的“数字拼图”，它可以帮助艺术家和设计师在创作中实现复杂的视觉效果，类似于审计师在财务报告中通过数据拼凑出整个财务状况的过程。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>ArtCraft使用Rust语言编写，这保证了其高性能和安全性。它的核心架构包括一个模块化的设计，允许用户自定义和扩展功能。ArtCraft的亮点设计在于其直观的用户界面和强大的渲染引擎，这使得即使是编程新手也能轻松上手。它的工作机制类似于审计软件，通过提供一系列工具和模板，帮助用户快速构建和测试他们的创意。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的Adobe After Effects</p>
+  <h3>💼 与你的关联</h3>
+  <p>ArtCraft与审计师工作的直接关联较弱，但可以类比于审计师在处理大量数据时，需要通过逻辑和推理来构建出一个清晰的财务图像，而ArtCraft则帮助艺术家通过视觉元素构建出一个完整的艺术作品。</p>
+  <span class="plink">🔗 <a href="https://github.com/storytold/artcraft">github.com/storytold/artcraft</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/liquidslr/system-design-notes">system-design-notes</a></span>
+  　<span class="meta">liquidslr</span></div>
+  <div class="meta"><span class="star">⭐ 24649</span>（今日 +393） · 语言未知</div>
+  <div class="times">
+    🕐 抓取 <b>2026/10/09 09:40</b> ｜ 仓库创建 <b>2024/12/24 09:19</b> ｜ 最近提交 <b>2026/08/13 06:22</b>（北京时间）
+  </div>
+  <h3>📖 这是什么</h3>
+  <p>这个项目是《系统设计面试 - 内部人士指南》一书的笔记，旨在帮助读者理解和掌握系统设计面试中的关键概念和技巧。它解决了面试者对于系统设计面试的困惑，提供了实用的框架和案例，帮助读者在面试中更好地展示自己的能力。这个项目可以用来准备系统设计面试，尤其是对于没有编程经验的审计师来说，它提供了一个学习系统设计的平台，有助于提升面试技巧。典型使用场景包括：审计师在准备面试时，可以通过阅读这些笔记来了解系统设计的基本概念和实际应用，从而在面试中更好地回答相关问题。</p>
+  <h3>🏗️ 怎么设计的</h3>
+  <p>该项目基于书籍《系统设计面试 - 内部人士指南》的内容，采用笔记形式，通过详细的章节划分，涵盖了系统设计面试的各个方面。技术栈主要是文字和链接，核心架构是笔记的组织结构，包括从零到数百万用户规模的扩展、估算、设计框架、速率限制器、一致性哈希、键值存储、分布式系统中的唯一ID生成器、URL缩短器、网络爬虫和通知系统等。亮点设计在于它提供了一个系统设计的全面指南，通过案例和框架帮助读者理解和应用系统设计原则。</p>
+  <h3>🔭 类比成熟工具</h3>
+  <p>相当于开源版的系统设计面试指南，帮助读者快速掌握系统设计的关键概念和实际应用。</p>
+  <h3>💼 与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们理解系统设计的原理，从而在审计过程中更好地评估和监控系统的安全性、可靠性和效率。虽然审计师可能不会直接使用这些系统设计的技术，但了解这些概念对于评估系统的内部控制和风险管理非常有帮助。</p>
+  <span class="plink">🔗 <a href="https://github.com/liquidslr/system-design-notes">github.com/liquidslr/system-design-notes</a></span>
+</div>
+
+
+<h2 class="sect">📋 今日总结</h2>
+<div class="summary-card">今日项目列表中，AnyPS5、diagram-design和rea在语言分布和star增长方面表现突出。AnyPS5专注于游戏和软件的跨平台移植，diagram-design提供了丰富的图表创建工具，rea则是一个功能强大的逆向工程工具。</div>
+<script>
+var _ttsOn=false;
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;
+    btn.textContent="🔊 朗读";btn.style.background="#e03328";return false;}
+  var text=(document.body.innerText||"")
+    .replace(/🔊\s*朗读|⏹\s*停止/g,"")
+    .replace(/\s+/g," ").trim();
+  var parts=text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[text];
+  speechSynthesis.cancel();
+  parts.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    var vs=speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+    var pv=vs.filter(function(v){return /晓晓|xiaoxiao|晓伊|Xiaoyi|婷婷|Huihui|Yaoyao|云希|female|女/i.test(v.name);});
+    u.voice=pv[0]||vs[0]||null;
+    u.lang="zh-CN";u.rate=1;
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;btn.textContent="⏹ 停止";btn.style.background="#555";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;
+      btn.textContent="🔊 朗读";btn.style.background="#e03328";}
+  },1000);
+  return false;
+}
+</script>
+</body></html>
