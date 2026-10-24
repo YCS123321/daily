@@ -3,7 +3,8 @@
 <title>每日新闻日报 2026-10-12 · AI+审计训练营第二期开班</title>
 <style>
 :root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
-     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75}
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+     --modern-accent:#2f6fdd}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
      font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
@@ -47,7 +48,7 @@ body{margin:0;background:var(--bg);color:var(--ink);
 /* ── 栏目标题：── 政 治 ── ── */
 h2.sect{display:flex;align-items:center;gap:12px;font-size:1.12em;
         margin:26px 0 10px;letter-spacing:.3em;font-weight:900}
-[id]{scroll-margin-top:64px}
+[id]{scroll-margin-top:64px}   /* 锚点跳转不被吸顶导航盖住 */
 h2.sect::before,h2.sect::after{content:"";flex:1;
         border-top:1px solid var(--ink);box-shadow:0 3px 0 -1px var(--paper)}
 h2.sect::after{box-shadow:none;border-bottom:none}
@@ -173,7 +174,66 @@ audio{width:100%;height:36px;margin:2px 0}
 .audiobox{margin:8px 0 2px}
 .audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
         font-family:-apple-system,"Microsoft YaHei",sans-serif}
-</style></head><body>
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        flex:0 0 auto;letter-spacing:.05em}
+/* ══ 现代风皮肤（结构不变，换肤：白底卡片/圆角/彩色/无衬线）══ */
+body.modern{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.65}
+body.modern .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.modern .masthead h1{font-size:1.35em;letter-spacing:.06em}
+body.modern .masthead .motto{letter-spacing:.12em}
+body.modern .rule-double{border-top:none;margin:0}
+body.modern .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.modern .headlines a{font-size:.98em;line-height:2}
+body.modern h2.sect{letter-spacing:.05em;font-size:1.06em;gap:8px;
+        color:#1a1a1a;margin:22px 0 8px}
+body.modern h2.sect::before,body.modern h2.sect::after{border-top:none}
+body.modern h2.sect::before{content:"▎";color:var(--modern-accent);border:none;flex:none}
+body.modern h2.sect::after{display:none}
+body.modern .item{border-bottom:1px solid #f2f2f2}
+body.modern .item .headline{font-size:1em}
+body.modern .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
+body.modern .item a,body.modern .tlink{color:#2f6fdd}
+body.modern .rlink{color:#2f6fdd}
+body.modern .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
+body.modern .tag.auth{background:#fdecec;color:#d6392f}
+body.modern .badge{background:#e03328;border-radius:4px}
+body.modern .badge.o{background:#f08c00}
+body.modern .badge.y{background:#e8b400}
+body.modern .hot .reason{color:#555}
+body.modern .hrow{border-bottom:1px solid #f7f7f7}
+body.modern .htitle{color:#1a4f9c}
+body.modern .hno.top{color:#e03328}
+body.modern .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
+        border-style:solid}
+body.modern .digest h3{color:#8a6d1a;letter-spacing:.1em}
+body.modern details.xb{border-bottom:1px solid #f7f7f7}
+body.modern details.xb summary{font-family:inherit}
+body.modern details.xb summary .xt{font-weight:600}
+body.modern .lang-card{border:1px solid #f0f0f0;background:#fafafa;
+        border-radius:8px}
+body.modern .lang-card h3{color:#7a3fa0}
+body.modern .idiom-row b{color:#7a3fa0}
+body.modern .wprop b{color:#7a3fa0}
+body.modern .word-row a{color:#2f6fdd}
+body.modern .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
+        border-radius:8px;overflow:hidden}
+body.modern .hd-head{background:#7a3fa0}
+body.modern .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
+body.modern .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
+body.modern .hd-trans{background:#f3eefb;border-radius:6px}
+body.modern .hd-trans-label{color:#7a3fa0}
+body.modern .pcard h3{color:#d6392f}
+body.modern .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.modern .footer{border-top:1px solid #f0f0f0}
+body.modern #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
 <div class="sheet">
 <div class="masthead">
   <h1>每日新闻日报</h1>
@@ -196,20 +256,20 @@ audio{width:100%;height:36px;margin:2px 0}
 <span class="mchip dn">伦敦金 <b>3997.79</b> -0.66%</span>
 </div>
 
-<div class="nav"><a href="#top3">必看</a><a href="#weibo">微博</a><a href="#zhihu">知乎</a><a href="#major">大事</a><a href="#xwlb">联播</a><a href="#lang">语言</a><a href="#words">单词</a><a href="#thought">思维</a><a href="#cat-经济">经济</a><a href="#cat-科技">科技</a><a href="#huangdi">内经</a><a href="#persp">视角</a></div>
+<div class="nav"><a href="#top3">必看</a><a href="#weibo">微博</a><a href="#zhihu">知乎</a><a href="#major">大事</a><a href="#xwlb">联播</a><a href="#lang">语言</a><a href="#words">单词</a><a href="#thought">思维</a><a href="#cat-经济">经济</a><a href="#cat-科技">科技</a><a href="#huangdi">内经</a><a href="#persp">视角</a><button id="themeBtn" onclick="return toggleTheme()">🎨 现代风</button></div>
 
-<div style="margin:8px 0 4px"><audio controls preload="none" style="width:100%;height:40px" src="news.mp3"></audio><div style="color:#999;font-size:.82em;margin:2px 0 6px">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3">今日必看</h2>
+<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="news.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3">今日必看</h2>
 
 <div class="hot">
   <div><span class="badge ">1</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">AI+审计训练营第二期开班</a></span></div>
   <div class="meta"><span class="src">内审协会</span> · 10/09 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">原文</a></div>
-  <div class="reason">提升审计人员AI技术应用能力，指导审计相关职位备考及工作。</div>
+  <div class="reason">提升审计人员AI技术应用能力，关注最新技术培训动态。</div>
 </div>
 
 <div class="hot">
   <div><span class="badge o">2</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">熊继军会见澳门经济财政司司长</a></span></div>
   <div class="meta"><span class="src">工信部</span> · 10/12 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">原文</a></div>
-  <div class="reason">体现内地与澳门经济合作，对宏观经济政策有重要参考价值。</div>
+  <div class="reason">涉及两地经济合作与政策交流，对审计监管环境有重要意义。</div>
 </div>
 
 
@@ -272,16 +332,16 @@ audio{width:100%;height:36px;margin:2px 0}
 
 <div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">AI+审计训练营第二期</a></span>
   <div class="meta"><span class="src">内审协会</span> · 10/09 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">原文</a></div>
-  <p><b>背景</b>：内审协会即将举办第二期“AI＋审计”智能体实战训练营，旨在提升审计人员的AI技术应用能力。</p>
-  <p><b>影响</b>：对备考审计相关职位及从事审计工作的人员具有实际指导意义，有助于推动审计行业的技术进步。</p>
-  <p><b>与你</b>：训练营内容涉及AI在审计领域的应用，对审计师了解和运用AI技术有直接帮助。</p>
+  <p><b>背景</b>：内审协会即将举办第二期AI与审计结合的实战训练营。</p>
+  <p><b>影响</b>：提升审计人员AI技术应用能力，对备考审计职位的人员了解技术培训动态重要。</p>
+  <p><b>与你</b>：提升审计人员技术能力，优化审计流程和监管环境。</p>
 </div>
 
 <div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">熊继军会见澳门经济财政司长</a></span>
   <div class="meta"><span class="src">工信部</span> · 10/12 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">原文</a></div>
-  <p><b>背景</b>：工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴，双方就经济合作等议题进行了交流。</p>
-  <p><b>影响</b>：体现了内地与澳门在经济发展领域的紧密合作，对理解宏观经济政策及区域经济发展趋势有重要参考价值。</p>
-  <p><b>与你</b>：会议内容涉及经济合作，对审计师了解宏观经济政策和区域经济发展趋势有间接帮助。</p>
+  <p><b>背景</b>：工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长。</p>
+  <p><b>影响</b>：可能涉及两地经济合作与政策交流，对理解国家经济政策走向和审计监管环境有重要意义。</p>
+  <p><b>与你</b>：两地经济合作可能影响审计监管政策和环境。</p>
 </div>
 
 
@@ -292,7 +352,7 @@ audio{width:100%;height:36px;margin:2px 0}
 
 <div class="digest">
   <h3>要点速览</h3>
-  <ol><li>{&#39;title&#39;: &#39;【新思想引领新征程】守护绿水青山 共绘美丽中国新画卷&#39;, &#39;text&#39;: &#39;习近平强调生态保护，云南推进洱海治理&#39;}</li><li>{&#39;title&#39;: &#39;王沪宁会见越南国会主席&#39;, &#39;text&#39;: &#39;王沪宁会见越南国会主席，强调中越命运共同体建设&#39;}</li><li>{&#39;title&#39;: &#39;中国物流业景气指数连续5个月扩张&#39;, &#39;text&#39;: &#39;中国物流业景气指数连续5个月扩张，业务活动预期指数大幅回升&#39;}</li><li>{&#39;title&#39;: &#39;我国氢能产业进入发展快车道&#39;, &#39;text&#39;: &#39;我国氢能产业进入发展快车道，产能规模全球领先&#39;}</li><li>{&#39;title&#39;: &#39;新皇岗口岸落成 明日开通运行&#39;, &#39;text&#39;: &#39;新皇岗口岸落成，提供24小时通关服务，提升通关效率&#39;}</li></ol>
+  <ol><li>{&#39;title&#39;: &#39;习近平强调高质量发展与生态保护&#39;, &#39;text&#39;: &#39;习近平强调高质量发展与生态保护，推进山水林田湖草沙一体化保护。&#39;}</li><li>{&#39;title&#39;: &#39;王沪宁会见越南国会主席，深化中越关系&#39;, &#39;text&#39;: &#39;王沪宁会见越南国会主席，强调深化中越关系和互利合作。&#39;}</li><li>{&#39;title&#39;: &#39;中国物流业景气指数连续5个月扩张&#39;, &#39;text&#39;: &#39;中国物流业景气指数连续5个月扩张，供需市场适配性增强。&#39;}</li><li>{&#39;title&#39;: &#39;新开工重大水利工程数量超去年全年&#39;, &#39;text&#39;: &#39;前三季度新开工重大水利工程数量超去年全年，推进重点领域污染防治。&#39;}</li><li>{&#39;title&#39;: &#39;氢能产业进入发展快车道&#39;, &#39;text&#39;: &#39;我国氢能产业进入发展快车道，产能规模全球领先。&#39;}</li></ol>
 </div>
 
 <div class="hotlist">
@@ -412,7 +472,7 @@ audio{width:100%;height:36px;margin:2px 0}
   <div class="wprop"><b>6.44</b><span>神秘的不是世界是怎样的，而是世界是这样的。</span></div>
   
   </div>
-  <p class="mini">💡 维特根斯坦的命题强调命题价值平等，世界意义超越世界本身，伦理命题不可说，与美学同质。联想到‘AI+审计’训练营，似乎技术进步在改变界限而非事实，而高层会晤可能关乎经济财政的伦理与美学界限。</p>
+  <p class="mini">💡 维特根斯坦的命题强调命题价值平等，世界意义超越世界本身，伦理命题不可说，与美学同质。联想到‘AI＋审计’训练营，似乎技术进步在探索伦理与美学的界限，而政府间的会见则可能涉及超越技术层面的价值探讨。</p>
   <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
 </div>
 
@@ -545,16 +605,16 @@ audio{width:100%;height:36px;margin:2px 0}
 <div class="item">
   <div class="headline">关于举办“AI＋审计”智能体实战训练营（第二期）的通知</div>
   <div class="meta"><span class="tag auth">权威</span><span class="src">内审协会</span> · 10/09 列表日期</div>
-  <p>内审协会发布通知，将于近期举办第二期“AI＋审计”智能体实战训练营。</p>
-  <p class="sig"><b>意义</b>：【考公+审计】本期训练营旨在提升审计人员的AI技术应用能力，对备考审计相关职位及从事审计工作的人员具有实际指导意义。</p>
+  <p>内审协会将举办第二期“AI＋审计”智能体实战训练营。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】该训练营有助于提升审计人员的AI技术应用能力，对备考审计相关职位的人员来说，了解最新的技术培训动态是必要的。</p>
   <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">▸ 阅读原文</a>
 </div>
 
 <div class="item">
   <div class="headline">熊继军会见澳门特别行政区政府经济财政司司长吴惠娴</div>
   <div class="meta"><span class="tag auth">权威</span><span class="src">工信部</span> · 10/12 页面核实</div>
-  <p>工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴，双方就经济合作等议题进行了交流。</p>
-  <p class="sig"><b>意义</b>：【考公+经济】此次会见体现了内地与澳门在经济发展领域的紧密合作，对理解宏观经济政策及区域经济发展趋势有重要参考价值。</p>
+  <p>工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】此次会见可能涉及两地经济合作与政策交流，对理解国家经济政策走向和审计监管环境有重要意义。</p>
   <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">▸ 阅读原文</a>
 </div>
 
@@ -569,15 +629,15 @@ audio{width:100%;height:36px;margin:2px 0}
 <div class="item">
   <div class="headline">基于$k$的Direct Pass优化：测试时推理中质量与多样性的平衡</div>
   <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 10/12 收录</div>
-  <p>这篇论文提出了一种优化测试时推理中候选解的方法，旨在平衡质量与多样性。这种方法对于需要快速适应新任务的元强化学习有潜在的应用价值，但目前还处于研究阶段，离实际应用还有一段距离。</p>
+  <p>这篇论文提出了一种优化测试时推理中候选解的方法，旨在平衡质量与多样性。这种方法对于需要快速适应新任务的元强化学习领域有潜在的应用价值，目前离实际应用较近。</p>
   
   <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2610.31667v1">▸ 阅读原文</a>
 </div>
 
 <div class="item">
-  <div class="headline">基于LLM的IT工单分类的成本感知弃权</div>
+  <div class="headline">基于LLM的IT工单分类的成本感知弃用</div>
   <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 10/12 收录</div>
-  <p>该论文评估了成本感知弃权在基于LLM的IT工单分类中的应用，通过在成本条件下选择路由策略，有助于提高工单处理的效率和准确性。这项技术已经具有一定的实际应用价值，尤其是在需要自动路由IT支持票务的场景中。</p>
+  <p>该论文评估了成本感知弃用作为IT工单分类的一种策略，这对于降低错误工单路由的成本有直接的应用价值，目前技术已经较为成熟。</p>
   
   <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2610.31657v1">▸ 阅读原文</a>
 </div>
@@ -621,7 +681,7 @@ audio{width:100%;height:36px;margin:2px 0}
       <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：太阳经脉的脉象怎样？岐伯说：太阳经脉像三阳经脉那样极盛，同时它还轻浮。黄帝问：少阳经脉的脉象怎样？岐伯说：少阳经脉与一阳经脉一样，脉象是滑而不实的。黄帝问：阳明经脉之象怎样？岐伯说：脉象大而且浮。太阴经脉搏动，其脉象沉伏而实鼓指；二阴经脉搏动，是肾脉沉而不浮的现象。</div>
       
     
-    <p class="mini">💡 本段讲述了六经病脉象、症状、治法及饮食生化过程，强调医生诊断需结合患者体质和环境因素，饮食消化吸收对健康的影响，以及情绪和劳逸对脉象的影响。对现代养生启示：注意生活作息，合理饮食，保持情绪稳定，关注体质变化，以预防疾病。</p>
+    <p class="mini">💡 本段讲述的是六经病脉象、症状、治法及饮食生化过程，强调医生诊断需结合患者体质和脉象变化，饮食消化吸收对健康的影响，以及情绪和生活方式对脉象的影响。对现代养生启示：注意生活作息，保持情绪稳定，合理饮食，关注身体变化，以预防疾病。</p>
     <p class="mini">姚春鹏译本 · 全文含题解/注释/译文 · OCR 识别偶有错字</p>
   </div>
 </div>
@@ -630,31 +690,49 @@ audio{width:100%;height:36px;margin:2px 0}
 <h2 class="sect" id="persp">五大视角</h2>
 
 
-<div class="pcard"><h3>政治视角</h3><p>今日该领域无重要动态</p></div>
+<div class="pcard"><h3>政治视角</h3><p>今日时政大事：内审协会将举办第二期‘AI＋审计’智能体实战训练营，对备考审计相关职位的人员来说，了解最新的技术培训动态是必要的。</p></div>
 
 
 
-<div class="pcard"><h3>经济视角</h3><p>{&#34;考公+审计&#34;:&#34;内审协会发布通知，将于近期举办第二期“AI＋审计”智能体实战训练营，旨在提升审计人员的AI技术应用能力，对备考审计相关职位及从事审计工作的人员具有实际指导意义。&#34;,&#34;考公+经济&#34;:&#34;工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴，双方就经济合作等议题进行了交流，体现了内地与澳门在经济发展领域的紧密合作，对理解宏观经济政策及区域经济发展趋势有重要参考价值。&#34;}</p></div>
+<div class="pcard"><h3>经济视角</h3><p>经济动态：内审协会举办‘AI＋审计’智能体实战训练营，有助于提升审计人员的AI技术应用能力；工信部副部长熊继军会见澳门特别行政区政府经济财政司司长吴惠娴，涉及两地经济合作与政策交流。</p></div>
 
 
 
-<div class="pcard"><h3>科技视角</h3><p>今日该领域无重要动态</p></div>
+<div class="pcard"><h3>科技视角</h3><p>科技进展：内审协会举办‘AI＋审计’智能体实战训练营，标志着AI技术在审计领域的应用进一步深化。</p></div>
 
 
 
-<div class="pcard"><h3>文学视角</h3><p>今日该领域无重要动态</p></div>
+<div class="pcard"><h3>文学视角</h3><p>今日该领域无重要动态。</p></div>
 
 
 
-<div class="pcard"><h3>医学视角</h3><p>今日该领域无重要动态</p></div>
+<div class="pcard"><h3>医学视角</h3><p>今日该领域无重要动态。</p></div>
 
 
 
 <h2 class="sect" id="summary">今日总结</h2>
-<div class="summary-card">内审协会发布第二期“AI＋审计”智能体实战训练营通知，旨在提升审计人员AI技术应用能力；工信部副部长熊继军会见澳门经济财政司司长，探讨经济合作议题。</div>
+<div class="summary-card">内审协会举办第二期AI+审计训练营，提升审计人员技术能力；工信部副部长会见澳门经济财政司司长，探讨两地经济合作与政策交流。</div>
 <div class="footer">每日新闻日报 · 右下角可朗读全文 · 页内 mp3 为新闻播音男声版</div>
 </div>
 <script>
+/* ===== 双画风切换（报纸风/现代风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    document.body.classList.toggle('modern',t==='modern');
+    document.body.classList.toggle('paper',t!=='modern');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='modern'?'📰 报纸风':'🎨 现代风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('modern')?'paper':'modern');
+    return false;
+  };
+})();
 (function(){
   var KEY="scroll_y:"+location.pathname+location.search;
   if("scrollRestoration" in history){history.scrollRestoration="manual";}
