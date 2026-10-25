@@ -4,7 +4,7 @@
 <style>
 :root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
      --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
-     --modern-accent:#2f6fdd}
+}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
      font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
@@ -174,65 +174,72 @@ audio{width:100%;height:36px;margin:2px 0}
 .audiobox{margin:8px 0 2px}
 .audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
         font-family:-apple-system,"Microsoft YaHei",sans-serif}
+body.finance .sub{color:#b0500e;letter-spacing:.05em}
+body.finance .sub.intl{color:#0f6b3e}
+body.finance .mkt{border-bottom:1px solid #f0f0f0;color:#555}
 #themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
         font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
         flex:0 0 auto;letter-spacing:.05em}
-/* ══ 现代风皮肤（结构不变，换肤：白底卡片/圆角/彩色/无衬线）══ */
-body.modern{font-family:-apple-system,"Microsoft YaHei",sans-serif;
-        font-size:15.5px;line-height:1.65}
-body.modern .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
-        padding:14px 16px 26px}
-body.modern .masthead h1{font-size:1.35em;letter-spacing:.06em}
-body.modern .masthead .motto{letter-spacing:.12em}
-body.modern .rule-double{border-top:none;margin:0}
-body.modern .dateline{border-bottom:none;justify-content:center;gap:14px;
-        color:#888;font-size:.82em}
-body.modern .headlines a{font-size:.98em;line-height:2}
-body.modern h2.sect{letter-spacing:.05em;font-size:1.06em;gap:8px;
-        color:#1a1a1a;margin:22px 0 8px}
-body.modern h2.sect::before,body.modern h2.sect::after{border-top:none}
-body.modern h2.sect::before{content:"▎";color:var(--modern-accent);border:none;flex:none}
-body.modern h2.sect::after{display:none}
-body.modern .item{border-bottom:1px solid #f2f2f2}
-body.modern .item .headline{font-size:1em}
-body.modern .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
-body.modern .item a,body.modern .tlink{color:#2f6fdd}
-body.modern .rlink{color:#2f6fdd}
-body.modern .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
-body.modern .tag.auth{background:#fdecec;color:#d6392f}
-body.modern .badge{background:#e03328;border-radius:4px}
-body.modern .badge.o{background:#f08c00}
-body.modern .badge.y{background:#e8b400}
-body.modern .hot .reason{color:#555}
-body.modern .hrow{border-bottom:1px solid #f7f7f7}
-body.modern .htitle{color:#1a4f9c}
-body.modern .hno.top{color:#e03328}
-body.modern .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/emoji栏标/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.6}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance .headlines{border-bottom:1px solid #f0f0f0}
+body.finance .headlines a{color:#1a4f9c;font-size:1em;line-height:2}
+body.finance .headlines a b{color:#e03328}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        color:#1a1a1a;margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .nav a::before{content:attr(data-e) " "}
+body.finance .item{border-bottom:1px solid #f2f2f2}
+body.finance .item .headline{font-size:1em}
+body.finance .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
+body.finance .item a,body.finance .tlink{color:#2f6fdd}
+body.finance .rlink{color:#2f6fdd}
+body.finance .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
+body.finance .tag.auth{background:#fdecec;color:#d6392f}
+body.finance .badge{background:#e03328;border-radius:4px}
+body.finance .badge.o{background:#f08c00}
+body.finance .badge.y{background:#e8b400}
+body.finance .hot .reason{color:#555}
+body.finance .hrow{border-bottom:1px solid #f7f7f7}
+body.finance .htitle{color:#1a4f9c}
+body.finance .hno.top{color:#e03328}
+body.finance .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
         border-style:solid}
-body.modern .digest h3{color:#8a6d1a;letter-spacing:.1em}
-body.modern details.xb{border-bottom:1px solid #f7f7f7}
-body.modern details.xb summary{font-family:inherit}
-body.modern details.xb summary .xt{font-weight:600}
-body.modern .lang-card{border:1px solid #f0f0f0;background:#fafafa;
+body.finance .digest h3{color:#8a6d1a;letter-spacing:.1em}
+body.finance details.xb{border-bottom:1px solid #f7f7f7}
+body.finance details.xb summary{font-family:inherit}
+body.finance details.xb summary .xt{font-weight:600}
+body.finance .lang-card{background:#faf6fd;border:1px solid #ecdcf5;
         border-radius:8px}
-body.modern .lang-card h3{color:#7a3fa0}
-body.modern .idiom-row b{color:#7a3fa0}
-body.modern .wprop b{color:#7a3fa0}
-body.modern .word-row a{color:#2f6fdd}
-body.modern .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
+body.finance .lang-card h3{color:#7a3fa0}
+body.finance .idiom-row b{color:#7a3fa0}
+body.finance .wprop b{color:#7a3fa0}
+body.finance .word-row a{color:#2f6fdd}
+body.finance .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
         border-radius:8px;overflow:hidden}
-body.modern .hd-head{background:#7a3fa0}
-body.modern .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
-body.modern .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
-body.modern .hd-trans{background:#f3eefb;border-radius:6px}
-body.modern .hd-trans-label{color:#7a3fa0}
-body.modern .pcard h3{color:#d6392f}
-body.modern .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+body.finance .hd-head{background:#7a3fa0}
+body.finance .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
+body.finance .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
+body.finance .hd-trans{background:#f3eefb;border-radius:6px}
+body.finance .hd-trans-label{color:#7a3fa0}
+body.finance .pcard h3{color:#d6392f}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
         border-radius:8px}
-body.modern .footer{border-top:1px solid #f0f0f0}
-body.modern #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
         border:none;background:#e03328;color:#fff}
-body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
 </style></head><body class="paper">
 <div class="sheet">
 <div class="masthead">
@@ -256,25 +263,25 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 <span class="mchip dn">伦敦金 <b>3997.79</b> -0.66%</span>
 </div>
 
-<div class="nav"><a href="#top3">必看</a><a href="#weibo">微博</a><a href="#zhihu">知乎</a><a href="#major">大事</a><a href="#xwlb">联播</a><a href="#lang">语言</a><a href="#words">单词</a><a href="#thought">思维</a><a href="#cat-经济">经济</a><a href="#cat-科技">科技</a><a href="#huangdi">内经</a><a href="#persp">视角</a><button id="themeBtn" onclick="return toggleTheme()">🎨 现代风</button></div>
+<div class="nav"><a href="#top3" data-e="🎯">必看</a><a href="#weibo" data-e="🔥">微博</a><a href="#zhihu" data-e="💡">知乎</a><a href="#major" data-e="📌">大事</a><a href="#xwlb" data-e="📺">联播</a><a href="#lang" data-e="🗣️">语言</a><a href="#words" data-e="📘">单词</a><a href="#thought" data-e="🧠">思维</a><a href="#cat-经济" data-e="📈">经济</a><a href="#cat-科技" data-e="🤖">科技</a><a href="#huangdi" data-e="🌿">内经</a><a href="#persp" data-e="🧭">视角</a><button id="themeBtn" onclick="return toggleTheme()">🎨 财经风</button></div>
 
-<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="news.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3">今日必看</h2>
+<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="news.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
 
 <div class="hot">
   <div><span class="badge ">1</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">AI+审计训练营第二期开班</a></span></div>
   <div class="meta"><span class="src">内审协会</span> · 10/09 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">原文</a></div>
-  <div class="reason">提升审计人员AI技术应用能力，关注最新技术培训动态。</div>
+  <div class="reason">提升审计人员AI技术应用能力，行业影响积极</div>
 </div>
 
 <div class="hot">
   <div><span class="badge o">2</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">熊继军会见澳门经济财政司司长</a></span></div>
   <div class="meta"><span class="src">工信部</span> · 10/12 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">原文</a></div>
-  <div class="reason">涉及两地经济合作与政策交流，对审计监管环境有重要意义。</div>
+  <div class="reason">涉及两地经济合作与政策交流，对审计法规有重要意义</div>
 </div>
 
 
 
-<h2 class="sect" id="weibo">微博热搜</h2>
+<h2 class="sect" id="weibo"><span class="sem">🔥</span>微博热搜榜</h2>
 <div class="mini" style="margin:-4px 0 6px">口径：昨日多次抓取·全天热度汇总</div>
 <div class="hotlist">
 
@@ -305,7 +312,7 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 </div>
 
 
-<h2 class="sect" id="zhihu">知乎热榜</h2>
+<h2 class="sect" id="zhihu"><span class="sem">💡</span>知乎热榜</h2>
 <div class="hotlist">
 
 <div class="hrow"><span class="hno zh">1</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2092513467722719411" class="htitle">沙特利雅得机场遭袭，造成 12 人死亡 309 人受伤，哪些信息值得关注？对中东局势有何影响？</a></div>
@@ -328,31 +335,31 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 
 
 
-<h2 class="sect" id="major">今日大事</h2>
+<h2 class="sect" id="major"><span class="sem">📌</span>今日大事</h2>
 
 <div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">AI+审计训练营第二期</a></span>
   <div class="meta"><span class="src">内审协会</span> · 10/09 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">原文</a></div>
   <p><b>背景</b>：内审协会即将举办第二期AI与审计结合的实战训练营。</p>
-  <p><b>影响</b>：提升审计人员AI技术应用能力，对备考审计职位的人员了解技术培训动态重要。</p>
-  <p><b>与你</b>：提升审计人员技术能力，优化审计流程和监管环境。</p>
+  <p><b>影响</b>：提升审计人员AI技术应用能力，对考公和审计行业有积极影响。</p>
+  <p><b>与你</b>：提升审计人员技能，增强审计效率和质量。</p>
 </div>
 
 <div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">熊继军会见澳门经济财政司长</a></span>
   <div class="meta"><span class="src">工信部</span> · 10/12 00:00 · <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">原文</a></div>
-  <p><b>背景</b>：工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长。</p>
-  <p><b>影响</b>：可能涉及两地经济合作与政策交流，对理解国家经济政策走向和审计监管环境有重要意义。</p>
-  <p><b>与你</b>：两地经济合作可能影响审计监管政策和环境。</p>
+  <p><b>背景</b>：工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴。</p>
+  <p><b>影响</b>：可能涉及两地经济合作与政策交流，对了解国家经济政策及审计法规有重要意义。</p>
+  <p><b>与你</b>：了解经济政策变化，对审计法规的解读和执行有指导作用。</p>
 </div>
 
 
 
 
-<h2 class="sect" id="xwlb">新闻联播</h2>
+<h2 class="sect" id="xwlb"><span class="sem">📺</span>新闻联播</h2>
 <div class="mini" style="text-align:center;margin:-4px 0 8px">昨晚 19:00 播出 · 全部 13 条文字实录 · 点击条目展开全文</div>
 
 <div class="digest">
   <h3>要点速览</h3>
-  <ol><li>{&#39;title&#39;: &#39;习近平强调高质量发展与生态保护&#39;, &#39;text&#39;: &#39;习近平强调高质量发展与生态保护，推进山水林田湖草沙一体化保护。&#39;}</li><li>{&#39;title&#39;: &#39;王沪宁会见越南国会主席，深化中越关系&#39;, &#39;text&#39;: &#39;王沪宁会见越南国会主席，强调深化中越关系和互利合作。&#39;}</li><li>{&#39;title&#39;: &#39;中国物流业景气指数连续5个月扩张&#39;, &#39;text&#39;: &#39;中国物流业景气指数连续5个月扩张，供需市场适配性增强。&#39;}</li><li>{&#39;title&#39;: &#39;新开工重大水利工程数量超去年全年&#39;, &#39;text&#39;: &#39;前三季度新开工重大水利工程数量超去年全年，推进重点领域污染防治。&#39;}</li><li>{&#39;title&#39;: &#39;氢能产业进入发展快车道&#39;, &#39;text&#39;: &#39;我国氢能产业进入发展快车道，产能规模全球领先。&#39;}</li></ol>
+  <ol><li>{&#39;title&#39;: &#39;习近平强调生态保护&#39;, &#39;text&#39;: &#39;习近平强调生态保护，推进山水林田湖草沙一体化保护和系统治理。&#39;}</li><li>{&#39;title&#39;: &#39;王沪宁会见越南国会主席&#39;, &#39;text&#39;: &#39;王沪宁会见越南国会主席，推进中越命运共同体建设。&#39;}</li><li>{&#39;title&#39;: &#39;中国物流业景气指数连续5个月扩张&#39;, &#39;text&#39;: &#39;中国物流业景气指数连续5个月扩张，供需市场适配性增强。&#39;}</li><li>{&#39;title&#39;: &#39;我国氢能产业进入发展快车道&#39;, &#39;text&#39;: &#39;我国氢能产业进入发展快车道，产能规模全球领先。&#39;}</li><li>{&#39;title&#39;: &#39;新皇岗口岸落成明日开通&#39;, &#39;text&#39;: &#39;新皇岗口岸落成，提供24小时通关服务，提升通关效率。&#39;}</li></ol>
 </div>
 
 <div class="hotlist">
@@ -425,7 +432,7 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 </div>
 
 
-<h2 class="sect" id="lang">每日语言</h2>
+<h2 class="sect" id="lang"><span class="sem">🗣️</span>每日语言</h2>
 
 <div class="lang-card">
   <h3>十个常用成语</h3>
@@ -472,23 +479,23 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
   <div class="wprop"><b>6.44</b><span>神秘的不是世界是怎样的，而是世界是这样的。</span></div>
   
   </div>
-  <p class="mini">💡 维特根斯坦的命题强调命题价值平等，世界意义超越世界本身，伦理命题不可说，与美学同质。联想到‘AI＋审计’训练营，似乎技术进步在探索伦理与美学的界限，而政府间的会见则可能涉及超越技术层面的价值探讨。</p>
+  <p class="mini">💡 维特根斯坦的命题强调命题价值平等，世界意义超越自身，伦理命题不可言说，AI技术的发展似乎在改变世界的界限而非事实，这与今日新闻中AI与审计结合的实践相呼应，引发对技术影响伦理界限的思考。</p>
   <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
 </div>
 
 
 
-<h2 class="sect" id="thought">思维边界 · 今日深读</h2>
+<h2 class="sect" id="thought"><span class="sem">🧠</span>思维边界 · 今日深读</h2>
 
-<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793466">应县木塔作为「千年病人」，其修缮面临哪些核心技术难题？</a></div>
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793487">网友称可用「蟑螂粉」作为蛋白粉平替，商家还强调「野生蟑螂」，先抛开味道，这「蟑螂粉」有可能安全有效吗？</a></div>
 
-<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793469">有什么很有意思的考古事件？</a></div>
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793497">中国有哪些考古上的巨大遗憾？</a></div>
 
-<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793476">地面倾角很小时人体感觉不到，那么是否可以建造一个一楼和二楼之间没有楼梯和明显斜坡的建筑？</a></div>
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793507">人类可以破译蝾螈的再生基因，让人类在灾难或者意外情况下损坏或者毁掉的肢体，器官重新生长出来吗？</a></div>
 
 
 
-<h2 class="sect" id="words">每日背单词</h2>
+<h2 class="sect" id="words"><span class="sem">📘</span>每日背单词</h2>
 <div class="lang-card">
   <div class="word-grid">
   
@@ -598,7 +605,7 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 
 
 
-<h2 class="sect" id="cat-经济">经济</h2>
+<h2 class="sect" id="cat-经济"><span class="sem">📈</span>经济</h2>
 
 <div class="sub">国 内</div>
 
@@ -606,7 +613,7 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
   <div class="headline">关于举办“AI＋审计”智能体实战训练营（第二期）的通知</div>
   <div class="meta"><span class="tag auth">权威</span><span class="src">内审协会</span> · 10/09 列表日期</div>
   <p>内审协会将举办第二期“AI＋审计”智能体实战训练营。</p>
-  <p class="sig"><b>意义</b>：【考公+审计】该训练营有助于提升审计人员的AI技术应用能力，对备考审计相关职位的人员来说，了解最新的技术培训动态是必要的。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】该训练营有助于提升审计人员的AI技术应用能力，对考公和审计行业有积极影响。</p>
   <a class="rlink" target="_blank" rel="noopener" href="https://www.ciia.com.cn/cndetail.html?id=79520">▸ 阅读原文</a>
 </div>
 
@@ -614,14 +621,14 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
   <div class="headline">熊继军会见澳门特别行政区政府经济财政司司长吴惠娴</div>
   <div class="meta"><span class="tag auth">权威</span><span class="src">工信部</span> · 10/12 页面核实</div>
   <p>工信部副部长熊继军会见了澳门特别行政区政府经济财政司司长吴惠娴。</p>
-  <p class="sig"><b>意义</b>：【考公+审计】此次会见可能涉及两地经济合作与政策交流，对理解国家经济政策走向和审计监管环境有重要意义。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】此次会见可能涉及两地经济合作与政策交流，对了解国家经济政策及审计法规有重要意义。</p>
   <a class="rlink" target="_blank" rel="noopener" href="https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_cafc3755aa594de2bdcfb9fb854d8a07.html">▸ 阅读原文</a>
 </div>
 
 
 
 
-<h2 class="sect" id="cat-科技">科技</h2>
+<h2 class="sect" id="cat-科技"><span class="sem">🤖</span>科技</h2>
 
 
 <div class="sub intl">国 际</div>
@@ -629,15 +636,15 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 <div class="item">
   <div class="headline">基于$k$的Direct Pass优化：测试时推理中质量与多样性的平衡</div>
   <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 10/12 收录</div>
-  <p>这篇论文提出了一种优化测试时推理中候选解的方法，旨在平衡质量与多样性。这种方法对于需要快速适应新任务的元强化学习领域有潜在的应用价值，目前离实际应用较近。</p>
+  <p>这篇论文提出了一种优化测试时推理中候选解决方案的方法，旨在平衡质量和多样性。这种方法对于需要快速适应新任务的元强化学习领域有潜在的应用价值，但目前还处于研究阶段，离实际应用还有一段距离。</p>
   
   <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2610.31667v1">▸ 阅读原文</a>
 </div>
 
 <div class="item">
-  <div class="headline">基于LLM的IT工单分类的成本感知弃用</div>
+  <div class="headline">基于LLM的IT工单分类的成本感知弃权</div>
   <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 10/12 收录</div>
-  <p>该论文评估了成本感知弃用作为IT工单分类的一种策略，这对于降低错误工单路由的成本有直接的应用价值，目前技术已经较为成熟。</p>
+  <p>该论文评估了成本感知弃权在基于LLM的IT工单分类中的应用，通过在成本条件下选择路由策略，并在测试数据上评估该策略。这种方法对于提高IT支持工单处理的效率和准确性有直接的应用价值，目前处于实际应用阶段。</p>
   
   <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2610.31657v1">▸ 阅读原文</a>
 </div>
@@ -681,24 +688,24 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
       <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：太阳经脉的脉象怎样？岐伯说：太阳经脉像三阳经脉那样极盛，同时它还轻浮。黄帝问：少阳经脉的脉象怎样？岐伯说：少阳经脉与一阳经脉一样，脉象是滑而不实的。黄帝问：阳明经脉之象怎样？岐伯说：脉象大而且浮。太阴经脉搏动，其脉象沉伏而实鼓指；二阴经脉搏动，是肾脉沉而不浮的现象。</div>
       
     
-    <p class="mini">💡 本段讲述的是六经病脉象、症状、治法及饮食生化过程，强调医生诊断需结合患者体质和脉象变化，饮食消化吸收对健康的影响，以及情绪和生活方式对脉象的影响。对现代养生启示：注意生活作息，保持情绪稳定，合理饮食，关注身体变化，以预防疾病。</p>
+    <p class="mini">💡 本段主要讲述六经病脉象、症状、治法及饮食生化过程，强调医生诊断需结合患者身体强弱、骨肉皮肤形态等，并指出情绪、环境、劳逸等因素对脉象的影响，提醒养生时应注意调整生活节奏，保持阴阳平衡。</p>
     <p class="mini">姚春鹏译本 · 全文含题解/注释/译文 · OCR 识别偶有错字</p>
   </div>
 </div>
 
 
-<h2 class="sect" id="persp">五大视角</h2>
+<h2 class="sect" id="persp"><span class="sem">🧭</span>五大视角</h2>
 
 
-<div class="pcard"><h3>政治视角</h3><p>今日时政大事：内审协会将举办第二期‘AI＋审计’智能体实战训练营，对备考审计相关职位的人员来说，了解最新的技术培训动态是必要的。</p></div>
-
-
-
-<div class="pcard"><h3>经济视角</h3><p>经济动态：内审协会举办‘AI＋审计’智能体实战训练营，有助于提升审计人员的AI技术应用能力；工信部副部长熊继军会见澳门特别行政区政府经济财政司司长吴惠娴，涉及两地经济合作与政策交流。</p></div>
+<div class="pcard"><h3>政治视角</h3><p>今日时政大事：内审协会将举办第二期‘AI＋审计’智能体实战训练营，有助于提升审计人员的AI技术应用能力，对考公和审计行业有积极影响。</p></div>
 
 
 
-<div class="pcard"><h3>科技视角</h3><p>科技进展：内审协会举办‘AI＋审计’智能体实战训练营，标志着AI技术在审计领域的应用进一步深化。</p></div>
+<div class="pcard"><h3>经济视角</h3><p>经济动态：内审协会举办‘AI＋审计’智能体实战训练营，提升审计人员AI技术应用能力；工信部副部长熊继军会见澳门特别行政区政府经济财政司司长吴惠娴，涉及两地经济合作与政策交流。</p></div>
+
+
+
+<div class="pcard"><h3>科技视角</h3><p>科技进展：内审协会举办‘AI＋审计’智能体实战训练营，标志着AI技术在审计领域的深入应用。</p></div>
 
 
 
@@ -710,26 +717,27 @@ body.modern #themeBtn{border:1px solid #ddd;border-radius:14px}
 
 
 
-<h2 class="sect" id="summary">今日总结</h2>
-<div class="summary-card">内审协会举办第二期AI+审计训练营，提升审计人员技术能力；工信部副部长会见澳门经济财政司司长，探讨两地经济合作与政策交流。</div>
+<h2 class="sect" id="summary"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">内审协会举办第二期‘AI+审计’训练营，提升审计人员AI技术应用能力；工信部副部长会见澳门经济财政司司长，探讨两地经济合作与政策交流。</div>
 <div class="footer">每日新闻日报 · 右下角可朗读全文 · 页内 mp3 为新闻播音男声版</div>
 </div>
 <script>
-/* ===== 双画风切换（报纸风/现代风，记住选择） ===== */
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
 (function(){
   var KEY='report_theme';
   function set(t){
-    document.body.classList.toggle('modern',t==='modern');
-    document.body.classList.toggle('paper',t!=='modern');
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
     var b=document.getElementById('themeBtn');
-    if(b){b.textContent=t==='modern'?'📰 报纸风':'🎨 现代风';}
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
     try{localStorage.setItem(KEY,t);}catch(e){}
   }
   var saved='paper';
   try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
   set(saved);
   window.toggleTheme=function(){
-    set(document.body.classList.contains('modern')?'paper':'modern');
+    set(document.body.classList.contains('finance')?'paper':'finance');
     return false;
   };
 })();
