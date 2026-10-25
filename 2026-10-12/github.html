@@ -3,7 +3,8 @@
 <title>GitHub 每日热门 2026-10-12</title>
 <style>
 :root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
-     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75}
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
      font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
@@ -60,216 +61,297 @@ h2.sect::before,h2.sect::after{content:"";flex:1;
         box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
 #ttsBtn.stop{background:var(--ink);color:var(--paper)}
 audio{width:100%;height:36px;margin:2px 0}
-</style></head><body>
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+.themewrap{text-align:right;margin:-4px 0 4px}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
 <div class="sheet">
+<div class="themewrap"><button id="themeBtn" onclick="return toggleTheme()">🎨 财经风</button></div>
 <div class="masthead">
   <h1>GitHub 每日热门</h1>
   <div class="motto">TRENDING · 每项深度介绍</div>
 </div>
 <div class="rule-double"></div>
-<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="github.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><div class="dateline"><span>2026-10-12</span><span>周一</span><span>TOP10</span></div>
+<div class="dateline"><span>2026-10-12</span><span>周一</span><span>TOP10</span></div>
 
 
-<h2 class="sect">今日必看</h2>
+<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="github.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
 
 <div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/security-audit-skill">security-audit-skill</a></span>
-<div class="reason">该项目为安全审计提供了一套完整的自动化审计流程，有助于提高审计效率和准确性。</div></div>
+<div class="reason">提供多阶段安全审计技能，由Cloudflare开发，具有独立验证和机器可读的发现功能，非常适合需要全面安全审计的场合。</div></div>
 
 <div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/OpenShell">OpenShell</a></span>
-<div class="reason">OpenShell为自主AI代理提供了一个安全、私密的运行环境，有助于保护数据安全和隐私。</div></div>
+<div class="reason">由NVIDIA开发的安全、私密运行时环境，专为自主AI代理设计，确保数据安全性和隐私性，适用于需要高度数据保护的场景。</div></div>
 
-<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/agent-toolkit-for-aws">agent-toolkit-for-aws</a></span>
-<div class="reason">agent-toolkit-for-aws为AI代理提供了构建、部署和管理AWS服务的工具，有助于审计师更好地理解AWS服务的运作。</div></div>
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/claude-howto">claude-howto</a></span>
+<div class="reason">提供视觉化、示例驱动的Claude Code指南，适合快速学习和掌握Claude Code，对于需要自动化工具的审计师和备考公务员尤其有用。</div></div>
 
 
-<h2 class="sect">今日项目详解</h2>
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/cloudflare/security-audit-skill">security-audit-skill</a></span>
   　<span class="meta">cloudflare</span></div>
-  <div class="meta"><span class="star">⭐ 42995</span>（今日 +2271） · JavaScript</div>
+  <div class="meta"><span class="star">⭐ 45090</span>（今日 +2264） · JavaScript</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/06/18 22:08</b> ｜ 最近提交 <b>2026/09/15 03:29</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2026/06/18 22:08</b> ｜ 最近提交 <b>2026/09/15 03:29</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>这个项目是一个用于多阶段安全审计的编码代理技能，它可以将你的代理转变为安全审计员。它通过侦察、以覆盖率为导向的狩猎、候选验证、结构化输出、独立记录验证和目标中立报告来协调隔离的代理。这个技能是Cloudflare的漏洞发现工具包的种子，该工具包在[构建自己的漏洞工具包](https://blog.cloudflare.com/build-your-own-vulnerability-harness)中进行了描述。这个工具包发展成为一个多阶段、全舰队的系统；这个技能是从它演变而来的单一存储库的起点。它可以运行结构化审计的六个阶段：侦察、以覆盖率为导向的狩猎、候选验证、结构化输出、独立记录验证和目标中立报告。</p>
+  <p>这个项目是一个编码代理技能，旨在将您的代理转变为安全审计员。它通过侦察、以覆盖率为导向的狩猎、候选验证、结构化输出、独立记录验证和目标中立报告来协调隔离的代理。这个技能是Cloudflare的漏洞发现工具包的种子，该工具包在[构建自己的漏洞工具包](https://blog.cloudflare.com/build-your-own-vulnerability-harness)中进行了描述。这个工具包发展成为一个多阶段、全舰队的系统；这个技能是从它演变而来的单仓库起点。它运行一个结构化审计，分为六个阶段：侦察、以覆盖率为导向的狩猎、候选验证、结构化输出、独立记录验证和目标中立报告。</p>
   <h3>怎么设计的</h3>
-  <p>这个技能使用JavaScript编写，其核心架构和工作机制包括侦察、以覆盖率为导向的狩猎、候选验证、结构化输出、独立记录验证和目标中立报告。技术栈主要是JavaScript，没有提供具体的技术栈细节。亮点设计包括通过侦察映射架构、信任边界、输入表面、先前证据和确定性覆盖，以及使用覆盖批评家来寻找差距。候选验证阶段确保每个独特的候选者都由一个尝试证明其错误的全新验证者进行验证。结构化输出将记录写入`findings.json`，并对其进行验证。这是一个概述，因为README中没有提供具体的技术栈细节。</p>
+  <p>这个技能使用JavaScript编写，其核心架构和工作机制包括侦察、狩猎、验证、输出和验证等阶段。它通过`architecture.md`和`coverage-ledger.json`映射架构、信任边界、输入表面、先前证据和确定性覆盖。然后，它分配隔离的狩猎者，记录他们的检查，并使用覆盖批评家来寻找差距。每个独特的候选者都会被分配给一个新鲜的验证者，以尝试证明其错误。最后，它将`confirmed`、`needs_validation`和`rejected`记录写入`findings.json`，并对其进行验证。这个技能的亮点设计在于其多阶段审计流程和独立验证机制，确保审计的全面性和准确性。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的漏洞扫描工具</p>
+  <p>相当于开源版的安全审计工具，帮助用户进行多阶段安全审计。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，这个技能可以帮助他们进行结构化的安全审计，通过侦察、狩猎和验证来发现潜在的安全漏洞。这对于审计师的工作非常有用，因为它可以自动化一些审计过程，提高效率和准确性。对于备考公务员的朋友来说，了解这样的工具可以增加他们在信息安全领域的知识，这对于公务员考试中的相关题目可能有所帮助。</p>
+  <p>对于审计师来说，这个项目可以帮助他们进行更全面和准确的安全审计。它可以帮助审计师识别潜在的安全漏洞，验证候选解决方案，并生成结构化的审计报告。这对于审计师的工作非常有用，尤其是在进行系统安全评估和合规性检查时。</p>
   <span class="plink">▸ <a href="https://github.com/cloudflare/security-audit-skill">github.com/cloudflare/security-audit-skill</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/NVIDIA/OpenShell">OpenShell</a></span>
   　<span class="meta">NVIDIA</span></div>
-  <div class="meta"><span class="star">⭐ 19125</span>（今日 +893） · Rust</div>
+  <div class="meta"><span class="star">⭐ 19598</span>（今日 +896） · Rust</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/02/25 06:52</b> ｜ 最近提交 <b>2026/10/24 10:12</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2026/02/25 06:52</b> ｜ 最近提交 <b>2026/10/25 07:55</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>OpenShell 是由 NVIDIA 开发的一个安全、私密的自主人工智能代理运行时环境。它旨在为大量自主人工智能代理提供一个稳定、安全的运行平台。对于审计师来说，OpenShell 可以帮助他们在处理大量数据时，确保数据的安全性和隐私性。例如，在审计过程中，审计师可以使用 OpenShell 来处理敏感的财务数据，而不必担心数据泄露或被未授权访问。对于备考公务员的朋友来说，OpenShell 可以帮助他们进行模拟测试，提高答题效率。在考试准备阶段，他们可以利用 OpenShell 的隐私特性来保护自己的学习资料，避免泄露给竞争对手。典型使用场景包括：审计师在处理财务数据时使用 OpenShell 来保证数据安全；公务员考生使用 OpenShell 进行模拟考试，提高答题速度和准确率。</p>
+  <p>OpenShell 是由 NVIDIA 开发的一个安全、私密的自主人工智能代理运行时环境。它旨在为大量自主人工智能代理提供一个稳定、安全的运行平台。对于审计师来说，OpenShell 可以帮助他们在处理大量数据时，确保数据的安全性和隐私性。例如，在审计过程中，审计师可以使用 OpenShell 来保护敏感的财务数据，防止未经授权的访问。对于备考公务员的朋友来说，OpenShell 可以帮助他们处理和分析大量的学习资料，提高学习效率。典型使用场景包括：审计师在审计过程中保护财务数据，公务员在备考时分析学习资料。</p>
   <h3>怎么设计的</h3>
-  <p>OpenShell 使用 Rust 语言编写，其技术栈包括但不限于：安全机制、隔离技术、扩展接口和API。核心架构包括：安全模块、隔离模块、扩展模块和API接口。亮点设计包括：高度的安全性和隐私保护，通过隔离技术确保每个代理的运行环境独立；灵活的扩展接口，允许用户根据需求添加新的功能；丰富的API接口，方便用户进行二次开发。这些设计使得 OpenShell 能够满足不同用户的需求，同时保证了系统的稳定性和安全性。</p>
+  <p>OpenShell 使用 Rust 语言编写，其技术栈包括 Rust、WebAssembly 和容器技术。核心架构包括代理管理、安全隔离和扩展接口。亮点设计包括：稳定的发布节奏，新的隔离原语，扩展的扩展接口和新的 API。这些设计使得 OpenShell 能够提供高效、安全、可扩展的运行环境。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的 TensorFlow 或 PyTorch，OpenShell 提供了一个安全、私密的运行环境，用于自主人工智能代理的开发和应用。</p>
+  <p>相当于开源版的 TensorFlow 或 PyTorch，为人工智能代理提供一个运行环境。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，OpenShell 可以作为处理敏感财务数据的安全工具，有助于保护数据不被未授权访问。对于备考公务员的朋友，OpenShell 可以作为模拟考试的平台，提高考试准备效率。虽然与审计师日常工作的直接关联性不强，但其在数据安全和隐私保护方面的特性，对于审计工作具有一定的间接帮助作用。</p>
+  <p>对于审计师来说，OpenShell 可以帮助他们在处理大量数据时，确保数据的安全性和隐私性。对于备考公务员的朋友来说，OpenShell 可以帮助他们处理和分析大量的学习资料，提高学习效率。</p>
   <span class="plink">▸ <a href="https://github.com/NVIDIA/OpenShell">github.com/NVIDIA/OpenShell</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/aws/agent-toolkit-for-aws">agent-toolkit-for-aws</a></span>
   　<span class="meta">aws</span></div>
-  <div class="meta"><span class="star">⭐ 2964</span>（今日 +11） · Python</div>
+  <div class="meta"><span class="star">⭐ 3196</span>（今日 +13） · Python</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/04/23 20:44</b> ｜ 最近提交 <b>2026/10/23 23:00</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2026/04/23 20:44</b> ｜ 最近提交 <b>2026/10/23 23:00</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>这个项目是一个由AWS官方支持的MCP服务器、技能和插件集合，旨在帮助AI代理在AWS上构建应用程序。它为AI编码代理提供了构建、部署和管理AWS服务的工具、知识和指导。这个工具适用于各种AI编码代理，如Claude Code、Codex、Cursor、Devin、Kiro和fx等。对于审计师来说，这个工具可以帮助他们理解AWS服务的运作方式，从而在审计过程中更好地评估和监控AWS资源的使用情况。例如，审计师可以使用这个工具来检查AWS账户的配置是否符合最佳实践，或者监控AWS服务的使用情况，以确保财务报告的准确性。对于备考公务员的朋友来说，了解如何使用AWS服务对于理解现代信息技术在政府管理中的应用非常有帮助。典型使用场景包括自动化审计流程、监控IT资源使用情况以及评估IT合规性。</p>
+  <p>这个项目是一个由 AWS 官方支持的 MCP 服务器、技能和插件集合，旨在帮助 AI 代理在 AWS 上构建应用程序。它为 AI 编码代理提供了构建、部署和管理 AWS 服务的工具、知识和指导。这对于审计师来说，可以想象成是一个自动化工具，它可以帮助审计师在 AWS 环境中更高效地执行审计任务，比如监控资源使用情况、检查安全配置等。对于备考公务员的朋友来说，这个工具可以类比为一种模拟考试环境，它可以帮助他们模拟实际工作场景，提高解决问题的能力。</p>
   <h3>怎么设计的</h3>
-  <p>这个项目使用Python语言编写，其技术栈包括MCP服务器、技能和插件。核心架构是围绕为AI代理提供构建、部署和管理AWS服务的工具。亮点设计包括与现有AI编码代理的集成，如Claude Code和Codex，以及通过AWS CLI直接从终端使用工具的能力。此外，该项目还提供了详细的文档和集成指南，帮助用户快速上手。概述来说，agent-toolkit-for-aws的设计亮点在于其高度集成和用户友好的特性，使得非技术背景的用户也能轻松使用。</p>
+  <p>这个项目使用 Python 语言编写，它的工作原理是通过提供一系列的库和工具，使得 AI 代理能够与 AWS 服务进行交互。技术栈包括 AWS CLI、各种插件和技能，以及与现有编码代理的集成。核心架构可以类比为审计流程中的控制框架，它通过提供一系列的检查点和工具，确保审计师在 AWS 环境中的操作是规范和高效的。亮点设计包括与现有开发工具的集成，以及提供了一套完整的文档和指南，帮助用户快速上手。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的AWS服务管理工具</p>
+  <p>相当于开源版的 AWS SDK，为开发者提供了一套完整的工具和接口，用于在 AWS 上构建和部署应用程序。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，agent-toolkit-for-aws可以帮助他们更好地理解AWS服务的运作，从而在审计过程中进行更深入的评估。对于财务专业背景的审计师，这个工具可以帮助他们监控和验证IT资源的使用，确保财务报告的准确性。对于备考公务员的朋友，了解如何使用这个工具有助于他们理解现代信息技术在政府管理中的应用，对于未来的工作可能有所帮助。</p>
+  <p>对于审计师来说，这个工具可以帮助他们自动化审计流程中的某些部分，提高审计效率和质量。对于备考公务员的朋友来说，它提供了一个模拟的工作环境，有助于提升实际工作中的问题解决能力。</p>
   <span class="plink">▸ <a href="https://github.com/aws/agent-toolkit-for-aws">github.com/aws/agent-toolkit-for-aws</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/Nutlope/hallmark">hallmark</a></span>
   　<span class="meta">Nutlope</span></div>
-  <div class="meta"><span class="star">⭐ 31499</span>（今日 +567） · CSS</div>
+  <div class="meta"><span class="star">⭐ 32423</span>（今日 +455） · CSS</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/04/28 04:47</b> ｜ 最近提交 <b>2026/10/23 01:20</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2026/04/28 04:47</b> ｜ 最近提交 <b>2026/10/23 01:20</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>Hallmark 是一个专为 Claude Code、Codex、Cursor 和 OpenCode 设计的技能，旨在避免其设计看起来像是人工智能生成的。这个项目解决的问题是如何在网页设计中避免那些让人一眼就能识别出是机器生成的特征，比如缺乏创意的布局、重复的元素或者不自然的用户界面。它可以用来创建更加自然、有吸引力的网页设计，适用于那些希望提升网站用户体验和品牌形象的开发者。典型使用场景包括网站重构、品牌形象更新或者创建全新的网站。</p>
+  <p>Hallmark 是一个为 Claude Code、Codex、Cursor 和 OpenCode 设计的技能，旨在避免设计看起来像是人工智能生成的。这个项目可以帮助开发者创建出更加自然、符合人类审美标准的设计，避免常见的机器生成设计问题。它通过提供一系列设计主题和定制选项，帮助开发者构建出既美观又实用的网页。典型的使用场景包括审计师在审查网站设计时，可以借助 Hallmark 来判断设计是否过于机械或不符合人类设计习惯，从而提高审查效率。</p>
   <h3>怎么设计的</h3>
-  <p>Hallmark 使用 CSS 作为技术栈，通过一系列预设的主题和设计规则来避免机器生成的痕迹。其核心架构包括一个主题库，包含48种不同的设计主题，以及一个自定义功能，允许用户根据需求进行定制。工作机制是首先确定页面的主要功能，然后根据这个功能选择合适的设计主题，最后在真实浏览器环境中进行代码审查，以确保设计符合预期。亮点设计包括预设的主题库、自定义功能和实时审查机制。</p>
+  <p>Hallmark 使用 CSS 作为技术栈，通过一系列预设的主题和定制选项来帮助开发者设计网页。其核心架构包括三个主要部分：Floor、Reflex 和自定义主题。Floor 是一个不可更改的基础设计，强调对比、焦点、减少运动等设计原则。Reflex 则是模型默认的设计，但可以通过有理由的构建来覆盖。Hallmark 的亮点设计在于它能够识别并避免常见的机器生成设计特征，如标题上的眉毛、追踪大写标签、标题中的一词着色、空框架页面或仅包含照片的页面、屏幕外的英雄元素、每个页面末尾的电子邮件注册表单以及没有发送任何内容的感谢表单等。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的网页设计工具，如 Bootstrap 或 Materialize，但更专注于避免机器生成的痕迹。</p>
+  <p>相当于开源版的网页设计工具，如 Bootstrap 或 Foundation，但专注于避免机器生成的设计问题。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，Hallmark 可以帮助他们在审查网站设计时识别出可能的人工智能生成内容，从而提高审计的准确性和效率。虽然直接关联性不强，但它在提升网站设计和用户体验方面的工作，间接地与审计师的工作目标相吻合。</p>
+  <p>对于审计师来说，Hallmark 可以帮助他们在审查网站设计时，快速识别出设计是否过于机械或不符合人类设计习惯，从而提高审计效率。它可以帮助审计师判断网站设计是否符合用户的审美需求，以及是否可能存在误导用户的风险。</p>
   <span class="plink">▸ <a href="https://github.com/Nutlope/hallmark">github.com/Nutlope/hallmark</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/luongnv89/claude-howto">claude-howto</a></span>
   　<span class="meta">luongnv89</span></div>
-  <div class="meta"><span class="star">⭐ 44153</span>（今日 +1053） · Python · <span class="tag">claude-code</span><span class="tag">guide</span><span class="tag">tutorial</span></div>
+  <div class="meta"><span class="star">⭐ 44702</span>（今日 +392） · Python · <span class="tag">claude-code</span><span class="tag">guide</span><span class="tag">tutorial</span></div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2025/11/08 06:59</b> ｜ 最近提交 <b>2026/10/20 20:23</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2025/11/08 06:59</b> ｜ 最近提交 <b>2026/10/20 20:23</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>Claude How To 是一个视觉化的、以示例驱动的指南，旨在帮助用户从基础概念到高级代理的 Claude Code 进行学习。它提供了复制粘贴的模板，这些模板能够立即为用户提供价值。这个项目解决了想要学习 Claude Code 但缺乏编程经验的人的问题，它能够帮助用户快速掌握从编写简单的 &#39;claude&#39; 命令到编排代理、钩子和技能的高级技能。</p>
+  <p>Claude How To 是一个视觉化的、以示例驱动的指南，旨在帮助用户从基础概念到高级代理，快速掌握 Claude Code。它提供了复制粘贴的模板，这些模板能够立即为用户提供价值。这个项目解决了想要学习 Claude Code 但缺乏编程经验用户的问题，它能够帮助用户从简单的命令输入过渡到复杂的代理、钩子和技能的编排。典型使用场景包括：审计师在审查自动化流程时，可以使用 Claude How To 来了解如何构建和部署自动化脚本，提高工作效率；财务专业人士在处理大量数据时，可以利用 Claude How To 来创建自定义的数据处理流程；备考公务员的朋友可以通过 Claude How To 学习如何编写高效的代码，以应对公务员考试中的编程题目。</p>
   <h3>怎么设计的</h3>
-  <p>Claude How To 使用 Python 编写，其技术栈包括文档编写工具和模板引擎。核心架构是一个详细的指南，从基础概念到高级代理的每个部分都有详细的解释和示例。亮点设计包括易于理解的视觉元素、复制粘贴的模板以及多语言支持，使得不同背景的用户都能轻松学习。项目没有特别提及核心架构的工作机制，但可以合理概述为通过清晰的步骤和示例引导用户逐步学习 Claude Code。</p>
+  <p>Claude How To 使用 Python 编写，其技术栈包括但不限于 Markdown、Jupyter Notebook 和 GitHub Actions。核心架构是一个由基础概念、示例代码和模板组成的指南，用户可以通过这些资源来学习和实践 Claude Code。亮点设计包括：提供多种语言的文档支持，方便不同背景的用户阅读；使用 Jupyter Notebook 格式，使得代码示例更加直观易懂；集成 GitHub Actions，允许用户直接在 GitHub 上运行和测试代码。这些设计使得 Claude How To 成为一个易于上手且功能强大的学习工具。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的 Claude Code 学习指南，帮助用户快速上手。</p>
+  <p>相当于开源版的 Python 教程，帮助用户快速掌握编程技能。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，这个项目可能关联较弱，因为它主要是针对编程初学者和想要学习 Claude Code 的用户。然而，审计师在处理数据分析和报告时可能会遇到编程相关的挑战，这个项目可以作为学习编程的一个资源。</p>
+  <p>Claude How To 对于审计师来说，可以作为一个学习和实践自动化审计流程的工具，帮助审计师提高工作效率和准确性。对于财务专业人士，它可以帮助他们自动化数据处理和分析任务。对于备考公务员的朋友，它提供了一个学习编程的平台，有助于提高在公务员考试中的编程能力。</p>
   <span class="plink">▸ <a href="https://github.com/luongnv89/claude-howto">github.com/luongnv89/claude-howto</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/pbakaus/impeccable">impeccable</a></span>
   　<span class="meta">pbakaus</span></div>
-  <div class="meta"><span class="star">⭐ 85851</span>（今日 +541） · Rust</div>
+  <div class="meta"><span class="star">⭐ 86616</span>（今日 +619） · Rust</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2025/11/16 09:52</b> ｜ 最近提交 <b>2026/10/24 14:29</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>【这是什么，≥300字】impeccable是一个为AI编码代理提供设计指导的项目。它旨在帮助AI更好地进行设计，通过提供一系列技能和命令，使得AI生成的前端设计更加规范和一致。对于审计师来说，这个项目可以帮助他们评估和审核AI生成的代码和设计，确保其符合审计标准和规范。在财务领域，impeccable可以帮助自动化设计流程，提高工作效率。对于备考公务员的朋友，这个项目可以用于学习如何编写规范和清晰的设计文档，这对于公务员考试中的案例分析题非常有帮助。典型使用场景包括：审计师使用impeccable来审核AI生成的财务报告设计，财务专业人士使用它来优化财务报表的布局和设计，公务员考生使用它来练习撰写规范的设计文档。</p>
+  <p>impeccable是一个为AI编码代理提供设计指导的项目。它通过提供一套技能和命令，帮助AI在生成前端设计时更加出色。这个项目旨在解决AI生成的设计缺乏多样性和创新性的问题，通过62个确定性检测规则和24个命令，帮助AI设计出更加符合人类审美和需求的设计。典型使用场景包括：审计师在审查项目设计时，可以使用impeccable来评估设计的质量，确保设计符合规范和标准；财务专业人士在制作报告或演示文稿时，可以利用impeccable来优化视觉效果，提升报告的专业性；备考公务员的朋友在准备材料时，可以使用impeccable来设计更加吸引人的宣传海报或资料。</p>
   <h3>怎么设计的</h3>
-  <p>【怎么设计的，≥200字】impeccable使用Rust语言编写，其核心架构包括一个设计指导引擎和一套命令集。技术栈包括Rust、WebAssembly和前端技术。核心工作机制是通过`impeccable init`命令初始化设计环境，记录产品真实信息，然后通过一系列命令如`polish`、`audit`、`critique`等与AI交互，实现设计指导。亮点设计包括：统一的设置流程，确保设计指导的一致性；丰富的命令集，提供多样化的设计指导功能；实时浏览器迭代，允许用户即时查看设计效果。README中提到的功能概述了impeccable的基本使用方法和优势，但没有详细的技术实现细节。</p>
+  <p>impeccable使用Rust语言编写，其核心架构包括设计指导技能、命令系统、浏览器迭代和确定性检测规则。技术栈主要包括Rust、Web技术等。项目亮点设计包括：1. 一套完整的初始化流程，通过`/impeccable init`命令，将产品真实信息记录在`PRODUCT.md`文件中，确保后续命令能够准确理解设计背景和需求；2. 24个设计命令，涵盖了从设计优化到审查的各个方面，为AI提供了一套完整的设计词汇；3. 62个确定性检测规则，帮助AI识别和避免设计中的常见问题。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的AI设计助手</p>
+  <p>相当于开源版的Sketch或Adobe XD</p>
   <h3>与你的关联</h3>
-  <p>与审计师工作相关，可以帮助他们审核AI生成的代码和设计，确保其符合审计标准和规范。对于财务专业人士，可以用于优化财务报表的设计，提高信息传达的准确性。对于公务员考生，可以用于学习如何撰写规范的设计文档，提升案例分析题的解答能力。</p>
+  <p>对于审计师来说，impeccable可以帮助他们评估设计质量，确保设计符合规范和标准；对于财务专业人士，它可以帮助提升报告的专业性和视觉效果；对于备考公务员的朋友，它可以用来设计更加吸引人的宣传材料。</p>
   <span class="plink">▸ <a href="https://github.com/pbakaus/impeccable">github.com/pbakaus/impeccable</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/pollen-robotics/microduck">microduck</a></span>
   　<span class="meta">pollen-robotics</span></div>
-  <div class="meta"><span class="star">⭐ 10631</span>（今日 +421） · Rust</div>
+  <div class="meta"><span class="star">⭐ 11119</span>（今日 +319） · Rust</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/07/29 15:52</b> ｜ 最近提交 <b>2026/10/24 17:37</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>Microduck 是一个微型两足鸭形机器人，它通过强化学习策略进行移动。这个项目旨在提供一个平台，让开发者能够研究和开发机器人技术。它解决的问题是如何让机器人更加智能地移动，典型使用场景包括教育、研究和娱乐。对于审计师来说，这个项目可能不直接相关，但对于那些对机器人技术感兴趣或者希望了解未来技术发展趋势的人来说，Microduck 提供了一个很好的学习和实践机会。它可以帮助理解机器学习在机器人控制中的应用，这对于审计师在评估自动化和智能化系统时可能有所帮助。对于备考公务员的朋友来说，了解这类技术的前沿动态可能有助于他们在政策制定或科技监管等领域的工作。</p>
+  <p>Microduck是一个小型双足鸭形机器人，它通过强化学习策略进行移动。这个项目旨在提供一个平台，让开发者能够研究和开发机器人技术。它解决的问题是如何让机器人更加智能和自主地移动，适用于教育和研究场景。Microduck可以用来进行机器人控制算法的研究，也可以作为教学工具，帮助学生理解机器人技术的基本原理。典型使用场景包括机器人控制课程、研究项目、以及教育演示。对于审计师来说，Microduck可以作为一个案例来了解机器人技术的发展和应用，而对于备考公务员的朋友来说，了解这类前沿技术有助于拓宽知识面，增强综合素质。</p>
   <h3>怎么设计的</h3>
-  <p>Microduck 的设计基于 Rust 语言，这是一个注重安全性和性能的编程语言。其核心架构包括一个控制循环，该循环以 50 Hz 的频率运行，通过神经策略驱动十五个伺服电机。机器人还配备了无线电和摄像头，以及更新机制，可以将新软件部署到机器人上而不会损坏它。这个设计亮点在于其强化学习策略的应用，这使得机器人能够通过不断学习和适应来优化其移动行为。此外，Microduck 的开源特性使得开发者可以自由地修改和扩展其功能，这对于教育和研究来说是一个巨大的优势。</p>
+  <p>Microduck的设计基于Rust编程语言，利用Rockchip RK3566处理器，通过一个50Hz的控制循环驱动十五个伺服电机。核心架构包括强化学习策略、神经网络政策、无线电和摄像头，以及更新机制，确保机器人能够接收新的软件更新而不会损坏。亮点设计包括使用Rust语言提供的高效性能和安全性，以及通过强化学习实现的高度自主的移动能力。此外，Microduck的架构设计考虑了模块化和可扩展性，方便开发者进行定制和扩展。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的机器人研究平台，类似于乐高积木，用户可以自由组合和定制机器人功能。</p>
+  <p>相当于开源版的乐高机器人套件，Microduck为开发者提供了一个可定制的平台，用于构建和测试机器人算法。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，Microduck 的相关性较弱，但了解其背后的技术和原理可能有助于评估自动化系统在财务和审计流程中的应用潜力。对于备考公务员的朋友，了解这类技术有助于他们在未来可能涉及的科技监管和政策制定工作中做出更明智的决策。</p>
+  <p>对于审计师来说，Microduck可以作为一个案例来了解机器人技术的发展和应用，对于财务专业背景的审计师来说，了解这类技术有助于评估与机器人相关的财务风险和合规性。对于备考公务员的朋友来说，了解Microduck有助于理解现代科技的发展趋势，增强在公共管理领域的竞争力。</p>
   <span class="plink">▸ <a href="https://github.com/pollen-robotics/microduck">github.com/pollen-robotics/microduck</a></span>
 </div>
 
 <div class="card">
   <div><span class="pname"><a href="https://github.com/google-gemini/gemini-cli">gemini-cli</a></span>
   　<span class="meta">google-gemini</span></div>
-  <div class="meta"><span class="star">⭐ 107600</span>（今日 +38） · TypeScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">cli</span><span class="tag">gemini</span><span class="tag">gemini-api</span><span class="tag">mcp-client</span></div>
+  <div class="meta"><span class="star">⭐ 108206</span>（今日 +44） · TypeScript</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2025/04/18 01:04</b> ｜ 最近提交 <b>2026/10/24 09:15</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>Gemini CLI 是一个开源的 AI 代理，它将 Gemini 的强大功能直接带入您的终端。这个项目旨在为用户提供一个便捷的方式来访问 Gemini 的功能，无需离开终端环境。对于审计师来说，它可以用来自动化一些重复性的数据分析任务，比如检查财务报表的准确性。对于备考公务员的朋友，它可以作为一个辅助工具，帮助快速获取和处理信息。典型使用场景包括审计师在审查财务数据时，可以通过 Gemini CLI 快速分析数据，识别异常；公务员在备考时，可以使用它来快速检索和整理学习资料。</p>
+  <p>Gemini CLI 是一个开源的 AI 代理，它将 Gemini 的强大功能直接带到您的终端。对于审计师来说，这个项目可以帮助他们通过终端进行更高效的信息检索和分析。它解决的问题包括简化复杂查询过程、提高数据处理速度以及提供更便捷的交互方式。典型使用场景包括审计过程中对大量数据的快速筛选和分析，比如在财务报表审计中，使用 Gemini CLI 可以快速定位异常数据，提高审计效率。对于备考公务员的朋友来说，这个工具可以帮助他们快速获取和处理信息，提高学习效率。</p>
   <h3>怎么设计的</h3>
-  <p>Gemini CLI 使用 TypeScript 编写，其技术栈包括 Node.js 和 npm。核心架构是一个命令行界面，用户可以通过输入命令来与 Gemini 进行交互。它的工作机制是通过命令行接收用户的输入，然后将其发送到 Gemini 的服务器进行处理，并将结果返回给用户。亮点设计包括自动化的命令行界面和与 Gemini 服务的无缝集成。由于 README 中没有详细描述核心架构和工作机制，以下为合理概述：Gemini CLI 通过命令行接口与 Gemini 服务器通信，支持自动化任务执行，并通过 npm 包管理工具进行依赖管理。</p>
+  <p>Gemini CLI 使用 TypeScript 编写，其技术栈包括 Node.js 和 Gemini API。核心架构是一个命令行界面，用户可以通过输入命令来与 Gemini 进行交互。它的工作机制是将用户的命令转换为 Gemini API 调用，然后返回处理结果。亮点设计包括命令行界面的直观性和 Gemini API 的强大功能，使得用户可以轻松地在终端中进行复杂的数据处理和分析。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的 Gemini 服务，为用户提供了一个便捷的终端访问方式。</p>
+  <p>相当于开源版的 Gemini API，为用户提供了一个直接在终端使用 Gemini 功能的便捷方式。</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，Gemini CLI 可以帮助自动化数据分析，提高工作效率；对于备考公务员的朋友，它可以作为一个辅助工具，帮助快速获取和处理信息。虽然关联性不强，但对于需要处理大量数据的审计工作，它仍然是一个有用的工具。</p>
+  <p>对于审计师来说，Gemini CLI 可以帮助他们更高效地进行数据分析和信息检索，尤其是在处理大量数据时。对于备考公务员的朋友，它可以帮助他们快速获取和处理信息，提高学习效率。虽然与审计工作的直接关联性不强，但其在信息处理方面的能力对于审计师来说仍然具有一定的参考价值。</p>
   <span class="plink">▸ <a href="https://github.com/google-gemini/gemini-cli">github.com/google-gemini/gemini-cli</a></span>
 </div>
 
 <div class="card">
-  <div><span class="pname"><a href="https://github.com/jbiaojerry/ebook-treasure-chest">ebook-treasure-chest</a></span>
+  <div><span class="pname"><a href="https://github.com/jbiaojerry/ebook-treasure-chest">电子书下载宝库</a></span>
   　<span class="meta">jbiaojerry</span></div>
-  <div class="meta"><span class="star">⭐ 22275</span>（今日 +220） · Python</div>
+  <div class="meta"><span class="star">⭐ 22813</span>（今日 +227） · Python</div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2023/09/13 20:22</b> ｜ 最近提交 <b>2026/01/13 08:59</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2023/09/13 20:22</b> ｜ 最近提交 <b>2026/01/13 08:59</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>这个项目是一个电子书下载宝库，它为用户提供了一个集中了各类电子书下载链接的平台。无论你是审计师想要学习财务知识，还是你的朋友在备考公务员需要阅读相关书籍，这个宝库都能满足你的需求。它收集了包括帆书app（原樊登读书）、微信读书、京东读书、喜马拉雅等读书app的大部分电子书，涵盖了经典文学、经管励志、终身学习、职场创业、技术手册等多种类型的书籍。你可以通过实时搜索和多关键词搜索功能，快速找到你想要的电子书，无论是用于审计工作学习，还是为公务员考试做准备，这个宝库都能提供方便快捷的服务。</p>
+  <p>这个项目是一个电子书下载链接的集合地，它为喜欢阅读的用户提供了一个方便的平台，可以下载各类电子书。无论是审计师想要学习财务知识，还是备考公务员的朋友需要阅读相关书籍，这个宝库都能提供丰富的资源。它类似于一个电子书图书馆，汇集了帆书app、微信读书、京东读书、喜马拉雅等知名读书平台的电子书资源，满足了不同类型读者的需求。对于审计师来说，它可以作为学习新知识、提升专业能力的工具；对于备考公务员的朋友，它则是一个获取相关书籍资料的好去处。</p>
   <h3>怎么设计的</h3>
-  <p>该项目使用Python编写，采用了简洁明了的设计。它的工作机制是通过收集和整理来自各个电子书网站的下载链接，并按照常用的标签进行分类。核心亮点在于其强大的实时搜索功能和多关键词搜索功能，这使得用户可以非常快速地找到所需的电子书。此外，该项目还提供了多种格式的电子书下载，包括epub、mobi和azw3，以满足不同阅读设备和喜好的需求。虽然README中没有详细的技术栈和架构描述，但可以合理概述该项目是基于Python的Web应用程序，使用了常见的Web开发框架和数据库技术。</p>
+  <p>该项目使用Python语言开发，其核心架构是一个电子书资源索引系统。系统通过爬虫技术从各个读书平台抓取电子书信息，并建立了一个电子书数据库。用户可以通过关键词搜索、分类浏览等方式找到所需的电子书。项目亮点在于其资源丰富、更新及时，以及用户友好的搜索和浏览体验。虽然README片段中没有具体的技术栈信息，但根据描述，可以合理概述其技术栈可能包括Python的爬虫库、数据库管理系统等。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的电子书搜索引擎，为用户提供了一个便捷的电子书下载平台。</p>
+  <p>相当于开源版的电子书图书馆</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，这个项目可以作为一个学习资源库，用于获取各类专业书籍和资料。对于备考公务员的朋友来说，这个宝库可以提供丰富的阅读材料，帮助他们更好地准备考试。虽然与审计工作的直接关联性不强，但作为一个知识获取和学习的工具，它具有一定的间接关联性。</p>
-  <span class="plink">▸ <a href="https://github.com/jbiaojerry/ebook-treasure-chest">github.com/jbiaojerry/ebook-treasure-chest</a></span>
+  <p>对于审计师来说，这个项目可以用来获取学习资料，提升自己的专业知识和技能。对于备考公务员的朋友，它提供了丰富的阅读资源，有助于备考。虽然与审计工作的直接关联性不强，但作为知识更新的工具，具有一定的间接关联性。</p>
+  <span class="plink">▸ <a href="https://github.com/jbiaojerry/ebook-treasure-chest">github.com/jbiaojerry/电子书下载宝库</a></span>
 </div>
 
 <div class="card">
-  <div><span class="pname"><a href="https://github.com/makecindy/cindy">CINDY</a></span>
+  <div><span class="pname"><a href="https://github.com/makecindy/cindy">cindy</a></span>
   　<span class="meta">makecindy</span></div>
-  <div class="meta"><span class="star">⭐ 3749</span>（今日 +471） · TypeScript · <span class="tag">agent</span><span class="tag">ai-agent</span><span class="tag">ai-assistant</span><span class="tag">android</span><span class="tag">claude-code</span><span class="tag">codex</span></div>
+  <div class="meta"><span class="star">⭐ 4234</span>（今日 +477） · TypeScript · <span class="tag">agent</span><span class="tag">ai-agent</span><span class="tag">ai-assistant</span><span class="tag">android</span><span class="tag">claude-code</span><span class="tag">codex</span></div>
   <div class="times">
-    抓取 <b>2026/10/24 19:59</b> ｜ 仓库创建 <b>2026/07/23 01:49</b> ｜ 最近提交 <b>2026/10/24 19:53</b>（北京时间）
+    抓取 <b>2026/10/25 13:50</b> ｜ 仓库创建 <b>2026/07/23 01:49</b> ｜ 最近提交 <b>2026/10/25 13:45</b>（北京时间）
   </div>
   <h3>这是什么</h3>
-  <p>CINDY是一个开源的AI代理，它开箱即用，能够将多种工具、模型和功能集成到一个代理中，以便在您的项目和应用程序中完成实际工作。它类似于一个全能助手，从第一天开始就准备好帮助您处理各种任务。对于审计师来说，CINDY可以用来自动化一些重复性的数据分析工作，比如财务报表的审查，从而提高工作效率。对于备考公务员的朋友，CINDY可以帮助他们进行资料整理、模拟测试等，提高学习效率。</p>
+  <p>CINDY是一个开源的AI代理，它开箱即用，能够将多个工具、模型和框架集成到一个代理中，用于在项目中完成实际工作。对于审计师来说，CINDY可以作为一个自动化工具，帮助处理数据分析和报告生成等任务，提高工作效率。例如，审计师可以使用CINDY来分析财务数据，自动识别异常，生成报告，从而节省时间和精力。对于备考公务员的朋友来说，CINDY可以帮助他们进行资料整理、模拟测试和智能问答，提高备考效率。</p>
   <h3>怎么设计的</h3>
-  <p>CINDY使用TypeScript编写，支持Node.js 22.x和pnpm。其核心架构包括一个集成平台，可以无缝地整合不同的工具和模型。CINDY的亮点设计在于其开箱即用的特性，无需复杂的配置和编程知识即可使用。它的工作机制类似于一个虚拟助手，用户可以通过简单的命令或自然语言与CINDY交互，完成各种任务。</p>
+  <p>CINDY使用TypeScript编写，支持Node.js 22.x和pnpm。其核心架构包括一个集成框架，能够无缝地整合不同的AI模型和工具。CINDY的亮点设计在于其开箱即用的特性，无需复杂的配置和设置，用户可以直接使用。此外，CINDY还提供了丰富的API接口，方便用户进行二次开发和定制。</p>
   <h3>类比成熟工具</h3>
-  <p>相当于开源版的虚拟助手</p>
+  <p>相当于开源版的自动化助手</p>
   <h3>与你的关联</h3>
-  <p>对于审计师来说，CINDY可以帮助自动化财务数据的分析，减少人工工作量，提高审计效率。对于备考公务员的朋友，CINDY可以辅助学习，提高学习效率。</p>
-  <span class="plink">▸ <a href="https://github.com/makecindy/cindy">github.com/makecindy/CINDY</a></span>
+  <p>CINDY可以帮助审计师自动化处理数据分析和报告生成，提高工作效率；对于备考公务员的朋友，CINDY可以辅助资料整理和模拟测试，提升备考效果。</p>
+  <span class="plink">▸ <a href="https://github.com/makecindy/cindy">github.com/makecindy/cindy</a></span>
 </div>
 
 
-<h2 class="sect">今日总结</h2>
-<div class="summary-card">今日项目列表中，安全审计、数据安全和AWS服务管理类项目受到关注，显示出用户对提高工作效率和数据安全性的需求。</div>
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，安全审计技能、OpenShell和Claude How To因其独特的功能和实用性，在今日获得了较高的关注。安全审计技能由Cloudflare开发，适用于全面安全审计；OpenShell专为自主AI代理设计，确保数据安全；Claude How To则提供快速学习Claude Code的指南，适合需要自动化工具的用户。</div>
 <div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
 </div>
 <script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
 (function(){
   var KEY="scroll_y:"+location.pathname+location.search;
   if("scrollRestoration" in history){history.scrollRestoration="manual";}
