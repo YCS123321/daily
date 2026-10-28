@@ -1,0 +1,438 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-10-28</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+.themewrap{text-align:right;margin:-4px 0 4px}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<div class="themewrap"><button id="themeBtn" onclick="return toggleTheme()">🎨 财经风</button></div>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-10-28</span><span>周三</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/AI Design Skills">AI Design Skills</a></span>
+<div class="reason">提供一系列AI编码工具的设计技能，帮助用户快速生成设计元素，提高工作效率。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/hallmark">hallmark</a></span>
+<div class="reason">专注于避免设计看起来像是人工智能生成的，提升网页设计质量。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/openbot">openbot</a></span>
+<div class="reason">为持久的AI助手提供本地优先的桌面工作空间，支持多种AI工具，提高协作效率。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/elayadesign/ai-design-skills">AI Design Skills</a></span>
+  　<span class="meta">elayadesign</span></div>
+  <div class="meta"><span class="star">⭐ 9437</span>（今日 +1395） · 语言未知</div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/07/29 14:43</b> ｜ 最近提交 <b>2026/10/28 00:02</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>AI Design Skills 是一个不断增长的 AI 编码工具设计技能集合，包括 Claude Code、Cursor、Codex、Windsurf 等读取 markdown 规则文件的工具。每个技能都是一个独立的文件夹，你可以根据需要安装。例如，`landing-page-design` 技能可以从零开始构建一个着陆页面，包括问题收集、页面结构、转化文案以及完整的视觉系统（字体、间距、半径、动画）。这个项目旨在帮助用户通过简单的指令，快速生成所需的设计元素，适用于网站、产品或服务的界面设计。典型使用场景包括网站着陆页设计、产品原型制作、营销材料设计等。对于审计师来说，这个工具可以帮助他们快速生成报告模板、设计演示文稿，或者为审计项目创建专业的视觉元素。对于备考公务员的朋友，这个工具可以用于制作个人简历、模拟考试界面设计等。</p>
+  <h3>怎么设计的</h3>
+  <p>AI Design Skills 的技术栈主要包括 Git、Markdown 和相关的设计工具。每个技能都是一个独立的文件夹，通过 Git 克隆到本地，然后将其复制到相应的工具目录下。核心架构是每个技能文件夹内的 markdown 规则文件，这些文件定义了技能的工作方式和输出结果。亮点设计在于其模块化设计，用户可以根据需要安装和配置不同的技能，提高了工具的灵活性和可扩展性。此外，通过简单的命令行操作，用户可以轻松地集成和使用这些技能，无需深入了解背后的技术细节。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的网页设计工具集，如 Bootstrap 或 Element UI，但专注于 AI 编码工具的设计技能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个工具可以用于快速生成报告模板、设计演示文稿，或者为审计项目创建专业的视觉元素。对于备考公务员的朋友，这个工具可以用于制作个人简历、模拟考试界面设计等，提高工作效率和视觉效果。</p>
+  <span class="plink">▸ <a href="https://github.com/elayadesign/ai-design-skills">github.com/elayadesign/AI Design Skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/Nutlope/hallmark">hallmark</a></span>
+  　<span class="meta">Nutlope</span></div>
+  <div class="meta"><span class="star">⭐ 39063</span>（今日 +2830） · CSS</div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/04/28 04:47</b> ｜ 最近提交 <b>2026/10/27 23:05</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Hallmark 是一个专为 Claude Code、Codex、Cursor 和 OpenCode 设计的技能，旨在避免设计看起来像是人工智能生成的。这个项目通过提供一系列设计主题，帮助用户创建出看起来更加自然和手工制作的设计。它解决了在网页设计中避免机器生成痕迹的问题，使得网页设计更加符合人类审美和用户体验。典型使用场景包括审计师在审查网站设计时，可以使用 Hallmark 来判断设计是否过于机械化，或者财务专业人士在创建报告和演示文稿时，可以利用 Hallmark 来提升文档的外观和可读性。对于备考公务员的朋友来说，Hallmark 可以帮助他们制作出更加专业和吸引人的个人简历和考试材料。</p>
+  <h3>怎么设计的</h3>
+  <p>Hallmark 使用 CSS 作为其技术栈，通过一系列预设的主题和设计规则来构建网页。其核心架构包括一个主题目录，其中包含五十种不同的设计主题，用户可以根据需求进行定制。Hallmark 的工作机制是首先确定页面的主要功能，然后围绕这些功能构建页面布局，并对页面进行审查，以确保其不包含常见的机器生成痕迹。亮点设计包括对页面元素如标题、标签、颜色使用和布局的严格审查，以及提供自定义设计和重新设计服务。虽然没有详细的 README 描述，但可以合理概述其设计理念和工作流程。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的网页设计工具，如 Bootstrap 或 Foundation，但专注于避免机器生成的设计风格。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Hallmark 可以帮助他们在审查网站设计时识别出可能由人工智能生成的元素，从而提高审计的准确性和效率。对于财务专业人士，Hallmark 可以帮助他们提升报告和演示文稿的设计质量。对于备考公务员的朋友，Hallmark 可以帮助他们制作出更加专业的个人材料，增加在竞争中的优势。</p>
+  <span class="plink">▸ <a href="https://github.com/Nutlope/hallmark">github.com/Nutlope/hallmark</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/nightly-labs/openbot">openbot</a></span>
+  　<span class="meta">nightly-labs</span></div>
+  <div class="meta"><span class="star">⭐ 2475</span>（今日 +777） · TypeScript · <span class="tag">ai-agents</span><span class="tag">bun</span><span class="tag">codex</span><span class="tag">electron</span><span class="tag">local-first</span><span class="tag">macos</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/08/13 05:32</b> ｜ 最近提交 <b>2026/10/28 09:19</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>OpenBot是一个本地优先的桌面工作空间，旨在为持久的AI助手提供平台。它支持Codex App Server、Claude Code、Grok CLI、OpenCode、Gemini、Cursor CLI和Cline CLI等AI工具，通过ACP（Agent Communication Protocol）实现。OpenBot为每个AI助手提供专属的工作空间和对话，同时提供本地队列、文件传输、内嵌浏览器和AI助手之间的消息传递等功能。这对于审计师来说，可以看作是一个强大的工具，用于处理和分析大量数据，同时与AI助手协作，提高工作效率。例如，审计师可以使用OpenBot来管理审计任务，分析财务数据，并与AI助手进行实时沟通，以获取专业建议。在备考公务员的朋友看来，OpenBot可以作为一个学习工具，帮助他们整理学习资料，管理学习计划，并通过AI助手获取学习资源和建议。</p>
+  <h3>怎么设计的</h3>
+  <p>OpenBot使用TypeScript编写，其核心架构包括本地优先的工作空间、任务队列、文件共享、浏览器控制和AI助手之间的协作。技术栈包括Codex App Server、Claude Code、Grok CLI等AI工具，以及ACP协议。OpenBot的亮点设计在于其本地优先的特性，这意味着所有数据都存储在本地，确保了数据的安全性和隐私性。此外，OpenBot的集成式设计使得用户可以在一个应用程序中完成多种任务，提高了工作效率。例如，审计师可以在OpenBot中同时进行数据分析、文件管理和与AI助手的沟通，而无需切换多个应用程序。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Slack或Microsoft Teams，但专注于AI助手和协作工作空间</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，OpenBot可以用于数据分析和报告生成，提高审计效率。它可以与审计软件集成，帮助审计师处理大量数据，并利用AI助手提供的数据分析和建议。对于备考公务员的朋友，OpenBot可以作为学习工具，帮助他们整理学习资料，管理学习进度，并通过AI助手获取学习资源和建议。</p>
+  <span class="plink">▸ <a href="https://github.com/nightly-labs/openbot">github.com/nightly-labs/openbot</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/obra/superpowers">superpowers</a></span>
+  　<span class="meta">obra</span></div>
+  <div class="meta"><span class="star">⭐ 306465</span>（今日 +617） · Shell · <span class="tag">ai</span><span class="tag">brainstorming</span><span class="tag">coding</span><span class="tag">obra</span><span class="tag">sdlc</span><span class="tag">skills</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2025/10/10 03:45</b> ｜ 最近提交 <b>2026/10/23 11:48</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Superpowers是一个为您的编码代理构建的完整软件开发方法论，它基于一组可组合的技能和一些初始指令，确保您的代理能够使用这些技能。这个项目旨在解决软件开发过程中重复性和低效的问题，通过自动化和智能化的方式提高开发效率。它适用于需要快速构建和部署软件的场景，如审计自动化工具的开发、财务系统的维护，甚至是公务员考试复习资料的管理。典型使用场景包括：审计师使用Superpowers自动化审计流程，财务人员利用其快速生成财务报告，公务员考生通过它来提高编程技能，以便在考试中脱颖而出。</p>
+  <h3>怎么设计的</h3>
+  <p>Superpowers使用Shell语言编写，其技术栈包括Claude Code、Antigravity、Codex App等多个组件。核心架构是一个技能框架，它允许开发者通过组合不同的技能和指令来创建个性化的代理。这些技能包括代码生成、代码审查、测试自动化等。Superpowers的亮点设计在于其高度的可定制性和模块化，开发者可以根据具体需求灵活配置技能和指令。例如，审计师可以配置一个技能组合，用于自动检查财务报表的准确性；财务人员可以创建一个技能组合，用于自动生成和分析财务数据；公务员考生可以通过配置编程技能组合，来提高自己的编程能力。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的敏捷开发框架，帮助开发者快速构建和部署软件，提高开发效率。</p>
+  <h3>与你的关联</h3>
+  <p>Superpowers可以帮助审计师自动化审计流程，提高审计效率，减少人为错误。对于财务专业背景的审计师来说，它可以用于自动化财务报表的生成和分析，提高财务工作的准确性。对于备考公务员的朋友，Superpowers可以帮助他们提高编程技能，增加在考试中的竞争力。</p>
+  <span class="plink">▸ <a href="https://github.com/obra/superpowers">github.com/obra/superpowers</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/pbakaus/impeccable">impeccable</a></span>
+  　<span class="meta">pbakaus</span></div>
+  <div class="meta"><span class="star">⭐ 90591</span>（今日 +1449） · Rust</div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2025/11/16 09:52</b> ｜ 最近提交 <b>2026/10/28 00:28</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>impeccable是一个为AI编码代理提供设计指导的工具。它通过提供一套技能、命令和规则，帮助AI生成前端设计时更加符合设计规范。对于审计师来说，这个项目可以帮助他们评估和审核AI生成的界面设计是否符合既定的标准和规范，从而提高设计质量。例如，审计师可以使用impeccable中的命令来检查设计的合规性、优化设计元素，或者对设计进行批判性分析。在公务员备考过程中，了解和使用这样的工具可以帮助考生更好地理解设计原则，提高他们的设计能力，这在一些涉及视觉传达的职位中尤为重要。</p>
+  <h3>怎么设计的</h3>
+  <p>impeccable使用Rust语言编写，其核心架构包括一个设置流程、一套设计命令和一个检测规则集。设置流程通过`/impeccable init`命令记录产品的真实信息，如目标受众、目的、操作环境、限制、语气和证据，以便后续命令可以正确理解这些信息。设计命令包括`polish`、`audit`、`critique`等，它们构成了与AI共享的设计词汇。此外，impeccable还包含62个确定性检测规则，用于确保AI生成的界面设计符合特定的设计标准。这个项目的亮点在于其简洁的设置流程和强大的设计命令集，使得AI设计更加高效和规范。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的设计指导工具，如Sketch或Adobe XD。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，impeccable可以帮助他们评估AI生成的界面设计是否符合审计标准，提高设计质量。在财务领域，审计师可能需要审核与设计相关的财务报告或界面，impeccable可以辅助这一过程。对于备考公务员的朋友，了解和使用impeccable可以提高他们的设计能力，这在某些公务员职位中可能是一个加分项。</p>
+  <span class="plink">▸ <a href="https://github.com/pbakaus/impeccable">github.com/pbakaus/impeccable</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/makecindy/cindy">cindy</a></span>
+  　<span class="meta">makecindy</span></div>
+  <div class="meta"><span class="star">⭐ 7494</span>（今日 +1465） · TypeScript · <span class="tag">agent</span><span class="tag">ai-agent</span><span class="tag">ai-assistant</span><span class="tag">android</span><span class="tag">claude-code</span><span class="tag">codex</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/07/23 01:49</b> ｜ 最近提交 <b>2026/10/28 09:30</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>CINDY是一个开源的AI代理，它开箱即用，可以连接您的电脑和手机，并整合您已经使用的模型和订阅服务。它旨在成为一个了解您工作习惯的伴侣，帮助您在多个设备上保持一致的工作体验。对于审计师来说，CINDY可以作为一个工具来辅助数据处理和分析，尤其是在处理大量财务数据时，它可以自动化一些重复性任务，提高工作效率。对于备考公务员的朋友，CINDY可以帮助他们管理学习计划，自动整理学习资料，甚至提供个性化的学习建议。</p>
+  <h3>怎么设计的</h3>
+  <p>CINDY使用TypeScript编写，其核心架构包括设备连接模块、模型整合模块和用户行为学习模块。技术栈可能包括Node.js、React等。设备连接模块负责无缝连接用户的多种设备；模型整合模块允许用户导入和使用各种AI模型；用户行为学习模块则通过机器学习算法来理解用户的工作习惯。CINDY的亮点设计在于其开箱即用的特性，以及跨平台和设备的兼容性，使得用户可以轻松地在不同设备间迁移工作状态。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的个人助理或智能秘书工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，CINDY可以帮助自动化数据整理和分析工作，减少人为错误，提高审计效率。对于备考公务员的朋友，CINDY可以作为一个辅助工具，帮助他们更高效地管理学习和复习。</p>
+  <span class="plink">▸ <a href="https://github.com/makecindy/cindy">github.com/makecindy/cindy</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/gitroomhq/postiz-app">postiz-app</a></span>
+  　<span class="meta">gitroomhq</span></div>
+  <div class="meta"><span class="star">⭐ 39408</span>（今日 +951） · TypeScript · <span class="tag">nextjs</span><span class="tag">open-source</span><span class="tag">open-source-social-media-scheduling-tool</span><span class="tag">oss</span><span class="tag">postiz-cloud</span><span class="tag">postiz-hosted</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2023/07/09 01:24</b> ｜ 最近提交 <b>2026/10/25 02:27</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Postiz 是一款社交媒体管理平台，旨在帮助用户安排、自动化和分析他们的内容。对于审计师来说，它可以用来管理社交媒体发布日程，确保信息发布的一致性和准确性。例如，审计师可以设置自动发布财务报告摘要，或者定期发布审计相关的通知和更新。对于备考公务员的朋友，Postiz 可以帮助他们规划社交媒体上的学习时间表，自动发布学习计划和心得，提高学习效率。典型使用场景包括：自动发布公司新闻、财务报告、审计公告，以及个人品牌建设，如定期发布专业见解和行业动态。</p>
+  <h3>怎么设计的</h3>
+  <p>Postiz 使用 TypeScript 开发，采用前后端分离的设计。前端负责用户界面和交互，后端则处理数据存储、处理和分析。核心架构包括内容管理系统（CMS）、任务调度器和数据分析引擎。亮点设计包括：支持多种社交媒体平台的集成，如微博、微信公众号等；提供可视化内容编辑器，方便用户设计发布内容；具备强大的数据分析功能，能够生成报告以帮助用户了解内容的表现和受众反应。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Hootsuite 或 Buffer，提供社交媒体内容规划和自动化功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Postiz 可以帮助管理社交媒体发布，确保信息的及时性和准确性，与审计工作的透明度和合规性要求相吻合。对于备考公务员的朋友，Postiz 可以作为个人品牌建设工具，有助于提升公众形象和知名度。</p>
+  <span class="plink">▸ <a href="https://github.com/gitroomhq/postiz-app">github.com/gitroomhq/postiz-app</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/affaan-m/ECC">ECC</a></span>
+  　<span class="meta">affaan-m</span></div>
+  <div class="meta"><span class="star">⭐ 290917</span>（今日 +1165） · JavaScript · <span class="tag">ai-agents</span><span class="tag">anthropic</span><span class="tag">claude</span><span class="tag">claude-code</span><span class="tag">developer-tools</span><span class="tag">llm</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/01/18 08:51</b> ｜ 最近提交 <b>2026/10/26 12:56</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>ECC是一个性能优化系统，旨在提升智能代理的性能。它通过整合技能、本能、记忆、安全性和以研究为先的开发策略，为Claude Code、Codex、Opencode、Cursor等智能代理提供支持。这个项目解决的问题是如何让智能代理更加高效、智能地工作，从而在处理大量数据和复杂任务时提供更好的性能。它可以用来开发更强大的智能代理，适用于需要处理大量数据、进行复杂决策和执行自动化任务的场景，比如审计自动化、财务分析、甚至是在公务员考试准备中辅助学习和分析。典型使用场景包括审计自动化流程的优化、财务数据的智能分析、以及公务员考试资料的研究和整理。</p>
+  <h3>怎么设计的</h3>
+  <p>ECC的设计基于JavaScript语言，利用了现代前端开发的技术栈。其核心架构包括智能代理的技能管理、本能模拟、记忆存储、安全性保障以及研究驱动的开发流程。亮点设计包括模块化的架构，使得各个功能模块可以独立开发、测试和升级；以及高度可配置性，允许用户根据具体需求调整系统设置。这个系统的工作机制类似于一个智能的操作系统，它通过不断学习和优化，提升智能代理的处理能力和决策质量。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的智能代理操作系统</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，ECC可以用于自动化审计流程，提高审计效率和质量。在财务领域，它可以用于财务数据的智能分析，帮助审计师发现潜在的风险和异常。对于备考公务员的朋友，ECC可以辅助进行资料整理和学习分析，提高学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/affaan-m/ECC">github.com/affaan-m/ECC</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/HKUDS/DeepTutor">DeepTutor</a></span>
+  　<span class="meta">HKUDS</span></div>
+  <div class="meta"><span class="star">⭐ 45976</span>（今日 +1598） · Python · <span class="tag">ai-agents</span><span class="tag">ai-tutor</span><span class="tag">clawbot</span><span class="tag">cli-tool</span><span class="tag">deepresearch</span><span class="tag">interactive-learning</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2025/12/28 23:35</b> ｜ 最近提交 <b>2026/10/28 02:37</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>DeepTutor是一个终身个性化辅导平台，旨在为用户提供个性化的学习体验。它通过分析用户的学习习惯、兴趣和能力，提供定制化的学习内容和路径。对于审计师来说，这个项目可以帮助他们提升自我学习的能力，比如通过个性化学习路径来掌握新的审计技术和法规。对于备考公务员的朋友来说，DeepTutor可以作为一个有效的学习工具，帮助他们根据考试大纲和自己的学习进度制定个性化的复习计划。典型使用场景包括：审计师通过DeepTutor学习新的审计软件或法规，公务员考生利用DeepTutor进行高效备考。</p>
+  <h3>怎么设计的</h3>
+  <p>DeepTutor使用Python编写，其核心架构包括用户数据收集、学习路径规划、内容推荐和效果评估等模块。技术栈包括机器学习、自然语言处理和大数据分析。亮点设计包括：智能学习路径规划，可以根据用户的学习习惯和进度动态调整；个性化内容推荐，通过分析用户的学习数据，推荐最适合他们的学习内容；效果评估，通过跟踪用户的学习进度和成绩，评估学习效果并提供反馈。这些设计使得DeepTutor能够提供高效、个性化的学习体验。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Khan Academy或Coursera，为用户提供个性化的学习资源和学习路径。</p>
+  <h3>与你的关联</h3>
+  <p>DeepTutor可以帮助审计师提升自我学习的能力，适应不断变化的审计技术和法规。对于审计师来说，这是一个很好的工具，可以帮助他们保持专业知识的更新。对于财务专业人士，DeepTutor也可以用于学习新的财务软件或法规。对于备考公务员的朋友，DeepTutor可以作为一个有效的学习工具，帮助他们提高学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/HKUDS/DeepTutor">github.com/HKUDS/DeepTutor</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/JetBrains/thinkrail">ThinkRail</a></span>
+  　<span class="meta">JetBrains</span></div>
+  <div class="meta"><span class="star">⭐ 4046</span>（今日 +1204） · TypeScript · <span class="tag">agent</span><span class="tag">agent-skills</span><span class="tag">agentic-ai</span><span class="tag">agentic-workflow</span><span class="tag">ai-coding</span><span class="tag">ai-tools</span></div>
+  <div class="times">
+    抓取 <b>2026/10/28 09:40</b> ｜ 仓库创建 <b>2026/07/08 15:40</b> ｜ 最近提交 <b>2026/10/28 09:39</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>ThinkRail 是一款智能化的IDE，它能够根据用户的使用习惯不断优化自身功能。它通过实时规格学习用户的项目，并在此基础上构建自己的能力。这款IDE围绕pi编码代理构建了一个丰富的界面，将工作隔离到不同的工作区中，并通过实时规格和可重用技能赋予代理持久的项目知识。ThinkRail的目标是成为一个能够根据用户实际工作方式创建所需工具的IDE。对于审计师来说，ThinkRail可以帮助他们更高效地管理项目，通过自动化和智能化的工具来提高工作效率，尤其是在处理复杂的财务数据和审计流程时。例如，它可以用来创建和跟踪审计流程，自动化数据分析和报告生成，从而减少人为错误和提高审计的准确性。对于备考公务员的朋友来说，ThinkRail可以帮助他们更好地组织学习资料，通过智能化的工具来提高学习效率。</p>
+  <h3>怎么设计的</h3>
+  <p>ThinkRail的技术栈主要是TypeScript，它使用pi编码代理来学习用户的项目，并通过实时规格和可重用技能来赋予代理持久的项目知识。其核心架构包括一个丰富的用户界面，用于与pi编码代理交互，以及一个工作区管理系统，用于隔离和优化不同工作区的工作。ThinkRail的亮点设计在于其智能化的学习机制，它能够根据用户的使用习惯不断优化自身功能，从而提供更加个性化的用户体验。此外，ThinkRail还支持全扩展功能，这意味着它可以根据用户的需求创建定制化的工具，进一步提高了其灵活性和实用性。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Visual Studio Code，提供类似的功能和用户体验，但更加专注于智能化和个性化。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，ThinkRail可以帮助他们更高效地管理审计项目，自动化数据分析和报告生成，提高审计效率和准确性。对于备考公务员的朋友，ThinkRail可以作为一个强大的工具来组织学习资料，提高学习效率。虽然其直接关联性可能不如审计工作那么紧密，但其在提高工作效率和学习效率方面的潜力是显而易见的。</p>
+  <span class="plink">▸ <a href="https://github.com/JetBrains/thinkrail">github.com/JetBrains/ThinkRail</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，AI Design Skills、hallmark和openbot在语言分布和star增长方面表现突出。AI Design Skills和hallmark分别提供了高效的设计工具和避免AI生成痕迹的设计技能，而openbot则提供了本地优先的AI助手协作工作空间。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
