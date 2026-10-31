@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-10-31</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-10-31</span><span>周六</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/claude-mem">claude-mem</a></span>
+<div class="reason">Claude-Mem通过AI压缩和上下文注入，有效提高数据存储和检索效率，适用于审计流程记录和学习资料整理。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/impeccable">impeccable</a></span>
+<div class="reason">impeccable提供代码审查和改进工具，帮助提高代码质量，适用于审计师检查代码规范性和准确性。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/OpenBot">OpenBot</a></span>
+<div class="reason">OpenBot作为AI协作工具，可监控和记录工作流程，适用于审计流程监控和公务员考试准备。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></span>
+  　<span class="meta">thedotmack</span></div>
+  <div class="meta"><span class="star">⭐ 106356</span>（今日 +1140） · TypeScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">ai-memory</span><span class="tag">anthropic</span><span class="tag">artificial-intelligence</span><span class="tag">chromadb</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2025/09/01 04:50</b> ｜ 最近提交 <b>2026/10/31 10:09</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Claude-Mem是一个用于跨会话持久化上下文的项目，它能够捕捉代理在会话期间所做的所有操作，并使用AI进行压缩。在未来的会话中，它会将相关的上下文信息注入回去。这个项目与多种工具兼容，包括Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode等。对于审计师来说，它可以用来记录和分析代理在处理审计任务时的操作，帮助审计师更好地理解整个审计过程，提高审计效率。例如，审计师在审查财务报表时，可以使用Claude-Mem来记录下所有的查询和分析步骤，以便在后续的审计工作中快速回顾和复现这些步骤。对于备考公务员的朋友来说，它可以作为一个学习工具，帮助记录和复习学习过程中的关键信息和知识点，提高学习效率。典型使用场景包括审计流程记录、学习资料整理和复习等。</p>
+  <h3>怎么设计的</h3>
+  <p>Claude-Mem使用TypeScript编写，其核心架构包括数据捕捉、AI压缩和上下文注入三个部分。数据捕捉部分负责记录代理在会话期间的所有操作；AI压缩部分使用机器学习算法对捕捉到的数据进行压缩，以减少存储空间的需求；上下文注入部分则负责在未来的会话中将压缩后的上下文信息注入回去。这个项目的亮点设计在于其跨工具兼容性和AI压缩技术，能够有效地提高数据存储和检索的效率。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的审计软件，能够帮助审计师记录和分析审计过程。</p>
+  <h3>与你的关联</h3>
+  <p>Claude-Mem可以帮助审计师记录和分析审计过程中的操作，提高审计效率和质量。对于审计师来说，这是一个非常有用的工具，可以帮助他们更好地理解整个审计过程。对于备考公务员的朋友来说，它也可以作为一个学习工具，帮助记录和复习学习过程中的关键信息和知识点。</p>
+  <span class="plink">▸ <a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/milind-soni/OpenMausBot">OpenMausBot</a></span>
+  　<span class="meta">milind-soni</span></div>
+  <div class="meta"><span class="star">⭐ 8722</span>（今日 +895） · TypeScript · <span class="tag">ai-agents</span><span class="tag">claude-code</span><span class="tag">codex</span><span class="tag">computer-use</span><span class="tag">docker</span><span class="tag">electron</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2026/08/12 02:58</b> ｜ 最近提交 <b>2026/10/31 06:54</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>OpenMausBot是一个开源的Grok Bot替代品，它提供了一个虚拟机，供机器人使用。这个项目旨在为用户提供一个类似于Grok Bot的AI机器人团队，这些机器人可以在聊天应用中运行。它允许用户拥有自己的AI代理，这些代理运行在本地，具有自己的个性、模型、云计算机和连接的应用程序。用户可以像与联系人交流一样与这些机器人交流，观察它们的工作，并批准重要事项。对于审计师来说，这个项目可以用来模拟和测试自动化审计流程，例如，通过机器人来模拟审计数据收集和分析的过程，从而提高审计效率和准确性。对于备考公务员的朋友，这个项目可以用来模拟面试和考试场景，通过机器人提供的问题和回答来练习和准备。典型使用场景包括自动化审计流程的模拟、面试和考试的模拟练习等。</p>
+  <h3>怎么设计的</h3>
+  <p>OpenMausBot使用TypeScript编写，并可能依赖于React和Electron等框架。其核心架构包括一个虚拟机，用于运行AI代理。每个代理都有自己的模型和云计算机，这使得它们可以在本地独立运行。这个设计的一个亮点是它的本地优先性，即所有数据和处理都在本地进行，这有助于保护用户数据的安全和隐私。此外，每个代理都有自己独特的个性和模型，这增加了用户体验的多样性。由于README片段中没有提供具体的技术栈细节，以上内容是基于项目描述的合理概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Grok Bot</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，OpenMausBot可以用来模拟审计流程，提高审计效率和准确性。对于备考公务员的朋友，它可以作为面试和考试的模拟工具，帮助用户准备。虽然与审计的直接关联可能不是非常紧密，但它在提高工作效率和模拟测试方面具有一定的相关性。</p>
+  <span class="plink">▸ <a href="https://github.com/milind-soni/OpenMausBot">github.com/milind-soni/OpenMausBot</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/pbakaus/impeccable">impeccable</a></span>
+  　<span class="meta">pbakaus</span></div>
+  <div class="meta"><span class="star">⭐ 97156</span>（今日 +2300） · Rust · <span class="tag">agent-skills</span><span class="tag">ai</span><span class="tag">anti-slop</span><span class="tag">design</span><span class="tag">slop</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2025/11/16 09:52</b> ｜ 最近提交 <b>2026/10/31 01:36</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>impeccable 是一个用于你的编码代理的设计词汇库。它可以帮助你在编码过程中进行精细的调整和审查，确保代码质量，就像在发货前捕捉到AI生成的低质量代码一样。这个项目旨在提高代码的可读性和一致性，适用于多种编码工具和平台，如Claude Code、Cursor、Codex CLI、GitHub Copilot等。对于审计师来说，它可以作为一个辅助工具来检查代码的规范性和准确性，确保代码符合财务和审计标准。对于备考公务员的朋友，它可以作为一个提高编程技能的工具，帮助他们更好地理解和应对公务员考试中的编程题目。</p>
+  <h3>怎么设计的</h3>
+  <p>impeccable 使用 Rust 语言编写，其技术栈包括命令行界面、插件系统以及与多种编码工具的集成。核心架构包括初始化、配置和执行三个阶段。初始化阶段通过命令行工具安装和配置impeccable；配置阶段允许用户根据个人喜好和需求调整设置；执行阶段则通过插件系统与不同的编码工具交互，提供代码审查和改进的功能。亮点设计包括插件化架构，使得impeccable可以轻松扩展以支持新的工具和功能；以及直观的命令行界面，使得用户可以方便地使用和配置impeccable。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的代码审查工具，如 SonarQube 或 Checkstyle，但更专注于与多种编码工具的集成和代码风格的一致性。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，impeccable 可以帮助检查代码的合规性和准确性，确保代码符合财务和审计标准。它可以用来审查代码中的潜在错误和风险点，提高审计效率。对于备考公务员的朋友，它可以帮助提高编程技能，更好地理解和应对公务员考试中的编程题目。</p>
+  <span class="plink">▸ <a href="https://github.com/pbakaus/impeccable">github.com/pbakaus/impeccable</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/CopilotKit/OpenBot">OpenBot</a></span>
+  　<span class="meta">CopilotKit</span></div>
+  <div class="meta"><span class="star">⭐ 8837</span>（今日 +706） · TypeScript · <span class="tag">ag-ui</span><span class="tag">agent-governance</span><span class="tag">ai-agents</span><span class="tag">browser-automation</span><span class="tag">copilotkit</span><span class="tag">generative-ui</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2026/08/17 08:44</b> ｜ 最近提交 <b>2026/10/31 06:06</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>OpenBot 是一款开源的AI协作工具，它为每个AI同事都分配了一个独立的计算机环境：包括浏览器、文件和工具。每个动作在发生前都会被决定，并在发生后被记录。它允许用户将任何AG-UI代理引入到系统中。对于审计师来说，OpenBot 可以用来监控和记录工作流程，确保所有操作都符合审计标准和规定。例如，审计师可以使用OpenBot来跟踪财务报告的生成过程，确保数据的准确性和完整性。对于备考公务员的朋友，OpenBot 可以作为一个智能助手，帮助他们准备考试，提供信息检索和知识管理功能。典型使用场景包括：审计流程监控、财务报告生成、公务员考试准备等。</p>
+  <h3>怎么设计的</h3>
+  <p>OpenBot 使用TypeScript编写，其技术栈包括AG-UI和自定义的浏览器环境。核心架构是一个基于角色的访问控制系统，确保每个AI同事只能访问授权的工具和文件。工作机制是每个动作都会在执行前进行决策，并在执行后进行记录。亮点设计包括：1. 独立的浏览器环境，每个AI同事都有自己的登录信息和文件系统；2. 角色基权限控制，确保数据安全；3. 实时记录所有操作，便于审计和回溯。这些设计使得OpenBot既安全又灵活，能够满足不同用户的需求。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的ChatGPT或Claude，但运行在用户自己的基础设施上，用户可以自由定制和修改。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，OpenBot可以帮助他们监控和记录审计流程，确保审计工作的准确性和合规性。它可以用于审计财务报告、合规性检查等场景。对于备考公务员的朋友，虽然直接关联较弱，但OpenBot提供的信息检索和知识管理功能可以帮助他们更高效地准备考试。</p>
+  <span class="plink">▸ <a href="https://github.com/CopilotKit/OpenBot">github.com/CopilotKit/OpenBot</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/Renhuai123/ziwei-doushu">ziwei-doushu</a></span>
+  　<span class="meta">Renhuai123</span></div>
+  <div class="meta"><span class="star">⭐ 11287</span>（今日 +1126） · TypeScript · <span class="tag">bazi</span><span class="tag">chinese-astrology</span><span class="tag">divination</span><span class="tag">fortune-telling</span><span class="tag">nextjs</span><span class="tag">open-source</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2026/05/01 13:09</b> ｜ 最近提交 <b>2026/10/31 08:10</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>紫微斗数开源排盘引擎是一个基于倪海厦《天纪》体系的开源项目，它提供了一套完整的紫微斗数排盘算法、四化系统、格局知识库以及古籍原文数据。这个项目旨在让更多人能够接触和学习紫微斗数这一中国传统命理学。它解决了传统命理知识难以获取和传播的问题，为用户提供了一个在线体验平台，用户可以通过输入出生信息来获取个人的命盘解读。对于审计师来说，虽然紫微斗数与审计工作本身没有直接关系，但了解这种传统文化和知识可以丰富个人的知识储备，对于提升文化素养和跨领域沟通能力有一定的帮助。对于备考公务员的朋友来说，这种对传统文化的了解可能会在面试中增加个人魅力，尤其是在面对传统文化问题时。典型使用场景包括个人命理分析、文化研究、以及作为公务员面试的文化知识储备。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目采用TypeScript语言编写，其技术栈包括前端框架和后端服务。核心架构包括数据存储、算法处理和用户界面。亮点设计包括：1. 完整的紫微斗数排盘算法，能够根据用户输入的出生信息生成详细的命盘；2. 四化系统，提供了对命盘的深入分析；3. 格局知识库，包含了丰富的命理知识；4. 古籍原文数据，为用户提供原始资料。此外，项目还提供了一套完整的开源解读数据集，包括大量的命盘数据和解读内容，这对于研究和学习紫微斗数非常有价值。项目的设计注重用户体验，提供了在线体验平台，方便用户随时随地进行命理分析。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的紫微斗数在线排盘工具</p>
+  <h3>与你的关联</h3>
+  <p>与审计师工作关联较弱，但可以用于丰富个人知识储备和文化素养，对于公务员面试可能有一定的帮助</p>
+  <span class="plink">▸ <a href="https://github.com/Renhuai123/ziwei-doushu">github.com/Renhuai123/ziwei-doushu</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/expo/skills">skills</a></span>
+  　<span class="meta">expo</span></div>
+  <div class="meta"><span class="star">⭐ 3910</span>（今日 +38） · Shell</div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2025/11/30 11:57</b> ｜ 最近提交 <b>2026/10/31 04:29</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Expo Skills 是由 Expo 团队提供的官方 AI 代理技能集合，旨在帮助开发者构建、部署、升级和调试 Expo 应用。它为 AI 代理提供了针对 Expo 的专业知识，包括何时使用 Expo API、如何构建常见的工作流程以及哪些 Expo、EAS、React Native、iOS 和 Android 约束需要注意。这些技能帮助开发者正确地应用 Expo 文档、Expo CLI 和 EAS CLI，从而提高开发效率。</p>
+  <h3>怎么设计的</h3>
+  <p>Expo Skills 使用 Shell 语言编写，其核心架构和工作机制包括为 AI 代理提供专注于 Expo 的知识库。这些技能通过分析 Expo 文档、CLI 和 EAS CLI，帮助开发者理解何时以及如何使用不同的 API 和工具。亮点设计包括：1）集成官方文档和 CLI，确保信息的准确性和时效性；2）提供常见工作流程的指导，帮助开发者快速上手；3）支持多种 AI 编码代理，如 Claude Code、Cursor 和 OpenCode，以适应不同的开发环境。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Expo 官方文档和 CLI 的补充工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Expo Skills 可以帮助审计应用开发过程中的技术合规性和安全性。通过了解应用使用的 API 和工具，审计师可以更好地评估应用的风险和合规性。此外，它还可以帮助审计师了解应用开发过程中的技术细节，为审计工作提供参考。</p>
+  <span class="plink">▸ <a href="https://github.com/expo/skills">github.com/expo/skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/macro-inc/macro">macro</a></span>
+  　<span class="meta">macro-inc</span></div>
+  <div class="meta"><span class="star">⭐ 5889</span>（今日 +57） · Rust · <span class="tag">agent</span><span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">all-in-one</span><span class="tag">crm</span><span class="tag">crm-system</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2025/11/08 23:18</b> ｜ 最近提交 <b>2026/10/31 10:24</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Macro是一个为团队提供统一工作空间的平台，它将电子邮件、聊天、文档、任务、代理、通话和CRM等功能整合到一个快速界面上，并配备了共享的团队级记忆。这个平台解决了在多个工具之间切换的繁琐问题，使得团队成员（包括代理）无需频繁切换工具即可完成所有工作。对于审计师来说，Macro可以帮助他们更高效地管理文档、任务和沟通，尤其是在需要跨部门协作的审计项目中。例如，审计师可以使用Macro来整理审计报告、分配任务、与团队成员沟通，以及跟踪项目进度。对于备考公务员的朋友来说，Macro可以作为一个学习资料管理工具，帮助他们整理学习资料、安排学习计划、与学习伙伴交流，并跟踪学习进度。典型使用场景包括：审计项目协作、团队沟通、文档管理、任务分配和学习资料整理。</p>
+  <h3>怎么设计的</h3>
+  <p>Macro使用Rust语言开发，其核心架构和工作机制如下：首先，它通过一个统一的界面将多种功能模块整合在一起，包括电子邮件、聊天、文档、任务、代理、通话和CRM等。这些模块通过共享的AI记忆相互连接，使得信息可以跨模块共享和搜索。技术栈方面，Macro可能使用了Web框架、数据库、搜索引擎等技术。其亮点设计包括：1. 统一的工作空间，减少工具切换的繁琐；2. 共享的AI记忆，提高信息共享和搜索效率；3. 高度可定制化的界面和功能，满足不同团队的需求。由于README片段中没有详细的技术细节，以上内容为合理概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Slack或Notion，帮助团队实现高效沟通和协作。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Macro可以帮助他们更高效地管理审计项目中的文档、任务和沟通，提高工作效率。对于备考公务员的朋友，Macro可以作为学习资料管理工具，帮助他们更好地组织学习资料和安排学习计划。与审计师工作/日常有较强的关联性，可以实际应用。</p>
+  <span class="plink">▸ <a href="https://github.com/macro-inc/macro">github.com/macro-inc/macro</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/mattpocock/skills">skills</a></span>
+  　<span class="meta">mattpocock</span></div>
+  <div class="meta"><span class="star">⭐ 307534</span>（今日 +876） · Shell</div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2026/02/03 19:15</b> ｜ 最近提交 <b>2026/10/30 22:00</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个Shell脚本集合，旨在帮助真正的工程师在日常工作中提高效率。它提供了一系列实用的技能，如GSD（Get Shit Done，即完成工作）、BMAD（Build, Measure, and Learn，即构建、度量、学习）和Spec-Kit等，这些技能可以帮助工程师更好地管理工程过程，减少错误，并提高工作效率。对于审计师来说，这些技能可以帮助他们更好地管理审计流程，提高审计效率；对于备考公务员的朋友来说，这些技能可以帮助他们提高日常工作和学习效率。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Shell脚本编写，技术栈包括Shell脚本编程。核心架构是提供一系列可组合的技能，这些技能可以独立使用，也可以与其他技能结合使用。工作机制是用户可以根据自己的需求选择合适的技能，并集成到自己的工作流程中。亮点设计包括技能的模块化设计，使得用户可以根据自己的需求灵活组合使用。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的自动化工具集，帮助读者提高工作效率。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这些技能可以帮助他们自动化一些重复性的工作，提高审计效率；对于备考公务员的朋友来说，这些技能可以帮助他们提高日常工作和学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/mattpocock/skills">github.com/mattpocock/skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/pingdotgg/t3code">t3code</a></span>
+  　<span class="meta">pingdotgg</span></div>
+  <div class="meta"><span class="star">⭐ 32813</span>（今日 +930） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2026/02/09 07:46</b> ｜ 最近提交 <b>2026/10/31 10:24</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>T3 Code是一个“代理控制界面”，它通过一个一流的移动应用（iOS、Android、Web应用和基于Electron的桌面应用）来控制您机器上的代理。它支持Claude Code、Codex、Cursor、Grok Build、OpenCode和Google Antigravity等订阅服务，如果这些服务已经在您的电脑上设置，T3 Code就可以控制它们。该项目旨在提供最佳的开发体验，通过集成多个代理服务，使用户能够更高效地工作。例如，审计师在处理大量数据时，可以使用T3 Code来管理不同的数据分析工具，提高工作效率。</p>
+  <h3>怎么设计的</h3>
+  <p>T3 Code使用TypeScript编写，其技术栈包括移动应用、Web应用和桌面应用。核心架构是通过代理服务控制界面，允许用户通过移动设备或桌面应用远程控制机器上的代理。亮点设计包括高性能、远程准备就绪和真正的开放性，用户可以轻松地fork和构建自己的编辑器。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的远程代理控制工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，T3 Code可以帮助他们更高效地管理多个数据分析工具，尤其是在处理大量数据时。它可以与审计工作中的数据分析和报告工具相结合，提高审计工作的效率。</p>
+  <span class="plink">▸ <a href="https://github.com/pingdotgg/t3code">github.com/pingdotgg/t3code</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/HKUDS/DeepTutor">DeepTutor</a></span>
+  　<span class="meta">HKUDS</span></div>
+  <div class="meta"><span class="star">⭐ 51834</span>（今日 +2282） · Python · <span class="tag">ai-agents</span><span class="tag">ai-tutor</span><span class="tag">clawbot</span><span class="tag">cli-tool</span><span class="tag">deepresearch</span><span class="tag">interactive-learning</span></div>
+  <div class="times">
+    抓取 <b>2026/10/31 10:30</b> ｜ 仓库创建 <b>2025/12/28 23:35</b> ｜ 最近提交 <b>2026/10/30 22:15</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>DeepTutor是一个终身个性化辅导平台，旨在为用户提供个性化的学习体验。它通过分析用户的学习习惯、能力和需求，提供定制化的学习内容和路径，帮助用户更高效地学习。对于审计师来说，DeepTutor可以帮助他们提升自我学习的能力，比如学习新的审计法规或财务分析工具。对于备考公务员的朋友，DeepTutor可以作为一个有效的学习工具，帮助他们系统性地复习和准备考试。典型使用场景包括：审计师利用DeepTutor学习新的审计方法，公务员考生通过DeepTutor进行高效复习。</p>
+  <h3>怎么设计的</h3>
+  <p>DeepTutor使用Python编写，其核心架构包括用户数据分析模块、个性化推荐算法和学习内容管理系统。技术栈包括TensorFlow、Django等。DeepTutor的亮点设计在于其强大的个性化推荐算法，能够根据用户的学习数据提供精准的学习内容。此外，其用户友好的界面和便捷的操作流程也使得用户能够轻松上手。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Khan Academy或Coursera，提供个性化的学习体验和资源。</p>
+  <h3>与你的关联</h3>
+  <p>DeepTutor可以帮助审计师提升自我学习的能力，适应不断变化的审计环境。对于财务专业背景的审计师，DeepTutor提供的学习资源可以帮助他们更好地理解和应用财务知识。对于备考公务员的朋友，DeepTutor的学习方法有助于提高考试准备效率。</p>
+  <span class="plink">▸ <a href="https://github.com/HKUDS/DeepTutor">github.com/HKUDS/DeepTutor</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，Claude-Mem、impeccable和OpenBot在语言分布和star增长方面表现突出。Claude-Mem和impeccable分别以TypeScript和Rust编写，OpenBot以TypeScript编写。Claude-Mem和impeccable的star增长较为稳定，OpenBot今日star增长明显。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
