@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-11-02</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-02</span><span>周一</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/claude-mem">claude-mem</a></span>
+<div class="reason">Claude-mem 通过AI压缩和上下文注入，提高审计师和公务员在处理大量数据时的效率和准确性。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/browser">browser</a></span>
+<div class="reason">Lightpanda Browser 使用Zig语言编写，轻量级且速度快，适合自动化网站测试和数据抓取。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/Kronos">Kronos</a></span>
+<div class="reason">Kronos 通过自然语言处理技术，帮助审计师和公务员理解和分析金融市场中的信息，提高工作效率。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/thedotmack/claude-mem">claude-mem</a></span>
+  　<span class="meta">thedotmack</span></div>
+  <div class="meta"><span class="star">⭐ 109344</span>（今日 +1526） · TypeScript · <span class="tag">ai</span><span class="tag">ai-agents</span><span class="tag">ai-memory</span><span class="tag">anthropic</span><span class="tag">artificial-intelligence</span><span class="tag">chromadb</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2025/09/01 04:50</b> ｜ 最近提交 <b>2026/11/02 05:01</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Claude-mem 是一个用于跨会话持久化上下文的项目，它能够捕捉代理在会话期间所做的一切，并使用 AI 进行压缩，然后将相关的上下文注入到未来的会话中。这个项目与 Claude Code、OpenClaw、Codex、Gemini、Hermes、Copilot、OpenCode 等多个工具兼容，旨在提高这些工具在处理复杂任务时的效率和准确性。对于审计师来说，它可以作为一个辅助工具，帮助他们在处理大量数据时，快速捕捉和回顾关键信息，类似于审计过程中的数据追踪和记录，能够提高审计工作的效率和准确性。对于备考公务员的朋友来说，它可以作为一个学习辅助工具，帮助他们在准备考试时，更好地管理和回顾学习内容，类似于学习过程中的笔记整理和复习。典型使用场景包括：审计师在审计过程中记录和回顾交易数据，公务员考生在准备考试时整理和回顾学习资料。</p>
+  <h3>怎么设计的</h3>
+  <p>Claude-mem 使用 TypeScript 编写，其核心架构包括数据捕捉、AI 压缩和上下文注入三个部分。数据捕捉模块负责记录代理在会话期间的所有操作；AI 压缩模块使用机器学习算法对捕捉到的数据进行压缩，以提高存储效率；上下文注入模块则负责将压缩后的上下文信息注入到未来的会话中。这个项目的亮点设计在于其高效的压缩算法和智能的上下文注入机制，能够确保在保持数据完整性的同时，提高系统的响应速度。此外，Claude-mem 的设计还考虑了与其他工具的兼容性，使其能够轻松集成到现有的工作流程中。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的会话上下文管理工具，如 Thinkific 或 Teachable，但专注于AI压缩和上下文注入功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Claude-mem 可以帮助他们在处理大量审计数据时，快速捕捉和回顾关键信息，提高审计工作的效率和准确性。对于备考公务员的朋友来说，它可以作为一个学习辅助工具，帮助他们在准备考试时，更好地管理和回顾学习内容。</p>
+  <span class="plink">▸ <a href="https://github.com/thedotmack/claude-mem">github.com/thedotmack/claude-mem</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/lightpanda-io/browser">browser</a></span>
+  　<span class="meta">lightpanda-io</span></div>
+  <div class="meta"><span class="star">⭐ 40178</span>（今日 +825） · Zig · <span class="tag">browser</span><span class="tag">browser-automation</span><span class="tag">cdp</span><span class="tag">headless</span><span class="tag">lightpanda</span><span class="tag">playwright</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2023/02/07 23:19</b> ｜ 最近提交 <b>2026/11/02 09:06</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Lightpanda Browser 是一个从头开始构建的无头浏览器，专为 AI 代理和自动化设计。它不是 Chromium 的分支，也不是 WebKit 的补丁，而是一个全新的浏览器，使用 Zig 语言编写。这个项目旨在解决传统浏览器在处理大量数据时的性能问题，尤其是在自动化测试、数据抓取和爬虫任务中。对于审计师来说，它可以用来自动化审计流程，比如检查网站数据的一致性和完整性，或者在财务报表审核中自动抓取和验证数据。对于备考公务员的朋友，它可以用于模拟在线考试环境，提高答题效率。典型使用场景包括自动化测试网站功能、抓取网络数据以及进行在线调查分析。</p>
+  <h3>怎么设计的</h3>
+  <p>Lightpanda Browser 使用 Zig 语言编写，这是一种系统编程语言，以其安全性和效率著称。其核心架构包括一个轻量级的渲染引擎和高效的 JavaScript 运行时。这个浏览器的一个亮点设计是它的模块化设计，这使得它可以轻松集成到各种自动化工具中。它比 Chromium 轻了 16 倍，速度快了 9 倍，这对于需要处理大量数据的审计师来说是一个巨大的优势。此外，它的设计考虑了可扩展性和可维护性，使得未来的功能扩展和问题修复更加容易。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Selenium，但更轻量级、更高效。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Lightpanda Browser 可以用于自动化测试网站和应用程序，确保数据的一致性和准确性。在财务审计中，它可以用来抓取和验证财务数据，提高审计效率。对于备考公务员的朋友，它可以帮助模拟考试环境，提高答题速度和准确性。</p>
+  <span class="plink">▸ <a href="https://github.com/lightpanda-io/browser">github.com/lightpanda-io/browser</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/shiyu-coder/Kronos">Kronos</a></span>
+  　<span class="meta">shiyu-coder</span></div>
+  <div class="meta"><span class="star">⭐ 45420</span>（今日 +630） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2025/07/01 10:54</b> ｜ 最近提交 <b>2026/04/13 20:38</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Kronos是一个为金融市场语言提供基础模型的项目。它旨在通过自然语言处理技术，帮助用户理解和分析金融市场中的信息。对于审计师来说，Kronos可以帮助他们更快速地理解复杂的财务报告和公告，从而提高审计效率。对于备考公务员的朋友，Kronos可以帮助他们分析政策文件和新闻报道，提高对时政的理解。典型使用场景包括审计师在审查财务报告时，使用Kronos来提取关键信息；公务员在准备考试时，利用Kronos来分析政策文本。</p>
+  <h3>怎么设计的</h3>
+  <p>Kronos使用Python编写，基于Hugging Face的Transformers库。其核心架构包括数据预处理、模型训练和推理三个部分。数据预处理阶段，Kronos会对金融市场文本进行清洗和标注；模型训练阶段，Kronos使用预训练的模型进行微调，以适应金融市场的特定需求；推理阶段，Kronos可以快速生成对金融市场文本的解读。Kronos的亮点设计在于其高效的文本处理能力和对金融市场特定语言的深入理解。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的自然语言处理工具，如NLTK或spaCy，但专注于金融市场领域。</p>
+  <h3>与你的关联</h3>
+  <p>Kronos可以帮助审计师快速提取和分析财务报告中的关键信息，提高审计效率。对于审计师来说，这是一个非常有用的工具，可以帮助他们更好地理解复杂的财务数据。</p>
+  <span class="plink">▸ <a href="https://github.com/shiyu-coder/Kronos">github.com/shiyu-coder/Kronos</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/pingdotgg/t3code">t3code</a></span>
+  　<span class="meta">pingdotgg</span></div>
+  <div class="meta"><span class="star">⭐ 38101</span>（今日 +3094） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2026/02/09 07:46</b> ｜ 最近提交 <b>2026/11/02 09:39</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>T3 Code是一个名为“代理 harness 控制表面”的工具，它允许用户通过一个一流的手机应用、Web应用和基于Electron的桌面应用来控制计算机上的代理。这个项目旨在提供最佳的开发体验，与Claude Code、Codex、Cursor、Grok Build、OpenCode、Google Antigravity和fx等订阅服务兼容。如果这些服务已经在用户的计算机上设置，T3 Code可以控制它们。它的设计理念是提供高性能、远程准备就绪和真正开放的平台，以便用户可以在方向错误时轻松地进行分支和构建他们想要的编辑器。对于审计师来说，T3 Code可能不直接相关，但它代表了技术工具的一种高级使用，类似于自动化和远程控制，这在审计流程中可能用于监控和自动化某些任务。</p>
+  <h3>怎么设计的</h3>
+  <p>T3 Code使用TypeScript编写，其技术栈包括移动应用、Web应用和桌面应用。核心架构是通过提供多种平台来控制计算机上的代理，允许用户远程操作和自动化开发流程。亮点设计在于其高性能和开放性，用户可以轻松地分支和构建自己的编辑器。此外，它支持多种代理服务，这表明其架构具有灵活性和扩展性。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的远程自动化工具，如TeamViewer或AnyDesk，但专注于开发环境中的代理控制。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，T3 Code的直接关联性较弱，但它在技术工具和自动化方面提供了一个高级的例子，这可能与审计过程中对系统监控和自动化工具的需求有关。审计师可能不会直接使用T3 Code，但它代表了技术进步的一个方向，这可能会影响审计实践和工具的发展。</p>
+  <span class="plink">▸ <a href="https://github.com/pingdotgg/t3code">github.com/pingdotgg/t3code</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/milind-soni/OpenMausBot">OpenMausBot</a></span>
+  　<span class="meta">milind-soni</span></div>
+  <div class="meta"><span class="star">⭐ 10566</span>（今日 +922） · TypeScript · <span class="tag">ai-agents</span><span class="tag">claude-code</span><span class="tag">codex</span><span class="tag">computer-use</span><span class="tag">docker</span><span class="tag">electron</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2026/08/12 02:58</b> ｜ 最近提交 <b>2026/11/02 03:48</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>OpenMausBot是一个开源的Grok Bot替代品，它提供了一个虚拟机，供机器人使用。这个项目旨在为用户提供一个类似于Grok Bot的AI机器人团队，这些机器人可以在聊天应用程序中运行。它类似于Meta Muse、OpenAI dots和Cue by Manus等工具，允许用户在自己的模型上运行本地化的AI代理。每个侧边栏中的机器人都是一个真实的代理，比如Claude或Codex，它们在本地运行，拥有自己的个性、模型、云计算机和连接的应用程序。用户可以像联系人类似地与他们交流，观察他们的工作，并批准重要事项。对于审计师来说，这个项目可以用来模拟和测试自动化审计流程，特别是在处理大量数据时，可以帮助审计师更高效地分析信息。对于备考公务员的朋友来说，它可以作为一个学习和交流的平台，帮助他们更好地准备考试。</p>
+  <h3>怎么设计的</h3>
+  <p>OpenMausBot使用TypeScript编写，结合了React和Electron技术栈。其核心架构包括一个虚拟机，用于运行AI代理。每个代理都有自己的模型和云计算机，这使得它们可以独立运行和交互。项目的亮点设计在于其本地化、个性化的AI代理，以及它们之间的独立性和交互性。这种设计允许用户根据自己的需求定制和扩展功能，同时保持系统的灵活性和可扩展性。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Grok Bot</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，OpenMausBot可以帮助模拟审计流程，提高审计效率。对于备考公务员的朋友，它可以作为一个学习和交流的平台，帮助他们更好地准备考试。虽然与审计的直接关联性不强，但其在数据处理和分析方面的能力可以为审计工作提供辅助。</p>
+  <span class="plink">▸ <a href="https://github.com/milind-soni/OpenMausBot">github.com/milind-soni/OpenMausBot</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/public-apis/public-apis">public-apis</a></span>
+  　<span class="meta">public-apis</span></div>
+  <div class="meta"><span class="star">⭐ 494649</span>（今日 +324） · Python · <span class="tag">api</span><span class="tag">apis</span><span class="tag">dataset</span><span class="tag">development</span><span class="tag">free</span><span class="tag">list</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2016/03/21 07:49</b> ｜ 最近提交 <b>2026/11/02 02:22</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个集合了众多免费API的列表，它为开发者提供了一个方便的途径来查找和集成各种在线服务。比如，你可以使用这个列表来查找地理编码API，用于将地址转换为地理位置坐标；或者使用电子邮件验证API来确保用户输入的电子邮件地址有效；甚至可以用来获取航班信息、股票市场数据，或者进行网络爬虫。对于审计师来说，这个项目可以用来验证数据来源的可靠性，检查外部数据接口的合规性，以及进行数据验证和审计工作。对于备考公务员的朋友，这个项目可以帮助他们快速找到相关的数据服务API，用于准备考试或进行政策研究。典型使用场景包括：审计数据来源的准确性、验证用户输入信息的真实性、进行市场数据分析等。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Python编写，提供了一个简单的API列表，用户可以通过简单的命令行界面或者Web界面来浏览和搜索API。技术栈主要包括Python后端和可能的前端技术，如HTML、CSS和JavaScript。核心架构是API的索引和搜索功能，通过这些功能，用户可以快速找到所需的API。项目的亮点设计在于其简洁性和易用性，用户无需安装额外的软件，只需访问网站即可使用。此外，项目还提供了APILayer Postman Collection，方便用户快速开始使用这些API。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的API搜索引擎，类似于DuckDuckGo或Google，但专注于API的搜索和集成。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们快速找到用于审计目的的API，如数据验证、合规性检查等。对于备考公务员的朋友，这个项目可以提供他们进行政策研究和数据分析所需的API资源。</p>
+  <span class="plink">▸ <a href="https://github.com/public-apis/public-apis">github.com/public-apis/public-apis</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/cjpais/Handy">Handy</a></span>
+  　<span class="meta">cjpais</span></div>
+  <div class="meta"><span class="star">⭐ 36590</span>（今日 +339） · Rust · <span class="tag">accessibility</span><span class="tag">cross-platform</span><span class="tag">speech-to-text</span><span class="tag">tauri-v2</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2025/02/13 10:42</b> ｜ 最近提交 <b>2026/11/02 09:10</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Handy是一个免费、开源且可扩展的离线语音转文字应用。它是一个跨平台的桌面应用程序，提供简单、注重隐私的语音转录功能。用户可以通过按下一个快捷键来启动转录，然后开始说话，文字就会出现在任何文本框中。整个过程都在用户的电脑上完成，不会将任何信息发送到云端。Handy旨在填补市场上真正开源、可扩展的语音转文字工具的空白，它强调免费、开源、隐私和简单易用。对于审计师来说，Handy可以用于记录会议或访谈内容，而不必担心信息泄露；对于备考公务员的朋友来说，它可以作为学习笔记的工具，帮助他们在没有网络的情况下记录重要信息。</p>
+  <h3>怎么设计的</h3>
+  <p>Handy使用Rust语言编写，其技术栈包括音频处理库、图形用户界面库和本地文件系统操作。核心架构包括音频输入处理、语音识别引擎和文本输出模块。其亮点设计包括：1. 离线工作模式，确保用户隐私；2. 可配置的快捷键，方便用户快速启动和停止转录；3. 开源代码，允许用户自定义和扩展功能。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Dragon NaturallySpeaking</p>
+  <h3>与你的关联</h3>
+  <p>Handy可以帮助审计师记录会议内容，避免信息泄露的风险；对于备考公务员的朋友，它可以作为学习笔记的工具，帮助他们在没有网络的情况下记录重要信息。</p>
+  <span class="plink">▸ <a href="https://github.com/cjpais/Handy">github.com/cjpais/Handy</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/Donchitos/Claude-Code-Game-Studios">Claude-Code-Game-Studios</a></span>
+  　<span class="meta">Donchitos</span></div>
+  <div class="meta"><span class="star">⭐ 32334</span>（今日 +967） · Shell</div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Claude Code Game Studios是一个将Claude Code转换成完整游戏开发工作室的项目。它通过49个AI代理、72个工作流程技能和完整的协调系统，模拟真实工作室的层级结构，使得单个Claude Code会话能够变成一个完整的游戏开发工作室。这对于那些想要快速构建游戏原型或者进行游戏开发的人来说非常有用，它可以帮助用户节省时间，提高效率。典型的使用场景包括游戏设计师、独立游戏开发者或者游戏教育机构，他们可以利用这个工具来快速实现游戏开发过程中的各种需求。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Shell语言编写，其技术栈包括49个AI代理、72个工作流程技能和15个钩子以及14个规则。核心架构是一个协调系统，它模拟了真实游戏工作室的层级结构，使得不同的AI代理能够协同工作，完成游戏开发的不同环节。亮点设计在于其高度模块化的技能系统，允许用户根据需要灵活配置和扩展功能。此外，该项目还提供了详细的文档和示例，帮助用户快速上手。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的游戏开发引擎，如Unity或Unreal Engine，但更加专注于快速原型制作和协作开发。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可能关联性较弱，但如果审计师的工作涉及到游戏行业的财务审计或者合规性检查，了解这个工具可能会帮助他们更好地理解游戏开发流程和相关的技术风险。</p>
+  <span class="plink">▸ <a href="https://github.com/Donchitos/Claude-Code-Game-Studios">github.com/Donchitos/Claude-Code-Game-Studios</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/kornia/kornia">kornia</a></span>
+  　<span class="meta">kornia</span></div>
+  <div class="meta"><span class="star">⭐ 11809</span>（今日 +101） · Python · <span class="tag">artificial-intelligence</span><span class="tag">computer-vision</span><span class="tag">deep-learning</span><span class="tag">hacktoberfest</span><span class="tag">image-processing</span><span class="tag">machine-learning</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2018/08/22 18:31</b> ｜ 最近提交 <b>2026/11/02 02:28</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>kornia是一个用于空间人工智能的几何计算机视觉库。它提供了丰富的图像变换、特征提取和几何变换功能，可以帮助开发者快速构建和测试计算机视觉模型。对于审计师来说，这可能意味着在审计过程中，如果涉及到图像处理或模式识别的需求，kornia可以作为一个工具来辅助分析和验证数据。例如，在审计电子文档的完整性时，可能需要检查文档中的图像是否被篡改，使用kornia可以进行图像的几何变换和特征提取，从而辅助判断图像的真实性。对于备考公务员的朋友来说，如果考试中涉及到图像处理相关的题目，kornia可以帮助他们理解和解决这些问题。典型使用场景包括图像增强、图像分类、目标检测等。</p>
+  <h3>怎么设计的</h3>
+  <p>kornia使用Python编写，其技术栈包括NumPy、PyTorch和TensorFlow等。核心架构是基于PyTorch的自动微分系统，允许开发者通过编写少量的代码来实现复杂的图像处理任务。kornia的亮点设计包括模块化的API、广泛的图像变换和几何操作，以及与深度学习框架的紧密集成。这些设计使得kornia在处理图像数据时既灵活又高效。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的OpenCV，kornia提供了类似的图像处理功能，但更专注于深度学习和空间人工智能领域。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，kornia可以帮助进行图像数据的分析和验证，尤其是在处理电子文档和图像数据时。对于备考公务员的朋友，kornia可以作为一个学习和理解图像处理技术的工具。虽然直接关联性不强，但在某些特定场景下，如电子文档审计或图像识别相关考试，kornia可以提供帮助。</p>
+  <span class="plink">▸ <a href="https://github.com/kornia/kornia">github.com/kornia/kornia</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/beenuar/AiSOC">AiSOC</a></span>
+  　<span class="meta">beenuar</span></div>
+  <div class="meta"><span class="star">⭐ 6243</span>（今日 +446） · Python · <span class="tag">agentic-ai</span><span class="tag">ai-security</span><span class="tag">alert-triage</span><span class="tag">blue-team</span><span class="tag">cybersecurity</span><span class="tag">detection-engineering</span></div>
+  <div class="times">
+    抓取 <b>2026/11/02 09:40</b> ｜ 仓库创建 <b>2026/05/02 11:30</b> ｜ 最近提交 <b>2026/11/02 09:35</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>AiSOC是一个开源的AI安全运营中心，它能够接收您的安全监控数据，检测并关联威胁，利用AI代理进行彻底的调查，并提议由人类审核批准的响应。对于审计师来说，这意味着它可以帮助自动化安全监控和威胁检测的过程，确保审计工作的效率和准确性。它解决了安全事件响应中的信息过载和误报问题，通过AI代理的推理过程实现完全可审计的威胁调查，这对于审计师来说是一个重要的功能，因为它确保了审计过程的透明性和可追溯性。典型使用场景包括：审计师在审查企业安全系统时，可以使用AiSOC来监控和评估安全事件，确保安全措施的有效性，同时，对于备考公务员的朋友来说，了解和掌握这种工具有助于在信息安全领域的工作中脱颖而出。</p>
+  <h3>怎么设计的</h3>
+  <p>AiSOC使用Python编写，其技术栈包括但不限于：Flask、Django、TensorFlow等。核心架构包括数据收集模块、威胁检测模块、AI代理模块和决策记录模块。数据收集模块负责从各种安全监控系统中收集数据；威胁检测模块利用机器学习算法检测和关联威胁；AI代理模块则负责调查威胁并提供可审计的推理过程；决策记录模块则记录每个代理的决策过程，以便于审计和回溯。亮点设计包括：无需API密钥即可运行，MIT许可，提供Claude、Cursor和Continue的MCP服务器，以及全面的代码审查和安全性评分。这些设计使得AiSOC既安全又易于部署和维护。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Splunk或SIEM工具，帮助审计师和信息安全专业人员更有效地管理和分析安全数据。</p>
+  <h3>与你的关联</h3>
+  <p>AiSOC与审计师的工作紧密相关，因为它可以帮助审计师自动化安全监控和事件响应流程，提高审计效率和准确性。审计师可以使用它来审查企业的安全系统，确保安全措施的有效性，同时，对于备考公务员的朋友来说，了解和掌握这种工具有助于在信息安全领域的工作中脱颖而出。</p>
+  <span class="plink">▸ <a href="https://github.com/beenuar/AiSOC">github.com/beenuar/AiSOC</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，Claude-mem、Lightpanda Browser 和 Kronos 在语言处理、自动化和数据分析方面表现出色，对审计师和公务员的工作具有显著的实际应用价值。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
