@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-11-06</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-06</span><span>周五</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/auto-ontology">auto-ontology</a></span>
+<div class="reason">Auto Ontology 是一个强大的数据分析和推理工具，特别适合审计师在处理复杂数据集时使用，能够提高数据分析和审计工作的效率。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/gstack">gstack</a></span>
+<div class="reason">gstack 提供了一套全面的项目管理工具，可以帮助审计师和备考公务员的用户更高效地管理项目和任务，提高工作效率。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/Scrapling">Scrapling</a></span>
+<div class="reason">Scrapling 是一个功能强大的网络爬虫框架，可以帮助审计师自动化数据收集，提高审计工作的效率和质量。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/NVIDIA/auto-ontology">auto-ontology</a></span>
+  　<span class="meta">NVIDIA</span></div>
+  <div class="meta"><span class="star">⭐ 7522</span>（今日 +2679） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Auto Ontology 是一个基于 Python 的框架，用于在数据上构建语义和图推理层。它能够实现确定性查询生成、更好的上下文检索，以及为大型语言模型（LLM）和智能体工作流程提供更可解释的人工智能。对于审计师来说，这个项目可以帮助他们通过构建数据之间的语义关系，更有效地进行数据分析和审计工作，特别是在处理复杂的数据集时，能够更好地理解数据之间的关联和逻辑关系。例如，审计师可以使用这个工具来分析财务报表中的数据，识别潜在的不合规行为或异常模式。在公务员备考中，这个工具可以帮助考生更好地理解政策文件和法规之间的逻辑关系，提高学习效率。在日常生活中，它可以用于构建个人知识图谱，帮助用户更好地组织和理解自己的信息。</p>
+  <h3>怎么设计的</h3>
+  <p>Auto Ontology 使用 Python 编写，其技术栈包括图数据库和自然语言处理技术。核心架构包括数据预处理、语义建模、推理引擎和查询生成模块。亮点设计包括：1. 支持多种数据源和格式的数据预处理，确保数据的一致性和准确性；2. 语义建模模块能够自动识别数据之间的关系，构建语义网络；3. 推理引擎支持多种推理算法，能够根据语义网络进行逻辑推理；4. 查询生成模块能够根据用户需求生成定制化的查询语句。这些设计使得 Auto Ontology 能够灵活地应用于各种场景，并提供强大的数据分析和推理能力。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Neo4j 或 Protege，为用户提供了一个构建和查询语义网络的强大工具。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Auto Ontology 可以帮助他们更深入地理解数据之间的关系，提高审计效率和准确性。在财务审计中，它可以用于分析财务数据之间的关联，识别潜在的财务风险。在合规审计中，它可以用于分析法规与财务数据之间的关系，确保合规性。对于公务员备考，它可以用于构建政策文件的知识图谱，帮助考生更好地理解政策背景和逻辑。</p>
+  <span class="plink">▸ <a href="https://github.com/NVIDIA/auto-ontology">github.com/NVIDIA/auto-ontology</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/mattpocock/skills">skills</a></span>
+  　<span class="meta">mattpocock</span></div>
+  <div class="meta"><span class="star">⭐ 315400</span>（今日 +2071） · Shell</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个Shell脚本集合，旨在帮助真正的工程师提升技能。它包含了作者从自己的.agents目录中提取的实用脚本。这些脚本可能用于自动化日常任务、简化配置管理或者提供一些实用的工具。对于审计师来说，这些脚本可以用来自动化一些重复性的检查工作，提高工作效率。对于备考公务员的朋友，这些脚本可能帮助他们更高效地管理学习资料和复习计划。典型使用场景包括：自动化服务器配置检查、脚本编写练习、学习资料整理等。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目使用Shell脚本编写，技术栈主要是Bash。核心架构是脚本集合，每个脚本都有明确的用途和功能。工作机制是通过命令行调用相应的脚本，执行特定的任务。亮点设计包括：模块化设计，每个脚本独立，易于维护和更新；丰富的注释，方便用户理解和使用。由于README片段信息不足，以上内容为概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的自动化脚本工具集，如Ansible或Puppet的简化版。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这些脚本可以用于自动化审计过程中的数据收集和分析，提高审计效率。对于备考公务员的朋友，这些脚本可以用于自动化学习资料整理和复习计划管理。与审计工作关联较强，有助于提高工作效率。</p>
+  <span class="plink">▸ <a href="https://github.com/mattpocock/skills">github.com/mattpocock/skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/garrytan/gstack">gstack</a></span>
+  　<span class="meta">garrytan</span></div>
+  <div class="meta"><span class="star">⭐ 140009</span>（今日 +612） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>gstack 是一个基于 Garry Tan 的 Claude Code 配置的工具集合，它包含了 23 个具有强烈个人观点的工具，这些工具可以服务于 CEO、设计师、工程经理、发布经理、文档工程师和 QA。这个项目旨在为用户提供一个一站式的工作环境，通过这些工具，用户可以更高效地管理自己的工作流程，提高工作效率。典型使用场景包括：CEO 使用这些工具来管理团队和项目；设计师利用工具进行设计工作；工程经理通过工具监控项目进度；发布经理使用工具进行版本控制；文档工程师利用工具编写文档；QA 使用工具进行质量保证。对于审计师来说，这个项目可以帮助他们更好地管理文档和项目进度，提高工作效率；对于备考公务员的朋友来说，这个工具集合可以帮助他们更高效地整理和学习资料。</p>
+  <h3>怎么设计的</h3>
+  <p>gstack 使用 TypeScript 编写，其技术栈包括 Node.js、React 和 Express 等。核心架构是一个模块化的设计，每个工具都是一个独立的模块，通过统一的接口进行调用。工作机制是通过一个命令行界面（CLI）来启动和管理这些工具。亮点设计包括：模块化的设计使得每个工具都可以独立更新和维护；统一的接口简化了工具的使用和集成；CLI 提供了便捷的命令行操作，方便用户快速启动和管理工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Jira + Confluence + Trello + 其他项目管理工具的集合</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，gstack 可以帮助管理审计过程中的文档和项目进度，提高审计效率；对于备考公务员的朋友，gstack 可以帮助他们整理学习资料，提高学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/garrytan/gstack">github.com/garrytan/gstack</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/Usagi-org/ai-goofish-monitor">ai-goofish-monitor</a></span>
+  　<span class="meta">Usagi-org</span></div>
+  <div class="meta"><span class="star">⭐ 17686</span>（今日 +240） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个基于 Playwright 和 AI 技术实现的闲鱼多任务实时/定时监控与智能分析系统。对于审计师来说，它可以用来监控和分析闲鱼上的商品信息，帮助审计师在审计过程中快速定位关键商品，进行风险评估和合规性检查。比如，审计师在审查某公司的采购记录时，可以使用这个系统监控闲鱼上的同类商品价格波动，从而评估采购价格的合理性。对于备考公务员的朋友来说，这个系统可以帮助他们实时了解市场上的商品信息，为公务员考试中的案例分析题提供素材。典型使用场景包括：监控特定商品的价格走势、分析市场供需关系、评估商品质量等。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目采用 Python 编程语言开发，技术栈包括 Playwright 用于网页自动化，AI 技术用于数据分析和智能推荐。核心架构包括数据采集模块、数据处理模块、智能分析模块和后台管理UI。亮点设计包括：1. 使用 Playwright 实现自动化数据采集，提高数据获取效率；2. 应用 AI 技术对数据进行智能分析，提供个性化推荐；3. 后台管理UI设计简洁易用，便于用户进行数据管理和操作。这些设计使得系统能够高效、准确地处理大量数据，为用户提供便捷的服务。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的闲鱼数据分析工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个系统可以帮助他们监控和分析闲鱼上的商品信息，提高审计效率，增强审计的准确性。对于备考公务员的朋友，这个系统可以作为辅助工具，帮助他们了解市场动态，为考试提供素材。虽然关联性不是特别强，但仍然具有一定的参考价值。</p>
+  <span class="plink">▸ <a href="https://github.com/Usagi-org/ai-goofish-monitor">github.com/Usagi-org/ai-goofish-monitor</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/D4Vinci/Scrapling">Scrapling</a></span>
+  　<span class="meta">D4Vinci</span></div>
+  <div class="meta"><span class="star">⭐ 98102</span>（今日 +1655） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Scrapling是一个强大的网络爬虫框架，它能够处理从单个请求到大规模爬取的整个过程。对于审计师来说，这个项目可以用来自动化地抓取网站数据，比如财务报告、市场分析等，从而节省时间和提高效率。在审计过程中，可能需要检查大量的数据来源，Scrapling可以帮助审计师快速地从不同网站获取所需信息，类似于审计师在检查一家公司财务报表时，需要从多个渠道收集数据。对于备考公务员的朋友来说，Scrapling可以用来抓取政府公告、政策文件等，帮助他们更有效地准备考试。典型使用场景包括：审计师在审查一家公司的财务报表时，需要从公司官网、行业报告等多个渠道收集数据；公务员考生需要收集最新的政策文件和考试信息。</p>
+  <h3>怎么设计的</h3>
+  <p>Scrapling使用Python编写，其技术栈包括但不限于requests、BeautifulSoup、Selenium等。核心架构是一个模块化的设计，允许用户根据需要自定义爬取规则和数据处理逻辑。亮点设计包括：支持多种爬取模式，如单页爬取、多线程爬取等；内置的数据清洗和转换功能，可以快速处理抓取到的数据；易于扩展的插件系统，可以方便地添加新的功能。这些设计使得Scrapling成为一个灵活且高效的爬虫工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的BeautifulSoup或Selenium，Scrapling提供了更全面的网络爬取功能，帮助用户更轻松地实现数据抓取和自动化处理。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Scrapling可以帮助他们更高效地收集和分析数据，提高审计工作的效率和质量。对于备考公务员的朋友，Scrapling可以辅助他们收集考试相关的信息，提高备考效率。虽然与审计师日常工作的直接关联性不强，但通过自动化数据收集，可以间接提高工作效率。</p>
+  <span class="plink">▸ <a href="https://github.com/D4Vinci/Scrapling">github.com/D4Vinci/Scrapling</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/vercel-labs/agent-desktop">agent-desktop</a></span>
+  　<span class="meta">vercel-labs</span></div>
+  <div class="meta"><span class="star">⭐ 17016</span>（今日 +2173） · Rust</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>agent-desktop 是一个基于 Rust 编程语言开发的计算机 CLI（命令行界面）工具，旨在为 AI 代理提供便捷的交互方式。它可以帮助用户通过命令行与 AI 代理进行交互，从而实现自动化任务处理、数据分析和智能决策等功能。对于审计师来说，它可以用于自动化审计流程中的数据收集和分析工作，提高审计效率；对于备考公务员的朋友，它可以用于模拟考试环境，进行智能化的复习和练习。典型使用场景包括：审计师使用它来自动化检查财务报表，公务员考生用它来模拟考试答题过程。</p>
+  <h3>怎么设计的</h3>
+  <p>agent-desktop 的技术栈主要包括 Rust 语言、命令行界面和 AI 代理技术。其核心架构是一个模块化的设计，包括命令解析模块、AI 代理接口模块和数据处理模块。亮点设计包括：1. 高效的命令解析机制，能够快速响应用户指令；2. 支持多种 AI 代理接口，便于与不同类型的 AI 代理进行集成；3. 强大的数据处理能力，能够处理大量数据并生成有价值的分析结果。由于 README 中没有具体的技术细节，以上内容为概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的终端自动化工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，agent-desktop 可以帮助自动化审计流程中的数据收集和分析工作，提高工作效率。对于财务专业背景的审计师，它可以帮助处理大量的财务数据，减少人工操作，降低出错率。对于备考公务员的朋友，虽然直接关联性较弱，但可以通过模拟考试环境，提高应试能力。</p>
+  <span class="plink">▸ <a href="https://github.com/vercel-labs/agent-desktop">github.com/vercel-labs/agent-desktop</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/max-sixty/worktrunk">worktrunk</a></span>
+  　<span class="meta">max-sixty</span></div>
+  <div class="meta"><span class="star">⭐ 11556</span>（今日 +546） · Rust</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Worktrunk是一个用于Git工作树管理的命令行界面（CLI），它旨在为并行AI代理工作流程设计。这个项目可以帮助用户轻松地在Git仓库中创建和管理多个工作树，从而实现并行开发。对于审计师来说，它可以用来跟踪和审查代码更改的历史记录，确保代码的完整性和准确性。对于备考公务员的朋友，这个工具可以帮助他们更好地管理多个项目或任务，提高工作效率。典型使用场景包括：审计师在审查代码时，需要同时查看多个版本的代码，而Worktrunk可以帮助他们快速切换工作树；公务员在准备考试时，需要同时处理多个学习任务，Worktrunk可以帮助他们组织和管理这些任务。</p>
+  <h3>怎么设计的</h3>
+  <p>Worktrunk使用Rust语言编写，其技术栈包括Git、命令行界面和并行处理机制。核心架构包括工作树管理模块、命令解析模块和用户界面模块。亮点设计包括：支持跨平台操作，易于安装和使用；提供丰富的命令行选项，满足不同用户的需求；支持并行工作流程，提高工作效率。由于README片段信息不足，以下内容为概述：Worktrunk通过Git的工作树功能，允许用户在不切换分支的情况下，对同一仓库的不同部分进行修改。它的工作机制是，通过命令行创建、切换和管理工作树，从而实现并行开发。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Git工作树管理工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Worktrunk可以帮助他们更好地跟踪和审查代码更改的历史记录，确保代码的完整性和准确性。对于公务员，它可以帮助他们更有效地管理多个项目或任务，提高工作效率。虽然与审计工作的直接关联性不强，但其在项目管理方面的功能对于审计师来说具有一定的参考价值。</p>
+  <span class="plink">▸ <a href="https://github.com/max-sixty/worktrunk">github.com/max-sixty/worktrunk</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/google/skills">skills</a></span>
+  　<span class="meta">google</span></div>
+  <div class="meta"><span class="star">⭐ 22421</span>（今日 +211） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个Python编写的技能库，旨在为Google的产品和技术提供技能支持。它可以帮助开发者更好地理解和运用Google的技术，解决在开发过程中遇到的问题。对于审计师来说，这个项目可以用来了解和评估与Google技术相关的风险点，为审计工作提供技术支持。例如，在审计过程中，审计师可以使用这个技能库来检查和验证Google广告投放的合规性，或者在审计电子数据时，利用其中的技能来提取和分析数据。对于备考公务员的朋友来说，这个技能库可以帮助他们了解和掌握与Google技术相关的知识，增加在公务员考试中的竞争力。典型使用场景包括：审计师在审计过程中使用技能库进行技术风险评估；公务员考生通过技能库学习Google技术知识。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目使用Python编写，技术栈包括但不限于：Google API、Django框架、数据库管理等。核心架构是一个模块化的设计，每个技能模块都独立且可复用。工作机制是通过调用Google API获取数据，然后通过Django框架进行数据处理和展示。项目的亮点设计包括：高度模块化的架构，便于扩展和维护；丰富的API调用，支持多种Google产品；详细的文档和示例代码，方便开发者快速上手。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Google技术支持库</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们了解Google技术的风险点，提高审计效率和质量；对于备考公务员的朋友，这个项目可以增加他们在技术领域的知识储备，提高公务员考试的竞争力。</p>
+  <span class="plink">▸ <a href="https://github.com/google/skills">github.com/google/skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/vercel-labs/agent-browser">agent-browser</a></span>
+  　<span class="meta">vercel-labs</span></div>
+  <div class="meta"><span class="star">⭐ 45965</span>（今日 +150） · Rust</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>agent-browser是一个基于Rust语言的浏览器自动化命令行工具，主要用于AI代理。它可以模拟人类用户在浏览器中的操作，如点击、输入、滚动等，从而实现自动化测试、数据抓取、网页交互等功能。对于审计师来说，它可以用来自动化测试网页应用的安全性，模拟用户操作以检查潜在的安全漏洞；对于备考公务员的朋友，它可以用于模拟在线考试环境，帮助练习答题速度和准确性。典型使用场景包括自动化测试网页应用、数据抓取、模拟在线考试等。</p>
+  <h3>怎么设计的</h3>
+  <p>agent-browser采用Rust语言编写，其技术栈包括Rust标准库、Webdriver、Tokio等。核心架构包括命令行解析、浏览器自动化控制、事件监听和响应等模块。亮点设计包括：1. 高效的异步I/O处理，提高自动化操作的响应速度；2. 支持多种浏览器和浏览器驱动，如Chrome、Firefox等；3. 强大的命令行解析功能，方便用户自定义自动化脚本。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Selenium WebDriver</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，agent-browser可以帮助自动化测试网页应用的安全性，提高审计效率；对于备考公务员的朋友，它可以模拟在线考试环境，帮助练习答题速度和准确性。</p>
+  <span class="plink">▸ <a href="https://github.com/vercel-labs/agent-browser">github.com/vercel-labs/agent-browser</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/scenario-labs/skills">skills</a></span>
+  　<span class="meta">scenario-labs</span></div>
+  <div class="meta"><span class="star">⭐ 3120</span>（今日 +667） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/06 10:53</b> ｜ 仓库创建 <b>未知</b> ｜ 最近提交 <b>未知</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个基于Python开发的技术平台，旨在帮助用户从任何AI代理中获取高质量的图像、视频、音频和3D内容。它具备以下功能：首先，它能够挑选出最适合用户需求的模型；其次，在用户消费之前，它能够提供价格预估，帮助用户合理规划预算；再者，通过Scenario MCP，它能够确保角色和品牌的一致性；最后，它拥有一支专业的团队，能够熟练使用Blender、Maya、ZBrush、Unreal和Unity等软件，为用户提供全方位的技术支持。这个平台适用于需要高质量多媒体内容的个人或企业，尤其是那些在广告、游戏、影视制作等领域有需求的人群。典型使用场景包括：广告公司制作广告视频、游戏开发者制作游戏场景、影视制作公司制作电影特效等。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目的技术栈主要包括Python编程语言，以及Blender、Maya、ZBrush、Unreal和Unity等软件。其核心架构和工作机制如下：首先，用户通过平台提交需求，平台会根据需求挑选合适的模型；其次，平台会提供价格预估，用户确认后进行消费；然后，平台通过Scenario MCP确保角色和品牌的一致性；最后，专业团队使用相关软件进行内容制作。这个项目的亮点设计在于其高度自动化和智能化，能够大大提高内容制作的效率和质量。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Adobe Creative Cloud</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可能关联性较弱，但它在财务预算管理和成本控制方面有一定的参考价值。审计师可以使用这个项目提供的价格预估功能来帮助客户进行预算规划，从而提高审计工作的效率。</p>
+  <span class="plink">▸ <a href="https://github.com/scenario-labs/skills">github.com/scenario-labs/skills</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日推荐的项目中，auto-ontology、gstack 和 Scrapling 在数据分析和项目管理方面表现突出，特别适合审计师和备考公务员的用户使用。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
