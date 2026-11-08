@@ -1,0 +1,1169 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日新闻日报 2026-11-08 · 虹桥论坛强调多边主义</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+/* ── 报头 ── */
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.9em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.32em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.dateline span{letter-spacing:.05em}
+/* ── 头条（TLDR 式开篇）── */
+.headlines{padding:10px 0 4px;border-bottom:1px solid var(--ink)}
+.headlines a{display:block;color:var(--ink);text-decoration:none;
+             font-size:1.06em;font-weight:700;line-height:1.9}
+.headlines a b{color:var(--red);font-family:Georgia,serif;margin-right:6px}
+.headlines a:visited{color:var(--ink)}
+/* ── 行情条 ── */
+.mkt{display:flex;gap:14px;overflow-x:auto;white-space:nowrap;
+     scrollbar-width:none;padding:6px 2px;font-size:.78em;color:var(--ink);
+     border-bottom:1px solid var(--hair);font-family:inherit}
+.mkt::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto}
+.mchip b{font-weight:700}
+.mchip.up{color:var(--red)}
+.mchip.dn{color:#1d6b40}
+/* ── 导航 ── */
+.nav{position:sticky;top:0;background:var(--paper);z-index:20;display:flex;
+     gap:14px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;
+     border-bottom:2px solid var(--ink);padding:8px 2px;
+     -webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink);text-decoration:none;font-size:.85em;
+       flex:0 0 auto;letter-spacing:.04em}
+/* ── 栏目标题：── 政 治 ── ── */
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.12em;
+        margin:26px 0 10px;letter-spacing:.3em;font-weight:900}
+[id]{scroll-margin-top:64px}   /* 锚点跳转不被吸顶导航盖住 */
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink);box-shadow:0 3px 0 -1px var(--paper)}
+h2.sect::after{box-shadow:none;border-bottom:none}
+.sub{font-size:.82em;color:var(--red);letter-spacing:.2em;margin:12px 0 4px;
+     font-weight:700}
+.sub.intl{color:#1d6b40}
+/* ── 条目 ── */
+.item{padding:10px 0 12px;border-bottom:1px solid var(--hair)}
+.item:last-child{border-bottom:none}
+.headline{font-weight:700;font-size:1.05em;line-height:1.6}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .src{color:#5c5749}
+.tag{display:inline-block;border:1px solid var(--ink);padding:0 4px;
+     font-size:.74em;margin-right:6px;letter-spacing:.1em}
+.tag.aux{border-color:var(--gray);color:var(--gray)}
+.item p{margin:6px 0;text-align:justify}
+.item p.sig{color:#4a463c;background:#f6f2e6;padding:7px 10px;
+            border-left:3px solid var(--red)}
+.item a,.tlink{color:var(--blue);text-decoration:none}
+.item a:hover,.tlink:hover{text-decoration:underline}
+.rlink{font-size:.8em;font-family:-apple-system,"Microsoft YaHei",sans-serif;
+       color:var(--blue);text-decoration:none;letter-spacing:.05em}
+.readmin{color:var(--gray);font-size:.78em}
+/* ── TOP3 ── */
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.badge.o{background:var(--red)}
+.badge.y{background:#6b6353}
+.hot{padding:10px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.95em;margin-top:4px}
+/* ── 热榜（紧凑单行）── */
+.hotlist{border-top:1px solid var(--hair)}
+.hrow{display:flex;align-items:baseline;gap:8px;padding:4px 0;
+      border-bottom:1px dotted var(--hair);font-size:.9em}
+.hrow:last-child{border-bottom:none}
+.hno{flex:0 0 18px;color:var(--gray);font-weight:700;font-family:Georgia,
+     serif}
+.hno.top{color:var(--red)}
+.hno.zh{color:var(--blue)}
+.htitle{flex:1;color:var(--ink);text-decoration:none}
+.htitle:hover{color:var(--blue)}
+.hval{flex:0 0 auto;color:#a49e8e;font-size:.78em;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+/* ── 联播：速览 + 折叠 ── */
+.digest{border:3px double var(--ink);padding:10px 14px;margin:4px 0 10px;
+        background:#fbf8ef}
+.digest h3{margin:0 0 6px;font-size:.9em;letter-spacing:.25em;
+           text-align:center;font-weight:900}
+.digest li{margin:4px 0;font-size:.92em;text-align:justify}
+details.xb{border-bottom:1px dotted var(--hair)}
+details.xb:last-child{border-bottom:none}
+details.xb summary{display:flex;align-items:baseline;gap:8px;padding:6px 0;
+                   cursor:pointer;list-style:none;font-size:.95em}
+details.xb summary::-webkit-details-marker{display:none}
+details.xb summary .xt{flex:1;font-weight:700;color:var(--ink)}
+details.xb summary .xno{color:var(--red);font-family:Georgia,serif;
+                        font-weight:700;flex:0 0 16px}
+details.xb summary .xd{color:#a49e8e;font-size:.76em;font-family:
+                       -apple-system,"Microsoft YaHei",sans-serif}
+details.xb summary:hover .xt{color:var(--blue)}
+details.xb .xtext{margin:2px 0 10px;color:#33302a;font-size:.9em;
+                  line-height:1.85;text-align:justify}
+/* ── 语言栏目 ── */
+.lang-card{border:1px solid var(--hair);padding:10px 14px;margin-bottom:10px;
+           background:#fcfaf3}
+.lang-card h3{margin:0 0 6px;font-size:.95em;font-weight:900;
+              letter-spacing:.08em}
+.mini{font-size:.8em;color:var(--gray)}
+.mini a{color:var(--blue);text-decoration:none}
+.wprop{display:flex;gap:8px;padding:4px 0;
+       border-bottom:1px dotted var(--hair);font-size:.9em}
+.wprop:last-child{border-bottom:none}
+.wprop b{flex:0 0 3.6em;color:var(--red);font-family:Georgia,serif}
+.wprop span{flex:1}
+.idiom-row{display:flex;gap:10px;padding:4px 0;
+           border-bottom:1px dotted var(--hair);font-size:.92em}
+.idiom-row:last-child{border-bottom:none}
+.idiom-row b{flex:0 0 6em}
+.idiom-row span{flex:1;color:#4a463c}
+.word-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+@media(max-width:420px){.word-grid{grid-template-columns:1fr}}
+.word-row{display:flex;gap:8px;padding:3px 0;font-size:.86em;
+          border-bottom:1px dotted var(--hair)}
+.word-row a{flex:0 0 5.5em;color:var(--blue);text-decoration:none;
+            font-weight:700}
+.word-row span{flex:1;color:#4a463c}
+/* ── 黄帝内经（平铺）── */
+.hd-block{border:1px solid var(--ink);margin:14px 0 4px;background:#fbf8ee}
+.hd-head{background:var(--ink);color:var(--paper);padding:6px 12px;
+         font-size:.95em;font-weight:900;letter-spacing:.1em}
+.hd-body{padding:12px 14px}
+.hd-taojie{font-size:.86em;color:var(--gray);text-align:justify;
+           border-bottom:1px solid var(--hair);padding-bottom:8px;
+           margin-bottom:8px}
+.hd-text{font-size:1.02em;line-height:2;margin:8px 0;text-align:justify}
+.hd-note{font-size:.78em;color:var(--gray);line-height:1.7;text-align:
+         justify;border-left:3px solid var(--hair);padding-left:8px;
+         margin:8px 0}
+.hd-trans{background:#f4efdd;padding:10px 12px;margin:10px 0 4px;
+          font-size:.92em;line-height:1.9;text-align:justify}
+.hd-trans-label{font-weight:900;color:var(--red);letter-spacing:.2em;
+                font-size:.8em;display:block;margin:0 0 4px}
+/* ── 视角/总结 ── */
+.pcard{border-top:1px solid var(--hair);padding:8px 0}
+.pcard h3{margin:0 0 4px;font-size:.9em;color:var(--red);
+          letter-spacing:.15em;font-weight:900}
+.pcard p{margin:0;text-align:justify;font-size:.95em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center;
+        letter-spacing:.08em}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+body.finance .sub{color:#b0500e;letter-spacing:.05em}
+body.finance .sub.intl{color:#0f6b3e}
+body.finance .mkt{border-bottom:1px solid #f0f0f0;color:#555}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+/* 切换按钮固定右上角（2026-10-28 教训：藏在横向滚动导航最右端，
+   窄屏永远看不见——用户截图点名后改为悬浮） */
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/emoji栏标/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.6}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance .headlines{border-bottom:1px solid #f0f0f0}
+body.finance .headlines a{color:#1a4f9c;font-size:1em;line-height:2}
+body.finance .headlines a b{color:#e03328}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        color:#1a1a1a;margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .nav a::before{content:attr(data-e) " "}
+body.finance .item{border-bottom:1px solid #f2f2f2}
+body.finance .item .headline{font-size:1em}
+body.finance .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
+body.finance .item a,body.finance .tlink{color:#2f6fdd}
+body.finance .rlink{color:#2f6fdd}
+body.finance .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
+body.finance .tag.auth{background:#fdecec;color:#d6392f}
+body.finance .badge{background:#e03328;border-radius:4px}
+body.finance .badge.o{background:#f08c00}
+body.finance .badge.y{background:#e8b400}
+body.finance .hot .reason{color:#555}
+body.finance .hrow{border-bottom:1px solid #f7f7f7}
+body.finance .htitle{color:#1a4f9c}
+body.finance .hno.top{color:#e03328}
+body.finance .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
+        border-style:solid}
+body.finance .digest h3{color:#8a6d1a;letter-spacing:.1em}
+body.finance details.xb{border-bottom:1px solid #f7f7f7}
+body.finance details.xb summary{font-family:inherit}
+body.finance details.xb summary .xt{font-weight:600}
+body.finance .lang-card{background:#faf6fd;border:1px solid #ecdcf5;
+        border-radius:8px}
+body.finance .lang-card h3{color:#7a3fa0}
+body.finance .idiom-row b{color:#7a3fa0}
+body.finance .wprop b{color:#7a3fa0}
+body.finance .word-row a{color:#2f6fdd}
+body.finance .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
+        border-radius:8px;overflow:hidden}
+body.finance .hd-head{background:#7a3fa0}
+body.finance .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
+body.finance .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
+body.finance .hd-trans{background:#f3eefb;border-radius:6px}
+body.finance .hd-trans-label{color:#7a3fa0}
+body.finance .pcard h3{color:#d6392f}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<div class="masthead">
+  <h1>每日新闻日报</h1>
+  <div class="motto">政治 · 经济 · 科技 · 文学 · 医学</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-08</span><span>周日</span><span>第 14 条联播</span></div>
+
+<div class="headlines">
+  
+  <a target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml"><b>1</b>虹桥论坛强调多边主义</a>
+  
+  <a target="_blank" rel="noopener" href="https://www.chinanews.com.cn/sh/2026/11-08/10728238.shtml"><b>2</b>中新社获中国新闻奖</a>
+  
+  <a target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml"><b>3</b>航母技术新突破</a>
+  
+</div>
+
+
+<div class="mkt">
+<span class="mchip dn">上证指数 <b>3649.18</b> -1.1%</span><span class="mchip dn">深证成指 <b>11175.78</b> -2.57%</span><span class="mchip dn">创业板指 <b>2465.23</b> -3.96%</span>
+<span class="mchip dn">伦敦金 <b>4070.75</b> -0.44%</span>
+</div>
+
+<div class="nav"><a href="#top3" data-e="🎯">必看</a><a href="#weibo" data-e="🔥">微博</a><a href="#zhihu" data-e="💡">知乎</a><a href="#major" data-e="📌">大事</a><a href="#xwlb" data-e="📺">联播</a><a href="#lang" data-e="🗣️">语言</a><a href="#words" data-e="📘">单词</a><a href="#thought" data-e="🧠">思维</a><a href="#cat-政治" data-e="🏛️">政治</a><a href="#cat-经济" data-e="📈">经济</a><a href="#cat-科技" data-e="🤖">科技</a><a href="#cat-文学" data-e="📖">文学</a><a href="#cat-医学" data-e="🏥">医学</a><a href="#huangdi" data-e="🌿">内经</a><a href="#persp" data-e="🧭">视角</a></div>
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+
+<div class="audiobox"><audio controls preload="none" style="width:100%;height:40px" src="news.mp3"></audio><div class="alabel">🎧 全文朗读（云扬·新闻播音男声）</div></div><h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot">
+  <div><span class="badge ">1</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml">虹桥论坛强调多边主义</a></span></div>
+  <div class="meta"><span class="src">中新网</span> · 11/08 09:43 · <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml">原文</a></div>
+  <div class="reason">国际经济形势和全球治理体系重要议题</div>
+</div>
+
+<div class="hot">
+  <div><span class="badge o">2</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/sh/2026/11-08/10728238.shtml">中新社获中国新闻奖</a></span></div>
+  <div class="meta"><span class="src">中新网</span> · 11/08 09:35 · <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/sh/2026/11-08/10728238.shtml">原文</a></div>
+  <div class="reason">新闻行业专业水平体现</div>
+</div>
+
+<div class="hot">
+  <div><span class="badge y">3</span><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml">航母技术新突破</a></span></div>
+  <div class="meta"><span class="src">中新网</span> · 11/08 09:33 · <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml">原文</a></div>
+  <div class="reason">海军技术发展对国防安全重要</div>
+</div>
+
+
+
+<h2 class="sect" id="weibo"><span class="sem">🔥</span>微博热搜榜</h2>
+<div class="mini" style="margin:-4px 0 6px">口径：昨日多次抓取·全天热度汇总</div>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno top">1</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E8%8A%92%E6%9E%9C%E6%96%87%E6%A1%88%E7%BB%84%E6%9D%A5%E4%BA%86%E4%B8%80%E7%BE%A4%E5%A4%A9%E6%89%8D" class="htitle">芒果文案组来了一群天才</a><span class="hval">116.1万</span></div>
+
+<div class="hrow"><span class="hno top">2</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%9D%92%E7%A8%9A%E8%80%81%E6%9D%BF%E5%9B%9E%E5%BA%94%E8%A2%AB%E9%AA%82" class="htitle">青稚老板回应被骂</a><span class="hval">85.2万</span></div>
+
+<div class="hrow"><span class="hno top">3</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%B9%8F%E5%9F%8E%E8%8A%B1%E5%BC%80%E5%85%B1%E8%B5%B4APEC%E4%B9%8B%E7%BA%A6" class="htitle">鹏城花开共赴APEC之约</a><span class="hval">68.9万</span></div>
+
+<div class="hrow"><span class="hno ">4</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E8%AE%B8%E9%A3%9E%E5%86%99%E7%9A%84%E6%AD%8C%E6%9D%8E%E5%81%A5%E4%BB%98%E8%B4%B9%E7%BB%99%E5%A5%B9%E4%B8%8D%E8%A6%81" class="htitle">许飞写的歌李健付费给她不要</a><span class="hval">67.7万</span></div>
+
+<div class="hrow"><span class="hno ">5</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%B8%A5%E9%87%8D%E4%BD%8E%E4%BC%B0%E4%BA%86100%E5%9D%97%E7%9A%84%E8%B4%AD%E4%B9%B0%E5%8A%9B" class="htitle">严重低估了100块的购买力</a><span class="hval">60.2万</span></div>
+
+<div class="hrow"><span class="hno ">6</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%90%8E%E4%BC%9A%E5%8F%8B%E6%9C%9F%20%E5%87%8C%E6%99%A84%E7%82%B9%E5%87%86%E7%82%B9%E5%87%BA%E5%8F%91" class="htitle">后会友期 凌晨4点准点出发</a><span class="hval">46.2万</span></div>
+
+<div class="hrow"><span class="hno ">7</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=S16%E5%B0%86%E8%AF%9E%E7%94%9F%E6%96%B0%E7%9A%84%E4%B8%96%E7%95%8C%E8%B5%9B%E4%B8%A4%E5%86%A0%E7%8E%8B" class="htitle">S16将诞生新的世界赛两冠王</a><span class="hval">31.3万</span></div>
+
+<div class="hrow"><span class="hno ">8</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%BA%AF%E7%A8%9A%20%E5%82%B2%E6%85%A2%E4%B8%8E%E5%81%8F%E8%A7%81" class="htitle">纯稚 傲慢与偏见</a><span class="hval">31.3万</span></div>
+
+<div class="hrow"><span class="hno ">9</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E6%9D%A8%E7%80%9A%E6%A3%AE%E5%8D%95%E6%89%93%E5%87%AF%E6%96%AF%E5%8B%92" class="htitle">杨瀚森单打凯斯勒</a><span class="hval">31.3万</span></div>
+
+<div class="hrow"><span class="hno ">10</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%BC%80%E6%8B%93%E8%80%85vs%E6%B9%96%E4%BA%BA" class="htitle">开拓者vs湖人</a><span class="hval">31.2万</span></div>
+
+<div class="hrow"><span class="hno ">11</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%A9%AC%E5%A4%A9%E5%AE%87%E7%9B%B4%E6%92%AD%E8%A2%AB%E5%B7%A5%E4%BD%9C%E4%BA%BA%E5%91%98%E5%8F%AB%E5%81%9C" class="htitle">马天宇直播被工作人员叫停</a><span class="hval">31.2万</span></div>
+
+<div class="hrow"><span class="hno ">12</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%BC%A0%E8%90%8C%E8%80%81%E5%85%AC%E7%AE%80%E5%8E%86%E5%B1%85%E7%84%B6%E8%BF%99%E4%B9%88%E5%8E%89%E5%AE%B3" class="htitle">张萌老公简历居然这么厉害</a><span class="hval">31.2万</span></div>
+
+</div>
+
+
+<h2 class="sect" id="zhihu"><span class="sem">💡</span>知乎热榜</h2>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno zh">1</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2101692390444642514" class="htitle">男子 5 年入职 25 家公司「表演式上班」骗薪 13 万，此类骗局为何长久来都没能被公司发现？</a></div>
+
+<div class="hrow"><span class="hno zh">2</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2102266225753601473" class="htitle">S16 淘汰赛 T1 3:1 击败 KC 晋级半决赛，如何评价这场比赛？</a></div>
+
+<div class="hrow"><span class="hno zh">3</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2101979474723960031" class="htitle">如何看待广电总局重申未来将把重点放在扶持真人短剧，以及规范 AI 短剧？这对短剧行业会带来哪些影响？</a></div>
+
+<div class="hrow"><span class="hno zh">4</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2102027001586511991" class="htitle">谷爱凌称「没有谁会因吃苦而获奖，不要歌颂牺牲」，如何评价这一观点？</a></div>
+
+<div class="hrow"><span class="hno zh">5</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2102347655133094184" class="htitle">如何看待 Faker 称 BLG 具备夺冠的实力，但很遗憾他们在半决赛对上了我们？</a></div>
+
+<div class="hrow"><span class="hno zh">6</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2101996866988675962" class="htitle">政策严控 「速成车」，工信部第 413 批新车申报量锐减，新势力集体沉默，「速成车」时代要结束了吗？</a></div>
+
+<div class="hrow"><span class="hno zh">7</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2102336825024931148" class="htitle">S16 半决赛 BLG vs T1，这场比赛你觉得谁能赢下来晋级决赛？</a></div>
+
+<div class="hrow"><span class="hno zh">8</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2101727275771244573" class="htitle">如何看待法国2027年最新政府预算案在议会获458票反对，0票赞成，被全票反对，未能通过？</a></div>
+
+</div>
+
+
+
+<h2 class="sect" id="major"><span class="sem">📌</span>今日大事</h2>
+
+<div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml">第九届虹桥国际经济论坛举行，与会人士呼吁——坚守多边主义，推进普惠包容的经济全球化</a></span>
+  <div class="meta"><span class="src">中新网</span> · 11/08 09:43 · <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml">原文</a></div>
+  <p><b>背景</b>：第九届虹桥国际经济论坛在上海举行，与会人士强调多边主义，推动经济全球化。</p>
+  <p><b>影响</b>：论坛关注全球经济治理，对考公者了解国际经济形势和全球治理体系有重要意义。</p>
+  <p><b>与你</b>：论坛关注全球经济治理，对审计师了解国际经济形势和全球治理体系有重要意义。</p>
+</div>
+
+<div class="item"><span class="headline"><a class="tlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml">“航母五件套”未来还可能升级！专家解读“5+X”新模式</a></span>
+  <div class="meta"><span class="src">中新网</span> · 11/08 09:33 · <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml">原文</a></div>
+  <p><b>背景</b>：我国首型舰载察打一体隐身无人机在两栖攻击舰上成功起降，标志着海军技术取得新突破。</p>
+  <p><b>影响</b>：海军技术的发展对国防安全具有重要意义，考公者应关注相关军事动态。</p>
+  <p><b>与你</b>：海军技术的发展对国防安全具有重要意义，对审计师了解国防安全和经济安全有间接关联。</p>
+</div>
+
+
+
+
+<h2 class="sect" id="xwlb"><span class="sem">📺</span>新闻联播</h2>
+<div class="mini" style="text-align:center;margin:-4px 0 8px">昨晚 19:00 播出 · 全部 14 条文字实录 · 点击条目展开全文</div>
+
+<div class="digest">
+  <h3>要点速览</h3>
+  <ol><li>{&#39;title&#39;: &#39;【学习贯彻党的二十届五中全会精神】&#39;, &#39;text&#39;: &#39;中管企业、高校干部职工学习全会精神，开创中国式现代化新局面。&#39;}</li><li>{&#39;title&#39;: &#39;中共中央发出通知 部署党的二十一大代表选举工作&#39;, &#39;text&#39;: &#39;中共中央部署二十一大代表选举工作，确保代表素质优良。&#39;}</li><li>{&#39;title&#39;: &#39;【学习贯彻党的二十届五中全会精神】中央宣讲团在各地宣讲&#39;, &#39;text&#39;: &#39;中央宣讲团宣讲全会精神，推动深入人心。&#39;}</li><li>{&#39;title&#39;: &#39;第七届世界媒体峰会在北京举办&#39;, &#39;text&#39;: &#39;世界媒体峰会探讨媒体发展，促进文明交流互鉴。&#39;}</li><li>{&#39;title&#39;: &#39;新一代通信网加快建设 筑牢高质量发展数字底座&#39;, &#39;text&#39;: &#39;各地加快新一代通信网建设，夯实高质量发展基础。&#39;}</li></ol>
+</div>
+
+<div class="hotlist">
+
+<details class="xb">
+  <summary><span class="xno">1</span><span class="xt">【学习贯彻党的二十届五中全会精神】踔厉奋发勇争先 不断开创中国式现代化新局面</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：连日来，中管企业、中管金融企业和中管高校干部职工认真学习党的二十届五中全会精神。大家表示，新征程上，要把思想和行动统一到以习近平同志为核心的党中央决策部署上来，踔厉奋发勇争先，以高质量党建引领高质量发展，不断开创中国式现代化新局面。全会审议通过的《决定》指出，新时代全面从严治党开辟了百年大党自我革命新境界，推动党和国家事业取得历史性成就、发生历史性变革，党和人民赢得强党强国的历史主动。大家表示，新时代全面从严治党取得的伟大成就，充分印证了习近平党建思想的真理力量和实践伟力。全会审议通过的《决定》，是持续推进新时代党的建设新的伟大工程的纲领性文件。大家表示，要深入学习领会全会精神，加强组织领导，持续在解决突出问题上下功夫，推动《决定》各项部署落到实处。大家表示，在全国上下砥砺奋进“十五五”的重要节点，要把党的二十届五中全会战略部署转化为新时代党的建设新的伟大工程的扎实行动，为全面建成社会主义现代化强国、以中国式现代化全面推进中华民族伟大复兴提供坚强保障。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">2</span><span class="xt">中共中央发出通知 部署党的二十一大代表选举工作</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：近日，中共中央印发了《关于党的二十一大代表选举工作的通知》，对二十一大代表选举工作作出全面部署。中央组织部召开会议作出具体安排。党的二十一大代表名额共2360名，由全国38个选举单位选举产生。做好二十一大代表选举工作，要全面贯彻习近平新时代中国特色社会主义思想，深入学习贯彻习近平党建思想，以党章为根本，坚持和加强党的全面领导特别是党中央集中统一领导，坚持把政治标准放在首位，严格标准条件，严密选举程序，严肃选举纪律，确保选出的二十一大代表素质优良、结构合理、分布广泛、党员拥护。党中央明确，二十一大代表应是共产党员中的优秀分子，要严把人选政治关，做深做实政治素质考察，加强党性鉴别，对政治上不合格的一票否决；严把人选廉洁关、作风关，坚决防止“带病提名”“带病当选”。要合理把握代表结构，保证生产和工作第一线代表比例，注重推荐工人、农民和专业技术人员党员中的先进模范人物作为代表人选。女党员和少数民族党员代表应占一定比例。要有各条战线、各个行业的代表。党中央要求，二十一大代表的选举产生，采取自下而上、上下结合、反复酝酿、逐级遴选的办法进行。各级党组织要切实加强领导，周密安排部署，扎实做好代表选举工作。要落实持之以恒推进全面从严治党要求，使代表选举产生过程，成为深入学习贯彻习近平新时代中国特色社会主义思想特别是习近平党建思想的过程，动员广大党员、干部更加紧密地团结在以习近平同志为核心的党中央周围，不忘初心、牢记使命，万众一心、勠力进取，为基本实现社会主义现代化而共同奋斗，不断开创以中国式现代化全面推进强国建设、民族复兴伟业新局面。二十一大代表选举工作从现在开始，到明年6月底前结束。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">3</span><span class="xt">【学习贯彻党的二十届五中全会精神】中央宣讲团在各地宣讲党的二十届五中全会精神</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：连日来，学习贯彻党的二十届五中全会精神中央宣讲团成员在重庆、山东、青海等地宣讲，并深入一线与干部群众交流座谈，推动全会精神深入人心。中央宣讲团成员、中共中央政治局委员、重庆市委书记袁家军近日在重庆作宣讲报告。袁家军从深刻领会把握持之以恒推进全面从严治党的核心要义、对标对表深谋实干体系化推动全会精神在重庆一贯到底等方面，对全会精神进行系统阐释和深入解读。袁家军还走进生产车间、乡镇村社，向基层干部群众宣讲全会精神。中央宣讲团成员、中央组织部分管日常工作的副部长黄建发在山东作宣讲报告。黄建发结合学习贯彻习近平党建思想，重点解读了持之以恒推进全面从严治党的总体要求、战略任务和重大举措，并运用事例与数据对全会精神作了全面解读和深刻阐释。 黄建发还来到山东大学、济南市历下区大明湖街道舜井社区，同在校师生、社区群众、基层党员代表等进行面对面、互动式宣讲。中央宣讲团成员、中央社会工作部部长吴汉圣在青海作宣讲报告。吴汉圣围绕学习贯彻习近平总书记重要讲话精神和全会《决定》，从深刻理解把握全会的重大意义，全面准确理解持之以恒推进全面从严治党的总体要求、战略任务和重大举措等方面，对全会精神作了全面宣讲和深入阐释。吴汉圣还来到青海省海北藏族自治州海晏县东达村、原子城纪念馆等地，与基层党员干部群众开展面对面交流互动。 </div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">4</span><span class="xt">第七届世界媒体峰会在北京举办</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：第七届世界媒体峰会7日在北京开幕。与会嘉宾认为，当前全球人工智能技术创新进入前所未有的活跃期，为媒体发展带来了机遇和挑战。技术发展越迅猛，越是要坚持人文精神、长期主义。各国媒体要深化务实合作，不断丰富优质内容供给，加快推进数智化赋能，携手促进文明交流互鉴，助力完善人工智能治理，为推动构建人类命运共同体贡献智慧和力量。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">5</span><span class="xt">新一代通信网加快建设 筑牢高质量发展数字底座</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：新一代通信网是贯通数字和实体、连接当下与未来的关键数字纽带。“十五五”开局之年，各地加快推动新一代通信网建设，夯实高质量发展底座。新一代通信网，包含了5G、5G-A、6G等移动通信网，以及万兆光网、卫星互联网等，实现通信、感知、计算、智能等多功能深度融合。 眼下，新一代通信网建设稳步推进，覆盖范围越来越广。在大兴安岭的加格达奇，基站建进林海深处，无人林区的画面实时传送到指挥平台，让防火监测有了“千里眼”。在秦巴山区，网络正铺进深山，无人机、无人车定期巡检，大幅提高了山区道路管护效率。在渤海，建设者们依托油气平台等设施，架设起60多座各类基站，信号接力，让这片海域实现全域互联。融合应用不断拓展。目前，我国已建成工业5G专网超2.6万个、5G工厂1260个，工业互联网已覆盖全部41个工业大类。在安徽合肥的这家新能源汽车工厂，工业5G覆盖冲压、焊装、总装各个环节，智慧产线高速运转，一分钟就能下线一台整车。在内蒙古呼伦贝尔伊敏露天矿，无人电动矿卡加紧作业。今年9月，这里完成了全国首个露天矿山场景5G-A千兆上行验证，近百台矿卡在调度中心的指挥下实现自动装卸、自动避障、自动换电，24小时高效运行。面向未来，6G技术正加速从实验室走向应用。在江苏南京紫金山实验室，科研人员正在开展新一轮6G网络多基站协同感知能力测试。6G基站和信号不仅可以通信，还能够像雷达一样感知物体的运动。未来，这项技术将为自动驾驶等提供更快速的响应保障。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">6</span><span class="xt">我国加快推进核能综合利用</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：今年以来，在保障电力供应基础上，我国积极拓展核能供热供汽等多元场景，加快推进核能综合利用。在江苏连云港，全球首个三代加四代核电技术的徐圩核能综合利用项目正在加快建设。这座核电站不只生产电力，还能大规模制造工业蒸汽，直供连云港石化产业基地。如今，核能的应用场景正在不断拓展。在大连红沿河核电站，已经开始向周边两万多居民提供清洁供暖。在秦山核电基地，商用反应堆实现镥‑177、钇‑90等医用同位素规模化生产，这些同位素经过加工制成靶向药物，补齐了我国高端核药自主供给短板。今年以来，我国核能综合利用效率显著提升，核技术应用年直接经济产值预计将达到4000亿元，未来有望形成万亿级市场规模。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">7</span><span class="xt">【赓续长征精神 奋进复兴征程】河南：传承红色基因 绘就振兴新画卷</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：中国工农红军第二十五军从河南踏上长征，并率先抵达陕北，为党中央把中国革命的大本营安置在西北创造了条件。九十余载岁月流转，中原大地红色血脉代代相传，以实干开拓新路，书写革命老区高质量发展的时代答卷。1934年11月，红二十五军2980多名将士高举北上抗日第二先遣队的旗帜，从河南罗山何家冲出发。从大别山到伏牛山，红军历经独树镇战斗、强渡澧河、木札岭伏击等多次战斗，最后从三门峡卢氏突出重围挺进陕西，这支年轻的队伍不畏强敌、浴血奋战，成为第一支抵达陕北的长征队伍。弘扬伟大长征精神，河南立足自身特点，加快推进老区建设。如今，在大别山深处的罗山县，董寨保护区已经成为国内重要的朱鹮保护繁育基地，成千上万的珍稀鸟类在此栖息。伏牛山区的三门峡卢氏县，引进食用菌的工厂化生产项目，让白玉菇成为乡村振兴的致富产业。“十五五”时期，河南将持续推进现代农业产业链群拓展升级，粮食综合生产能力达到1400亿斤。同时，加快构建以先进制造业为骨干的现代化产业体系，力争制造业比重达到28%左右、战略性新兴产业增加值占规模以上工业比重达到30%。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">8</span><span class="xt">【新闻特写】深耕中国 共享机遇</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：第九届中国国际进口博览会正在上海举行。展馆里，尽管各国参展商说着不同的语言，但都表达着同一个心声：看好中国、深耕中国。这两天，进博会的贸易投资对接配套活动一场接着一场。在这个食品对接专区里，等着洽谈的展商还排着长队。今年，连续九年参加进博会的“全勤生”达到了近200家。在展馆里，记者遇到了一位来自美国的企业家，他特意带来了一枚徽章，这是他连续九年参展获得的“全勤奖”。在这些九届“全勤生”里，记者遇到了一家跨馆参展的企业。过去八年，他们一直在农食产品展区展示他们的膳食产品，今年他们把一整个养老社区的样板间，搬进了进博会。采访中，不少参展商告诉记者，今年以来，中国“十五五”规划的一项项部署正在陆续落地，他们对中国市场也有了新的认识。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">9</span><span class="xt">华北迎大范围降雪 中东部降温明显</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：新一轮冷空气影响我国。今天（11月7日），北京、河北局地降雪。中央气象台预计降雪最强时段将出现在今天夜间到明天早晨，内蒙古、辽宁、山西、河北、北京、天津等地部分地区有大到暴雪，局地大暴雪。为此，北京在降雪集中的区域，提前调度铲冰除雪设备、应急物资等，布设了161处应急保障站点。河北承德统筹调配除雪机械，多举措防范高速路面的结冰风险。冷空气给中东部多地也带来明显降温。今天到10日，大部地区气温将普遍下降4—8℃，其中黄淮、江淮、江南等地部分地区降温幅度可达10℃以上，公众需注意做好保暖。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">10</span><span class="xt">国内联播快讯</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：截至10月末我国外汇储备规模为34052亿美元国家外汇管理局统计数据显示，截至今年10月末，我国外汇储备规模为34052亿美元，较9月末上升49亿美元，升幅为0.14%，我国经济运行总体平稳，高质量发展取得新成效，为外汇储备规模保持基本稳定提供支撑。2026年第二批质量督察工作启动国家质量强国建设协调推进领导小组办公室会同有关成员单位近日启动2026年第二批质量督察工作，4个质量督察组将陆续进驻安徽、江西、河南、四川等省份，围绕重点领域、重点产品、重点行为开展抽查核查，推动解决一批社会关切和群众反映强烈的突出质量问题。 两部门集中整治网上金融“黑灰产”信息乱象近期，国家网信办会同金融监管总局，持续加强网上金融类信息管理，集中处置一批发布、传播“代理理赔”“征信修复”等金融“黑灰产”信息的账号，涉及的相关账号已被关闭。2026中非经贸和文化论坛在浙江义乌举行今天（11月7日），2026中非经贸和文化论坛在浙江义乌举行，来自39个国家和地区的400余位嘉宾围绕“经贸繁荣、文化互鉴、伙伴共赢、民心相通”主题，畅谈中非合作高质量发展新机遇。前三季度我国开展补贴性培训超800万人次记者从人力资源社会保障部了解到，今年以来，国家分行业领域开展大规模职业技能培训，前三季度补贴性培训超800万人次。截至9月底，各地培育建设379个产教评技能生态链，涉及企业3190家。电视剧《伟大的长征》创作座谈会在京举行由中央广播电视总台主办的重大革命题材电视剧《伟大的长征》创作座谈会今天（11月7日）在京举行。该剧首次全景式展现多路红军长征全过程的壮阔图景，搭建起赓续先辈红色血脉、激励后人奋进前行的精神桥梁。该剧自10月9日播出以来，稳居同时段各类节目收视率第一位。2026年中国金鸡百花电影节在厦门开幕2026年中国金鸡百花电影节暨第39届中国电影金鸡奖，昨天（11月6日）在福建厦门开幕，其间将举办提名者表彰仪式、国际影展、电影工作者走基层等系列配套活动，金鸡奖最佳故事片、最佳编剧、最佳导演、最佳男女主角等奖项获奖名单将在10日颁奖典礼上揭晓。中国记协传播矩阵数智化建设成果集中上线昨天（11月6日），中华全国新闻工作者协会传播中心集中上线多个数智化建设成果，包括数智化编辑部正式启用，中国记协网全新改版，“记协·声音”“我的IP”等新栏目亮相。目前，中国记协传播矩阵全平台粉丝数已突破1000万。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">11</span><span class="xt">“中国之治与世界发展”全球对话会继续在多国进行</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：连日来，中国中央广播电视总台“中国之治与世界发展”全球对话会分别在俄罗斯、加纳等国陆续举行。总台CGTN还在保加利亚、西班牙、墨西哥、老挝等国举办多场海外宣介活动。各国嘉宾围绕“中国之治”的成功经验和发展成就展开深入探讨。大家表示，举世瞩目的中共二十届五中全会立足中华民族伟大复兴关键阶段，对持之以恒推进全面从严治党作出系统部署，为世界各国国家治理和政党建设贡献了中国智慧，也为发展中国家探索符合自身国情的发展道路提供了有益借鉴，必将惠及更多国家，为人类和平发展事业注入更多正能量。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">12</span><span class="xt">美称打击伊朗防空装置 伊朗称击落美无人机</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：美国总统特朗普6日称，美军当天对伊朗实施了小规模打击，目标是伊朗制造的一个小型防空装置。据伊朗媒体今天（11月7日）报道，两枚导弹击中了伊朗格什姆岛上的设施，目前暂未收到人员伤亡的报告。报道还称，伊朗军方在格什姆岛上空击落一架美军MQ-9无人机。另据美国媒体报道，美国副总统万斯近日与卡塔尔、巴基斯坦等调解方进行了密集沟通，寻求与伊朗达成新的停火协议和重启核谈判。伊朗最高国家安全委员会副秘书巴盖里6日表示，伊朗不会再相信美国的“纸面承诺”，美方必须先拿出实际行动满足伊朗提出的条件，谈判才能推进。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">13</span><span class="xt">国际联播快讯</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：也门塔伊兹一市场遭袭相关方相互指责也门西南部塔伊兹省一个市场6日遭到袭击。也门胡塞武装称沙特战机对市场发动了3次空袭，造成数十名平民伤亡。也门政府军则称胡塞武装应对这一严重事件负责。国际海事组织呼吁保障重要航道安全国际海事组织6日在英国伦敦表示，重要航运通道应保持开放和安全，应加强保护措施，应对全球航运面临的威胁。国际海事组织发布的信息显示，本轮中东紧张局势下，已确认发生至少130起针对商业船只的袭击事件，造成25名海员死亡，数千名海员面临风险。欧盟机构称今年10月为全球最热10月欧盟气候监测机构哥白尼气候变化服务局6日发布报告说，今年10月是全球有记录以来最热的10月，全球平均地表气温为15.35摄氏度，比工业化前平均水平高出1.75摄氏度。该机构预测，2026年全年，全球平均地表气温较工业化前水平升幅超过1.5摄氏度的概率超过99%。旅美大熊猫“平平”“福双”正式亮相美国佐治亚州亚特兰大动物园6日举行大熊猫馆开馆仪式。在经过一个多月的适应期后，中国大熊猫“平平”“福双”当天正式与公众见面。两只大熊猫将在亚特兰大动物园生活10年。不少美国民众当天专程赶来，一睹这两位新朋友的风采。他们表示，期待“平平”和“福双”进一步拉近美中两国人民的关系。</div>
+</details>
+
+<details class="xb">
+  <summary><span class="xno">14</span><span class="xt">二十四节气·立冬</span><span class="xd">11/07 19:00</span></summary>
+  <div class="xtext">央视网消息（新闻联播）：立冬是冬季的第一个节气。节目的最后，我们一起欣赏这个时节的自然之美和文化意蕴。 “冬，终也，万物收藏。”田里庄稼收罢，仓廪充盈。天地敛了生机，也留下黄花带露、红叶随风的景致。更往南去，正是橙黄橘绿时。中国之大，风物各悠然。“立冬补冬，补嘴空。”立冬有补冬的风俗，一家人围坐，炉火映窗红，饭菜香浓。补冬，补的是身，守的是根。立冬是酿造黄酒、制作腌菜的好时节。如今四季都有新鲜蔬菜，很多人还是惦记这一口。有些滋味，须付光阴慢慢地酿。立冬，莫道冬来萧瑟，心有所向即是春。</div>
+</details>
+
+</div>
+
+
+<h2 class="sect" id="lang"><span class="sem">🗣️</span>每日语言</h2>
+
+<div class="lang-card">
+  <h3>十个常用成语</h3>
+  <div class="idiom-grid">
+  
+  <div class="idiom-row"><b>争强斗狠</b><span>犹争强好胜。</span></div>
+  
+  <div class="idiom-row"><b>兵不厌诈</b><span>厌嫌恶；诈欺骗。作战时尽可能地用假象迷惑敌人以取得胜利。</span></div>
+  
+  <div class="idiom-row"><b>弹尽援绝</b><span>作战中弹药用完了，援兵断绝了。也比喻处境非常困难。</span></div>
+  
+  <div class="idiom-row"><b>高谈弘论</b><span>弘大。高深空洞不切实际的谈论。</span></div>
+  
+  <div class="idiom-row"><b>戛玉鸣金</b><span>戛敲击。敲打玉器和金器。形容声调有节奏而响亮好听。也形容人气节凛然。</span></div>
+  
+  <div class="idiom-row"><b>伶仃孤苦</b><span>伶仃孤独，没有依靠。孤单困苦，没有依靠。</span></div>
+  
+  <div class="idiom-row"><b>气满志骄</b><span>指心满意得，骄傲自大。同气充志骄”。</span></div>
+  
+  <div class="idiom-row"><b>十步香车</b><span>比喻处处都有人才。</span></div>
+  
+  <div class="idiom-row"><b>文房四物</b><span>俗指笔、墨、纸、砚。同文房四宝”。</span></div>
+  
+  <div class="idiom-row"><b>一个巴掌拍不响</b><span>比喻事情不会是单方面引起的。</span></div>
+  
+  </div>
+</div>
+
+
+<div class="lang-card">
+  <h3>维特根斯坦《逻辑哲学论》命题组 §5.6–5.64 · 语言的界限：我与世界</h3>
+  <div class="wprops">
+  
+  <div class="wprop"><b>5.6</b><span>我的语言的界限意味着我的世界的界限。</span></div>
+  
+  <div class="wprop"><b>5.61</b><span>逻辑充满世界：世界的界限也就是逻辑的界限。所以我们不能思想世界上不合逻辑的东西……我们不能说出我们不能思想的东西。</span></div>
+  
+  <div class="wprop"><b>5.62</b><span>这段话为唯我论在何种程度上是真理的问题提供了一把钥匙……唯我论者想说的话是完全正确的，只是它不能被说出，而只能被显示出来。</span></div>
+  
+  <div class="wprop"><b>5.63</b><span>我是我的世界。（小宇宙。）</span></div>
+  
+  <div class="wprop"><b>5.632</b><span>主体不属于世界，而是世界的一个界限。</span></div>
+  
+  <div class="wprop"><b>5.64</b><span>唯我论严格贯彻到底，与纯粹的实在论是一致的。唯我论的自我收缩成一个无广延的点，剩下的是与它相对应的实在。</span></div>
+  
+  </div>
+  <p class="mini">💡 语言界限与世界观限的关联，在虹桥国际经济论坛的多边主义呼吁中体现，如同逻辑界限与世界界限的对应，强调个体与集体、国家与世界的互动关系。</p>
+  <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
+</div>
+
+
+
+<h2 class="sect" id="thought"><span class="sem">🧠</span>思维边界 · 今日深读</h2>
+
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793804">彩虹为什么是弧形，而不是完整的圆形，阳光经过水滴折射反射，为什么会形成固定的七彩色彩顺序？</a></div>
+
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793805">可不可以莫名其妙地教我一个知识?</a></div>
+
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://daily.zhihu.com/story/9793807">《离骚》的作者明明名正则字灵均，为何会被安在屈原名下认为是他的作品？ 司马迁是不是搞错了？</a></div>
+
+
+
+<h2 class="sect" id="words"><span class="sem">📘</span>每日背单词</h2>
+<div class="lang-card">
+  <div class="word-grid">
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reckon&amp;lang=en">reckon</a><span>v.认为、估计</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=recognize&amp;lang=en">recognize</a><span>v.认出、承认</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=recommend&amp;lang=en">recommend</a><span>v.推荐</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reconcile&amp;lang=en">reconcile</a><span>v.调和、对账</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=record&amp;lang=en">record</a><span>n.记录 v.记载</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=recover&amp;lang=en">recover</a><span>v.恢复、找回</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=recruit&amp;lang=en">recruit</a><span>v.招募</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reduce&amp;lang=en">reduce</a><span>v.减少</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=refer&amp;lang=en">refer</a><span>v.参考、提及</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=refine&amp;lang=en">refine</a><span>v.精炼、改进</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reflect&amp;lang=en">reflect</a><span>v.反映、反思</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reform&amp;lang=en">reform</a><span>n./v.改革</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=refuse&amp;lang=en">refuse</a><span>v.拒绝</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=regard&amp;lang=en">regard</a><span>v.看待 n.尊重</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=region&amp;lang=en">region</a><span>n.地区</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=register&amp;lang=en">register</a><span>v.登记、注册</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=regulate&amp;lang=en">regulate</a><span>v.监管、调节</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reinforce&amp;lang=en">reinforce</a><span>v.加强</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reject&amp;lang=en">reject</a><span>v.拒绝、驳回</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=relate&amp;lang=en">relate</a><span>v.有关、叙述</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=release&amp;lang=en">release</a><span>v.释放、发布</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=relevant&amp;lang=en">relevant</a><span>adj.相关的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reliable&amp;lang=en">reliable</a><span>adj.可靠的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=relieve&amp;lang=en">relieve</a><span>v.缓解、减轻</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reluctant&amp;lang=en">reluctant</a><span>adj.不情愿的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rely&amp;lang=en">rely</a><span>v.依赖</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remain&amp;lang=en">remain</a><span>v.保持、剩下</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remark&amp;lang=en">remark</a><span>n./v.评论</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remedy&amp;lang=en">remedy</a><span>n.补救、疗法</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remind&amp;lang=en">remind</a><span>v.提醒</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remote&amp;lang=en">remote</a><span>adj.遥远的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=render&amp;lang=en">render</a><span>v.使成为、给予</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=renew&amp;lang=en">renew</a><span>v.续期、更新</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rent&amp;lang=en">rent</a><span>n.租金</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=repair&amp;lang=en">repair</a><span>v.修理</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=replace&amp;lang=en">replace</a><span>v.替换</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=represent&amp;lang=en">represent</a><span>v.代表、象征</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reproduce&amp;lang=en">reproduce</a><span>v.复制、繁殖</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reputation&amp;lang=en">reputation</a><span>n.声誉</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=request&amp;lang=en">request</a><span>n./v.请求</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=require&amp;lang=en">require</a><span>v.需要、要求</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rescue&amp;lang=en">rescue</a><span>v.营救</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=research&amp;lang=en">research</a><span>n./v.研究</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resemble&amp;lang=en">resemble</a><span>v.类似</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reserve&amp;lang=en">reserve</a><span>v.保留 n.储备</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reside&amp;lang=en">reside</a><span>v.居住</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resign&amp;lang=en">resign</a><span>v.辞职</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resist&amp;lang=en">resist</a><span>v.抵制、抵抗</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resolve&amp;lang=en">resolve</a><span>v.解决、决心</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resource&amp;lang=en">resource</a><span>n.资源</span></div>
+  
+  </div>
+  <p class="mini">共 50 词 · 释义为本地词库 · 链接为有道词典（含音标/发音）</p>
+</div>
+
+
+
+<h2 class="sect" id="cat-政治"><span class="sem">🏛️</span>政治</h2>
+
+<div class="sub">国 内</div>
+
+<div class="item">
+  <div class="headline">第九届虹桥国际经济论坛举行，与会人士呼吁——坚守多边主义，推进普惠包容的经济全球化</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:43</div>
+  <p>第九届虹桥国际经济论坛在上海举行，与会人士强调多边主义，推动经济全球化。</p>
+  <p class="sig"><b>意义</b>：【考公视角】论坛关注全球经济治理，对考公者了解国际经济形势和全球治理体系有重要意义。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728239.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">中国新闻社7件作品获中国新闻奖，2件作品一等奖！</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:35</div>
+  <p>中国新闻社在第36届中国新闻奖评选中荣获7件作品奖项，其中包括2件一等奖。</p>
+  <p class="sig"><b>意义</b>：【考公视角】中国新闻社的成就反映了新闻行业的专业水平，对考公者了解新闻传播领域有积极影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/sh/2026/11-08/10728238.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">“航母五件套”未来还可能升级！专家解读“5+X”新模式</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:33</div>
+  <p>我国首型舰载察打一体隐身无人机在两栖攻击舰上成功起降，标志着海军技术取得新突破。</p>
+  <p class="sig"><b>意义</b>：【考公视角】海军技术的发展对国防安全具有重要意义，考公者应关注相关军事动态。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728237.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">光“星巴扎”就破防？那我告诉你，国际酒店也成群去新疆了</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:20</div>
+  <p>新疆商业活动活跃，国际酒店纷纷进入市场，反驳了西方关于新疆商业活动的错误说法。</p>
+  <p class="sig"><b>意义</b>：【考公视角】新疆经济发展状况对区域稳定和对外开放有重要影响，考公者需关注相关经济动态。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728236.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">日本静冈县西部发生5.7级地震</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:16</div>
+  <p>日本静冈县西部发生5.7级地震，具体情况待进一步了解。</p>
+  <p class="sig"><b>意义</b>：【考公视角】地震事件对国际安全形势有一定影响，考公者需关注国际灾害应对和救援情况。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="http://www.chinanews.com.cn/tp/hd2011/2026/11-08/1210155.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">广西开行首趟“八桂嗦粉”主题旅游列车   列车上设有米粉展示区</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:15</div>
+  <p>广西推出“八桂嗦粉”主题旅游列车，促进旅游业发展。</p>
+  <p class="sig"><b>意义</b>：【考公视角】旅游业发展对地方经济有积极作用，考公者需关注区域经济发展动态。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/sh/2026/11-08/10728219.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">第二十三届北京论坛开幕</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:03</div>
+  <p>第二十三届北京论坛开幕，以“科技变革与多元文明”为主题，来自29个国家和地区的学者参与。</p>
+  <p class="sig"><b>意义</b>：【考公视角】论坛关注科技变革和文明交流，对考公者了解国际科技发展和文化交流有重要意义。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/gn/2026/11-08/10728220.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">东南亚警察组队赴“村超”踢球</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">中新网</span> · 11/08 09:02</div>
+  <p>东南亚警察组队参加“村超”足球赛，促进澜湄各国执法机构人文交流。</p>
+  <p class="sig"><b>意义</b>：【考公视角】国际执法合作对维护地区安全有积极作用，考公者需关注国际执法合作动态。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.chinanews.com.cn/ty/2026/11-08/10728218.shtml">▸ 阅读原文</a>
+</div>
+
+
+
+<div class="sub intl">国 际</div>
+
+<div class="item">
+  <div class="headline">Homelessness in the U.S. saw its largest drop in more than a decade last year</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">NPR</span> · 11/08 08:19</div>
+  <p>美国无家可归者数量去年十年内首次大幅下降，但仍有近70万人无家可归。</p>
+  <p class="sig"><b>意义</b>：【考公视角】美国社会问题对国际社会有影响，考公者需关注国际社会问题及应对措施。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.npr.org/2026/11/07/nx-s1-6033491/homelessness-in-the-u-s-saw-its-largest-drop-in-more-than-a-decade-last-year">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">The surprising and often forgotten history of economic populism in Texas</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">NPR</span> · 11/08 06:12</div>
+  <p>NPR报道德克萨斯州经济民粹主义的历史，由Austin政治评论员David Griscom著书讲述。</p>
+  <p class="sig"><b>意义</b>：【考公视角】了解国际不同地区的经济历史对考公者拓宽国际视野有积极作用。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.npr.org/2026/11/07/nx-s1-6030759/the-surprising-and-often-forgotten-history-of-texas-tradition-of-economic-populism">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Israel&#39;s president taps opposition candidate, not Netanyahu, to form a government</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">NPR</span> · 11/08 04:18</div>
+  <p>以色列总统任命反对派候选人而非内塔尼亚胡组建新政府。</p>
+  <p class="sig"><b>意义</b>：【考公视角】以色列政治变动可能影响地区稳定，对中东地区安全形势有重要影响。考生需关注国际政治动态，了解可能对国内政策产生的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.npr.org/2026/11/07/g-s1-152536/netanyahu-israel-government-eisenkot-herzog">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Polish gunman who killed 6 people in Krakow has &#39;ultranationalistic&#39; views, authorities say</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">NPR</span> · 11/08 02:37</div>
+  <p>在克拉科夫杀害6人的枪手持有极端民族主义观点，当局表示。</p>
+  <p class="sig"><b>意义</b>：【考公视角】此类恐怖袭击事件可能对欧洲安全形势产生影响，考生需关注国际安全动态，了解可能对国际关系和国内安全政策的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.npr.org/2026/11/07/g-s1-152532/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15">▸ 阅读原文</a>
+</div>
+
+
+
+<h2 class="sect" id="cat-经济"><span class="sem">📈</span>经济</h2>
+
+<div class="sub">国 内</div>
+
+<div class="item">
+  <div class="headline">UFC总裁将与特朗普面谈</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">同花顺</span> · 11/08 09:45</div>
+  <p>UFC总裁达纳·怀特将飞往华盛顿会见美国总统特朗普。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】特朗普邀请UFC总裁可能涉及体育与政治的交叉领域，考生需关注体育产业与政治政策的关系，了解可能对相关行业的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.10jqka.com.cn/20261108/c681580752.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">受降雪影响 甘肃两条高速公路部分入口临时管制</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">同花顺</span> · 11/08 09:26</div>
+  <p>受降雪影响，甘肃两条高速公路部分入口实施临时交通管控。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】此类自然灾害对交通运输和区域经济有直接影响，考生需关注自然灾害对基础设施和经济活动的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.10jqka.com.cn/20261108/c681580708.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">我驻名古屋总领馆提醒领区中国公民注意防范地震灾害</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">同花顺</span> · 11/08 09:13</div>
+  <p>中国驻名古屋总领馆提醒领区中国公民注意防范地震灾害。</p>
+  <p class="sig"><b>意义</b>：【养生】地震灾害防范提醒对居住在地震多发区的公民有重要意义，建议居民加强自我保护意识，学习地震逃生知识。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.10jqka.com.cn/20261108/c681580675.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">围绕三大核心主线 一周逾550家上市公司迎来投资者调研</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">同花顺</span> · 11/08 08:47</div>
+  <p>上周逾550家上市公司迎来投资者调研，AI产业链、内需复苏节奏、重点行业价格变化是调研核心主线。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】投资者调研反映市场关注的热点，考生需关注AI、内需复苏等经济热点，了解可能对资本市场和宏观经济的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.10jqka.com.cn/20261108/c681580563.shtml">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">卡塔尔首相称美伊之间斡旋仍在继续</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">同花顺</span> · 11/08 08:27</div>
+  <p>卡塔尔首相表示，卡塔尔在美国和伊朗之间的调解斡旋仍在继续。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】美伊关系动态可能影响中东地区稳定和全球能源市场，考生需关注国际政治动态，了解可能对全球经济和能源政策的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.10jqka.com.cn/20261108/c681580479.shtml">▸ 阅读原文</a>
+</div>
+
+
+
+<div class="sub intl">国 际</div>
+
+<div class="item">
+  <div class="headline">Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">CNBC</span> · 11/07 21:00</div>
+  <p>Anthropic计划成为首个纯AI公司上市，但中期选举结果显示公众对数据中心行业持批评态度。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】AI行业面临公众质疑，考生需关注AI技术的发展趋势和公众接受度，了解可能对AI行业未来发展的挑战。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Trump offers UFC chief Dana White press secretary job</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">CNBC</span> · 11/08 07:13</div>
+  <p>特朗普向UFC总裁达纳·怀特提供新闻秘书职位。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】特朗普邀请UFC总裁可能涉及体育与政治的交叉领域，考生需关注体育产业与政治政策的关系，了解可能对相关行业的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Risk of Iran war escalation remains high despite Democratic sweep in U.S. midterm elections</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">CNBC</span> · 11/08 06:17</div>
+  <p>尽管美国中期选举民主党大胜，但伊朗战争升级的风险仍然很高。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】美伊关系紧张可能影响中东地区稳定和全球能源市场，考生需关注国际政治动态，了解可能对全球经济和能源政策的影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.cnbc.com/2026/11/07/iran-war-midterm-election-oil-price-trump.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">CNBC</span> · 11/07 23:23</div>
+  <p>伯克希尔哈撒韦在第三季度加速了股票回购，尽管运营和整体利润下降。</p>
+  <p class="sig"><b>意义</b>：【考公+审计】伯克希尔哈撒韦的股票回购策略可能影响资本市场监管，对审计和财务专业人士了解市场动态有重要意义。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html">▸ 阅读原文</a>
+</div>
+
+
+
+<h2 class="sect" id="cat-科技"><span class="sem">🤖</span>科技</h2>
+
+<div class="sub">国 内</div>
+
+<div class="item">
+  <div class="headline">GitHub不堪重负！OpenAI收购替代品，A社原地自研，马斯克也要搞</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">量子位</span> · 11/07 17:38</div>
+  <p>GitHub面临压力，OpenAI收购替代品，A社自研，马斯克也加入其中。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】GitHub的压力和OpenAI的收购可能预示着AI开发基础设施的竞争加剧，对科技行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.qbitai.com/2026/11/508449.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">OpenAI新融资到账110亿美元，不及原计划一半</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">量子位</span> · 11/07 16:11</div>
+  <p>OpenAI的新融资仅为原计划的一半，达到110亿美元。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】OpenAI融资缩水可能反映了投资者对AI行业的谨慎态度，对科技投资有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.qbitai.com/2026/11/508344.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">抢跑DeepSeek！硅谷华人把下一代Agent Harness造出来了！？</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">量子位</span> · 11/07 13:01</div>
+  <p>硅谷华人团队在下一代Agent Harness技术上取得进展。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】下一代Agent Harness的进展可能预示着AI技术的快速发展，对科技行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.qbitai.com/2026/11/508264.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">为了去AI味，人类开始主动写烂文章了……</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">量子位</span> · 11/07 15:59</div>
+  <p>为了区分AI写作，人类开始主动写质量较低的文章。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】人类写作风格的变化可能反映了AI在内容创作领域的崛起，对文学和媒体行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.qbitai.com/2026/11/508330.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">AGENTS.MD，危险危险危险！！！</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">量子位</span> · 11/07 11:43</div>
+  <p>AGENTS.MD是一种新的电脑病毒。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】新型电脑病毒的出现提醒了网络安全的重要性，对IT行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.qbitai.com/2026/11/508244.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">百图生科与11家伙伴战略合作，AI生物计算覆盖医药研发及农业育种</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">雷峰网</span> · 11/07 10:40</div>
+  <p>百图生科与多家伙伴合作，利用AI生物计算在医药研发和农业育种领域展开应用。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】AI在医药和农业领域的应用可能带来行业变革，对相关行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.leiphone.com/category/industrynews/X7HwwQTEXJhiVVzK.html">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">芝加哥大学教授：AI 时代数学人才招聘将更看重研究愿景与表达能力</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">IT之家</span> · 11/08 09:10</div>
+  <p>芝加哥大学教授认为，AI时代数学人才招聘将更看重研究愿景和表达能力。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】AI时代对数学人才的要求变化，对教育和招聘行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.ithome.com/1/023/859.htm">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">庆祝《霍格沃茨之遗》上线 DLSS 5，英伟达推出定制版 RTX 5090 显卡抽奖活动</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">IT之家</span> · 11/08 07:57</div>
+  <p>英伟达为庆祝《霍格沃茨之遗》上线DLSS 5，推出定制版RTX 5090显卡抽奖活动。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】英伟达的活动可能反映了游戏行业对AI技术的应用，对游戏和科技行业有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.ithome.com/1/023/847.htm">▸ 阅读原文</a>
+</div>
+
+
+
+<div class="sub intl">国 际</div>
+
+<div class="item">
+  <div class="headline">OpenAI reportedly raises an additional $11 billion at a $1.25 trillion valuation</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">TechCrunch</span> · 11/07 06:53</div>
+  <p>OpenAI据报道在1250亿美元的估值下额外融资110亿美元。</p>
+  <p class="sig"><b>意义</b>：【AI/机器人】OpenAI的融资反映了投资者对AI领域的信心，对科技投资有重要影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Hundreds of Artex AI hacking tools found publicly exposed to the web</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">TechCrunch</span> · 11/07 02:44</div>
+  <p>安全研究人员发现数百个服务器上运行的渗透测试工具Artex暴露在互联网上，任何人都可以访问这个黑客工具。</p>
+  <p class="sig"><b>意义</b>：AI黑客工具的公开暴露可能对网络安全构成严重威胁，需要加强相关安全措施和监管。对普通人而言，了解这一事件有助于提高网络安全意识。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">Meta introduces Spaces, a new way to collaborate with your Muse agent</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">TechCrunch</span> · 11/07 02:44</div>
+  <p>Meta的Muse代理继续获得新功能和集成。Spaces承诺将成为一种与AI助手互动的新方式。</p>
+  <p class="sig"><b>意义</b>：Meta的Spaces功能可能改变人们与AI助手协作的方式，对科技行业和普通用户的工作生活产生潜在影响。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">After the midterms, is the AI industry in for a rough two years?</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">TechCrunch</span> · 11/07 01:23</div>
+  <p>本周美国中期选举中民主党取得的重大胜利也可能改变科技行业。公众在周二对41项数据中心相关的投票措施进行了投票——在所有但一项中，大多数选民投票要求对数据中心发展施加更多限制。</p>
+  <p class="sig"><b>意义</b>：中期选举结果可能对AI行业产生重大影响，增加对数据中心发展的限制可能影响AI行业的发展。对考公人员而言，了解这些变化有助于把握时政常识考点。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://techcrunch.com/video/after-the-midterms-is-the-ai-industry-in-for-a-rough-two-years/">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">SwarmEvolve：用于进化发现和优化的潜在代理群</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 11/08 收录</div>
+  <p>这篇论文介绍了一种名为SwarmEvolve的框架，通过使用大量低成本代理在潜在空间中进行迭代优化，以提高数学和计算问题的程序性能。这项技术已经初步实现，离实际应用较近，有望在人工智能优化领域得到应用。</p>
+  
+  <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2611.08483v1">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">科学家世界：为AI科学家构建的研究世界</div>
+  <div class="meta"><span class="tag aux">辅助</span><span class="src">arxiv</span> · 11/08 收录</div>
+  <p>这篇论文提出构建一个名为“科学家世界”的平台，将每篇研究论文转化为可执行的环境，使得AI科学家能够直接在平台上进行研究和实验。这个概念目前还处于研究阶段，离实际应用有一定距离，但具有很高的应用潜力。</p>
+  
+  <a class="rlink" target="_blank" rel="noopener" href="http://arxiv.org/abs/2611.08478v1">▸ 阅读原文</a>
+</div>
+
+
+
+<h2 class="sect" id="cat-文学"><span class="sem">📖</span>文学</h2>
+
+<div class="sub">国 内</div>
+
+<div class="item">
+  <div class="headline">话剧《永远的“四大队”》在京首演</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">光明网文化</span> · 11/08 页面核实 · 多来源：光明网文化</div>
+  <p>话剧《永远的“四大队”》在北京首演。</p>
+  <p class="sig"><b>意义</b>：话剧首演是文学领域的常规活动，对考公人员关联有限。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://culture.gmw.cn/2026-11/08/content_39090777.htm">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">完善文物资源数字治理助力文化数字化传承</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">光明网文化</span> · 11/07 页面核实 · 多来源：光明网文化</div>
+  <p>完善文物资源数字治理有助于文化数字化传承。</p>
+  <p class="sig"><b>意义</b>：文化数字化是当前的趋势，对文化遗产的保护和传承具有重要意义。对考公人员关联有限。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.gmw.cn/2026-11/07/content_39089780.htm">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">2026年中国金鸡百花电影节在厦门开幕</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">光明网文化</span> · 11/07 页面核实 · 多来源：光明网文化</div>
+  <p>2026年中国金鸡百花电影节在厦门开幕。</p>
+  <p class="sig"><b>意义</b>：电影节是文化盛事，对考公人员关联有限。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.gmw.cn/2026-11/07/content_39089782.htm">▸ 阅读原文</a>
+</div>
+
+<div class="item">
+  <div class="headline">汇聚890余个非遗项目、930余位传承人参加第九届中国非物质文化遗产博览会举办</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">光明网文化</span> · 11/07 页面核实 · 多来源：光明网文化</div>
+  <p>第九届中国非物质文化遗产博览会在举办，汇聚了890余个非遗项目和930余位传承人。</p>
+  <p class="sig"><b>意义</b>：非物质文化遗产博览会对文化传承和保护有重要意义。对考公人员关联有限。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://news.gmw.cn/2026-11/07/content_39089806.htm">▸ 阅读原文</a>
+</div>
+
+
+
+
+<h2 class="sect" id="cat-医学"><span class="sem">🏥</span>医学</h2>
+
+<div class="sub">国 内</div>
+
+<div class="item">
+  <div class="headline">屈光技术创新与眼健康高质量发展活动</div>
+  <div class="meta"><span class="tag auth">权威</span><span class="src">健康时报</span> · 11/07 页面核实</div>
+  <p>屈光技术创新与眼健康高质量发展活动。</p>
+  <p class="sig"><b>意义</b>：眼健康是公共卫生的重要方面，了解屈光技术创新有助于提高公众对眼健康的重视。对考公人员关联有限。</p>
+  <a class="rlink" target="_blank" rel="noopener" href="https://www.jksb.com.cn/index.php?m=content&amp;c=index&amp;a=show&amp;catid=873&amp;id=260771">▸ 阅读原文</a>
+</div>
+
+
+
+
+
+<div class="hd-block" id="huangdi">
+  <div class="hd-head">🌿 黄帝内经 · 素问·脉解篇第四十九</div>
+  <div class="hd-body">
+    
+      <div class="hd-text">脉解，即解脉，脉之解说。本篇具体阐述了三阴三阳经脉之气各有所主之时，并从时令阴阳变化的角度，解释了阴阳经气盛衰而致经脉病变的症状和机理，故名为《脉解》。篇中介绍了六经与月份的配合以及相应的月建，分析了四时阴阳盛衰与六经病变的关系，详细解释了六经病变症候的机理。本篇从写作形式看是解经的传文，“所谓··.者”之内，为被释之经文，其后面的文字为传文。原来的完整的经文不见于《内经》，但其中的内容散见于《内经》各篇，也可能原来就没有完整的经文，而是医家综合各篇童要而疑难的问题写作的。太阳所谓肿腰睢痛者，正月太阳寅②，寅太阳也。正月阳气出在上，而阴气盛，阳未得自次也③，故肿腰睢痛也。病偏虚为跛者，正月阳气冻解，地气而出也。所谓偏虚者，冬寒颇有不足者，故偏虚为跛也。所谓疆上引背者，阳气大上而争，故强上也。所谓耳鸣者，阳气万物盛上而跃，故耳鸣也。所谓甚则狂巅疾者，阳尽在上，而阴气从下，下虚上实，故狂巅疾也。所谓浮为聋者，皆在气也。所谓人中为瘩者，阳盛已衰，故为瘩也。内夺而厥③，则为瘩，此肾虚也，少阴不至者，蕨也。</div>
+    
+      <div class="hd-note">【注】①肿腰雕（shui)痛：腰部肿胀，臀部疼痛。雕，臀部。②正月太阳寅：王冰：“正月三阳生，主建寅。三阳谓之太阳，故日：寅，太阳也。”③阳未得自次：正月属太阳主时，本当阳旺，今未旺，所以说阳未得自次。自次，自己所居的位次。次，次第。④偏虚：阳气不足，偏虚于一侧。③疆（jiang）上引背：头项强硬并牵引及背。疆，通“僵”。③“所谓”两句：气逆上浮而耳聋，阳气亢盛于上所致。①入中：阳气入内。③内夺：色欲过度，阴精内耗。瘩（fei)：音哑不能说话，四肢瘫痪不能运动的病证。，病废，瘫痪。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>太阳经有所谓的腰臀肿胀疼痛病，是因为正月属于太阳，而月建在寅，所以说正月太阳寅。正月阳气生发在上，但此时阴寒之气尚盛，阳气还不能按照自已应有的位次而逐渐旺盛，所以发生了腰臀肿胀疼痛。有病阳气偏虚而为跛足的，是因为正月阳气使冰冻消散，地气随之而出。所谓的偏虚，是因为冬寒之气使体内阳气颇感不足，所以阳气偏虚一侧，发生跛足。所谓头项强硬牵引及背之病，是因为阳气骤然上升，互相争扰，所以强硬牵引向上。所谓的耳鸣，是因为阳气使自然界万物生长旺盛，向上而活跃，人体阳气也是如此，阳气盛于上，所以发生了耳鸣。所谓阳气亢盛则发生癫狂之病，是因为阳气集中于上部，阴气滞留在下部，下虚而上实，所以发生癫狂之病。所谓气逆上浮而耳聋，是因素同·脉解高第四十九为阳气亢盛于上所致。所谓阳气入内而音哑不能言语，是因为阳气由盛转衰，故致音哑不能言。色欲过度，精气内耗而厥逆，就会发生不能说话、四肢瘫痪的瘩痱病，这是肾虚，少阴经气不能布散而导致厥逆。少阳所谓心胁痛者，言少阳戌也，戌者，心之所表也，九月阳气尽而阴气盛，故心胁痛也。所谓不可反侧者②，阴气藏物也，物藏则不动，故不可反侧也。所谓甚则跃者③，九月万物尽衰，草木毕落而，则气去阳而之阴③，气盛而阳之下长③，故谓跃。</div>
+      
+    
+      <div class="hd-note">【注】①“言少阳戌”三句：少阳戌，杨上善：“戌为九月，九月阳少，故日少阳也。”此指少阳主九月，九月月建在戌。戌者，心之所表，杨上善：“戌少阳脉散络心包，故为心之所表。”②反侧：转侧。③跃：《说文解字》：“跳，蹶也，日跃也。”“蹦，也。”段玉裁注：“方言跌也。”据医理，跌义胜。跌蹦，即跌倒。④气去阳而之阴：人体阳气由表（阳）入里（阴）。气盛而阳之下长：阴气盛而阳气趋于下部活动。杨上善：“阴气盛于地上，阳气在于地下，勇励万物之根，令其内长也。”</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>少阳经所谓的心胁疼痛，是因为少阳旺于九月，月建在戌，少阳之脉散络心包，故为心之表，九月阳气将尽，而阴气始盛，所以心胁疼痛。所谓的“不可反侧”，是因为此时阴气渐盛，万物开始收藏，万物收藏则静而不动，少阳经气应之，所以不能转侧。所谓的“甚则跃”，是因九月万物都衰退，草木凋零，人身之阳气也由表入里，阴气盛而阳气趋于下410.部活动，所以容易跌倒。阳明所谓洒洒振寒者の，阳明者，午也?，五月盛阳之阴也，阳盛而阴气加之，故洒洒振寒也。所谓胫肿而股不收者，是五月盛阳之阴也，阳者衰于五月，而一阴气上，与阳始争，故腔肿而股不收也。所谓上喘而为水者，阴气下而复上，上则邪客于脏腑间，故为水也。所谓胸痛少气者，水气在脏腑也，水者阴气也，阴气在中，故胸痛少气也。所谓甚则厥，恶人与火，闻木音则惕然而惊者，阳气与阴气相薄，水火相恶，故惕然而惊也。所谓欲独闭户而处者，阴阳相薄也，阳尽而阴盛，故欲独闭户履而居。所谓病至则欲乘高而歌，弃衣而走者，阴阳复争，而外并于阳，故使之弃衣而走也。所谓客孙脉则头痛鼻腹肿者，阳明并于上，上者则其孙络太阴也，故头痛鼻腹肿也。</div>
+      
+    
+      <div class="hd-note">【注】①洒洒（xian）：寒栗貌。②阳明者，午也：张介宾：“五月阳气明盛，故日阳明。”此指阳明主五月，五月月建在午。③五月盛阳之阴：五月阳气极盛而阴气始生。④“水者”三句：水为阴邪，阴寒凝聚，使经脉、脏腑之气运行不畅，故致胸痛少气。③熟（qiu)：鼻塞。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>阳明经有所谓的恶寒战栗，是因为阳明旺于五月而月建在午，五月是阳气极盛而阴气始生，阳气旺盛并有阴气相加，所以恶寒战栗。所谓素间：脉解篇第四十九的胫肿而股不收，是因为五月阳盛极而阴始生，五月阳气由盛转衰，初生的阴气上升，与阳气相争，使阳明经气不和，所以小腿肿而大腿弛缓无力。所谓的气逆喘息而为水肿，是因为阴气自下而又上升，阴气上则水邪也随之上行，停聚在脏腑之间，所以形成水肿。所谓的胸痛少气，是因为水气停聚在脏腑之间，水属阴气，阴气在内，所以发生胸痛呼吸气短。所谓的病甚则厥逆，厌恶见人与火光，听到木击音就惊惕不安，是因为阳气与阴气相搏，水火不相协调，所以惊惕不安。所谓的欲独闭户而处，是因为阴阳之气相搏靠近，结果阳气衰而阴气盛，阴主静，所以喜欢关闭门窗而独居。所谓的病至则欲乘高而歌，弃衣而走，是因为阴阳二气反复交争，向外并于阳经，使阳气盛，致使病人登高而歌，弃衣而走。所谓的客孙脉则头痛鼻腹肿，是因为阳明经的邪气上逆，邪气上入于本经的细小络脉及太阴之脉，则头痛鼻塞、腹部肿胀。太阴所谓病胀者，太阴子也①，十一月万物气皆藏于中，故百病胀。所谓上走心为臆者，阴盛上走于阳明，阳明络属心③，故日上走心为意也。所谓食则呕者，物盛满而上溢，故呕也。所谓得后与气，则快然如衰者，十一月阴气下衰，而阳气且出，故日得后与气则快然如衰也。</div>
+      
+    
+      <div class="hd-note">【注】①太阴子也：太阴主十一月，十一月月建在子。②心为嚏（ai)：心与胃的经别相通，故心病者可见暖气。意，暖气。③阳明络属（zhi）心：足阳明经别的循行，向上联络于心。属，连接。④后：大便。气：屎气。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>太阴经所谓的病胀，是因为太阴旺于十月，月建在子，十一月为万物收藏之季，若阴邪循脾经入腹潜藏，就会腹部胀满。所谓的上走心为意，是因为阴邪盛，邪气向上侵入足阳明经，而足阳明经之经别络属于心，阴气上犯心脏，所以暖气。所谓的食则呕，是因为进食过多，胃中盛满，不能消化而向上泛溢，所以呕吐。所谓的得后与气则快然如衰，是因为十一月阴气由盛转衰，阳气将要发动，腹中阴邪随大便与矢气下行，所以病人得后与气，感到舒服，好像病情大大衰减了一样。少阴所谓腰痛者，少阴者申也①，七月万物阳气皆伤，故腰痛也。所谓呕咳上气喘者，阴气在下，阳气在上，诸阳气浮，无所依从，故呕咳上气喘也。所谓邑邑不能久立久坐②，起则目皖肮无所见者，万物阴阳不定未有主也③，秋气始至，微霜始下，而方杀万物，阴阳内夺，故目肮皖无所见也。所当治而未得，故善怒，善怒者，名日煎厥③。所谓恐如人将捕之者，秋气万物未有毕去，阴气少，阳气人，阴阳相薄，故恐也。所谓恶闻食臭者，胃无气，故恶闻食臭也。所谓面黑如地色者，秋气内夺，故变于色也。所谓咳则有血者，阳脉伤也，阳气未盛于上而脉满，满则咳，故血见于鼻也。</div>
+      
+    
+      <div class="hd-note">【注】①少阴者审也：少阴主七月，七月月建在申。②邑邑（yi）：即恺。邑，通“恺”，不适貌。③“万物”句：此时天地阴阳之气交替，尚未稳定。④阳气不治：少阳经脉之气不得正常疏泄。阳气，此指少阳经脉之素问·脉解篇第四十九413.气。治，原意是安定。引申为正常。煎厥：病名。阳气亢盛，煎熬津液，使阴精耗竭而致气逆昏厥之证。③食臭（xii）：食物的气味。臭，气味。胃无气：胃气衰败，失去消化功能。③秋气内夺：秋气肃杀，耗伤内脏精气。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>少阴经所谓的腰痛，是因为少阴旺于七月，月建在申，七月为万物阳气开始下降，人体与时令之气相应，阳气减损，所以腰痛。所谓的呕咳上气喘，是因为阴气盛于下，阳气浮越在上而无所依附，所以呕吐、咳嗽、气逆喘息。所谓的身体不适而不能久立久坐，起身则视物不清，目无所见，是因为天地万物阴阳二气交替不定，尚未稳定，此时秋天肃杀之气已经降临，微霜开始下降而克伐万物，人体阴阳之气被伐而衰减，所以视物不清、目无所见。所谓的少气善怒，是因为少阳经脉之气不能正常疏泄，阳气不能正常疏泄，阳气不得外出，肝气郁结不疏，所以容易发怒·易怒这种病名叫煎厥。所谓的恐如人将捕之，是因为秋天万物尚未尽衰，阴气初生而阳气入内，阴阳相搏，所以恐惧不安。所谓的恶闻食臭，是因为胃气衰败，所以厌阐食物气味。所谓的面黑如地色，是因为秋气肃杀，耗夺内脏精气，肾精不足.所以面色变黑。所谓的咳则有血.是因为上部的阳络损伤，虽然阳气还没有充满于上，但血液充盈以致脉满，脉满所以咳嗽，鼻中出血。厥阴所谓癫疝、妇人少腹肿者?，厥阴者辰也，三月阳中之阴，邪在中，故日癫疝少腹肿也。所谓腰脊痛不可以俯仰者，三月一振荣华,万物一俯而不仰也。所谓癫瘙疝肤胀者，日阴亦盛而脉胀不通，故日癫疝也。所谓甚则干热中者，阴阳相薄而热，故嗑干也。</div>
+      
+    
+      <div class="hd-note">【注】①癫（tui)疝：病名。疝气的一种，证见睾丸肿大坚硬，重坠胀痛或麻木不知痛痒。②蕨阴者辰也：蕨阴主三月，三月月建在辰。③三月一振：三月阳气开始振发。④一俯而不仰：张志聪：“草木繁茂，枝叶下垂，一惟俯而不仰，即偃倭之状。”形容腰脊疼痛，俯仰不便。③癫瘫疝肤胀：指前阴肿痛，不得小便而致肌肤肿胀。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>阴经的所谓癫疝、妇人少腹肿，是因为厥阴旺于三月，月建在辰，三月为阳气方长，阴气未尽的阳中之阴，阴邪积聚在内，循厥阴肝经逆行致病，所以癫疝、少腹肿胀。所谓的腰脊痛不可以俯仰，是因为三月阳气开始鼓动振发，万物荣华茂盛，但由于阴气未尽，阳气尚被阴气压抑不能温养，所以腰脊疼痛而不能俯仰。所谓的癫瘙疝肤胀，是因为阴邪尚盛而致厥阴经脉闭塞不通，所以前阴肿痛、不得小便、肌肤肿胀。所谓的嗑干热中，是因为阴阳相争而致内热，所以咽喉发干。</div>
+      
+    
+    <p class="mini">💡 本段阐述了三阴三阳经脉之气随时令阴阳变化而盛衰，导致经脉病变的症状和机理，提示养生应顺应自然规律，注意季节变化对身体健康的影响，调整生活作息以适应四时阴阳变化，避免因气候变化导致的疾病发生。</p>
+    <p class="mini">姚春鹏译本 · 全文含题解/注释/译文 · OCR 识别偶有错字</p>
+  </div>
+</div>
+
+
+<h2 class="sect" id="persp"><span class="sem">🧭</span>五大视角</h2>
+
+
+<div class="pcard"><h3>政治视角</h3><p>第九届虹桥国际经济论坛强调多边主义，推动经济全球化；中国新闻社在新闻奖评选中取得优异成绩；我国首型舰载察打一体隐身无人机成功起降；新疆商业活动活跃，国际酒店进入市场；日本静冈县发生地震。</p></div>
+
+
+
+<div class="pcard"><h3>经济视角</h3><p>第九届虹桥国际经济论坛关注全球经济治理；受降雪影响，甘肃两条高速公路部分入口临时管制；中国驻名古屋总领馆提醒领区中国公民注意防范地震灾害；一周逾550家上市公司迎来投资者调研；卡塔尔首相称美伊之间斡旋仍在继续。</p></div>
+
+
+
+<div class="pcard"><h3>科技视角</h3><p>GitHub面临压力，OpenAI收购替代品，A社自研，马斯克加入其中；OpenAI新融资到账110亿美元，不及原计划一半；硅谷华人团队在下一代Agent Harness技术上取得进展；为了去AI味，人类开始主动写烂文章了……；AGENTS.MD是一种新的电脑病毒。</p></div>
+
+
+
+<div class="pcard"><h3>文学视角</h3><p>话剧《永远的“四大队”》在京首演；完善文物资源数字治理助力文化数字化传承；2026年中国金鸡百花电影节在厦门开幕；汇聚890余个非遗项目、930余位传承人参加第九届中国非物质文化遗产博览会举办。</p></div>
+
+
+
+<div class="pcard"><h3>医学视角</h3><p>屈光技术创新与眼健康高质量发展活动。</p></div>
+
+
+
+<h2 class="sect" id="summary"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">第九届虹桥国际经济论坛强调多边主义，中国新闻社荣获多项新闻奖，我国海军技术取得新突破，新疆商业活动活跃，日本静冈县发生地震，广西推出主题旅游列车，第二十三届北京论坛开幕，东南亚警察组队参加足球赛，美国无家可归者数量下降，特朗普邀请UFC总裁，甘肃受降雪影响部分高速公路入口管制，中国驻名古屋总领馆提醒防范地震灾害，一周逾550家上市公司迎来投资者调研，卡塔尔首相称美伊之间斡旋仍在继续，Anthropic计划成为首个纯AI公司上市，OpenAI新融资到账110亿美元，硅谷华人团队在下一代Agent Harness技术上取得进展，英伟达推出定制版RTX 5090显卡抽奖活动，话剧《永远的“四大队”》在京首演，完善文物资源数字治理助力文化数字化传承，2026年中国金鸡百花电影节在厦门开幕，第九届中国非物质文化遗产博览会举办，屈光技术创新与眼健康高质量发展活动。</div>
+<div class="footer">每日新闻日报 · 右下角可朗读全文 · 页内 mp3 为新闻播音男声版</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button,summary"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
