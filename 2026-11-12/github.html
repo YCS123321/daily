@@ -1,0 +1,444 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-11-12</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-12</span><span>周四</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/daily_stock_analysis">daily_stock_analysis</a></span>
+<div class="reason">LLM 驱动的多市场股票智能分析系统，对于审计师和公务员都有实际应用价值，尤其在监控市场动态和宏观经济分析方面。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/improve">improve</a></span>
+<div class="reason">代码审计工具，能够审计代码库并生成实施计划，对于审计师来说，可以高效地识别和修复代码库中的问题。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/agent-skills">agent-skills</a></span>
+<div class="reason">为AI编码代理提供生产级工程技能，有助于自动化和标准化软件开发流程，提高代码质量和合规性。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/meta/astryx">Astryx</a></span>
+  　<span class="meta">meta</span></div>
+  <div class="meta"><span class="star">⭐ 25055</span>（今日 +2776） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/01/10 00:20</b> ｜ 最近提交 <b>2026/11/12 09:39</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Astryx 是一个开源的设计系统，它提供了高度可定制的功能，并且为现代的团队协作和工作流程而设计。这个系统旨在帮助开发者构建更加一致和高效的用户界面，通过集成 React 19+ 和 StyleX，它支持快速开发，并且能够适应不断变化的设计需求。对于审计师来说，Astryx 可以帮助他们在审计过程中评估和比较不同系统的设计一致性，确保界面设计和财务报告的准确性。对于备考公务员的朋友，Astryx 可以作为学习资源，帮助他们理解现代软件开发和设计流程，这在公务员工作中可能涉及到对信息系统的审查和评估。典型使用场景包括：开发财务报告系统、设计审计软件界面、构建公务员考试报名平台等。</p>
+  <h3>怎么设计的</h3>
+  <p>Astryx 使用 TypeScript 编写，基于 React 19+ 和 StyleX 构建而成。其核心架构包括组件库、样式管理器和构建工具链。技术栈还包括 npm、Webpack 和 Storybook。Astryx 的亮点设计包括模块化组件库，允许开发者根据需要选择和组合组件；样式管理器提供了一套完整的样式解决方案，支持主题定制和响应式设计；构建工具链简化了开发流程，提高了开发效率。这些设计使得 Astryx 能够快速适应不同的开发需求，同时保持一致性和可维护性。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Bootstrap 或 Material-UI，Astryx 提供了一套完整的 UI 组件和样式解决方案，帮助开发者快速构建现代风格的界面。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Astryx 的可定制性和一致性可以帮助他们在审计过程中评估软件系统的设计是否符合规范和标准。对于公务员备考者，了解 Astryx 可以帮助他们更好地理解现代软件开发流程，这在实际工作中可能涉及到对信息系统的审查和评估。</p>
+  <span class="plink">▸ <a href="https://github.com/meta/astryx">github.com/meta/Astryx</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/ZhuLinsen/daily_stock_analysis">daily_stock_analysis</a></span>
+  　<span class="meta">ZhuLinsen</span></div>
+  <div class="meta"><span class="star">⭐ 70294</span>（今日 +278） · Python · <span class="tag">a-stock</span><span class="tag">ai-agent</span><span class="tag">aigc</span><span class="tag">llm</span><span class="tag">quant</span><span class="tag">quantitative-finance</span></div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/01/10 14:43</b> ｜ 最近提交 <b>2026/11/10 19:51</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个基于大型语言模型（LLM）的多市场股票智能分析系统。它能够整合多源行情数据、实时新闻资讯，并提供决策看板和自动推送功能。对于审计师来说，这个系统可以帮助他们监控和分析股票市场，了解市场动态，为审计工作提供数据支持。对于备考公务员的朋友，这个系统可以帮助他们了解经济形势，特别是股市动态，这对于政策制定和宏观经济分析有一定的参考价值。典型使用场景包括：审计师在审计过程中需要分析特定公司的股票表现，或者公务员在研究宏观经济政策时需要了解股市的走势。</p>
+  <h3>怎么设计的</h3>
+  <p>该系统采用Python语言开发，利用了大型语言模型进行数据处理和分析。技术栈包括但不限于：数据抓取、自然语言处理、机器学习等。核心架构包括数据源接入、数据处理、模型训练、决策看板展示和自动推送通知。亮点设计包括：1）多源行情数据的整合，能够提供全面的市场信息；2）实时新闻的接入，帮助用户及时了解市场动态；3）自动推送功能，让用户无需手动查询即可获取最新信息；4）零成本定时运行，方便用户在不需要人工干预的情况下持续获取数据。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的股票分析软件，如同花顺、大智慧等，但更加智能化和自动化。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个系统可以帮助他们更全面地了解被审计公司的股票表现，从而提高审计效率和质量。对于公务员，这个系统可以提供宏观经济分析的数据支持，帮助他们更好地制定和执行政策。</p>
+  <span class="plink">▸ <a href="https://github.com/ZhuLinsen/daily_stock_analysis">github.com/ZhuLinsen/daily_stock_analysis</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/GoogleChrome/modern-web-guidance-src">modern-web-guidance-src</a></span>
+  　<span class="meta">GoogleChrome</span></div>
+  <div class="meta"><span class="star">⭐ 1792</span>（今日 +159） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/01/28 04:22</b> ｜ 最近提交 <b>2026/11/12 09:36</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个源代码库，它为GoogleChrome团队提供的[Modern Web Guidance](https://developer.chrome.com/docs/modern-web-guidance)提供了代码和文档。Modern Web Guidance是一套技能，它将Web平台的专业知识、最佳实践和浏览器兼容性数据直接嵌入到编码过程中。它帮助开发者避免使用过时的模式，转而采用能够利用现代Web平台强大功能和能力的解决方案。对于审计师来说，这个项目可以帮助他们了解现代Web技术的最佳实践，从而在审计过程中评估网站或应用程序的技术实现是否遵循了最新的标准和最佳实践。典型使用场景包括在审计过程中检查网站或应用程序的编码质量，确保它们使用了现代Web技术，并且遵循了最佳实践。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用TypeScript编写，其技术栈包括Web平台API、现代JavaScript框架和工具链。核心架构包括代码编写、校准和评估三个主要部分。亮点设计包括：1. 集成浏览器兼容性数据，帮助开发者了解不同浏览器对Web标准的支持情况；2. 提供最佳实践指导，帮助开发者编写高效、可维护的代码；3. 支持代码评估，帮助开发者识别和修复潜在的问题。这些设计使得Modern Web Guidance成为一个全面、实用的现代Web开发工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Web开发指南，帮助开发者了解和掌握现代Web技术。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Modern Web Guidance可以帮助他们了解现代Web技术的最佳实践，从而在审计过程中评估网站或应用程序的技术实现是否遵循了最新的标准和最佳实践。对于审计师来说，这是一个非常有用的工具，可以帮助他们提高审计效率和质量。</p>
+  <span class="plink">▸ <a href="https://github.com/GoogleChrome/modern-web-guidance-src">github.com/GoogleChrome/modern-web-guidance-src</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/shadcn/improve">improve</a></span>
+  　<span class="meta">shadcn</span></div>
+  <div class="meta"><span class="star">⭐ 10917</span>（今日 +361） · 语言未知</div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/06/10 19:06</b> ｜ 最近提交 <b>2026/09/12 19:29</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个代码审计工具，它能够审计任何代码库并编写其他代理执行的实施计划。它的核心思想是使用最强大的模型来理解代码库、判断哪些操作值得执行，并编写规范，然后将执行的任务交给成本更低的模型。这个工具本身不会执行任何操作，它输出的产品是实施计划。对于审计师来说，它可以用来全面审计代码库，识别优先级高的发现，并生成详细的实施计划。例如，审计师可以使用它来审计代码库的安全性问题，或者针对特定的分支进行审计。这个工具的使用场景类似于审计师在审查财务报表时，使用高级工具分析数据，然后根据分析结果制定改进计划。</p>
+  <h3>怎么设计的</h3>
+  <p>improve 项目使用了一种分层的架构设计。它首先使用一个高级模型来审计代码库，这个模型可能是一个复杂的AI模型，能够处理大量的数据和复杂的逻辑。然后，它将审计结果转化为可执行的计划，这些计划以Markdown格式存储，可以被任何支持Agent Skills格式的代理或人类读取。这个设计的关键亮点在于它的高效性和灵活性。高效性体现在能够快速处理大量代码，灵活性体现在生成的计划可以由不同的代理或人类根据实际情况进行调整和执行。这种设计类似于审计师在财务审计中，使用高级数据分析工具来处理大量数据，然后根据分析结果制定详细的审计计划。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的代码审计工具，如SonarQube或Checkmarx，但更专注于自动化和高效性。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，improve 项目可以帮助他们更高效地审计代码库，识别潜在的安全问题和性能瓶颈。它生成的实施计划可以指导审计师进行针对性的审计工作，提高审计效率。此外，它还可以帮助审计师在审查财务系统时，识别与代码库相关的潜在风险。</p>
+  <span class="plink">▸ <a href="https://github.com/shadcn/improve">github.com/shadcn/improve</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/addyosmani/agent-skills">agent-skills</a></span>
+  　<span class="meta">addyosmani</span></div>
+  <div class="meta"><span class="star">⭐ 115978</span>（今日 +787） · JavaScript · <span class="tag">agent-skills</span><span class="tag">antigravity</span><span class="tag">claude-code</span><span class="tag">codex</span><span class="tag">cursor</span><span class="tag">skills</span></div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/02/16 04:20</b> ｜ 最近提交 <b>2026/11/02 03:24</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Agent Skills 项目是一个旨在为AI编码代理提供生产级工程技能的工具。它封装了资深工程师在构建软件时使用的流程、质量关卡和最佳实践，使得AI代理能够一致地遵循这些技能在开发的每个阶段。这个项目通过定义一系列的命令和步骤，帮助AI代理在软件开发的各个阶段（如定义、计划、构建、验证、审查和发布）中执行任务。对于审计师来说，这个工具可以帮助自动化和标准化软件开发流程，确保代码质量和合规性。例如，在审计软件系统的开发过程时，Agent Skills 可以帮助审计师检查代码的构建、测试和审查阶段是否符合既定的标准和流程。对于备考公务员的朋友来说，这个工具可以应用于模拟考试和练习中，通过自动化和标准化的方式提高学习效率和准确性。</p>
+  <h3>怎么设计的</h3>
+  <p>Agent Skills 项目使用JavaScript编写，其核心架构和工作机制包括以下部分：
+1. 技能编码：将资深工程师的软件构建最佳实践编码成一系列的技能，这些技能包括工作流程、质量关卡和最佳实践。
+2. 开发生命周期映射：将每个技能映射到软件开发的生命周期阶段，如定义、计划、构建、验证、审查和发布。
+3. 命令系统：提供9个命令，每个命令对应开发生命周期中的一个阶段，激活相应的技能执行任务。
+4. 自动化和标准化：通过自动化和标准化的方式，确保AI代理在软件开发过程中遵循最佳实践和流程。
+这个项目的亮点设计在于其高度的可扩展性和灵活性，能够适应不同的软件开发环境和需求。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的敏捷开发工具，如Jenkins或Travis CI，帮助开发者自动化和标准化软件开发流程。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Agent Skills 可以帮助审计软件开发的合规性和质量，确保软件系统符合审计标准。对于备考公务员的朋友，虽然直接关联较弱，但可以应用于模拟考试和练习中，提高学习效率和准确性。</p>
+  <span class="plink">▸ <a href="https://github.com/addyosmani/agent-skills">github.com/addyosmani/agent-skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/vercel-labs/agent-browser">agent-browser</a></span>
+  　<span class="meta">vercel-labs</span></div>
+  <div class="meta"><span class="star">⭐ 49893</span>（今日 +708） · Rust</div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/01/11 13:38</b> ｜ 最近提交 <b>2026/11/12 06:13</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>agent-browser 是一个用于浏览器自动化的命令行工具，旨在为人工智能代理提供网页自动化功能。它允许用户打开网页，将其作为无障碍树读取，并从命令行对页面元素进行操作。这对于审计师来说，可以想象成是一个高级的网页爬虫，能够帮助审计师自动化地检查网页内容，比如在审计过程中自动抓取特定网页上的财务数据，或者模拟用户操作来测试网站的安全性。对于备考公务员的朋友来说，它可以用来模拟在线考试的环境，自动填写表格或模拟答题，提高效率。典型使用场景包括自动化审计流程、网页内容抓取、在线考试模拟等。</p>
+  <h3>怎么设计的</h3>
+  <p>agent-browser 使用 Rust 语言编写，其技术栈包括命令行界面、浏览器自动化库和HTTP客户端。核心架构包括一个命令行接口，用于接收用户指令，并通过浏览器自动化库控制浏览器实例。这个库能够解析网页内容，并将它们转换为无障碍树，使得用户可以从命令行对网页元素进行操作。亮点设计包括跨平台支持、高效的浏览器控制以及丰富的命令集。由于 README 中没有详细描述核心架构，这里是对其进行合理概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Selenium WebDriver，但更专注于命令行操作和AI代理的集成。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，agent-browser 可以帮助自动化审计流程，提高审计效率。它可以用来抓取网页上的财务数据，模拟用户操作来测试网站的安全性，或者用于在线审计系统的测试。对于备考公务员的朋友，它可以用来模拟在线考试环境，提高应试能力。</p>
+  <span class="plink">▸ <a href="https://github.com/vercel-labs/agent-browser">github.com/vercel-labs/agent-browser</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/we-promise/sure">原样返回</a></span>
+  　<span class="meta">we-promise</span></div>
+  <div class="meta"><span class="star">⭐ 12988</span>（今日 +1078） · Ruby</div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2025/07/23 12:13</b> ｜ 最近提交 <b>2026/11/12 06:32</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这是一个个人财务管理的应用程序，旨在帮助用户跟踪和管理他们的财务状况。它能够记录现金流量、净资产、支出和收入，并提供一个直观的仪表板来展示这些数据。对于审计师来说，这个工具可以帮助他们更好地理解客户的财务状况，尤其是在进行财务审计或评估客户的财务健康时。对于备考公务员的朋友来说，这个应用可以帮助他们规划和管理个人预算，确保在备考期间有足够的资金支持。</p>
+  <h3>怎么设计的</h3>
+  <p>Sure应用使用Ruby语言开发，其核心架构包括一个用户友好的仪表板，用于展示财务数据，以及一个AI助手，用于回答用户关于储蓄和财务规划的问题。技术栈可能包括Rails框架、数据库管理系统（如PostgreSQL）和前端技术（如HTML、CSS和JavaScript）。亮点设计可能包括AI助手的智能问答功能和仪表板的个性化设置，允许用户根据他们的需求定制视图。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的个人财务管理软件，如YNAB（You Need A Budget）或Mint。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Sure可以帮助他们更全面地了解客户的财务状况，尤其是在进行现金流量分析和净资产评估时。它还可以作为审计过程中的一个辅助工具，帮助审计师识别潜在的风险点。对于备考公务员的朋友，虽然这个应用不是专门为审计设计的，但它可以帮助他们建立良好的财务习惯，这在公务员职业生涯中可能非常有用。</p>
+  <span class="plink">▸ <a href="https://github.com/we-promise/sure">github.com/we-promise/原样返回</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/homeassistant-ai/ha-mcp">ha-mcp</a></span>
+  　<span class="meta">homeassistant-ai</span></div>
+  <div class="meta"><span class="star">⭐ 7388</span>（今日 +645） · Python · <span class="tag">ai</span><span class="tag">claude</span><span class="tag">hacs</span><span class="tag">home-assistant</span><span class="tag">home-automation</span><span class="tag">llm</span></div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2025/09/14 21:23</b> ｜ 最近提交 <b>2026/11/12 09:39</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>HA-MCP是一个基于Python开发的项目，旨在通过配置和自动化Home Assistant来简化智能家居的管理。它允许用户使用Claude、ChatGPT等AI助手来配置和自动化Home Assistant，从而实现智能家居的智能化管理。对于审计师来说，这个项目可以帮助他们理解智能家居系统的配置和管理过程，对于财务专业人士来说，它可以作为一个案例来分析智能家居系统的成本效益，而对于备考公务员的朋友，了解智能家居系统的自动化和配置过程有助于他们理解现代科技在生活中的应用。典型使用场景包括自动化家庭设备控制、能源管理、安全监控等，这些都与审计师的工作有关，可以帮助他们更好地评估和监控家庭或企业的财务状况和风险。</p>
+  <h3>怎么设计的</h3>
+  <p>HA-MCP项目使用Python编写，其核心架构包括AI助手集成、Home Assistant配置自动化和用户界面。技术栈包括Python、Home Assistant API和AI助手API。项目亮点设计包括：1. AI助手集成，允许用户通过自然语言与智能家居系统交互；2. 自动化配置，简化了Home Assistant的配置过程；3. 用户界面友好，易于审计师和财务专业人士使用。这些设计使得HA-MCP成为一个功能强大且易于使用的智能家居管理工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的智能家居自动化工具，如Home Assistant本身，但更专注于AI助手的集成和自动化配置。</p>
+  <h3>与你的关联</h3>
+  <p>HA-MCP与审计师的工作有直接关联，因为它可以帮助审计师评估和监控智能家居系统的财务状况和风险。审计师可以使用这个工具来检查智能家居系统的配置是否合理，以及是否有效地管理了相关成本和风险。对于财务专业人士，HA-MCP可以作为一个案例来分析智能家居系统的成本效益。对于备考公务员的朋友，了解智能家居系统的自动化和配置过程有助于他们理解现代科技在公共管理中的应用。</p>
+  <span class="plink">▸ <a href="https://github.com/homeassistant-ai/ha-mcp">github.com/homeassistant-ai/ha-mcp</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/openai/codex-security">codex-security</a></span>
+  　<span class="meta">openai</span></div>
+  <div class="meta"><span class="star">⭐ 11767</span>（今日 +52） · TypeScript · <span class="tag">ai-security</span><span class="tag">application-security</span><span class="tag">cli</span><span class="tag">code-scanning</span><span class="tag">codex</span><span class="tag">codex-security</span></div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2026/07/14 06:00</b> ｜ 最近提交 <b>2026/11/12 09:32</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Codex Security 是一个由 OpenAI 开发的工具，旨在帮助开发者发现、调查和修复代码中的安全漏洞。它提供了一个命令行界面（CLI）和 TypeScript SDK，使得开发者可以在 Codex 中使用其安全工作流程，或者在终端中自动化这些工作流程。这个工具可以扫描代码库、选定路径或 Git 变更，进行深度扫描以重复标准扫描并返回去重后的发现。它还支持验证候选发现、生成补丁、验证现有修复，并允许用户预览第三方扫描器的发现，将其保存到本地或发布到 Codex Security Cloud。对于审计师来说，这个工具可以帮助他们检查代码库中的潜在安全风险，确保财务报告和相关系统的安全性。</p>
+  <h3>怎么设计的</h3>
+  <p>Codex Security 使用 TypeScript 编写，其核心架构包括 CLI 和 TypeScript SDK。CLI 允许用户在终端中执行扫描和修复操作，而 TypeScript SDK 则提供了更灵活的自动化选项。该工具的工作机制包括：扫描代码库以发现安全漏洞，验证这些漏洞的有效性，并生成修复补丁。其亮点设计包括深度扫描功能，可以重复标准扫描并返回去重后的发现，以及与第三方扫描器的集成能力。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 SonarQube 或 OWASP ZAP，为开发者提供代码安全扫描和修复的功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Codex Security 可以帮助他们在审计过程中识别和评估代码库中的安全风险，确保财务报告和相关系统的合规性和安全性。它可以帮助审计师发现潜在的安全漏洞，从而提高审计效率和准确性。</p>
+  <span class="plink">▸ <a href="https://github.com/openai/codex-security">github.com/openai/codex-security</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/TheAlgorithms/Java">Java</a></span>
+  　<span class="meta">TheAlgorithms</span></div>
+  <div class="meta"><span class="star">⭐ 67040</span>（今日 +51） · Java · <span class="tag">algorithm</span><span class="tag">algorithm-challenges</span><span class="tag">algorithms</span><span class="tag">algorithms-datastructures</span><span class="tag">data-structures</span><span class="tag">hacktoberfest</span></div>
+  <div class="times">
+    抓取 <b>2026/11/12 09:40</b> ｜ 仓库创建 <b>2016/07/16 18:21</b> ｜ 最近提交 <b>2026/11/12 05:56</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个Java编程语言的算法实现集合，它包含了各种算法的Java代码实现。对于审计师来说，这个项目可以作为一个学习和参考的资源，帮助他们理解算法的基本原理和实现方式。它解决了在审计过程中可能遇到的算法问题，比如数据排序、搜索、加密等，可以用来提升审计效率，特别是在处理大量数据时。典型使用场景包括审计师在分析财务数据时，需要使用特定的算法来优化数据处理流程，或者在学习新的审计技术时，可以通过这个项目来加深对算法的理解。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目使用Java语言实现，技术栈包括Java标准库和一些常用的数据结构。核心架构是算法的集合，每个算法都是一个独立的类或方法。工作机制是通过提供算法的代码实现，用户可以在自己的项目中直接使用这些算法。项目的亮点设计包括提供了详细的注释和文档，方便用户理解和使用，以及通过Gitpod.io提供的在线开发环境，用户可以一键运行和编辑算法代码。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的算法学习库，类似于《算法导论》这样的经典教材。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目与他们的工作有较强的关联性。审计师在处理财务数据时，可能会遇到需要使用算法解决的问题，比如数据清洗、统计分析等。通过学习这些算法的实现，审计师可以提高自己的数据处理能力，从而更有效地完成审计工作。</p>
+  <span class="plink">▸ <a href="https://github.com/TheAlgorithms/Java">github.com/TheAlgorithms/Java</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，daily_stock_analysis、improve 和 agent-skills 三个项目在语言分布和 star 增长方面表现突出，分别适用于股票市场分析、代码审计和软件开发流程自动化。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
