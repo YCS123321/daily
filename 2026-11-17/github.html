@@ -1,0 +1,439 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-11-17</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-17</span><span>周二</span><span>TOP10</span></div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/ag-ui">ag-ui</a></span>
+<div class="reason">AG-UI是一个连接智能代理到前端应用的开放协议，其高度的可扩展性和灵活性使其成为开发者集成智能代理的理想选择。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/Univer Office SDK">Univer Office SDK</a></span>
+<div class="reason">Univer Office SDK允许开发者构建自己的AI办公应用，其高度的可定制性和易于扩展性使其在办公自动化领域具有巨大潜力。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/arcane">arcane</a></span>
+<div class="reason">Arcane是一款现代的Docker管理工具，其直观的界面和丰富的API接口使其成为简化Docker管理流程的理想选择。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/ag-ui-protocol/ag-ui">ag-ui</a></span>
+  　<span class="meta">ag-ui-protocol</span></div>
+  <div class="meta"><span class="star">⭐ 19161</span>（今日 +791） · TypeScript · <span class="tag">ag-ui-protocol</span><span class="tag">agent-frontend</span><span class="tag">agent-ui</span><span class="tag">agentic-workflow</span><span class="tag">ai-agents</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2025/05/07 20:49</b> ｜ 最近提交 <b>2026/11/17 03:12</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>AG-UI是一个连接任何智能代理（Agent）到任何前端应用的开放协议。它允许开发者将智能代理集成到他们的前端应用程序中，使得应用程序能够与外部智能代理进行交互。这对于审计师来说，可以想象成将审计工具与财务系统无缝对接，就像审计师可以直接在财务软件中查看和分析数据，而不需要切换到其他工具。对于备考公务员的朋友，这可以类比为将考试辅导系统嵌入到学习平台中，使得学习过程更加便捷和高效。</p>
+  <h3>怎么设计的</h3>
+  <p>AG-UI使用TypeScript编写，其核心架构包括协议定义、客户端库和服务器端接口。协议定义了智能代理与前端应用之间的通信规范，客户端库提供了与智能代理交互的API，服务器端接口则负责处理智能代理的请求和响应。其亮点设计在于其高度的可扩展性和灵活性，允许开发者轻松地集成各种智能代理，同时保持前端应用的稳定性和性能。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的智能代理集成框架</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，AG-UI可以帮助他们更高效地整合审计工具，提高审计工作的自动化程度。对于财务专业背景的审计师，AG-UI可以看作是财务软件的扩展，使得审计工作更加便捷。对于备考公务员的朋友，AG-UI可以看作是学习平台的增强工具，有助于提高学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/ag-ui-protocol/ag-ui">github.com/ag-ui-protocol/ag-ui</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/backnotprop/plannotator">plannotator</a></span>
+  　<span class="meta">backnotprop</span></div>
+  <div class="meta"><span class="star">⭐ 12638</span>（今日 +696） · TypeScript · <span class="tag">agents</span><span class="tag">claude-code</span><span class="tag">code-review</span><span class="tag">codex</span><span class="tag">obsidian</span><span class="tag">opencode</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2025/12/28 10:09</b> ｜ 最近提交 <b>2026/11/17 10:48</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Plannotator是一个工作空间，旨在帮助用户与代理保持同步并掌握所有相关信息。它提供了一系列功能，包括形状设计、决策制定、规划、注释、代码审查、团队协作以及一键发送反馈给代理。这个工具适用于注释计划、规范、Markdown、HTML以及其他交互式工件，并允许用户审查差异和Pull Request（PR），从而能够及时向代理提供反馈。对于审计师来说，它可以用来审查和注释财务报告、审计计划和其他文档，确保所有细节都得到妥善处理。对于备考公务员的朋友，它可以帮助他们整理和注释学习资料，提高学习效率。典型使用场景包括审计报告的编写、财务分析的注释和团队协作中的知识共享。</p>
+  <h3>怎么设计的</h3>
+  <p>Plannotator使用TypeScript编写，其核心架构包括一个用户友好的界面和强大的后端服务。技术栈包括但不限于Amp、Claude Code、Codex、Copilot CLI、Droid和Gemini CLI等。这些技术栈为Plannotator提供了强大的注释、代码审查和团队协作功能。亮点设计包括一键反馈功能，允许用户快速将注释和反馈发送给代理，以及交互式工件的支持，使得用户可以轻松地对各种文档进行注释。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Jira或Trello，但专注于注释和代码审查功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Plannotator可以帮助他们更高效地注释和审查财务报告和审计计划，提高审计工作的准确性和效率。对于备考公务员的朋友，它可以帮助他们整理和注释学习资料，提高学习效率。</p>
+  <span class="plink">▸ <a href="https://github.com/backnotprop/plannotator">github.com/backnotprop/plannotator</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/dream-num/univer">Univer Office SDK</a></span>
+  　<span class="meta">dream-num</span></div>
+  <div class="meta"><span class="star">⭐ 27865</span>（今日 +1828） · TypeScript · <span class="tag">board</span><span class="tag">collaboration</span><span class="tag">doc</span><span class="tag">docx</span><span class="tag">excel</span><span class="tag">offce365</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2022/09/29 20:09</b> ｜ 最近提交 <b>2026/11/17 09:52</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Univer Office SDK 是一个开源的软件开发工具包，旨在帮助开发者构建自己的AI办公应用。它允许用户将编辑、计算、协作和文件处理等功能集成到自己的产品中，无论是面向人类用户还是AI代理。这个SDK基于一个可扩展的开源核心，提供了Sheets和Docs等开源组件，并允许开发者连接自己的应用或代理。对于审计师来说，这个工具可以用来构建自动化审计工具，提高审计效率和准确性；对于备考公务员的朋友，它可以用于创建智能化的学习辅助工具，帮助记忆和复习。</p>
+  <h3>怎么设计的</h3>
+  <p>Univer Office SDK 使用TypeScript语言编写，其核心架构包括一个可扩展的开放源代码核心，支持模块化和插件化设计。技术栈包括但不限于TypeScript、React和Redux。核心工作机制是通过提供预构建的组件和API，使得开发者可以快速集成所需的功能。亮点设计包括高度的可定制性和易于扩展性，允许开发者根据具体需求进行定制。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Microsoft Office，为开发者提供了构建类似功能的工具。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Univer Office SDK 可以用于开发自动化审计工具，提高审计工作的效率和准确性。例如，可以创建一个自动化的财务报表审核工具，帮助审计师快速识别异常数据。对于备考公务员的朋友，这个工具可以帮助他们创建智能化的学习辅助工具，如自动生成练习题和模拟考试。</p>
+  <span class="plink">▸ <a href="https://github.com/dream-num/univer">github.com/dream-num/Univer Office SDK</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/tradermonty/claude-trading-skills">Claude Trading Skills</a></span>
+  　<span class="meta">tradermonty</span></div>
+  <div class="meta"><span class="star">⭐ 6378</span>（今日 +837） · Python</div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2025/10/20 00:37</b> ｜ 最近提交 <b>2026/11/17 07:23</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Claude Trading Skills是一个基于Claude技能的股票投资者和交易者工具包，旨在帮助时间紧张的投资者进行市场分析、技术图表、经济日历、筛选器和交易策略开发。该项目最初是作者的个人项目，利用人工智能来优化自己的交易流程。它适用于以长期投资、ETF和股息股票为核心，在市场条件有利时采用纪律性波段交易作为辅助策略的投资者。该工具包的目标不是将买卖决策外包给AI，而是构建市场回顾、风险管理、交易计划、记录和持续改进的结构。它是开源的，因为更好的交易决策背后的工作流程、清单和审查习惯可以通过共享实践得到改进。这不是一个信号服务或盈利的承诺，而是为希望构建更好的决策过程的交易者提供的工具包。</p>
+  <h3>怎么设计的</h3>
+  <p>Claude Trading Skills使用Python编写，采用模块化设计，包括数据处理、市场分析、技术图表、经济日历、筛选器和交易策略开发等模块。其核心架构是围绕一个中心的工作流程，该流程包括市场回顾、风险管理、交易计划、记录和持续改进。亮点设计包括：1）模块化设计，便于扩展和维护；2）数据隐私和安全政策，确保用户数据的安全；3）开源性质，鼓励社区贡献和共享实践。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的TradingView或Thinkorswim</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Claude Trading Skills可以帮助他们更好地理解市场趋势和交易策略，从而在审计过程中对相关财务数据进行分析和评估。此外，该工具包的纪律性和透明度也有助于审计师在审计过程中保持客观和公正。</p>
+  <span class="plink">▸ <a href="https://github.com/tradermonty/claude-trading-skills">github.com/tradermonty/Claude Trading Skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/elementalsouls/Claude-BugHunter">Claude-BugHunter</a></span>
+  　<span class="meta">elementalsouls</span></div>
+  <div class="meta"><span class="star">⭐ 7491</span>（今日 +1094） · Python · <span class="tag">ai-security</span><span class="tag">anthropic</span><span class="tag">application-security</span><span class="tag">bug-bounty</span><span class="tag">bugbounty</span><span class="tag">bugcrowd</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2026/05/05 19:22</b> ｜ 最近提交 <b>2026/11/17 07:40</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Claude-BugHunter是一个专门为漏洞挖掘和外部红队工作设计的Claude代码技能包。它包含82个技能、15个斜杠命令和681个公开报告模式，涵盖了24个核心漏洞类别。此外，它还提供了企业身份和基础设施攻击矩阵，以及参与文件夹的脚手架。这个项目旨在帮助用户在授权的红队和漏洞挖掘活动中，以及公共培训平台上（如DVWA、OWASP Juice Shop、Hacker101、testphp.vulnweb.com）进行实战测试。对于审计师来说，它可以作为一个强大的工具来帮助识别和评估潜在的安全漏洞，类似于在审计过程中对财务报表进行深入分析，以确保数据的准确性和完整性。</p>
+  <h3>怎么设计的</h3>
+  <p>Claude-BugHunter使用Python编写，其核心架构包括技能库、命令解析器和报告模式数据库。技术栈包括但不限于Python、SQL和可能的Web框架。亮点设计包括技能库的模块化设计，使得用户可以根据需要添加或删除技能；命令解析器能够快速响应用户输入的斜杠命令；报告模式数据库则允许用户根据公开报告模式快速识别和分类漏洞。整个项目的设计理念是提供一套全面、易于使用的工具，帮助用户在漏洞挖掘和红队工作中提高效率。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的漏洞挖掘工具，如OWASP ZAP或Burp Suite，但Claude-BugHunter提供了更多的技能和命令，以及更丰富的报告模式数据库。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，Claude-BugHunter可以帮助他们识别和评估潜在的安全漏洞，类似于在审计过程中对财务报表进行深入分析。它可以用于审计信息系统安全，确保财务数据的安全性和完整性。虽然审计师可能不需要直接编写代码，但理解这个工具的工作原理可以帮助他们更好地理解技术风险，并在审计报告中提供更全面的见解。</p>
+  <span class="plink">▸ <a href="https://github.com/elementalsouls/Claude-BugHunter">github.com/elementalsouls/Claude-BugHunter</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/getarcaneapp/arcane">arcane</a></span>
+  　<span class="meta">getarcaneapp</span></div>
+  <div class="meta"><span class="star">⭐ 8800</span>（今日 +46） · Go · <span class="tag">compose</span><span class="tag">container-management</span><span class="tag">containers</span><span class="tag">docker</span><span class="tag">docker-compose</span><span class="tag">docker-management</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2025/04/19 08:43</b> ｜ 最近提交 <b>2026/11/17 10:47</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>Arcane 是一款现代的 Docker 管理工具，旨在为所有人提供便捷的 Docker 管理体验。它可以帮助用户轻松地创建、部署和管理 Docker 容器，简化了 Docker 的使用过程。对于审计师来说，Arcane 可以帮助他们在审计过程中更高效地检查和管理 Docker 容器，确保系统的安全性和合规性。对于备考公务员的朋友来说，Arcane 可以帮助他们更好地理解和管理服务器和容器技术，这在公务员考试中可能是一个加分项。典型使用场景包括：审计师在审计过程中使用 Arcane 检查 Docker 容器的配置和运行状态，确保系统符合审计要求；公务员考生使用 Arcane 学习 Docker 技术的应用和管理。</p>
+  <h3>怎么设计的</h3>
+  <p>Arcane 使用 Go 语言开发，其技术栈包括 Docker API、WebAssembly 和图形界面。核心架构包括容器管理模块、配置管理模块和用户界面模块。亮点设计包括：支持多平台部署，易于集成到现有的 IT 系统中；提供图形化界面，简化了 Docker 容器的操作和管理；支持容器监控和日志管理，方便用户实时了解容器状态。此外，Arcane 还提供了丰富的 API 接口，方便用户进行二次开发。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 Docker Compose，为用户提供了一个更直观、更易用的 Docker 管理体验。</p>
+  <h3>与你的关联</h3>
+  <p>Arcane 对于审计师来说非常有用，可以帮助他们更高效地审计 Docker 容器，确保系统的安全性和合规性。对于财务专业背景的审计师来说，Arcane 可以帮助他们更好地理解和管理与 Docker 相关的财务风险。对于备考公务员的朋友来说，Arcane 可以帮助他们提升对服务器和容器技术的理解和应用能力。</p>
+  <span class="plink">▸ <a href="https://github.com/getarcaneapp/arcane">github.com/getarcaneapp/arcane</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/DeanChensj/jiangshan-map">jiangshan-map</a></span>
+  　<span class="meta">DeanChensj</span></div>
+  <div class="meta"><span class="star">⭐ 6938</span>（今日 +288） · JavaScript · <span class="tag">ancient-china</span><span class="tag">cartography</span><span class="tag">china-map</span><span class="tag">chinese-history</span><span class="tag">classical-chinese-poetry</span><span class="tag">digital-humanities</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2026/07/24 06:44</b> ｜ 最近提交 <b>2026/11/16 19:59</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>江山时序是一个基于JavaScript开发的中国历史交互地图时间轴项目，它提供了一个从战国时期（公元前403年）到现在的中国历史地图，用户可以通过这个地图探索中国历史上的各个朝代、地区和城市。这个项目不仅展示了各个时期的地理分布，还包括了古代到现代的地名变迁和经典诗歌路线。对于审计师来说，这个项目可以作为一个历史背景研究的工具，帮助他们了解不同历史时期的经济、政治和文化背景，这对于审计某些与历史事件相关的财务数据时可能非常有用。对于备考公务员的朋友来说，这个项目可以帮助他们更好地理解中国历史的发展脉络，尤其是在考察历史背景和地理知识时。典型使用场景包括历史研究、地理教学和公务员考试准备。</p>
+  <h3>怎么设计的</h3>
+  <p>江山时序项目使用JavaScript作为主要编程语言，结合了前端框架和地图API来实现交互式地图。核心架构包括地图数据管理、时间轴控制和交互式元素展示。项目亮点设计包括：1）丰富的地图数据，覆盖了中国历史上的18个朝代和198个领土快照；2）时间轴功能，允许用户按时间顺序浏览历史事件；3）交互式元素，如点击地名查看详细信息、跟随历史路线等。这些设计使得用户可以直观地了解历史变迁和地理分布。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的历史地图工具，如Google Earth的历史模式，但专注于中国历史和地理信息。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，江山时序可以帮助他们了解历史背景，特别是在审计与历史事件相关的财务数据时。对于备考公务员的朋友，这个工具可以增强他们的历史地理知识，有助于在考试中取得好成绩。</p>
+  <span class="plink">▸ <a href="https://github.com/DeanChensj/jiangshan-map">github.com/DeanChensj/jiangshan-map</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/google-labs-code/stitch-skills">stitch-skills</a></span>
+  　<span class="meta">google-labs-code</span></div>
+  <div class="meta"><span class="star">⭐ 9766</span>（今日 +529） · TypeScript</div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2026/01/17 01:17</b> ｜ 最近提交 <b>2026/08/18 04:20</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个技能库，专为与 Google Stitch MCP 服务器协同工作的代理技能而设计。它遵循代理技能开放标准，以确保与诸如 Antigravity、Gemini CLI、Claude Code、Cursor 和 OpenCode 等编码代理的兼容性。对于审计师来说，这个项目可以用来构建自动化流程，比如在审计过程中自动收集和验证数据，类似于在财务审计中使用自动化工具来检查账目和交易记录。典型的使用场景包括自动化审计流程中的数据收集、分析和报告，帮助审计师提高工作效率，减少人为错误。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目使用 TypeScript 编写，其技术栈包括 TypeScript 本身以及与 Google Stitch 服务器交互所需的库。核心架构是一个模块化的设计，允许用户根据需要添加或删除特定的技能和插件。亮点设计包括技能市场的集成，允许用户通过命令行界面或 Codex UI 添加和配置所需的插件，以及 `--sparse` 标志的使用，这可以加快克隆过程，因为它只检查指定的路径。这种设计使得技能库既灵活又高效，类似于财务软件中的模块化设计，允许用户根据具体需求定制功能。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的自动化审计工具</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以用来自动化审计流程，比如数据收集、验证和报告，与审计工作中的数据分析和检查工作密切相关。它可以提高审计效率，减少人为错误，类似于在审计中使用电子表格软件来处理大量数据。</p>
+  <span class="plink">▸ <a href="https://github.com/google-labs-code/stitch-skills">github.com/google-labs-code/stitch-skills</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/mvanhorn/last30days-skill">last30days-skill</a></span>
+  　<span class="meta">mvanhorn</span></div>
+  <div class="meta"><span class="star">⭐ 68203</span>（今日 +135） · Python · <span class="tag">ai-prompts</span><span class="tag">ai-skill</span><span class="tag">bluesky</span><span class="tag">claude</span><span class="tag">claude-code</span><span class="tag">clawhub</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2026/01/24 04:37</b> ｜ 最近提交 <b>2026/11/17 10:38</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个AI代理驱动的搜索引擎，它能够跨Reddit、X（可能指Twitter）、YouTube、HN（Hacker News）、Polymarket和整个网络研究任何主题，然后生成一个基于事实的总结。对于审计师来说，这个工具可以用来快速了解特定话题的最新信息，比如某个公司的财务状况或者行业动态。例如，当审计一个公司时，审计师可以使用这个工具来查找最近30天内关于该公司的讨论和报道，以便更全面地评估其财务健康状况。对于备考公务员的朋友来说，这个工具可以帮助他们快速获取关于政策、经济和时事的最新信息，从而更好地准备考试。典型使用场景包括审计报告撰写、财务分析、政策研究等。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目使用Python编写，其核心是一个AI代理，它能够从多个平台上抓取信息，并通过自然语言处理技术进行总结。技术栈包括但不限于Python、机器学习库和搜索引擎API。核心架构包括数据抓取、信息处理和结果输出三个部分。亮点设计包括跨平台数据抓取能力、高效的文本处理和总结生成算法。项目中的README文件提到了一个验证工作流程，这表明项目注重代码质量和稳定性。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Google Scholar，专门针对特定话题和时间段的信息搜索和总结。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个工具可以帮助他们快速获取和分析与审计对象相关的最新信息，提高工作效率。对于备考公务员的朋友来说，这个工具可以帮助他们快速了解政策动态，增强考试准备。虽然与审计的直接关联性不强，但其在信息获取和分析方面的能力对于审计工作具有一定的辅助作用。</p>
+  <span class="plink">▸ <a href="https://github.com/mvanhorn/last30days-skill">github.com/mvanhorn/last30days-skill</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/NVIDIA/SkillEvaluator">SkillEvaluator</a></span>
+  　<span class="meta">NVIDIA</span></div>
+  <div class="meta"><span class="star">⭐ 2795</span>（今日 +873） · Python · <span class="tag">agent-evaluation</span><span class="tag">agent-plugins</span><span class="tag">agent-security</span><span class="tag">agent-skills</span><span class="tag">agentic-ai</span><span class="tag">benchmark</span></div>
+  <div class="times">
+    抓取 <b>2026/11/17 10:48</b> ｜ 仓库创建 <b>2026/06/24 10:32</b> ｜ 最近提交 <b>2026/11/17 10:47</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>SkillEvaluator 是一个由 NVIDIA 开发的多层级框架，旨在评估人工智能代理的技能和插件。它通过质量门、语义重叠检测、合成评估数据集生成以及实时代理评估等功能，来衡量技能如何影响代理的行为。这个项目可以帮助开发者评估和改进人工智能代理的技能和插件，确保它们的质量、安全性、兼容性，并评估它们在实际应用中的影响。对于审计师来说，这个工具可以帮助他们评估人工智能系统在财务报告和审计过程中的准确性和可靠性，确保自动化流程的合规性。典型使用场景包括审计自动化工具的评估、人工智能在财务分析中的应用评估，以及公务员考试中智能系统的性能评估。</p>
+  <h3>怎么设计的</h3>
+  <p>SkillEvaluator 使用 Python 编写，其技术栈包括但不限于机器学习、自然语言处理和数据分析。核心架构包括质量门控制、语义重叠检测模块、合成数据集生成器以及实时评估引擎。亮点设计包括：1. 质量门控制确保只有满足特定标准的技能和插件才能通过；2. 语义重叠检测帮助识别不同技能之间的相似性，避免冗余；3. 合成数据集生成器可以快速创建用于评估的模拟数据；4. 实时评估引擎能够实时监控代理的行为，评估技能的实际效果。这些设计使得 SkillEvaluator 能够全面、高效地评估人工智能代理的技能和插件。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的 TensorFlow 或 PyTorch，SkillEvaluator 为开发者提供了一个强大的工具来评估和改进人工智能代理的技能和插件。</p>
+  <h3>与你的关联</h3>
+  <p>SkillEvaluator 对于审计师来说非常有用，因为它可以帮助他们评估自动化审计工具的准确性和可靠性，确保审计流程的合规性。此外，它还可以用于评估公务员考试中使用的智能系统的性能，确保考试的公正性和准确性。</p>
+  <span class="plink">▸ <a href="https://github.com/NVIDIA/SkillEvaluator">github.com/NVIDIA/SkillEvaluator</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，ag-ui、Univer Office SDK和arcane在语言分布和star增长方面表现突出。ag-ui和Univer Office SDK均使用TypeScript编写，arcane使用Go语言。在star增长方面，ag-ui和arcane今日增长显著。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
