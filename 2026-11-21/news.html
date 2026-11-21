@@ -1,0 +1,705 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日新闻日报 2026-11-21</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+/* ── 报头 ── */
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.9em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.32em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.dateline span{letter-spacing:.05em}
+/* ── 头条（TLDR 式开篇）── */
+.headlines{padding:10px 0 4px;border-bottom:1px solid var(--ink)}
+.headlines a{display:block;color:var(--ink);text-decoration:none;
+             font-size:1.06em;font-weight:700;line-height:1.9}
+.headlines a b{color:var(--red);font-family:Georgia,serif;margin-right:6px}
+.headlines a:visited{color:var(--ink)}
+/* ── 行情条 ── */
+.mkt{display:flex;gap:14px;overflow-x:auto;white-space:nowrap;
+     scrollbar-width:none;padding:6px 2px;font-size:.78em;color:var(--ink);
+     border-bottom:1px solid var(--hair);font-family:inherit}
+.mkt::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto}
+.mchip b{font-weight:700}
+.mchip.up{color:var(--red)}
+.mchip.dn{color:#1d6b40}
+/* ── 导航 ── */
+.nav{position:sticky;top:0;background:var(--paper);z-index:20;display:flex;
+     gap:14px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;
+     border-bottom:2px solid var(--ink);padding:8px 2px;
+     -webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink);text-decoration:none;font-size:.85em;
+       flex:0 0 auto;letter-spacing:.04em}
+/* ── 栏目标题：── 政 治 ── ── */
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.12em;
+        margin:26px 0 10px;letter-spacing:.3em;font-weight:900}
+[id]{scroll-margin-top:64px}   /* 锚点跳转不被吸顶导航盖住 */
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink);box-shadow:0 3px 0 -1px var(--paper)}
+h2.sect::after{box-shadow:none;border-bottom:none}
+.sub{font-size:.82em;color:var(--red);letter-spacing:.2em;margin:12px 0 4px;
+     font-weight:700}
+.sub.intl{color:#1d6b40}
+/* ── 条目 ── */
+.item{padding:10px 0 12px;border-bottom:1px solid var(--hair)}
+.item:last-child{border-bottom:none}
+.headline{font-weight:700;font-size:1.05em;line-height:1.6}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .src{color:#5c5749}
+.tag{display:inline-block;border:1px solid var(--ink);padding:0 4px;
+     font-size:.74em;margin-right:6px;letter-spacing:.1em}
+.tag.aux{border-color:var(--gray);color:var(--gray)}
+.item p{margin:6px 0;text-align:justify}
+.item p.sig{color:#4a463c;background:#f6f2e6;padding:7px 10px;
+            border-left:3px solid var(--red)}
+.item a,.tlink{color:var(--blue);text-decoration:none}
+.item a:hover,.tlink:hover{text-decoration:underline}
+.rlink{font-size:.8em;font-family:-apple-system,"Microsoft YaHei",sans-serif;
+       color:var(--blue);text-decoration:none;letter-spacing:.05em}
+.readmin{color:var(--gray);font-size:.78em}
+/* ── TOP3 ── */
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.badge.o{background:var(--red)}
+.badge.y{background:#6b6353}
+.hot{padding:10px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.95em;margin-top:4px}
+/* ── 热榜（紧凑单行）── */
+.hotlist{border-top:1px solid var(--hair)}
+.hrow{display:flex;align-items:baseline;gap:8px;padding:4px 0;
+      border-bottom:1px dotted var(--hair);font-size:.9em}
+.hrow:last-child{border-bottom:none}
+.hno{flex:0 0 18px;color:var(--gray);font-weight:700;font-family:Georgia,
+     serif}
+.hno.top{color:var(--red)}
+.hno.zh{color:var(--blue)}
+.htitle{flex:1;color:var(--ink);text-decoration:none}
+.htitle:hover{color:var(--blue)}
+.hval{flex:0 0 auto;color:#a49e8e;font-size:.78em;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+/* ── 联播：速览 + 折叠 ── */
+.digest{border:3px double var(--ink);padding:10px 14px;margin:4px 0 10px;
+        background:#fbf8ef}
+.digest h3{margin:0 0 6px;font-size:.9em;letter-spacing:.25em;
+           text-align:center;font-weight:900}
+.digest li{margin:4px 0;font-size:.92em;text-align:justify}
+details.xb{border-bottom:1px dotted var(--hair)}
+details.xb:last-child{border-bottom:none}
+details.xb summary{display:flex;align-items:baseline;gap:8px;padding:6px 0;
+                   cursor:pointer;list-style:none;font-size:.95em}
+details.xb summary::-webkit-details-marker{display:none}
+details.xb summary .xt{flex:1;font-weight:700;color:var(--ink)}
+details.xb summary .xno{color:var(--red);font-family:Georgia,serif;
+                        font-weight:700;flex:0 0 16px}
+details.xb summary .xd{color:#a49e8e;font-size:.76em;font-family:
+                       -apple-system,"Microsoft YaHei",sans-serif}
+details.xb summary:hover .xt{color:var(--blue)}
+details.xb .xtext{margin:2px 0 10px;color:#33302a;font-size:.9em;
+                  line-height:1.85;text-align:justify}
+/* ── 语言栏目 ── */
+.lang-card{border:1px solid var(--hair);padding:10px 14px;margin-bottom:10px;
+           background:#fcfaf3}
+.lang-card h3{margin:0 0 6px;font-size:.95em;font-weight:900;
+              letter-spacing:.08em}
+.mini{font-size:.8em;color:var(--gray)}
+.mini a{color:var(--blue);text-decoration:none}
+.wprop{display:flex;gap:8px;padding:4px 0;
+       border-bottom:1px dotted var(--hair);font-size:.9em}
+.wprop:last-child{border-bottom:none}
+.wprop b{flex:0 0 3.6em;color:var(--red);font-family:Georgia,serif}
+.wprop span{flex:1}
+.idiom-row{display:flex;gap:10px;padding:4px 0;
+           border-bottom:1px dotted var(--hair);font-size:.92em}
+.idiom-row:last-child{border-bottom:none}
+.idiom-row b{flex:0 0 6em}
+.idiom-row span{flex:1;color:#4a463c}
+.word-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+@media(max-width:420px){.word-grid{grid-template-columns:1fr}}
+.word-row{display:flex;gap:8px;padding:3px 0;font-size:.86em;
+          border-bottom:1px dotted var(--hair)}
+.word-row a{flex:0 0 5.5em;color:var(--blue);text-decoration:none;
+            font-weight:700}
+.word-row span{flex:1;color:#4a463c}
+/* ── 黄帝内经（平铺）── */
+.hd-block{border:1px solid var(--ink);margin:14px 0 4px;background:#fbf8ee}
+.hd-head{background:var(--ink);color:var(--paper);padding:6px 12px;
+         font-size:.95em;font-weight:900;letter-spacing:.1em}
+.hd-body{padding:12px 14px}
+.hd-taojie{font-size:.86em;color:var(--gray);text-align:justify;
+           border-bottom:1px solid var(--hair);padding-bottom:8px;
+           margin-bottom:8px}
+.hd-text{font-size:1.02em;line-height:2;margin:8px 0;text-align:justify}
+.hd-note{font-size:.78em;color:var(--gray);line-height:1.7;text-align:
+         justify;border-left:3px solid var(--hair);padding-left:8px;
+         margin:8px 0}
+.hd-trans{background:#f4efdd;padding:10px 12px;margin:10px 0 4px;
+          font-size:.92em;line-height:1.9;text-align:justify}
+.hd-trans-label{font-weight:900;color:var(--red);letter-spacing:.2em;
+                font-size:.8em;display:block;margin:0 0 4px}
+/* ── 视角/总结 ── */
+.pcard{border-top:1px solid var(--hair);padding:8px 0}
+.pcard h3{margin:0 0 4px;font-size:.9em;color:var(--red);
+          letter-spacing:.15em;font-weight:900}
+.pcard p{margin:0;text-align:justify;font-size:.95em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center;
+        letter-spacing:.08em}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+body.finance .sub{color:#b0500e;letter-spacing:.05em}
+body.finance .sub.intl{color:#0f6b3e}
+body.finance .mkt{border-bottom:1px solid #f0f0f0;color:#555}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+/* 切换按钮固定右上角（2026-10-28 教训：藏在横向滚动导航最右端，
+   窄屏永远看不见——用户截图点名后改为悬浮） */
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/emoji栏标/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.6}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance .headlines{border-bottom:1px solid #f0f0f0}
+body.finance .headlines a{color:#1a4f9c;font-size:1em;line-height:2}
+body.finance .headlines a b{color:#e03328}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        color:#1a1a1a;margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .nav a::before{content:attr(data-e) " "}
+body.finance .item{border-bottom:1px solid #f2f2f2}
+body.finance .item .headline{font-size:1em}
+body.finance .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
+body.finance .item a,body.finance .tlink{color:#2f6fdd}
+body.finance .rlink{color:#2f6fdd}
+body.finance .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
+body.finance .tag.auth{background:#fdecec;color:#d6392f}
+body.finance .badge{background:#e03328;border-radius:4px}
+body.finance .badge.o{background:#f08c00}
+body.finance .badge.y{background:#e8b400}
+body.finance .hot .reason{color:#555}
+body.finance .hrow{border-bottom:1px solid #f7f7f7}
+body.finance .htitle{color:#1a4f9c}
+body.finance .hno.top{color:#e03328}
+body.finance .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
+        border-style:solid}
+body.finance .digest h3{color:#8a6d1a;letter-spacing:.1em}
+body.finance details.xb{border-bottom:1px solid #f7f7f7}
+body.finance details.xb summary{font-family:inherit}
+body.finance details.xb summary .xt{font-weight:600}
+body.finance .lang-card{background:#faf6fd;border:1px solid #ecdcf5;
+        border-radius:8px}
+body.finance .lang-card h3{color:#7a3fa0}
+body.finance .idiom-row b{color:#7a3fa0}
+body.finance .wprop b{color:#7a3fa0}
+body.finance .word-row a{color:#2f6fdd}
+body.finance .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
+        border-radius:8px;overflow:hidden}
+body.finance .hd-head{background:#7a3fa0}
+body.finance .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
+body.finance .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
+body.finance .hd-trans{background:#f3eefb;border-radius:6px}
+body.finance .hd-trans-label{color:#7a3fa0}
+body.finance .pcard h3{color:#d6392f}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<div class="masthead">
+  <h1>每日新闻日报</h1>
+  <div class="motto">政治 · 经济 · 科技 · 文学 · 医学</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-21</span><span>周六</span><span>第 </span></div>
+
+
+<div class="nav"><a href="#top3" data-e="🎯">必看</a><a href="#weibo" data-e="🔥">微博</a><a href="#zhihu" data-e="💡">知乎</a><a href="#lang" data-e="🗣️">语言</a><a href="#words" data-e="📘">单词</a><a href="#huangdi" data-e="🌿">内经</a><a href="#persp" data-e="🧭">视角</a></div>
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+
+
+<h2 class="sect" id="weibo"><span class="sem">🔥</span>微博热搜榜</h2>
+<div class="mini" style="margin:-4px 0 6px">口径：昨日多次抓取·全天热度汇总</div>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno top">1</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E4%BC%9A%E6%99%A4%E5%AF%8C%E6%9C%89%E6%88%90%E6%9E%9C" class="htitle">中俄美元首会晤富有成果</a><span class="hval">103.9万</span></div>
+
+<div class="hrow"><span class="hno top">2</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%A9%AC%E6%96%AF%E5%85%8B%E4%BB%8E%E6%B7%B1%E5%9C%B3%E9%A3%9E%E5%88%B0%E4%BA%86%E4%B8%8A%E6%B5%B7" class="htitle">马斯克从深圳飞到了上海</a><span class="hval">101.5万</span></div>
+
+<div class="hrow"><span class="hno top">3</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%B8%80%E5%9B%BE%E8%AF%BB%E6%87%82%E6%B7%B1%E5%9C%B3%E5%80%A1%E8%AE%AE" class="htitle">一图读懂深圳倡议</a><span class="hval">59.8万</span></div>
+
+<div class="hrow"><span class="hno ">4</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E7%A6%BB%E5%BC%80%E6%B7%B1%E5%9C%B3%E5%89%8D%E4%B8%8E%E7%8E%8B%E6%AF%85%E9%9D%A2%E8%B0%88" class="htitle">特朗普离开深圳前与王毅面谈</a><span class="hval">38.7万</span></div>
+
+<div class="hrow"><span class="hno ">5</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%A4%9A%E6%89%80%E9%AB%98%E6%A0%A1%E4%B8%8D%E5%90%912027%E7%BA%A7%E7%A0%94%E7%A9%B6%E7%94%9F%E6%8F%90%E4%BE%9B%E5%AE%BF%E8%88%8D" class="htitle">多所高校不向2027级研究生提供宿舍</a><span class="hval">30.9万</span></div>
+
+<div class="hrow"><span class="hno ">6</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=Viper%20BLG" class="htitle">Viper BLG</a><span class="hval">30.9万</span></div>
+
+<div class="hrow"><span class="hno ">7</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%BE%8E%E8%82%A1%E5%86%8D%E5%BA%A6%E5%A4%A7%E8%B7%8C" class="htitle">美股再度大跌</a><span class="hval">30.8万</span></div>
+
+<div class="hrow"><span class="hno ">8</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%B8%A4%E4%BA%AC%E5%8D%81%E4%BA%94%E6%97%A5%20%E8%BD%BB%E5%96%9C%E5%89%A7" class="htitle">两京十五日 轻喜剧</a><span class="hval">30.8万</span></div>
+
+<div class="hrow"><span class="hno ">9</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E6%96%87%E5%90%89%E5%84%BF%E5%B8%BD%E5%AD%90" class="htitle">文吉儿帽子</a><span class="hval">30.7万</span></div>
+
+<div class="hrow"><span class="hno ">10</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E7%99%BB%E4%B8%8A%E7%A9%BA%E5%86%9B%E4%B8%80%E5%8F%B7%E6%8C%A5%E6%89%8B%E5%91%8A%E5%88%AB" class="htitle">特朗普登上空军一号挥手告别</a><span class="hval">30.7万</span></div>
+
+<div class="hrow"><span class="hno ">11</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%BB%84%E9%87%91" class="htitle">黄金</a><span class="hval">30.6万</span></div>
+
+<div class="hrow"><span class="hno ">12</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%BC%A0%E6%B3%89%E7%81%B5%E5%B0%B1%E5%83%8F%E6%9C%89%E4%BA%BA%E5%BC%80%E5%9B%A2%E4%B8%80%E7%A7%92%E8%B7%9F%E4%BA%86%E4%B8%80%E6%A0%B7" class="htitle">张泉灵就像有人开团一秒跟了一样</a><span class="hval">30.5万</span></div>
+
+</div>
+
+
+<h2 class="sect" id="zhihu"><span class="sem">💡</span>知乎热榜</h2>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno zh">1</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106822157141534109" class="htitle">中俄美元首发表和平宣言，三国元首重申核战争打不赢也打不得，哪些信息值得重点关注？</a></div>
+
+<div class="hrow"><span class="hno zh">2</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106533852478977877" class="htitle">腾讯披露WorkBuddy近七天年化收入超5亿美元，有用户月付4万元买服务，数据背后有多大「含金量」？</a></div>
+
+<div class="hrow"><span class="hno zh">3</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106820088896512668" class="htitle">如何看待郎平表示，不认同「竞技体育，菜是原罪」这句话，并称「努力一辈子没赢冠军，那也不能算失败者」？</a></div>
+
+<div class="hrow"><span class="hno zh">4</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106816145466417197" class="htitle">美国总统特朗普称美国不支持「台独」，这一发言释放了哪些信号？</a></div>
+
+<div class="hrow"><span class="hno zh">5</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106540440845563614" class="htitle">如何看待混元Hy4 flash登顶Openrouter调用榜首 ，Tokens达DeepSeek两倍？</a></div>
+
+<div class="hrow"><span class="hno zh">6</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/265777669" class="htitle">有哪些可以用科学解释的神奇现象？</a></div>
+
+<div class="hrow"><span class="hno zh">7</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2105945098756289549" class="htitle">张朝阳称自己不看 AI 短剧，火可能只是昙花一现，当下批量生成的 AI 短剧普遍存在哪些痛点？</a></div>
+
+<div class="hrow"><span class="hno zh">8</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2104663850607965878" class="htitle">腾讯姚顺雨主导AI架构精简，而全公司11万人面临大调整，这类扁平化变革落地难点在哪？</a></div>
+
+</div>
+
+
+
+
+
+
+<h2 class="sect" id="lang"><span class="sem">🗣️</span>每日语言</h2>
+
+<div class="lang-card">
+  <h3>十个常用成语</h3>
+  <div class="idiom-grid">
+  
+  <div class="idiom-row"><b>枕戈汗马</b><span>枕着武器，疾驰战马。形容时刻准备杀敌立功。</span></div>
+  
+  <div class="idiom-row"><b>别有天地</b><span>天地境界。比喻另有一番境界。形容风景或艺术创作的境界引人入胜。</span></div>
+  
+  <div class="idiom-row"><b>担雪填河</b><span>挑雪去填塞河。比喻徒劳无功。</span></div>
+  
+  <div class="idiom-row"><b>高材捷足</b><span>高材才能高；捷足迈步快。形容人才能出众，行事敏捷。</span></div>
+  
+  <div class="idiom-row"><b>浃髓沦肌</b><span>浃通，透；沦陷入。浸透肌肉，深入骨髓。比喻感受极深。</span></div>
+  
+  <div class="idiom-row"><b>林下风度</b><span>称颂妇女娴雅飘逸的风采。</span></div>
+  
+  <div class="idiom-row"><b>骑者善堕</b><span>惯于骑马的人常常会从马上摔下来。比喻善长某一技艺的人，往往因大意而招致失败。</span></div>
+  
+  <div class="idiom-row"><b>失魂丧魄</b><span>①形容心烦意乱，精神恍惚。②形容极度惊恐不安。</span></div>
+  
+  <div class="idiom-row"><b>未可厚非</b><span>厚非过分责难、责备。不能过分责备。指说话做事虽有缺点，但还有可取之处，应予谅解。</span></div>
+  
+  <div class="idiom-row"><b>一搭两用</b><span>一样东西当两样用。</span></div>
+  
+  </div>
+</div>
+
+
+<div class="lang-card">
+  <h3>维特根斯坦《逻辑哲学论》命题组 §4–4.116 · 命题、意义与哲学何为</h3>
+  <div class="wprops">
+  
+  <div class="wprop"><b>4</b><span>思想是有意义的命题。</span></div>
+  
+  <div class="wprop"><b>4.01</b><span>命题是现实的图像。命题是我们所想到的现实的模型。</span></div>
+  
+  <div class="wprop"><b>4.022</b><span>命题显示它的意义。</span></div>
+  
+  <div class="wprop"><b>4.024</b><span>理解一个命题，意味着知道：如果它是真的，事情会是怎样的。</span></div>
+  
+  <div class="wprop"><b>4.112</b><span>哲学的目的是对思想的逻辑澄清。</span></div>
+  
+  <div class="wprop"><b>4.116</b><span>凡是能够思想的东西，都能够被清楚地思想；凡是能够说出的东西，都能够被清楚地说出。</span></div>
+  
+  </div>
+  
+  <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
+</div>
+
+
+
+
+<h2 class="sect" id="words"><span class="sem">📘</span>每日背单词</h2>
+<div class="lang-card">
+  <div class="word-grid">
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=innovation&amp;lang=en">innovation</a><span>n.创新</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=input&amp;lang=en">input</a><span>n.输入、投入</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=inquiry&amp;lang=en">inquiry</a><span>n.询问、调查</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=insert&amp;lang=en">insert</a><span>v.插入</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=insight&amp;lang=en">insight</a><span>n.洞察力、见解</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=inspect&amp;lang=en">inspect</a><span>v.检查、视察</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=inspire&amp;lang=en">inspire</a><span>v.激励、启发</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=install&amp;lang=en">install</a><span>v.安装、设置</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=instance&amp;lang=en">instance</a><span>n.例子、实例</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=instinct&amp;lang=en">instinct</a><span>n.本能、直觉</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=institute&amp;lang=en">institute</a><span>n.机构 v.建立</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=instruct&amp;lang=en">instruct</a><span>v.指导、指示</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=instrument&amp;lang=en">instrument</a><span>n.工具、乐器</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=insurance&amp;lang=en">insurance</a><span>n.保险</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=integrate&amp;lang=en">integrate</a><span>v.整合、融合</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=intellectual&amp;lang=en">intellectual</a><span>adj.智力的 n.知识分子</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=intelligent&amp;lang=en">intelligent</a><span>adj.聪明的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=intend&amp;lang=en">intend</a><span>v.打算、意图</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=intense&amp;lang=en">intense</a><span>adj.强烈的、紧张的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interact&amp;lang=en">interact</a><span>v.互动、相互作用</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interfere&amp;lang=en">interfere</a><span>v.干涉、干扰</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=internal&amp;lang=en">internal</a><span>adj.内部的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interpret&amp;lang=en">interpret</a><span>v.解释、口译</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interrupt&amp;lang=en">interrupt</a><span>v.打断、中断</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interval&amp;lang=en">interval</a><span>n.间隔、间隙</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=interview&amp;lang=en">interview</a><span>n./v.面试、采访</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=intimate&amp;lang=en">intimate</a><span>adj.亲密的、私人的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=introduce&amp;lang=en">introduce</a><span>v.介绍、引进</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=invade&amp;lang=en">invade</a><span>v.侵入、侵略</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=invent&amp;lang=en">invent</a><span>v.发明、编造</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=invest&amp;lang=en">invest</a><span>v.投资</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=investigate&amp;lang=en">investigate</a><span>v.调查</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=invite&amp;lang=en">invite</a><span>v.邀请</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=involve&amp;lang=en">involve</a><span>v.涉及、包含</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=isolate&amp;lang=en">isolate</a><span>v.使孤立、隔离</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=issue&amp;lang=en">issue</a><span>n.问题 v.发行</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=item&amp;lang=en">item</a><span>n.项目、条款</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=joint&amp;lang=en">joint</a><span>adj.联合的 n.关节</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=journal&amp;lang=en">journal</a><span>n.期刊、日志</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=justify&amp;lang=en">justify</a><span>v.证明…正当</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=keen&amp;lang=en">keen</a><span>adj.敏锐的、热衷的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=label&amp;lang=en">label</a><span>n.标签 v.标注</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=landscape&amp;lang=en">landscape</a><span>n.风景、形势</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=launch&amp;lang=en">launch</a><span>v.发射、发起</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=lawsuit&amp;lang=en">lawsuit</a><span>n.诉讼</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=layer&amp;lang=en">layer</a><span>n.层、阶层</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=leadership&amp;lang=en">leadership</a><span>n.领导力</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=lean&amp;lang=en">lean</a><span>v.倾斜 adj.瘦的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=legal&amp;lang=en">legal</a><span>adj.合法的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=legitimate&amp;lang=en">legitimate</a><span>adj.正当的、合法的</span></div>
+  
+  </div>
+  <p class="mini">共 50 词 · 释义为本地词库 · 链接为有道词典（含音标/发音）</p>
+</div>
+
+
+
+
+<div class="hd-block" id="huangdi">
+  <div class="hd-head">🌿 黄帝内经 · 素问·调经论篇第六十二</div>
+  <div class="hd-body">
+    
+      <div class="hd-text">调经即调治经络。本篇内容，说明了经络是气血运行和沟通脏腑内外的道路，邪气可以由经络传入脏腑或传出体表，所以治疗上要调治经络；并且讨论了运用针刺治疗脏腑经络寒热虚实病变的原理、症状和补泻手法，所以篇名《调经论》。本篇名言：“五脏之道，皆出于经隧，以行血气。血气不和，百病乃变化而生。是故守经隧焉。”黄帝问日：余闻刺法言，有余泻之，不足补之，何谓有余？何谓不足？岐伯对日：有余有五，不足亦有五，帝欲何问？帝日：愿尽闻之。岐伯日：神有余有不足，气有余有不足，血有余有不足，形有余有不足，志有余有不足。瓦此十者，其气不等也。</div>
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问道：我听刺法上说，病属有余的用泻法，病属不足的用补法。什么是有余，什么是不足呢？岐伯回答说：有余有五种，不足也有五种，你要问哪一种呢？黄帝道：希望都听听。歧伯说：神有有余和不足，气有有余和不足，血有有余和不足，形有有余和不足，志有有余和不足。这十种情况，随气流变，变化无穷。帝日：人有精气津液，四支九窍，五脏十六部①，三百六十五节②，乃生百病，百病之生，皆有虚实。今夫子乃言有余有五,不足亦有五，何以生之乎？岐伯日：皆生于五脏也。夫心藏神，肺藏气，肝藏血，脾藏肉，肾藏志，而此成形。志意通。内连骨髓，而成身形五脏。五脏之道，皆出于经隧，以行血气。血气不和，百病乃变化而生。是故守经隧焉③。</div>
+      
+    
+      <div class="hd-note">【注】①十六部：指手足十二经脉，二脉，一督脉，一任脉。②三百六十五节：指人的全身关节。③经隧：经脉流行之道。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问道：人有精气津液，四肢、九窝，五脏、十六部，三百六十五节；能够发生各种疾病，而各种疾病发生，各有虚实的不同。现在，夫子您只说有余的有五种，不足的也有五种，究竞是怎样发生的呢？岐伯说：都是从五脏发生的。心藏神，肺藏气，肝藏血，脾藏肉，肾藏志，因而生成人的形体。而志意通达，与内部骨髓互相连系，而形成了人的身体五脏。五脏之间相互联系的通道，都是出自经脉之间，从而运行血气。如果血气不调和，就会变化发生各种疾病。所以诊断治疗，要以经脉作为根据。素问·调经论篇第六十二帝日：神有余不足何如？岐伯日：神有余则笑不休，神不足则悲。血气未并①，五脏安定，邪客于形，洒浙起于毫毛，未人于经络也，故命日神之微。帝日：补泻奈何？岐伯日：神有余，则泻其小络之血，出血勿之深斥③，无中其大经,神气乃平。神不足者，视其虚络，按而致之，刺而利之，无出其血，无泄其气，以通其经，神气乃平。帝日：刺微奈何？岐伯日：按摩勿释，著针勿斥，移气于不足，神气乃得复。</div>
+      
+    
+      <div class="hd-note">【注】①血气未并：血气未有偏聚。②神之微：心经的微邪。因心藏神，故有此说。③深斥：推针深刺。④虚络：指虚而陷下的络脉。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：神有余和不足的情况如何？岐伯说：神有余就大笑不止，神不足就悲忧。如果病邪还未与血气混杂，那么，五脏还是安定的，这时病邪只是滞留在身体表面，只是肌肤毫毛恶寒，尚未进入经络，这叫做心经的微邪。黄帝又问：治疗时怎样使用补泻之法呢？岐伯说：神有余的，就刺它的小络之脉，使之出血，使之出血但不要推针深刺，更不要刺伤大的经脉，这样，神气就自然平调了。神不足的要用补法，看准那虚络，按摩以达病所，再配合针刺通利经气，不令出黄童内经血，也不使其气外泄，只是疏通它的经脉，神气就平调了。黄帝又问：针刺微邪应该怎样？岐伯说：按摩病处，不要停止，针刺时不向深推针，只是引导转移病人之气，使之充足，神气就能恢复。帝日：善。有余不足奈何？岐伯日：气有余则喘咳上气，不足则息不利少气。血气未并，五脏安定，皮肤微病，命日白气微泄。帝日：补泻奈何？岐伯日：气有余，则泻其经隧，无伤其经，无出其血，无泄其气。不足，则补其经隧，无出其气。帝日：刺微奈何？岐伯日：按摩勿释，出针视之，白故将深之。适人必革，精气自伏，邪气散乱，无所休息，气泄滕理，真气乃相得。</div>
+      
+    
+      <div class="hd-note">【注】①“精气”两句：精气贯注于内，邪气散乱于浅表。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：很好！气有余和不足的情况是怎样的？岐伯说：气有余就喘咳、上逆，气不足就呼吸不利、气短。如果邪气尚未与气血混杂，那么五脏还是安定的，这时皮肤只是微病，病势尚轻，这叫做肺气微虚。黄帝又问道：补泻的方法怎样？岐伯说：气有余就泻经隧，但不要伤了经脉，不能出血，不能泄气。如气不足的，就要补经隧，不能出气。黄帝又问道：针刺微病时应怎样？素问·调经论筋第六十二岐伯说：应按摩病处，不要停止，同时拿出针让病人看，并伴说，准备深刺。但是刚进针还是改为浅刺，这样病人的精气自然贯注于内，而邪气就散乱于浅表，无处留止，邪气从滕理发泄了，真气自然就能恢复正常。帝日：善。血有余不足奈何？岐伯日：血有余则怒，不足则恐。血气未并，五脏安定，孙络外溢，则络有留血。帝日：补泻奈何？岐伯日：血有余，则泻其盛经出其血；不足，则视其虚经，内针其脉中。久留而视，脉大，疾出其针，无令血泄。帝日：刺留血奈何？.岐伯日：视其血络，刺出其血，无令恶血得入于经，以成其疾。</div>
+      
+    
+      <div class="hd-note">【注】①络有留血：络内血行不畅，有留滞现象。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问说：很好。血有余和不足的情况是怎样的？岐伯说：血有余就易发怒，血不足就易悲忧。如果邪气尚未与血气混杂，五脏还安定，只是孙络邪盛外溢，络内就会有淤血现象。黄帝又问道：补泻的方法怎样？岐伯说：血有余，泻他的盛经，刺之出血；血不足，补益虚弱的经脉，把针扎在经脉上。在进针后，若病人脉象正常，留针时间就要稍长；若脉见洪大，就要立刻拔针，不使出血。黄帝又问道：刺留血的方法怎样？岐伯说：看准哪有留血的络脉，刺出其血，但注意不要让恶血回流入经脉，而引起其他疾病。帝日：善。形有余不足奈何？岐伯日：形有余则腹胀，泾漫不利?；不足则四支不用。血气未并，五脏安定，肌肉蠕动，命日微风。帝日：补泻奈何？岐伯日：形有余则泻其阳经?，不足则补其阳络。帝日：刺微奈何？岐伯日：取分肉间，无中其经，无伤其络，卫气得复，邪气乃索。</div>
+      
+    
+      <div class="hd-note">【注】①泾(jing)瘦不利：大小便不利。②阳经：和下文的“阳络”，指足阳明经脉、足阳明络脉。③索：消散。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：很好。形有余和不足的情况是怎样的？岐伯说：形有余就腹胀，小便不利；形不足则手足不灵活。如果邪气尚未与血气混杂，五脏还安定，只是肌肉有些微微蠕动的感觉，这叫“微风”。黄帝又问道：补泻的方法怎样？岐伯说：形有余就泻足阳明胃经的经脉之气，形不足就补足阳明胃经的络脉之气。黄帝又问道：针刺微风之病应怎样？歧伯说：刺其分肉间以散其邪，不要刺中经脉，也不要伤及络脉，卫素间·调经论篇第六十二气能够恢复，邪气就消散了。帝日：善。志有余不足奈何？岐伯日：志有余则腹胀泄，不足则蕨。血气未并，五脏安定，骨节有动。帝日：补泻奈何？岐伯日：志有余则泻然筋血者，不足则补其复溜。帝日：刺未并奈何？岐伯日：即取之，无中其经，邪所乃能立虚。</div>
+      
+    
+      <div class="hd-note">【注】①骨节有动：骨节之间有微动感。②然筋：即然谷穴。③复溜：穴名。在足内踝上二寸处，属足少阴肾经。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：很好。志有余和不足的情形是怎样的？岐伯说：志有余就要腹胀喰泄，志不足就手足厥冷。如果邪气尚未与气血混杂，那么五脏还是安定的，只是骨节间有微动感。黄帝又道：补泻的方法是怎样的？岐伯说：志有余就刺泻然谷穴出血，志不足就在复溜穴采取补法。黄帝又问道：在邪气与血气尚未相混的时候，怎样刺治呢？岐伯说：就刺骨节微动的地方，不要伤及经脉，只刺邪所留止处，病邪马上就能除去。帝日：善。余已闻虚实之形，不知其何以生。岐伯日：气血以并，阴阳相倾。气乱于卫，血逆于经，血气离居，一实一虚。血并于阴,气并于阳,故为惊狂。血并于阳，气并于阴，乃为灵中③。血并于上，气并于下，心烦婉善怒。血并于下，气并于上，乱而喜忘。帝日：血并于阴，气并于阳，如是血气离居，何者为实？何者为虚?岐伯日：血气者，喜温而恶寒。寒则泣不能流，温则消而去之?，是故气之所并为血虚?，血之所并为气虚。</div>
+      
+    
+      <div class="hd-note">【注】①阴阳相倾：阴阳失去平衡。②血气离居：血气失去正常状态。③灵（jiong）中：内热。④婉：网。③温则消而去之：温暖则气血散开而流走。?并：偏胜。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：很好。我已经听到关于虚实的各种情况，但还不知道是怎样产生的？岐伯说：虚实的发生，是由于邪气与血气混杂，阴阳混乱，失去平衡。这样，气乱于卫分，血逆行于经络，血气都离了本位，就形成了一虚一实的情况。如果血与阴邪相混，气与阳邪相混，就会发生惊狂的病证。如果血与阳邪相混，气与阴邪相混，就会发生内热的病证。如果血与邪气在人体上部相混杂，气与邪气在人体下部相混杂，就会心中烦闷，多怒。如果血与邪气在人体下部相混杂，气与邪气在人体上部相混杂，就会使人气乱健忘。黄帝道：血与阴邪相混，气与阳邪相混，像这样血气离了本位，怎样素间：调经论篇第六十二才算实，怎样才算虚呢？歧伯说：血和气都喜欢温暖而厌恶寒冷。寒冷会使血气涩滞不能畅通，温暖就能使血气消散而易于运行，所以气若偏胜，就有血虚的现象；而血若偏胜，就有气虚的现象。帝日：人之所有者，血与气耳。今夫子乃言血并为虚，气并为虚，是无实乎？岐伯日：有者为实，无者为虚，故气并则无血，血并则无气，今血与气相失,故为虚焉。络之与孙脉俱输于经，血与气并，则为实為。血之与气并走于上，则为大厥，厥则暴死，气复反则生，不反则死。</div>
+      
+    
+      <div class="hd-note">【注】①血与气相失：血和气失去了相互联系。②大厥：突然昏倒，中风之类疾病。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问说：人体最宝贵的，就是血和气了。现在夫子您说血偏胜，气偏胜都是虚，那么就没有实了吗？岐伯说：多余的就叫做实，不足的就叫做虚。因为，气偏胜，血就显得不足；血偏胜，气就显得不足。加之血和气失去了正常联系，所以就成为虚了。大络和孙络里的血气都流注到经脉，如果血与气混杂，那就成为实了。若血和气混杂后，循着经络上逆，就会发生大厥证，得了大厥证，就会突然昏死过去，气能恢复就能活，否则就会死去。帝日：实者何道从来？虚者何道从去？虚实之要，愿闻其故。岐伯日：夫阴与阳皆有俞会。阳注于阴，阴满之外，阴阳匀平，以充其形，九候若一，命日平人。夫邪之生也，或生于阴,或生于阳。其生于阳者，得之凤雨寒暑；其生于阴者，得之饮食居处，阴阳喜怒。</div>
+      
+    
+      <div class="hd-note">【注】①阴与阳：阴经和阳经。②阴阳：指男女。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：实是从什么渠道来的？虚又是从什么渠道去的？虚实的关键，我希望听听其中的缘故。歧伯说：阴经和阳经，都有输入和会合的穴。阳经的气血，灌注到阴经，阴经气血充满了，就流走到其他地方，这样阴阳平衡，来充实人的形体，九候的脉象一致，就是正常人。凡邪气的发生，有生于阴分，有生于阳分。生于阳分，是感受了风雨寒暑；生于阴分，是由于饮食不节，起居失常，房事过度，喜怒无常。帝日：风雨之伤人奈何？岐伯日：风雨之伤人也，先客于皮肤，传入于孙脉，孙脉满则传入于络脉，络脉满则输于大经脉，血气与邪并客于分滕之间，其脉坚大，故日实。实者外坚充满，不可按之，按之则痛。帝日：寒湿之伤人奈何？岐伯日：寒湿之中人也，皮肤收，肌肉坚紧，荣血泣，卫气去，故日虚。虚者，聂辟气不足，按之则气足以温之，故素间·调经论篇第六十二快然而不痛。</div>
+      
+    
+      <div class="hd-note">【注】①收：急而聚，拘急。②聂（zhé)辟（bi)：即折皱的意思。此处指皮肤上的皱纹。聂，通“撸”。辟，通“”，积，指衣服上的皱褶。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：风雨伤人的情况如何？岐伯说：风雨伤人是先侵入皮肤，然后传入孙脉，孙脉充满再传到络脉，络脉充满就注入到大经脉，血气和邪气混杂于分肉滕理之间，其脉象坚大，所以说是实证。实证外表坚实充满，肌肤不能够按触，按触就会疼痛。黄帝又问：寒湿伤人的情况如何？岐伯说：寒湿伤人，会使皮肤拘急，肌肉坚紧，营血凝涩，卫气耗散，所以说是虚证。病虚的人，多是皮肤松弛而有皱纹，卫气不足。按摩就会血脉流畅，则气足而温暖了，所以感觉舒服不痛了。帝日：善！阴之生实奈何？岐伯日：喜怒不节则阴气上逆①，上逆则下虚，下虚则阳气走之，故日实矣。帝日：阴之生虚奈何？岐伯日：喜则气下，悲则气消。消则脉虚空。因寒饮食，寒气熏满，则血泣气去，故日虚矣。</div>
+      
+    
+      <div class="hd-note">【注】①喜怒：偏义复词，偏指怒。②下虚则阳气走之：下部阴气不足，阳气就来凑合。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：很好！阴分发生的实证是怎样的？岐伯说：多怒不节制，就会使阴气上逆。如果阴气上逆，下部的阴气就要不足，下部的阴气不足，阳气就来凑合，所以说是实证。黄帝又道：阴分发生的虚证是怎样的？岐伯说：喜乐太过，其气下陷；悲哀太过，其气消散。气消耗，血脉就虚了。若再吃寒冷的饮食，寒气趁虚而充满于经脉，就会使血涩滞而气耗散，所以说是虚证。帝日：经言阳虚则外寒，阴虚则内热，阳盛则外热，阴盛则内寒。余已闻之矣，不知其所由然也。岐伯日：阳受气于上焦，以温皮肤分肉之间。今寒气在外，则上焦不通，上焦不通，则寒气独留于外，故寒。帝日：阴虚生内热奈何？岐伯日：有所劳倦，形气衰少，谷气不盛，上焦不行，下皖不通。胃气热，热气熏胸中，故内热。帝日：阳盛生外热奈何？岐伯日：上焦不通利，皮肤致密，滕理闭塞，玄府不通，卫气不得泄越，故外热。帝日：阴盛生内寒奈何？岐伯日：蕨气上逆，寒气积于胸中而不泻，不泻则温气去,寒独留，则血凝泣，凝则脉不通，其脉盛大以涩，故中寒。素问·调经论篇第六十二</div>
+      
+    
+      <div class="hd-note">【注】①温气：阳气。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：古经上所说的阳虚产生外寒，阴虚产生内热，阳盛产生外热，阴盛产生内寒。我已听到了这种说法，但不知其所以然。岐伯说：诸阳都是受气于上焦的，来温养滕理之间。现在寒气侵袭于外，就会使上焦之气不能达于肤滕之间，上焦之气不能达于肤滕之间，以致寒气独留在外表，所以恶寒战。黄帝又问：阴虚产生内热是怎么回事？岐伯说：劳倦过度，形体气力衰疲，谷气不足，上焦不能宣发五谷之味，下皖不能布化五谷之精，胃气郁遇生热，上熏胸中，所以阴虚生内热。黄帝又问：阳盛产生外热是怎么回事？岐伯说：上焦之气不畅通顺利，皮肤紧密，滕理闭塞，汗孔不通，卫气不能发泄外越，所以就发生外热。黄帝又问道：阴盛产生内寒是怎么回事？岐伯说：由于厥逆之气上冲，寒气积在胸中而不得下泄，寒气不泻，使阳气消散，而寒气独留，因而血液疑涩，血液凝涩则脉不通畅，其脉虽盛大却兼涩象，所以成为寒中。帝日：阴与阳并，血气以并，病形以成，刺之奈何？岐伯日：刺此者取之经隧，取血于营，取气于卫，用形哉，因四时多少高下。帝日：血气以并，病形以成，阴阳相倾，补泻奈何？岐伯日：泻实者气盛乃内针①，针与气俱内，以开其门，如利其户②。针与气俱出，精气不伤，邪气乃下③。外门不闭③，以出其疾，摇大其道，如利其路，是谓大泻。必切而出，大气乃屈。帝曰：补虚奈何？岐伯日：持针勿置③，以定其意。候呼内针，气出针入?。针空四塞，精无从去。方实而疾出针，气人针出，热不得还。闭塞其门，邪气布散，精气乃得存。动气候时，近气不失，远气乃来,是谓追之。</div>
+      
+    
+      <div class="hd-note">【注】①气盛乃内针：邪气盛才进针。②如：而。③邪气乃下：邪气才退。④外门：针孔。③持针勿置：拿针不立即刺入。③气出针入：在呼气时将针刺入。追之：针刺中的补法。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：阴与阳相混杂，同时又与血气相混杂，病已经形成，刺治的方法应怎样？歧伯说：刺治这样的病证，取其经隧刺之，并刺脉中营血和脉外卫气，同时还要观察病人形体的长短肥瘦和四时气候的不同，而采取或多，或少或高或下的刺法。黄帝又道：邪气已经和血气混杂，病形已成，阴阳失去平衡，这时补法和泻法怎样运用呢？岐伯说：泻实的方法是在邪气盛时进针，使针与气一起入内，从而开放邪气外泄的门户。拔针时，要使气和针一同出来，精气不受伤，邪素同·调经论篇第六十二气就会消退。不闭塞针孔，让邪气出尽，这就要摇大针孔，从而通利邪气处出的道路，这就叫大泻。拔针时一定要急出其针，邪气才会退。黄帝又问：补虚的方法又是怎样的？歧伯说：拿着针先不要忙着针刺，必须定神定志。等待病人呼气时下针，呼气出而针入。这样，针孔四围紧密，使精气没有地方外泄。待气正实的时候迅速把针拔出，气入而针出。这样，针下的热气不能随针而出。堵住其散失之路，而邪气散去，人的精气就能保存了。总而言之，在针刺时，不论入针还是出针都要不失时机，使已得之气不致从针孔外泄散失，使未至之气能够引导而来，这就叫做补法。帝日：夫子言虚实者有十の，生于五脏，五脏五脉耳。夫十二经脉皆生其病，今夫子独言五脏。夫十二经脉者，皆络三百六十五节,节有病必被经脉?，经脉之病皆有虚实，何以合之?岐伯日：五脏者，故得六腑与为表里，经络支节，各生虚实。其病所居,随而调之。病在脉,调之血;病在血，调之络;病在气,调之卫;病在肉，调之分肉；病在筋，调之筋;病在骨，调之骨。针劫刺其下及与急者。病在骨，针药熨；病不知所痛，两为上③；身形有痛，九候莫病，则缪刺之；痛在于左而右脉病者，巨刺之。必谨察其九候，针道备矣。</div>
+      
+    
+      <div class="hd-note">【注】①虚实者有十：神、气、血、肉、志各有虚实，计有十种情况。②被：及。③故：通“固”，本来。④针劫刺：针刺入后，用微火烧其针。③两暨：即阴阳暨脉。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝道：你说虚实有十种，都产生于五脏，具体说是与五脏相联系的五脉。可是人身有十二经脉，能够产生各种病变，现在夫子您只是谈了五脏。那十二经脉，联络人体的三百六十五个气穴，每个气穴有病，必定波及经脉，经脉的病又都有虚实，它们与五脏的虚实关系如何呢？岐伯说：五脏本来和六腑有表里的关系，其经络和支节，各有虚实的病证：根据病变的所在，随时调治。病在脉，可以调治其血；病在血，可以调治其络；病在气，可以调治其卫气；病在肌肉，可以调治其分肉；病在筋，可以调治其筋；病在骨，可以调治其骨。用火针劫刺病处和拘急的地方。如病在骨，可用火针深刺，并用药温熨病处；如病人不知疼痛，最好针刺阳硚阴硚二脉；如人身的形体有疼痛，而九候的脉象没有变化，就用缪刺法治疗；如疼痛在左侧，而右脉出现病象，用巨刺法治疗。必须谨慎审察病人九候的脉象，然后进行针治，这样，针刺的道理就算完备了。</div>
+      
+    
+    
+    <p class="mini">姚春鹏译本 · 全文含题解/注释/译文 · OCR 识别偶有错字</p>
+  </div>
+</div>
+
+
+<h2 class="sect" id="persp"><span class="sem">🧭</span>五大视角</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="sect" id="summary"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card"></div>
+<div class="footer">每日新闻日报 · 右下角可朗读全文 · 页内 mp3 为新闻播音男声版</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button,summary"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
