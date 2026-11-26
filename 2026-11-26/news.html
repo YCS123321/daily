@@ -1,0 +1,725 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日新闻日报 2026-11-26</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+/* ── 报头 ── */
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.9em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.32em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.dateline span{letter-spacing:.05em}
+/* ── 头条（TLDR 式开篇）── */
+.headlines{padding:10px 0 4px;border-bottom:1px solid var(--ink)}
+.headlines a{display:block;color:var(--ink);text-decoration:none;
+             font-size:1.06em;font-weight:700;line-height:1.9}
+.headlines a b{color:var(--red);font-family:Georgia,serif;margin-right:6px}
+.headlines a:visited{color:var(--ink)}
+/* ── 行情条 ── */
+.mkt{display:flex;gap:14px;overflow-x:auto;white-space:nowrap;
+     scrollbar-width:none;padding:6px 2px;font-size:.78em;color:var(--ink);
+     border-bottom:1px solid var(--hair);font-family:inherit}
+.mkt::-webkit-scrollbar{display:none}
+.mchip{flex:0 0 auto}
+.mchip b{font-weight:700}
+.mchip.up{color:var(--red)}
+.mchip.dn{color:#1d6b40}
+/* ── 导航 ── */
+.nav{position:sticky;top:0;background:var(--paper);z-index:20;display:flex;
+     gap:14px;overflow-x:auto;white-space:nowrap;scrollbar-width:none;
+     border-bottom:2px solid var(--ink);padding:8px 2px;
+     -webkit-overflow-scrolling:touch}
+.nav::-webkit-scrollbar{display:none}
+.nav a{color:var(--ink);text-decoration:none;font-size:.85em;
+       flex:0 0 auto;letter-spacing:.04em}
+/* ── 栏目标题：── 政 治 ── ── */
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.12em;
+        margin:26px 0 10px;letter-spacing:.3em;font-weight:900}
+[id]{scroll-margin-top:64px}   /* 锚点跳转不被吸顶导航盖住 */
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink);box-shadow:0 3px 0 -1px var(--paper)}
+h2.sect::after{box-shadow:none;border-bottom:none}
+.sub{font-size:.82em;color:var(--red);letter-spacing:.2em;margin:12px 0 4px;
+     font-weight:700}
+.sub.intl{color:#1d6b40}
+/* ── 条目 ── */
+.item{padding:10px 0 12px;border-bottom:1px solid var(--hair)}
+.item:last-child{border-bottom:none}
+.headline{font-weight:700;font-size:1.05em;line-height:1.6}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .src{color:#5c5749}
+.tag{display:inline-block;border:1px solid var(--ink);padding:0 4px;
+     font-size:.74em;margin-right:6px;letter-spacing:.1em}
+.tag.aux{border-color:var(--gray);color:var(--gray)}
+.item p{margin:6px 0;text-align:justify}
+.item p.sig{color:#4a463c;background:#f6f2e6;padding:7px 10px;
+            border-left:3px solid var(--red)}
+.item a,.tlink{color:var(--blue);text-decoration:none}
+.item a:hover,.tlink:hover{text-decoration:underline}
+.rlink{font-size:.8em;font-family:-apple-system,"Microsoft YaHei",sans-serif;
+       color:var(--blue);text-decoration:none;letter-spacing:.05em}
+.readmin{color:var(--gray);font-size:.78em}
+/* ── TOP3 ── */
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.badge.o{background:var(--red)}
+.badge.y{background:#6b6353}
+.hot{padding:10px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.95em;margin-top:4px}
+/* ── 热榜（紧凑单行）── */
+.hotlist{border-top:1px solid var(--hair)}
+.hrow{display:flex;align-items:baseline;gap:8px;padding:4px 0;
+      border-bottom:1px dotted var(--hair);font-size:.9em}
+.hrow:last-child{border-bottom:none}
+.hno{flex:0 0 18px;color:var(--gray);font-weight:700;font-family:Georgia,
+     serif}
+.hno.top{color:var(--red)}
+.hno.zh{color:var(--blue)}
+.htitle{flex:1;color:var(--ink);text-decoration:none}
+.htitle:hover{color:var(--blue)}
+.hval{flex:0 0 auto;color:#a49e8e;font-size:.78em;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+/* ── 联播：速览 + 折叠 ── */
+.digest{border:3px double var(--ink);padding:10px 14px;margin:4px 0 10px;
+        background:#fbf8ef}
+.digest h3{margin:0 0 6px;font-size:.9em;letter-spacing:.25em;
+           text-align:center;font-weight:900}
+.digest li{margin:4px 0;font-size:.92em;text-align:justify}
+details.xb{border-bottom:1px dotted var(--hair)}
+details.xb:last-child{border-bottom:none}
+details.xb summary{display:flex;align-items:baseline;gap:8px;padding:6px 0;
+                   cursor:pointer;list-style:none;font-size:.95em}
+details.xb summary::-webkit-details-marker{display:none}
+details.xb summary .xt{flex:1;font-weight:700;color:var(--ink)}
+details.xb summary .xno{color:var(--red);font-family:Georgia,serif;
+                        font-weight:700;flex:0 0 16px}
+details.xb summary .xd{color:#a49e8e;font-size:.76em;font-family:
+                       -apple-system,"Microsoft YaHei",sans-serif}
+details.xb summary:hover .xt{color:var(--blue)}
+details.xb .xtext{margin:2px 0 10px;color:#33302a;font-size:.9em;
+                  line-height:1.85;text-align:justify}
+/* ── 语言栏目 ── */
+.lang-card{border:1px solid var(--hair);padding:10px 14px;margin-bottom:10px;
+           background:#fcfaf3}
+.lang-card h3{margin:0 0 6px;font-size:.95em;font-weight:900;
+              letter-spacing:.08em}
+.mini{font-size:.8em;color:var(--gray)}
+.mini a{color:var(--blue);text-decoration:none}
+.wprop{display:flex;gap:8px;padding:4px 0;
+       border-bottom:1px dotted var(--hair);font-size:.9em}
+.wprop:last-child{border-bottom:none}
+.wprop b{flex:0 0 3.6em;color:var(--red);font-family:Georgia,serif}
+.wprop span{flex:1}
+.idiom-row{display:flex;gap:10px;padding:4px 0;
+           border-bottom:1px dotted var(--hair);font-size:.92em}
+.idiom-row:last-child{border-bottom:none}
+.idiom-row b{flex:0 0 6em}
+.idiom-row span{flex:1;color:#4a463c}
+.word-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
+@media(max-width:420px){.word-grid{grid-template-columns:1fr}}
+.word-row{display:flex;gap:8px;padding:3px 0;font-size:.86em;
+          border-bottom:1px dotted var(--hair)}
+.word-row a{flex:0 0 5.5em;color:var(--blue);text-decoration:none;
+            font-weight:700}
+.word-row span{flex:1;color:#4a463c}
+/* ── 黄帝内经（平铺）── */
+.hd-block{border:1px solid var(--ink);margin:14px 0 4px;background:#fbf8ee}
+.hd-head{background:var(--ink);color:var(--paper);padding:6px 12px;
+         font-size:.95em;font-weight:900;letter-spacing:.1em}
+.hd-body{padding:12px 14px}
+.hd-taojie{font-size:.86em;color:var(--gray);text-align:justify;
+           border-bottom:1px solid var(--hair);padding-bottom:8px;
+           margin-bottom:8px}
+.hd-text{font-size:1.02em;line-height:2;margin:8px 0;text-align:justify}
+.hd-note{font-size:.78em;color:var(--gray);line-height:1.7;text-align:
+         justify;border-left:3px solid var(--hair);padding-left:8px;
+         margin:8px 0}
+.hd-trans{background:#f4efdd;padding:10px 12px;margin:10px 0 4px;
+          font-size:.92em;line-height:1.9;text-align:justify}
+.hd-trans-label{font-weight:900;color:var(--red);letter-spacing:.2em;
+                font-size:.8em;display:block;margin:0 0 4px}
+/* ── 视角/总结 ── */
+.pcard{border-top:1px solid var(--hair);padding:8px 0}
+.pcard h3{margin:0 0 4px;font-size:.9em;color:var(--red);
+          letter-spacing:.15em;font-weight:900}
+.pcard p{margin:0;text-align:justify;font-size:.95em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center;
+        letter-spacing:.08em}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+body.finance .sub{color:#b0500e;letter-spacing:.05em}
+body.finance .sub.intl{color:#0f6b3e}
+body.finance .mkt{border-bottom:1px solid #f0f0f0;color:#555}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+/* 切换按钮固定右上角（2026-10-28 教训：藏在横向滚动导航最右端，
+   窄屏永远看不见——用户截图点名后改为悬浮） */
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/emoji栏标/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.6}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance .headlines{border-bottom:1px solid #f0f0f0}
+body.finance .headlines a{color:#1a4f9c;font-size:1em;line-height:2}
+body.finance .headlines a b{color:#e03328}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        color:#1a1a1a;margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .nav a::before{content:attr(data-e) " "}
+body.finance .item{border-bottom:1px solid #f2f2f2}
+body.finance .item .headline{font-size:1em}
+body.finance .item p.sig{background:#f8f8f8;border-left:none;border-radius:6px}
+body.finance .item a,body.finance .tlink{color:#2f6fdd}
+body.finance .rlink{color:#2f6fdd}
+body.finance .tag{border:none;background:#eef4ff;color:#2f6fdd;border-radius:3px}
+body.finance .tag.auth{background:#fdecec;color:#d6392f}
+body.finance .badge{background:#e03328;border-radius:4px}
+body.finance .badge.o{background:#f08c00}
+body.finance .badge.y{background:#e8b400}
+body.finance .hot .reason{color:#555}
+body.finance .hrow{border-bottom:1px solid #f7f7f7}
+body.finance .htitle{color:#1a4f9c}
+body.finance .hno.top{color:#e03328}
+body.finance .digest{border:1px solid #f0e2a0;background:#fffbe8;border-radius:8px;
+        border-style:solid}
+body.finance .digest h3{color:#8a6d1a;letter-spacing:.1em}
+body.finance details.xb{border-bottom:1px solid #f7f7f7}
+body.finance details.xb summary{font-family:inherit}
+body.finance details.xb summary .xt{font-weight:600}
+body.finance .lang-card{background:#faf6fd;border:1px solid #ecdcf5;
+        border-radius:8px}
+body.finance .lang-card h3{color:#7a3fa0}
+body.finance .idiom-row b{color:#7a3fa0}
+body.finance .wprop b{color:#7a3fa0}
+body.finance .word-row a{color:#2f6fdd}
+body.finance .hd-block{border:1px solid #ecdcf5;background:#faf6fd;
+        border-radius:8px;overflow:hidden}
+body.finance .hd-head{background:#7a3fa0}
+body.finance .hd-taojie{border-bottom:1px solid #f0eaf5;color:#8b8696}
+body.finance .hd-note{border-left:3px solid #ecdcf5;color:#8b8696}
+body.finance .hd-trans{background:#f3eefb;border-radius:6px}
+body.finance .hd-trans-label{color:#7a3fa0}
+body.finance .pcard h3{color:#d6392f}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<div class="masthead">
+  <h1>每日新闻日报</h1>
+  <div class="motto">政治 · 经济 · 科技 · 文学 · 医学</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-26</span><span>周四</span><span>第 </span></div>
+
+
+<div class="nav"><a href="#top3" data-e="🎯">必看</a><a href="#weibo" data-e="🔥">微博</a><a href="#zhihu" data-e="💡">知乎</a><a href="#lang" data-e="🗣️">语言</a><a href="#words" data-e="📘">单词</a><a href="#thought" data-e="🧠">思维</a><a href="#huangdi" data-e="🌿">内经</a><a href="#persp" data-e="🧭">视角</a></div>
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+
+
+<h2 class="sect" id="weibo"><span class="sem">🔥</span>微博热搜榜</h2>
+<div class="mini" style="margin:-4px 0 6px">口径：昨日多次抓取·全天热度汇总</div>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno top">1</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E8%88%AA%E5%A4%A9%E5%91%98%E6%89%8B%E6%8C%87%E5%9B%BD%E6%97%97%E5%90%91%E9%95%9C%E5%A4%B4%E6%95%AC%E7%A4%BC" class="htitle">巴基斯坦航天员手指国旗向镜头敬礼</a><span class="hval">204.0万</span></div>
+
+<div class="hrow"><span class="hno top">2</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E9%BB%84%E4%BB%81%E5%8B%8B%E6%AF%8F%E5%A4%A9%E6%8E%A5%E5%8F%971%E4%B8%AA%E5%8D%8A%E5%B0%8F%E6%97%B6%E6%B2%BB%E7%96%97" class="htitle">黄仁勋每天接受1个半小时治疗</a><span class="hval">98.1万</span></div>
+
+<div class="hrow"><span class="hno top">3</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%BA%9A%E5%A4%AA%E5%90%88%E4%BD%9C%E9%B9%8F%E7%A8%8B%E4%B8%87%E9%87%8C" class="htitle">亚太合作鹏程万里</a><span class="hval">76.3万</span></div>
+
+<div class="hrow"><span class="hno ">4</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%A4%A9%E9%9C%B8%20%E4%BD%93%E5%9D%9B" class="htitle">天霸 体坛</a><span class="hval">74.3万</span></div>
+
+<div class="hrow"><span class="hno ">5</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%A5%9E%E8%88%9F24%E5%8F%B7%E5%8F%91%E5%B0%84" class="htitle">神舟24号发射</a><span class="hval">49.9万</span></div>
+
+<div class="hrow"><span class="hno ">6</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%89%B9%E6%9C%97%E6%99%AE%E5%AF%B9%E4%B8%80%E9%81%93%E4%B8%AD%E5%9B%BD%E8%8F%9C%E5%BF%B5%E5%BF%B5%E4%B8%8D%E5%BF%98" class="htitle">特朗普对一道中国菜念念不忘</a><span class="hval">44.0万</span></div>
+
+<div class="hrow"><span class="hno ">7</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=AI%E6%8D%A2%E8%84%B8%E8%BF%98%E6%B2%A1%E5%AE%8CAI%E8%9E%8D%E8%84%B8%E5%8F%88%E6%9D%A5%E4%BA%86" class="htitle">AI换脸还没完AI融脸又来了</a><span class="hval">43.2万</span></div>
+
+<div class="hrow"><span class="hno ">8</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E8%8F%A9%E8%90%A8%E7%9A%84%E5%BF%83%E8%82%A0%E6%92%92%E6%97%A6%E7%9A%84%E8%A1%A8%E8%BE%BE%E8%83%BD%E5%8A%9B" class="htitle">菩萨的心肠撒旦的表达能力</a><span class="hval">43.1万</span></div>
+
+<div class="hrow"><span class="hno ">9</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E7%8E%8B%E7%89%8C%E5%AF%B9%E7%8E%8B%E7%89%8C%E7%AC%AC%E5%8D%81%E5%AD%A3%E9%98%B5%E5%AE%B9" class="htitle">王牌对王牌第十季阵容</a><span class="hval">42.3万</span></div>
+
+<div class="hrow"><span class="hno ">10</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E4%BB%BB%E6%97%B6%E5%AE%8C%E8%96%9B%E4%BB%81%E9%9B%85%E5%90%BB%E6%88%8F%E7%AC%91%E5%9C%BA" class="htitle">任时完薛仁雅吻戏笑场</a><span class="hval">32.2万</span></div>
+
+<div class="hrow"><span class="hno ">11</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6" class="htitle">巴基斯坦</a><span class="hval">31.9万</span></div>
+
+<div class="hrow"><span class="hno ">12</span><a target="_blank" rel="noopener" href="https://s.weibo.com/weibo?q=%E6%BC%94%E5%91%98%E5%A5%BD%E5%83%8F%E5%BF%98%E8%AE%B0%E8%87%AA%E5%B7%B1%E4%B8%AD%E7%AE%AD%E4%BA%86" class="htitle">演员好像忘记自己中箭了</a><span class="hval">31.7万</span></div>
+
+</div>
+
+
+<h2 class="sect" id="zhihu"><span class="sem">💡</span>知乎热榜</h2>
+<div class="hotlist">
+
+<div class="hrow"><span class="hno zh">1</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108654680351797564" class="htitle">神舟二十四号载人飞船发射取得圆满成功，中国空间站迎来首位外籍航天员，此次发射任务还有哪些看点？</a></div>
+
+<div class="hrow"><span class="hno zh">2</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108451365806776772" class="htitle">AI 短剧《丑狐》爆火后引发大量讨论，它能戳中观众的核心原因是什么？</a></div>
+
+<div class="hrow"><span class="hno zh">3</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108516619337064991" class="htitle">年轻人开始劝父母卖县城空房，换成现金收利息，空置多年的房子有必要留吗？</a></div>
+
+<div class="hrow"><span class="hno zh">4</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/365957338" class="htitle">为什么我觉得憨豆先生的表演非常庸俗幼稚，一点儿也不可笑？是中西文化的不同么？</a></div>
+
+<div class="hrow"><span class="hno zh">5</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2104246988380418941" class="htitle">高志凯称欧洲在人工智能发展中的作用几乎是零，这一观点是否站得住脚？</a></div>
+
+<div class="hrow"><span class="hno zh">6</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108601916930225865" class="htitle">特朗普称黄仁勋是「国家瑰宝」，若在美遇不公可去中国，黄仁勋未来若来华可能有哪些选择？</a></div>
+
+<div class="hrow"><span class="hno zh">7</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108210685716820377" class="htitle">因开塞露含甘油，自媒体宣传其可保湿淡纹、功效逼近大牌面霜，真这么管用吗？有其他体面一点的护肤办法吗？</a></div>
+
+<div class="hrow"><span class="hno zh">8</span><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/2106383813853159640" class="htitle">黄多多贝儿先后官宣出道，星二代扎堆进圈会挤压普通新人发展机会吗？</a></div>
+
+</div>
+
+
+
+
+
+
+<h2 class="sect" id="lang"><span class="sem">🗣️</span>每日语言</h2>
+
+<div class="lang-card">
+  <h3>十个常用成语</h3>
+  <div class="idiom-grid">
+  
+  <div class="idiom-row"><b>真情实感</b><span>真挚的感情，实在的感受。</span></div>
+  
+  <div class="idiom-row"><b>别籍异居</b><span>指另立门户，彼此分居。</span></div>
+  
+  <div class="idiom-row"><b>丹青妙手</b><span>丹青原指丹砂和青欔两种作颜料的矿物，后泛指颜料。多指国画大师。</span></div>
+  
+  <div class="idiom-row"><b>纲目不疏</b><span>比喻法令细密。</span></div>
+  
+  <div class="idiom-row"><b>骥子龙文</b><span>骥子千里马；龙文骏马名，旧时多指神童。原为佳子弟的代称◇多比喻英才。</span></div>
+  
+  <div class="idiom-row"><b>埒才角妙</b><span>比才艺，争最妙。</span></div>
+  
+  <div class="idiom-row"><b>耆年硕德</b><span>耆古称六十岁为耆，泛指年高。硕大。比喻年高而德望很重。</span></div>
+  
+  <div class="idiom-row"><b>盛情难却</b><span>浓厚的情意难以推辞。</span></div>
+  
+  <div class="idiom-row"><b>尾生之信</b><span>尾生古代传说中坚守信约的人，他为守约而甘心淹死。比喻只知道守约，而不懂得权衡利害关系。</span></div>
+  
+  <div class="idiom-row"><b>一成一旅</b><span>成古时以方圆十里为一成；旅古时以兵士五百人为一旅。形容地窄人少，力量单薄。</span></div>
+  
+  </div>
+</div>
+
+
+<div class="lang-card">
+  <h3>维特根斯坦《逻辑哲学论》命题组 §2.1–2.225 · 图像论：思想如何描绘世界</h3>
+  <div class="wprops">
+  
+  <div class="wprop"><b>2.1</b><span>我们给自己造事实的图像。</span></div>
+  
+  <div class="wprop"><b>2.12</b><span>图像是现实的一个模型。</span></div>
+  
+  <div class="wprop"><b>2.141</b><span>图像是一个事实。</span></div>
+  
+  <div class="wprop"><b>2.15</b><span>图像的诸元素以确定的方式相互结合，这表示事物也是以同样的方式相互结合的。</span></div>
+  
+  <div class="wprop"><b>2.17</b><span>图像为了能按它自己的方式——正确地或错误地——描绘现实，而必须与现实共有的东西，是它的描绘形式。</span></div>
+  
+  <div class="wprop"><b>2.223</b><span>要知道图像是真还是假，必须将它与现实相比较。</span></div>
+  
+  <div class="wprop"><b>2.224</b><span>单从图像本身不能知道它是真的还是假的。</span></div>
+  
+  <div class="wprop"><b>2.225</b><span>不存在先天为真的图像。</span></div>
+  
+  </div>
+  
+  <p class="mini"><a class="tlink" target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%80%BB%E8%BE%91%E5%93%B2%E5%AD%A6%E8%AE%BA">📖 导读词条：《逻辑哲学论》词条（维基百科·含七大数据命题导读）</a></p>
+</div>
+
+
+
+<h2 class="sect" id="thought"><span class="sem">🧠</span>思维边界 · 今日深读</h2>
+
+<div class="lang-card"><a class="tlink" target="_blank" rel="noopener" href="https://www.zhihu.com/question/2108601916930225865">特朗普称黄仁勋是「国家瑰宝」，若在美遇不公可去中国，黄仁勋未来若来华可能有哪些选择？</a></div>
+
+
+
+<h2 class="sect" id="words"><span class="sem">📘</span>每日背单词</h2>
+<div class="lang-card">
+  <div class="word-grid">
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=relevant&amp;lang=en">relevant</a><span>adj.相关的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reliable&amp;lang=en">reliable</a><span>adj.可靠的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=relieve&amp;lang=en">relieve</a><span>v.缓解、减轻</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reluctant&amp;lang=en">reluctant</a><span>adj.不情愿的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rely&amp;lang=en">rely</a><span>v.依赖</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remain&amp;lang=en">remain</a><span>v.保持、剩下</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remark&amp;lang=en">remark</a><span>n./v.评论</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remedy&amp;lang=en">remedy</a><span>n.补救、疗法</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remind&amp;lang=en">remind</a><span>v.提醒</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=remote&amp;lang=en">remote</a><span>adj.遥远的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=render&amp;lang=en">render</a><span>v.使成为、给予</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=renew&amp;lang=en">renew</a><span>v.续期、更新</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rent&amp;lang=en">rent</a><span>n.租金</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=repair&amp;lang=en">repair</a><span>v.修理</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=replace&amp;lang=en">replace</a><span>v.替换</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=represent&amp;lang=en">represent</a><span>v.代表、象征</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reproduce&amp;lang=en">reproduce</a><span>v.复制、繁殖</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reputation&amp;lang=en">reputation</a><span>n.声誉</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=request&amp;lang=en">request</a><span>n./v.请求</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=require&amp;lang=en">require</a><span>v.需要、要求</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rescue&amp;lang=en">rescue</a><span>v.营救</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=research&amp;lang=en">research</a><span>n./v.研究</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resemble&amp;lang=en">resemble</a><span>v.类似</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reserve&amp;lang=en">reserve</a><span>v.保留 n.储备</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reside&amp;lang=en">reside</a><span>v.居住</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resign&amp;lang=en">resign</a><span>v.辞职</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resist&amp;lang=en">resist</a><span>v.抵制、抵抗</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resolve&amp;lang=en">resolve</a><span>v.解决、决心</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resource&amp;lang=en">resource</a><span>n.资源</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=respect&amp;lang=en">respect</a><span>n./v.尊重</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=respond&amp;lang=en">respond</a><span>v.回应</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=restore&amp;lang=en">restore</a><span>v.恢复、修复</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=restrain&amp;lang=en">restrain</a><span>v.遏制、抑制</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=restrict&amp;lang=en">restrict</a><span>v.限制</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=result&amp;lang=en">result</a><span>n.结果</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=resume&amp;lang=en">resume</a><span>v.恢复 n.简历</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=retail&amp;lang=en">retail</a><span>n.零售</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=retain&amp;lang=en">retain</a><span>v.保留</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=retire&amp;lang=en">retire</a><span>v.退休</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=retreat&amp;lang=en">retreat</a><span>v.撤退</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reveal&amp;lang=en">reveal</a><span>v.揭示、显示</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=revenue&amp;lang=en">revenue</a><span>n.收入、税收</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reverse&amp;lang=en">reverse</a><span>v.颠倒 adj.相反的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=review&amp;lang=en">review</a><span>n./v.审查、复习</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=revise&amp;lang=en">revise</a><span>v.修改</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=revolution&amp;lang=en">revolution</a><span>n.革命、变革</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=reward&amp;lang=en">reward</a><span>n.报酬 v.奖励</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rigid&amp;lang=en">rigid</a><span>adj.严格的、僵硬的</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=risk&amp;lang=en">risk</a><span>n.风险</span></div>
+  
+  <div class="word-row"><a target="_blank" rel="noopener" href="https://dict.youdao.com/result?word=rival&amp;lang=en">rival</a><span>n.对手 adj.竞争的</span></div>
+  
+  </div>
+  <p class="mini">共 50 词 · 释义为本地词库 · 链接为有道词典（含音标/发音）</p>
+</div>
+
+
+
+
+<div class="hd-block" id="huangdi">
+  <div class="hd-head">🌿 黄帝内经 · 素问·五运行大论篇第六十七</div>
+  <div class="hd-body">
+    
+      <div class="hd-text">本篇内容主要包括：一、说明五运学说是从观察宇宙中存在着五种不同的气色而发展而来的。二、叙述了六气的假设位置、运行方向和次序。三、指出地在人之下、太虚之中，依赖大气的托举，而能在宇宙中间。大气的变化，直接影响着地上的万物。四、说明五运六气的变化对人体和对万物生化的影响。所谓“五运”，即五行之气变化运行，故称《五运行大论》。黄帝坐明堂，始正天纲，临观八极，考建五常，请天师而问之日：论言天地之动静①，神明为之纪。阴阳之升降，寒暑彰其兆。余闻五运之数于夫子，夫子之所言，正五气之各主岁尔，首甲定运，余因论之。鬼更区日：土主甲已，金主乙庚，水主丙辛，木主丁王，火主戊癸。子午之上，少阴主之；丑未之上，太阴主之；寅申之上，少阳主之；卯酉之上，阳明主之；辰戌之上，太阳主之；已亥之上，蕨阴主之。不合阴阳@，其故何也？岐伯日：是明道也，此天地之阴阳也。夫数之可数者，人中之阴阳也，然所合，数之可得者也。夫阴阳者，数之可十，推之可百，数之可干，推之可万。天地阴阳者，不以数推，以象之谓也。</div>
+    
+      <div class="hd-note">【注】①天纲：指关文学之大纲，如黄道、二十八宿、地平方位等等。②八极：张志聪：“地之八方也。”③考建五常：张介宾：“考，察也。建，立也。五常，五行气运之常也。”即观察推求五行运气之大法。④论：经论，指《太始天元册》、《阴阳应象大论》、《气交变大论》等文。夫子之所言：指《六节脏象论》中歧伯所讲的话。③不合阴阳：指三阴三阳之六气与五运，和一般说法有不相合之处。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝坐在明堂里，开始校正天文，观看八方地理，研究五行运气的阴阳变化，请岐伯来，向他问道：经论中说天地的动静，是由自然的内在动力所控制，而具有一定的规律性。阴阳的升降，可以由天气的寒署，彰显它的兆端。我也听夫子讲过五运的规律，先生所讲的仅仅是五运主岁，应以甲为首，我与鬼更区曾经讨论这个问题。鬼史区认为：土运统领甲、己，金运统领乙、庚，水运统领丙、辛，木运统领丁、壬，火运统领戊、癸。子、午两年是少阴司天；丑、未两年是太阴司天；寅、申两年是少阳司天；卯、酉两年是阳明司天；辰、成两年是太阳司天；已、亥两年是厥阴司天。与夫子所讲的阴阳之例不符，是什么缘故呢？岐伯说：这是明显的道理，因为五运六气是天地的阴阳。大凡能够查数的是人身中的阴阳，它与天地阴阳相合，是可以用类推的方法求得素间·五运行大论简第六十七一的。阴阳，可以由十推演到百，由千推演到万的。但是天地的阴阳，不能用数来类推，而应该用观察自然之象的方法来推求。帝日：愿闻其所始也。岐伯日：昭乎哉问也！臣览《太始天元册》文，丹天之气?，经于牛女戊分；天之气，经于心尾已分；苍天之气，经于危室柳鬼；素天之气，经于亢氏鼻毕；玄天之气，经于张翼娄胃。所谓戊已分者，奎壁角轮，则天地之门户也④。夫候之所始，道之所生，不可不通也。</div>
+      
+    
+      <div class="hd-note">【注】①丹天：及下文之“（jin)天”、“苍天”、“素天”、“玄天”，传说上古观天象时，见有五色之云气，横亘天空，所以有丹、、苍、素、玄五天之气的说法。丹是赤，是黄，苍是青，素是白，玄是黑。②经于牛女戊分：经，就是横亘，分布排列。牛、女，以及下文的心、尾、危、室、柳、鬼、亢、氏、鼎、毕、张、翼、娄、胃、奎、壁、角、轮等，是二十八宿之名称。二十八宿是古代天文学上的星座位次。戌分，即奎、壁二宿之位。③已分：角、轮二宿之位。④天地之门户：太阳之视运动，位于奎、壁二宿时，正是由春入夏之时，位于角、二宿时，正是由秋入冬之时。夏为阳中之阳，冬为阴中之阴，所以古人称奎、壁、角、为“天地之门户”。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝说：希望听听它是怎样开始的。岐伯说：这是一个很有意思的问题！我曾阅览《太始天元册》看到其中写道：古人观测天象时，看见天空当中有赤色的气，横亘在牛、女二宿与西北方戊位之间；黄色的气横亘在心、尾二宿与东南方己位之间；青色的气横亘在危、室二宿与柳、鬼二宿之间；白色的气横亘在亢、氏二宿与鼻、毕二宿之间；黑色的气横亘在张、翼二宿与娄、胃二宿之间。所谓戊位、已位，分别是奎、壁二宿和角、二宿的所在，奎、壁是在立春到立夏的节气之间，所以称为地户；角、轮是在立秋到立冬的节气之间，所以称为天门。时令的开始，也就是推算气候时令的方法产生根据的第一步，是自然规律所产生的，不可不通晓。帝日：善。《论》言天地者，万物之上下の；左右者，阴阳之道路，未知其所谓也。岐伯日：所谓上下者，岁上下见阴阳之所在也。左右者，诸上见厥阴，左少阴，右太阳；见少阴，左太阴，右蕨阴；见太阴，左少阳，右少阴；见少阳，左阳明，右太阴；见阳明，左太阳，右少阳；见太阳，左厥阴，右阳明。所谓面北而命其位③，言其见也。</div>
+      
+    
+      <div class="hd-note">【注】①上：指司天。下：指在泉。②左右：指司天之左右间气。司天之左侧为左间，司天之右侧为右间。③面北而命其位：上为南，下为北。面向南方时的左右和面向北方时的左右恰恰相反，所以经文说明司天的左右是面向北方时确定的。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝说：对。《天元纪大论》中说过，天地是万物的上下；左右是阴阳运行的道路。我还不明白它的意义。
+
+五运行大论第第六十七岐伯说：所谓上下，是指该年的司天在泉位置上的阴阳。所谓左右，是指司天的左右，凡是司天的位置见到厥阴时，左面是少阴，右面是太阳；见到少阴时，左面是太阴，右面是厥阴；见到太阴时，左面是少阳，右面是少阴；见到少阳时，左面是阳明，右面是太阴；见到阳明时，左面是太阳，右面是少阳；见到太阳时，左面是厥阴，右面是阳明。这里所说的左右是指面向北方时所见的位置。帝日：何谓下？岐伯日：厥阴在上，则少阳在下，左阳明,右太阴①；少阴在上，则阳明在下，左太阳，右少阳；太阴在上，则太阳在下，左厥阴，右阳明，少阳在上，则厥阴在下，左少阴，右太阳；阳明在上，则少阴在下，左太阴，右厥阴；太阳在上，则太阴在下，左少阳，右少阴。所谓面南而命其位，言其见也。上下相遭，寒暑相临③，气相得则和,不相得则病@。</div>
+      
+    
+      <div class="hd-note">【注】①左阳明，右太阴：指在泉之左右间气。下同。②上下相遵（gou)：上指客气，下指主气。上下相遵，就是司天在泉之客气与主时六步之气相交。③寒暑相临：指流行之客气，加临于主时之六气。④相得：客主之气相生。③不相得：客主之气相克。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：什么是下（在泉）呢？岐伯说：厥阴司天，则少阳在泉，在泉之左是阳明，右是太阴；少阴司天，则阳明在泉，左是太阳，右是少阳；太阴司天，则太阳在泉，左是厥阴，右是阳明；少阳司天，则蕨阴在泉，左是少阴，右是太阳；阳明司天，则少阴在泉，左是太阴，右是厥阴；太阳司天，则太阴在泉，左是少阳，右是少阴。这里所说的面向南方确定阴阳的位置，是阴阳在在泉位置上的不同显现。上下相互交合，寒暑相互加临，其气相生的就是和平，相克的就会使人生病。帝日：气相得而病者，何也？岐伯日：以下临上，不当位也。</div>
+      
+    
+      <div class="hd-note">【注】①以下临上：君火为上，相火为下，二火相加，若下加于上为“逆”，上加于下为“顺”。一说：下为子，上为母，如土临火、火临木、木临水、水临金、金临土，以子临母，故为“不相得”。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：有气相生而使人生病的，这又是什么缘故？歧伯说：以下位加临于上位，虽似相得，但位置不当，也属于克贼之类。帝百：动静何如？岐伯日：上者右行，下者左行，左右周天，余而复会也。帝日：余闻鬼更区日：应地者静。今夫子乃言下者左行，不知其所谓也，愿闻何以生之乎？岐伯日：天地动静，五行迁复，虽鬼奥区其上候而已②，犹不能遍明。夫变化之用，天垂象，地成形，七曜纬虚，五行丽地。地者，所以载生成之形类也；虚者，所以列应天之精气也。形精之动，犹根本之与枝叶也，仰观其象，虽远可素间五运行太论篇第六十七541知也。</div>
+      
+    
+      <div class="hd-note">【注】①“上者”两句：张介宾：“上者右行，言天气右旋，自东而西以降于地。下者左行，言地气左转，自西而东以升于天。”这是以面向南方之位置来说的。②上候：天运之候。③七曜纬虚：日月五星循行于太空。七曜，日月与木火土金水五星合称“七曜”。纬，经纬，运行。虚，太虚，宇宙。④五行丽地：五行附着于大地。丽，附着。③应天之精气：指日月五星。古人认为日月五星是由天之精气化生而来，所以称为“应天之精气”。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：司天在泉运转的动静怎样？歧伯说：在上的司天向右行，在下的在泉向左行，左右旋转一周为一年，才回归到原来的位置。黄帝说：我听到鬼更区说，应地之气多静而不动。现在夫子却说在下面的在泉地气向左行，不知是怎样一回事，希望听听怎样会动的？岐伯说：天地的运动和静止，五行的变换反复，鬼更区虽然上察天运之候，但还没有了解全面。大凡天地的变化作用，在天显出星象，在地生成有形的万物，日月五星循行天空，五行之气附着大地。所以大地是盛载由五行之气化生的有形物类的；天空是布列日月五星这应天之精气的。地上的有形万物与天上的无形精气之间，好像根本与枝叶一样，抬起头来观看天象，虽然是遥远的天体，也是可以了解的。帝曰：地之为下,否乎？岐伯日：地为人之下，太虚之中者也。帝日:冯乎①？岐伯白：大气举之也。燥以干之，暑以蒸之，风以动之，湿以润之，寒以坚之，火以温之。故风寒在下，燥热在上，湿气在中，火游行其间。寒暑六人，故令虚而生化也③。故燥胜则地干，暑胜则地热，风胜则地动，湿胜则地泥，寒胜则地裂，火胜则地固矣。</div>
+      
+    
+      <div class="hd-note">【注】①冯（ping)：同“凭”。张介宾：“言地在太虚之中而不坠者，果亦有所依凭否。”②寒暑六入：六气下临大地如自外而入，故称“六入”。寒暑，指一年。六，指六气。③令虚而生化：古人认为绝对充实则不能接受外来之气，而不能生化，只有实中有虚，才能受气而生化。六气作为虚气能使大地生化方物，所以说“令虚而生化”。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：大地是不是在宇宙的最下面？岐伯说：大地位于人的下面，在宇宙之中。黄帝又问：它依凭着什么东西吗？岐伯说：大气托举着它。燥气使它干燥，暑气使它蒸发，风气使它运动，湿气使它润泽，寒气使它坚实，火气使它温暖。所以风寒在下，燥热在上，湿气位于中间，火气游行于左右上下。一年之中，寒暑往来，六气进入地面，地面受其影响而生化万物。所以燥气太过地面就干燥，署气太过地面就发热，风气太过地面上万物皆动，湿气太过地面就会湿润，寒气太过地面就会冻裂，火气太过地面就会坚实固密了。素问·五运行大论篇第六十七帝日：天地之气?，何以候之？岐伯日：天地之气，胜复之作?，不形于诊也。《脉法》日：天地之变，无以脉诊。此之谓也。</div>
+      
+    
+      <div class="hd-note">【注】①天地之气：司天、在泉之气。②胜：克贼侵犯称为“胜”。复：报复。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：司天在泉之气，怎样用脉诊诊察呢？歧伯说：天气与地气胜复的变化，用脉诊是诊察不到的。《脉法》上说：天地的变化，是不能在脉搏上诊察到的。说的就是这个意思。帝日：间气何如？岐伯日：随气所在，期于左右。帝日：期之奈何？岐伯日：从其气则和，违其气则病，不当其位者病，迭移其位者病，失守其位者危，尺寸反者死，阴阳交者死。先立其年，以知其气，左右应见，然后乃可以言死生之逆顺。</div>
+      
+    
+      <div class="hd-note">【注】①间气：六气除司天、在泉之外，位于司天及在泉左右的，都称为“间气”。②左右：指左右手的脉搏。张介宾：“左右者，左右寸尺也。”③不当其位：位置相反。张介宾：“应左而右，应右而左，应上而下，应下而上也。”④迭移其位：指左右相反。王冰：“谓左见右脉，右见左脉。气差错故尔。”③失守其位：张介宾：“克贼之脉见，而本位失守也。”在相应部位不见本脏之脉，反见相克之脉。③阴阳交：左右之脉反见。王冰：“交，谓岁当阴，在右脉反见左，岁当阳，在左脉反见右。左右交见，是谓交。若左独然，或右独然，是不应气，非交也。”</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：左右间气怎样在脉象上诊察？歧伯说：根据间气的位置，可以诊察左右手的脉象。黄帝问：怎样诊察呢？岐伯说：脉与气相顺应的为和平，脉与气相违逆的就会生病，见于其他部位的会生病，左右相反的会生病，见到相克之脉的病就危险，尺寸俱反的就会死亡，阴阳交错而见的也会死亡。首先要确定该年的司天、在泉，从而知道它的左右间气，然后可以推测或死或生，或逆或顺。帝日：寒暑燥湿风火，在人合之，奈何？其于万物，何以生化？岐伯日：东方生风，风生木，木生酸，酸生肝，肝生筋,筋生心。其在天为玄，在人为道，在地为化。化生五味，道生智，玄生神，化生气。神在天为风，在地为木，在体为筋，在气为柔，在脏为肝。其性为暄?，其德为和,其用为动,其色为苍，其化为荣，其虫毛，其政为散，其令宣发，其变摧拉，其皆为陨，其味为酸,其志为怒。怒伤肝，悲胜怒；风伤肝，燥胜风；酸伤筋，辛胜酸。崇间五运行大论篇第六十七</div>
+      
+    
+      <div class="hd-note">【注】①柔：物体柔软。②暄（xuan）：温暖。③虫：泛指动物。④政：统领和管理。与下文的“令”，引申指气候变化加于万物的某些作用，用统治者所施行的政令来比喻。告(shéng)灾害。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：天之寒暑燥湿风火六气，在人体怎样与之相配合呢？它对万物是怎样使之生化的呢？岐伯说：东方生风，风气能使木气生长，木气能产生酸味，酸味能滋养肝脏，肝血能养筋，肝与筋膜和调，则木气充旺能使心气旺盛。六气的变化，在天为玄寞之象，在人为适应变化之道，在地为生化万物。地有生化，就能化生五味，人能适应变化之道，就能产生智慧，天的玄寞之象能够产生神明，使天地万物运动不息，从而化生五行六气。天的神明，在天是风，在地是木，在人体是筋，在物体生化是柔软，在内脏是肝。它的性质是温暖的，它的德性是平和的，它的作用是运动，它的颜色是青苍，它的变化是荣美，它在动物上是有毛的兽类，它在作用上是疏散，它的时令是宣发布散阳和之气，它的变动是摧折，它的灾害是陨落，它在五味是酸味，它在情志是发怒。您怒会损伤肝，悲衰能抑制您怒；风南方生热，热生火，火生苦，苦生心，心生血，血生脾。其在天为热，在地为火，在体为脉，在气为息①，在脏为心。其性为暑，其德为显，其用为躁，其色为赤，其化为茂，其虫羽，其政为明，其令郁蒸，其变炎烁，其，其味为苦，其志为喜。喜伤心，恐胜喜；热伤气，寒胜热；苦伤气，威胜苦。</div>
+      
+    
+      <div class="hd-note">【注】①息：生长。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>南方生热，热气能使火气旺盛，火气能生苦味，苦味能滋养心脏，心能生血脉，心血和调则滋养脾气。所以天的神明，在天是热，在地是火，在人体是血脉，在气化为使万物生长，在内脏是心。它的性质是炎热，它的德性是显露光华，它的作用是躁急，它的颜色是红赤，它的变化是使万物茂盛，在动物是有羽毛的禽类，它在作用上是日照光明，它的时令是地气上蒸，它的变动是使万物焦烁枯稿，它的灾害是楚炳，它在五味为苦味，在情志为喜乐。喜乐过度会损害心，恐惧能克制喜乐；过热也会损害气，寒气能克制热气；苦味太过能损害心气，咸味能克制苦味。中央生湿，湿生土，土生甘，甘生脾，脾生肉，肉生肺。其在天为湿，在地为土，在体为肉，在气为充，在脏为脾。其性静兼?，其德为，其用为化，其色为黄，其化为盈③，其虫课，其政为谧，其令云雨，其变动注，其淫溃，其味为甘，其志为思。思伤脾，怒胜思；湿伤肉，风胜湿；甘伤脾，酸胜甘。</div>
+      
+    
+      <div class="hd-note">【注】①充：充盈肥满。②静兼：安静而包容。张志聪：“静者，土之性。兼者，土旺四季，兼有寒热温凉之四气也。”素问·五运行大论篇第六十七③盈：充满丰盛。④课（luo）：赤体。虫课，无羽毛鳞甲蔽身的动物的总称。③谥（mi)；平静。王冰：“谧，静也，土性安静。”</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>中央生湿，湿气能使土气生长，土气能滋生甘味，甘味能滋养脾脏，脾能滋养肌肉，脾与肉盛则土气充盈，使肺气旺盛。所以天的神明，在天是湿，在地是土，在人体是肌肉，在气化能使形体充实，在内脏是脾。它的性质是安静而包容，它的德性是潮湿润泽，它的功用是化生万物，它的颜色为黄，它的变化是使形体充盛丰满，在动物是无毛羽的裸体动物，它的作用是使天气平静，地气上升，它的时令是云雨及时布行，它的变动是骤雨暴注或淫雨连绵，它的灾变是大水泛滥，在五味为甘甜，在情志为忧思；忧思过度会伤脾牌，您怒能克制忧思；湿气会伤害肌肉，风气能克制湿气；甘味过度会伤害脾，酸味能克制甘味。西方生燥，燥生金，金生辛，辛生肺，肺生皮毛，皮毛生肾。其在天为燥，在地为金，在体为皮毛，在气为成①，在脏为肺。其性为凉，其德为清，其用为固，其色为白，其化为欲，其虫介②，其政为劲，其令雾露，其变肃杀，其告苍落④，其味为辛，其志为忧。忧伤肺，喜胜忧；热伤皮毛，寒胜热；辛伤皮毛，苦胜辛。</div>
+      
+    
+      <div class="hd-note">【注】①成：成熟，成形。高世试：“在气为成者，感秋气而万物成就也。”②虫介：有壳的动物。介，即“甲”，俗称“壳”。③劲：强劲有力。④苍落：凋谢。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>西方生燥，燥气能使金气生长，金气能产生辛味，辛味能滋养肺脏，肺能滋养皮毛，肺与皮毛充旺则金盛而使肾气旺盛。所以天的神明，在天是燥，在地为金，在人体是皮毛，在气化能使万物成就，在内脏是肺。它的性质是清凉，它的德性是清静，它的功用是固卫，它的颜色为白，它的变化为收敛，在动物为甲壳类动物，它的作用是坚劲有力，它的时令是雾露下降，它的变动是使万物生机收杀，它的灾变是枝叶枯萎凋谢，在五味为辛味的物质，在情志为忧愁。忧愁过度会伤害肺，喜乐能克制忧愁；热气过度会伤害皮毛，寒气能克制热气；辛味过度能伤害皮毛，苦味能克制辛味。北方生寒，寒生水，水生咸，咸生肾，肾生骨髓，髓生肝。其在天为寒，在地为水，在体为骨，在气为坚①，在脏为肾。其性为凛?，其德为寒，其用为藏，其色为黑，其化为肃，其虫麟，其政为静，其令霰雪?，其变凝冽，其告冰，其味为咸，其志为恐。恐伤肾，思胜恐；寒伤血，燥胜寒；咸伤血，甘胜威。‘</div>
+      
+    
+      <div class="hd-note">【注】①坚：坚硬。高世试：“在气为坚者，感冬气而万物坚凝也。”②凛：高世：“凛，严厉也。冬气严厉而寒，故其性为凛。”③霰（xian）雪：原脱，据《吴注素问》补。④凝：水结冰。冽：冷极称“冽”。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>北方生寒，寒气能使水气生长，水气能生咸味，咸味能滋养肾脏，肾精能滋生骨髓，肾精骨髓充盈水盛而使肝脏充实。所以天的神明，在天素间·五运行大论篇第六十七是寒，在地是水，在人体是骨，在气化是使物体坚固，在内脏是肾。它的性质是凛冽，它的德性是寒凉，它的作用是贮藏，它的颜色为黑色，它的变化是使万物肃静，在动物为有鳞片的动物，它的作用是静止，它的时令是寒冷冰雪，它的变动是冰冻漂冽，它的灾变是冰電霜雪非时而下，在五味为咸味，在情志为恐惧。恐惧过度会伤害肾，思虑能克制恐惧；寒气过度会伤害血脉，燥气能克制寒气；咸味能伤害血脉，甘味能克制咸味。五气更立，各有所先，非其位则邪，当其位则正。</div>
+      
+    
+      <div class="hd-note">【注】①五气更立：五气交替主时。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>五方之气，交替主时，各有先期而至的气候，若与时令相反就是邪气，与时令相合就是四时正气。帝日：病生之变，何如？岐伯日：气相得则微，不相得则甚。帝曰：主岁何如?？岐伯日：气有余，则制已所胜?，而侮所不胜；其不及，则已所不胜侮而乘之?，已所胜轻而侮之。侮反受邪，侮而受邪,寡于畏也。帝曰:善。</div>
+      
+    
+      <div class="hd-note">【注】①主岁：五行各主一岁，五行主岁称为“五运”。②已所胜：为我所克者。③所不胜：克我者。</div>
+      
+    
+      <div class="hd-trans"><span class="hd-trans-label">📖 译文</span>黄帝问：产生的病变怎样？岐伯说：气与时令相合的虽病亦轻，不相合的其病必重。黄帝问：五气主岁怎样？岐伯说：气太过，一方面能克制自己所克的气，另一方面也能欺悔克制自己的气；如气不及，一方面克制自己的气乘机欺悔，另一方面本来受自己克制的气，也轻视自己而来侵犯。凡是欺悔人的而自己也会受到邪气侵犯，是因为它无所忌婵而招致的。黄帝说：讲得很对。</div>
+      
+    
+    
+    <p class="mini">姚春鹏译本 · 全文含题解/注释/译文 · OCR 识别偶有错字</p>
+  </div>
+</div>
+
+
+<h2 class="sect" id="persp"><span class="sem">🧭</span>五大视角</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 class="sect" id="summary"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card"></div>
+<div class="footer">每日新闻日报 · 右下角可朗读全文 · 页内 mp3 为新闻播音男声版</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button,summary"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
