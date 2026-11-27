@@ -1,0 +1,441 @@
+<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GitHub 每日热门 2026-11-27</title>
+<style>
+:root{--ink:#1c1a17;--paper:#fffdf6;--bg:#efece3;--red:#a63a2b;
+     --hair:#d8d2c2;--gray:#7a7568;--blue:#1e4a75;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+     font-family:"Noto Serif SC","Source Han Serif SC","Songti SC",
+                  "SimSun",serif;
+     font-size:16px;line-height:1.75}
+.sheet{max-width:700px;margin:0 auto;background:var(--paper);
+       padding:18px 20px 30px;min-height:100vh;
+       box-shadow:0 0 14px rgba(60,50,20,.12)}
+.masthead{text-align:center;padding:10px 0 2px}
+.masthead h1{font-size:1.7em;margin:0;letter-spacing:.18em;font-weight:900}
+.masthead .motto{font-size:.72em;color:var(--gray);letter-spacing:.3em;
+                 margin:2px 0 6px}
+.rule-double{border-top:3px double var(--ink);margin:6px 0}
+.dateline{display:flex;justify-content:space-between;font-size:.78em;
+          padding:4px 2px;border-bottom:1px solid var(--ink)}
+.note{border:1px solid var(--hair);padding:6px 10px;font-size:.8em;
+      color:#7a6208;background:#fbf6e4;margin:8px 0}
+h2.sect{display:flex;align-items:center;gap:12px;font-size:1.1em;
+        margin:24px 0 10px;letter-spacing:.3em;font-weight:900}
+h2.sect::before,h2.sect::after{content:"";flex:1;
+        border-top:1px solid var(--ink)}
+.badge{display:inline-block;min-width:22px;text-align:center;
+       background:var(--ink);color:var(--paper);font-weight:700;
+       font-size:.85em;padding:1px 6px;margin-right:8px;vertical-align:2px;
+       font-family:Georgia,serif}
+.hot{padding:9px 0;border-bottom:1px solid var(--hair)}
+.hot:last-child{border-bottom:none}
+.hot .reason{color:#4a463c;font-size:.92em;margin-top:4px}
+.pname{font-weight:700;font-size:1.04em}
+.pname a{color:var(--ink);text-decoration:none}
+.pname a:hover{color:var(--blue)}
+.card{padding:12px 0 14px;border-bottom:1px solid var(--hair)}
+.card:last-child{border-bottom:none}
+.meta{color:var(--gray);font-size:.78em;margin:3px 0 6px;
+      font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.meta .star{color:#8a6d1a;font-weight:600}
+.times{border:1px solid var(--hair);padding:6px 10px;font-size:.78em;
+       color:#5c5749;margin:6px 0;background:#fcfaf3;
+       font-family:-apple-system,"Microsoft YaHei",sans-serif}
+.times b{color:var(--ink)}
+.tag{display:inline-block;border:1px solid var(--gray);color:var(--gray);
+     padding:0 5px;font-size:.74em;margin:0 4px 2px 0}
+.card h3{margin:10px 0 2px;font-size:.9em;color:var(--red);
+         letter-spacing:.15em;font-weight:900}
+.card p{margin:4px 0;text-align:justify}
+.plink a{color:var(--blue);text-decoration:none;font-size:.85em}
+.summary-card{border:3px double var(--ink);padding:12px 16px;
+              line-height:1.85;text-align:justify;background:#fbf8ef}
+.footer{margin-top:26px;border-top:1px solid var(--ink);padding-top:8px;
+        font-size:.72em;color:var(--gray);text-align:center}
+#ttsBtn{position:fixed;right:14px;bottom:18px;z-index:99;border:1px solid
+        var(--ink);background:var(--paper);color:var(--ink);font-size:.9em;
+        font-family:inherit;padding:8px 14px;cursor:pointer;
+        box-shadow:2px 2px 0 var(--ink);letter-spacing:.1em}
+#ttsBtn.stop{background:var(--ink);color:var(--paper)}
+audio{width:100%;height:36px;margin:2px 0}
+.audiobox{margin:8px 0 2px}
+.audiobox .alabel{color:var(--gray);font-size:.76em;margin:2px 0 6px;
+        font-family:-apple-system,"Microsoft YaHei",sans-serif}
+#themeBtn{border:1px solid var(--ink);background:var(--paper);color:var(--ink);
+        font-size:.8em;font-family:inherit;padding:2px 8px;cursor:pointer;
+        letter-spacing:.05em}
+#themeBtn.theme-fab{position:fixed;top:12px;right:14px;z-index:98;
+        box-shadow:1px 1px 0 var(--ink)}
+.sem{display:none}   /* 财经风才显示 emoji 栏标 */
+/* ══ 财经风皮肤（=v8 原版观感：白底/无衬线/紫徽章/圆角）══ */
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:none;max-width:660px;
+        padding:0 12px 18px;min-height:100vh}
+body.finance .masthead{padding-top:14px}
+body.finance .masthead h1{font-size:1.15em;letter-spacing:0}
+body.finance .masthead .motto{display:none}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:1px solid #f0f0f0;justify-content:center;
+        gap:14px;color:#999;font-size:.8em}
+body.finance h2.sect{letter-spacing:.02em;font-size:1.02em;gap:6px;
+        margin:16px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{display:none}
+body.finance .sem{display:inline}
+body.finance .note{background:#fff8e6;border:1px solid #f0e2a0;border-radius:6px}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .card{border-bottom:1px solid #f0f0f0}
+body.finance .pname a{color:#1a4f9c}
+body.finance .times{background:#f8f9fb;border:none;border-radius:6px}
+body.finance .tag{background:#eef4ff;color:#2f6fdd;border:none;border-radius:3px}
+body.finance .card h3{color:#6e40c9;letter-spacing:0;font-size:.95em}
+body.finance .summary-card{background:#fffbe8;border:1px solid #f0e2a0;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{border:none;border-radius:22px;background:#e03328;
+        color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:12px}
+body.finance{font-family:-apple-system,"Microsoft YaHei",sans-serif;
+        font-size:15.5px;line-height:1.62}
+body.finance .sheet{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.08);
+        padding:14px 16px 26px}
+body.finance .masthead h1{font-size:1.3em;letter-spacing:.06em}
+body.finance .rule-double{border-top:none;margin:0}
+body.finance .dateline{border-bottom:none;justify-content:center;gap:14px;
+        color:#888;font-size:.82em}
+body.finance h2.sect{letter-spacing:.05em;font-size:1.02em;gap:8px;margin:22px 0 8px}
+body.finance h2.sect::before,body.finance h2.sect::after{border-top:none}
+body.finance h2.sect::after{display:none}
+body.finance .card{border-bottom:1px solid #f2f2f2}
+body.finance .pname a{color:#1a4f9c}
+body.finance .pname a:hover{color:#2f6fdd}
+body.finance .badge{background:#6e40c9;border-radius:4px}
+body.finance .times{border:1px solid #f0f0f0;background:#f8f9fb;border-radius:6px}
+body.finance .card h3{color:#6e40c9;letter-spacing:.02em}
+body.finance .tag{border:none;background:#eef4ff;border-radius:3px}
+body.finance .plink a{color:#2f6fdd}
+body.finance .summary-card{border:1px solid #f0e2a0;background:#fffbe8;
+        border-radius:8px}
+body.finance .footer{border-top:1px solid #f0f0f0}
+body.finance #ttsBtn{box-shadow:0 2px 8px rgba(0,0,0,.18);border-radius:20px;
+        border:none;background:#e03328;color:#fff}
+body.finance #themeBtn{border:1px solid #ddd;border-radius:14px}
+</style></head><body class="paper">
+<div class="sheet">
+<button id="themeBtn" class="theme-fab" onclick="return toggleTheme()">🎨 财经风</button>
+<div class="masthead">
+  <h1>GitHub 每日热门</h1>
+  <div class="motto">TRENDING · 每项深度介绍</div>
+</div>
+<div class="rule-double"></div>
+<div class="dateline"><span>2026-11-27</span><span>周五</span><span>TOP10</span></div>
+
+<div class="note">今日数据源：GitHub API 热门榜（Trending 限流降级）（Trending 页限流，star 数据可能缺"今日新增"）</div>
+
+
+<h2 class="sect" id="top3"><span class="sem">🎯</span>今日必看 TOP3</h2>
+
+<div class="hot"><span class="badge">1</span><span class="pname"><a href="https://github.com/build-your-own-x">build-your-own-x</a></span>
+<div class="reason">提供深入理解编程技术的独特学习方式，通过重建技术来掌握编程。</div></div>
+
+<div class="hot"><span class="badge">2</span><span class="pname"><a href="https://github.com/Awesome">Awesome</a></span>
+<div class="reason">收集了各种有趣主题的精彩列表，为审计师和公务员提供丰富的学习资源。</div></div>
+
+<div class="hot"><span class="badge">3</span><span class="pname"><a href="https://github.com/public-apis">public-apis</a></span>
+<div class="reason">提供免费API集合，帮助审计师验证数据来源的可靠性，公务员获取公共信息。</div></div>
+
+
+<h2 class="sect"><span class="sem">📦</span>今日项目详解</h2>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/codecrafters-io/build-your-own-x">build-your-own-x</a></span>
+  　<span class="meta">codecrafters-io</span></div>
+  <div class="meta"><span class="star">⭐ 565779</span> · Markdown · <span class="tag">awesome-list</span><span class="tag">free</span><span class="tag">programming</span><span class="tag">tutorial-code</span><span class="tag">tutorial-exercises</span><span class="tag">tutorials</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2018/05/09 20:03</b> ｜ 最近提交 <b>2026/11/19 13:32</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目旨在通过从头开始重新创建我们喜欢的技术来掌握编程。它提供了一系列精心编写的、逐步的指南，帮助用户从零开始构建各种技术，如3D渲染器、AI模型、增强现实、BitTorrent客户端、区块链/加密货币、机器人、命令行工具、数据库、分布式系统、Docker、模拟器/虚拟机、前端框架/库、游戏、Git、内存分配器、网络栈等。这种学习方式可以帮助用户深入理解技术的工作原理，类似于审计师通过亲自检查账目来理解财务状况，或者公务员通过实际操作来掌握政策执行。典型使用场景包括个人学习、技术探索、教学演示等，对于想要深入了解技术原理的审计师和备考公务员来说，这是一个非常有价值的资源。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Markdown语言编写，采用了一系列的指南和教程，通过逐步的步骤和详细的解释，帮助用户从零开始构建各种技术。技术栈包括但不限于编程语言、数据库、网络协议等。核心架构是提供一系列的教程和指南，用户可以根据自己的兴趣选择学习内容。亮点设计在于其全面性和实用性，通过实际操作来加深对技术的理解。例如，构建自己的区块链项目可以帮助审计师更好地理解加密货币的审计要点，而构建自己的数据库可以帮助公务员更好地理解数据管理和存储的原理。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的编程学习指南，帮助用户通过实践来掌握编程技能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们通过实际操作来理解各种技术的工作原理，从而更好地进行技术审计和风险评估。对于备考公务员的朋友来说，这个项目可以作为一种补充学习资源，帮助他们更好地理解信息技术在政府工作中的应用。</p>
+  <span class="plink">▸ <a href="https://github.com/codecrafters-io/build-your-own-x">github.com/codecrafters-io/build-your-own-x</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/sindresorhus/awesome">Awesome</a></span>
+  　<span class="meta">sindresorhus</span></div>
+  <div class="meta"><span class="star">⭐ 543459</span> · 语言未知 · <span class="tag">awesome</span><span class="tag">awesome-list</span><span class="tag">lists</span><span class="tag">resources</span><span class="tag">unicorns</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2014/07/11 21:42</b> ｜ 最近提交 <b>2026/09/02 10:10</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这是一个收集了各种有趣主题的精彩列表的项目。它提供了一个丰富的资源库，涵盖了从编程语言到生活技巧的各种主题。对于审计师来说，这个项目可以作为一个资源库，帮助他们找到关于审计、财务、法律法规以及各种工具和技术的信息。对于备考公务员的朋友来说，这个项目可以提供关于公共管理、政策制定、法律法规等方面的学习资料。典型使用场景包括：审计师在准备审计报告时查找相关法规，公务员在备考时查找政策文件和案例分析。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用GitHub作为平台，通过Markdown格式组织内容。它没有特定的技术栈，主要依赖于GitHub的仓库管理和Markdown编辑功能。项目的亮点设计在于其内容的分类和标签系统，使得用户可以快速找到自己感兴趣的主题。此外，项目鼓励社区贡献，通过Pull Requests来不断丰富内容。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的维基百科，提供各种主题的资料。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以作为一个辅助工具，帮助他们快速查找相关资料。对于备考公务员的朋友来说，这个项目可以作为一个学习资源。</p>
+  <span class="plink">▸ <a href="https://github.com/sindresorhus/awesome">github.com/sindresorhus/Awesome</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/public-apis/public-apis">public-apis</a></span>
+  　<span class="meta">public-apis</span></div>
+  <div class="meta"><span class="star">⭐ 501677</span> · Python · <span class="tag">api</span><span class="tag">apis</span><span class="tag">dataset</span><span class="tag">development</span><span class="tag">free</span><span class="tag">list</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2016/03/21 07:49</b> ｜ 最近提交 <b>2026/11/23 03:57</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个免费的API集合，它提供了一个集中列表，包含了各种可以免费使用的API。这些API涵盖了从地理位置编码、电子邮件验证、航班信息查询、股票市场数据抓取到网络爬虫等多种功能。对于审计师来说，这个项目可以用来验证数据来源的可靠性，比如在审计过程中，可以通过IPstack API来验证IP地址的合法性，或者使用股票市场数据API来验证财务报表中的数据准确性。对于备考公务员的朋友来说，这个项目可以帮助他们快速获取各种公共信息，比如使用Mediastack API来获取新闻数据，或者使用Aviationstack API来获取航空信息，这些都是公务员考试中可能用到的知识领域。典型使用场景包括：审计师在审查财务数据时，可以使用API来验证数据的真实性和准确性；公务员考生在准备考试时，可以利用API获取相关的政策法规和时事新闻信息。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Python编写，提供了一个统一的API接口，用户可以通过一个账户、一个仪表板和一个API密钥来访问所有的API服务。核心架构包括一个API列表管理和一个API调用接口。亮点设计包括：1. 一站式API管理，用户无需在不同API之间切换；2. API密钥统一管理，简化了用户的使用流程；3. 提供了丰富的API文档和示例代码，方便用户快速上手。由于README中未提供详细的技术栈信息，这里基于描述合理概述。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Google API，提供了一系列实用且免费的API服务，帮助用户快速实现各种功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们验证数据来源的可靠性，提高审计工作的效率和准确性。对于备考公务员的朋友，这个项目可以提供丰富的公共信息资源，有助于他们了解政策法规和时事动态。</p>
+  <span class="plink">▸ <a href="https://github.com/public-apis/public-apis">github.com/public-apis/public-apis</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/morluto/rea">rea</a></span>
+  　<span class="meta">morluto</span></div>
+  <div class="meta"><span class="star">⭐ 479823</span> · TypeScript · <span class="tag">agent-skills</span><span class="tag">ai</span><span class="tag">android</span><span class="tag">claude-code</span><span class="tag">cli</span><span class="tag">cpp</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2026/04/14 08:51</b> ｜ 最近提交 <b>2026/11/27 09:42</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>REA是一个用于逆向工程各种软件的工具，从应用行为到本地二进制文件都可以进行逆向分析。它可以帮助用户深入理解软件的工作原理，包括其底层代码和运行时行为。对于审计师来说，这可能意味着能够更深入地检查软件的内部逻辑，确保其符合审计标准和法规要求。对于备考公务员的朋友，这种工具可能有助于理解复杂的软件系统，这在某些职位中可能是一个加分项。典型使用场景包括审计软件安全性、分析恶意软件、研究软件漏洞等。</p>
+  <h3>怎么设计的</h3>
+  <p>REA项目使用TypeScript编写，其核心架构包括一个多功能的控制台程序，用于与各种软件进行交互。它的工作机制是通过代理（agents）来执行逆向工程任务。这些代理可以针对不同的软件类型和平台进行定制。项目的亮点设计包括跨平台支持、强大的二进制分析能力以及易于使用的用户界面。由于README中没有详细的技术栈信息，这里是一个概述：REA可能依赖于一系列的库和工具，如Emscripten用于WebAssembly逆向工程，以及各种二进制分析工具，如Radare2和Ghidra。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的IDA Pro或Ghidra，这些工具在逆向工程领域非常流行，但REA提供了更多的跨平台支持和自动化功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，REA可以帮助他们更深入地理解软件，特别是在审计软件安全性和合规性时。它可以用来检查软件的内部逻辑，发现潜在的安全漏洞。对于备考公务员的朋友，虽然直接关联较弱，但理解软件逆向工程的概念可能有助于他们在处理与信息技术相关的政策或法规时做出更明智的决策。</p>
+  <span class="plink">▸ <a href="https://github.com/morluto/rea">github.com/morluto/rea</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/freeCodeCamp/freeCodeCamp">freeCodeCamp</a></span>
+  　<span class="meta">freeCodeCamp</span></div>
+  <div class="meta"><span class="star">⭐ 459677</span> · TypeScript · <span class="tag">careers</span><span class="tag">certification</span><span class="tag">community</span><span class="tag">curriculum</span><span class="tag">d3</span><span class="tag">education</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2014/12/25 01:49</b> ｜ 最近提交 <b>2026/11/27 06:10</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>freeCodeCamp是一个开源的编程学习平台，它提供了一个完整的编程学习课程，包括数学、编程和计算机科学。这个平台旨在帮助成千上万的忙碌成年人免费过渡到技术领域。它提供全栈Web开发和机器学习课程，课程内容完全免费且可以自主安排学习进度。通过这个平台，用户可以学习编程，提高自己的技术能力，为将来在技术行业找到工作打下基础。对于审计师来说，这个平台可以帮助他们了解技术背景，提升数据分析能力，对于财务专业人士，学习编程有助于处理复杂的财务模型和数据分析，而对于备考公务员的朋友，掌握编程技能可以增加在公务员考试中涉及技术题目的应对能力。</p>
+  <h3>怎么设计的</h3>
+  <p>freeCodeCamp使用TypeScript作为主要编程语言，其核心架构包括一个互动式学习平台和丰富的课程资源。平台的设计亮点在于其互动性和社区支持。它提供了大量的互动式练习和项目，让初学者能够通过实践来学习。此外，平台还拥有一个活跃的社区，用户可以在Discord服务器上交流学习经验，寻求帮助。freeCodeCamp的亮点设计在于其免费性和社区驱动的学习模式，这使得它能够吸引大量的用户参与学习。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的Codecademy或Coursera</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，freeCodeCamp可以帮助他们了解编程基础，提高在审计过程中对数据分析和系统安全性的理解。财务专业人士可以通过学习编程来处理复杂的财务模型和数据分析。备考公务员的朋友可以通过学习编程来增加在公务员考试中涉及技术题目的应对能力。</p>
+  <span class="plink">▸ <a href="https://github.com/freeCodeCamp/freeCodeCamp">github.com/freeCodeCamp/freeCodeCamp</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/EbookFoundation/free-programming-books">free-programming-books</a></span>
+  　<span class="meta">EbookFoundation</span></div>
+  <div class="meta"><span class="star">⭐ 402349</span> · Python · <span class="tag">books</span><span class="tag">education</span><span class="tag">hacktoberfest</span><span class="tag">list</span><span class="tag">resource</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2013/10/11 14:50</b> ｜ 最近提交 <b>2026/11/27 09:01</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这是一个开源项目，旨在收集和整理各种编程语言的免费学习资源书籍。它解决了编程学习者寻找高质量学习材料的问题，提供了丰富的编程书籍资源，包括Python、Java、C++等多种编程语言。对于审计师来说，这个项目可以帮助他们了解编程基础知识，为审计工作中涉及到的IT系统分析提供支持。对于备考公务员的朋友，这个项目可以作为辅助学习资源，帮助他们拓宽知识面，提高综合素质。典型使用场景包括：审计师在审计过程中需要了解IT系统，可以通过这个项目查找相关编程书籍进行学习；备考公务员的朋友可以利用这个项目学习编程知识，提高自己的竞争力。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Python语言开发，采用前后端分离的设计架构。前端主要负责展示书籍列表和搜索功能，后端则负责处理数据请求和存储。核心架构包括书籍信息数据库、搜索引擎和用户界面。亮点设计包括：支持多种编程语言的书籍搜索，提供动态搜索网站，方便用户查找所需书籍；书籍信息丰富，包括作者、出版社、语言等详细信息；支持多种阅读方式，如在线阅读、下载PDF等。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的编程书籍大全</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们了解编程基础知识，为审计工作中涉及到的IT系统分析提供支持；对于备考公务员的朋友，这个项目可以作为辅助学习资源，帮助他们拓宽知识面，提高综合素质。</p>
+  <span class="plink">▸ <a href="https://github.com/EbookFoundation/free-programming-books">github.com/EbookFoundation/free-programming-books</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/openclaw/openclaw">openclaw</a></span>
+  　<span class="meta">openclaw</span></div>
+  <div class="meta"><span class="star">⭐ 395308</span> · TypeScript · <span class="tag">ai</span><span class="tag">assistant</span><span class="tag">crustacean</span><span class="tag">molty</span><span class="tag">openclaw</span><span class="tag">own-your-data</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2025/11/24 18:16</b> ｜ 最近提交 <b>2026/11/27 09:40</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>OpenClaw 是一款人工智能助手，旨在为用户提供跨平台、跨操作系统的服务。它可以在您的设备上运行，并与您的聊天工具集成，提供智能化的功能和服务。这个项目解决了在多个平台上实现个性化、智能化的助手服务的难题，使得用户可以在任何设备上享受到个性化的服务。典型的使用场景包括：审计师在处理大量数据时，可以利用 OpenClaw 进行自动化分析，提高工作效率；财务专业人士在处理复杂财务报表时，可以借助 OpenClaw 进行数据整理和预测分析；备考公务员的朋友可以使用 OpenClaw 进行资料整理和学习进度跟踪。</p>
+  <h3>怎么设计的</h3>
+  <p>OpenClaw 使用 TypeScript 编写，支持跨平台运行，其核心架构包括自然语言处理、机器学习算法和云服务接口。技术亮点包括：1. 强大的自然语言理解能力，能够准确解析用户指令；2. 高效的机器学习模型，能够快速适应用户需求；3. 云服务接口，确保数据安全和隐私保护。这些设计使得 OpenClaw 能够在各种场景下提供稳定、高效的服务。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的智能语音助手，如 Google Assistant 或 Amazon Alexa，但更专注于跨平台和个性化服务。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，OpenClaw 可以辅助进行数据分析和报告生成，提高工作效率；对于财务专业人士，它可以简化财务数据处理和分析流程；对于备考公务员的朋友，OpenClaw 可以帮助整理学习资料，提高学习效率。这些应用场景都与审计师的工作和生活息息相关。</p>
+  <span class="plink">▸ <a href="https://github.com/openclaw/openclaw">github.com/openclaw/openclaw</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/donnemartin/system-design-primer">system-design-primer</a></span>
+  　<span class="meta">donnemartin</span></div>
+  <div class="meta"><span class="star">⭐ 379375</span> · Python · <span class="tag">design</span><span class="tag">design-patterns</span><span class="tag">design-system</span><span class="tag">development</span><span class="tag">interview</span><span class="tag">interview-practice</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2017/02/27 00:15</b> ｜ 最近提交 <b>2026/09/15 09:10</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这个项目是一个系统设计学习的资源，旨在帮助用户了解如何设计大规模系统，并准备系统设计面试。它包含了大量的学习资料，包括Anki闪卡，适合那些想要提升系统设计能力的人。对于审计师来说，这个项目可以帮助他们理解复杂系统的设计，从而在审计过程中更好地评估系统的内部控制和风险管理。例如，审计师在审查一个企业的信息系统时，可以利用这个项目来分析系统的架构和设计，从而评估其安全性和可靠性。对于备考公务员的朋友来说，这个项目可以帮助他们理解政府机构中使用的复杂系统，这对于理解政府的工作流程和决策机制非常有帮助。典型使用场景包括：审计师在审计过程中分析企业信息系统，公务员在准备面试时学习政府系统设计。</p>
+  <h3>怎么设计的</h3>
+  <p>该项目使用Python编写，其核心架构包括系统设计的基础知识、设计模式、架构风格和设计原则。技术栈包括但不限于Python、Docker、Kubernetes等。项目亮点在于其结构化的学习路径和丰富的案例研究，这些都有助于用户深入理解系统设计的各个方面。例如，它通过模拟真实世界的系统设计问题，让用户在实践中学习。此外，项目还提供了Anki闪卡，帮助用户记忆关键概念和术语。这些设计使得该项目成为一个全面且实用的系统设计学习工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的系统设计指南，帮助读者快速掌握系统设计的基本概念和技巧。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，该项目可以帮助他们更好地理解信息系统和复杂系统的设计，从而在审计过程中进行更深入的评估。对于公务员，该项目有助于他们理解政府机构中使用的系统，对于准备相关职位面试尤其有用。</p>
+  <span class="plink">▸ <a href="https://github.com/donnemartin/system-design-primer">github.com/donnemartin/system-design-primer</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/nilbuild/developer-roadmap">developer-roadmap</a></span>
+  　<span class="meta">nilbuild</span></div>
+  <div class="meta"><span class="star">⭐ 372844</span> · TypeScript · <span class="tag">angular-roadmap</span><span class="tag">backend-roadmap</span><span class="tag">blockchain-roadmap</span><span class="tag">computer-science</span><span class="tag">dba-roadmap</span><span class="tag">developer-roadmap</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2017/03/15 21:45</b> ｜ 最近提交 <b>2026/11/27 04:49</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>developer-roadmap 是一个基于 TypeScript 开发的项目，旨在为开发者提供互动式的职业成长路线图、指南以及其他教育资源。这个项目解决的问题是如何帮助开发者规划自己的职业发展路径，提供了一系列的学习资源和最佳实践，帮助开发者提升技能和知识。它能够用来创建个人或团队的成长计划，通过互动式的路线图，开发者可以点击不同的节点来获取更多关于特定主题的信息。典型的使用场景包括：个人职业规划、团队技能提升、学习资源整合。对于审计师来说，这个项目可以帮助他们了解技术领域的最新趋势和知识，为审计工作提供技术支持。而对于备考公务员的朋友，这个项目可以作为扩展知识面的工具，帮助他们了解和掌握更多的技术知识。</p>
+  <h3>怎么设计的</h3>
+  <p>developer-roadmap 使用 TypeScript 作为主要编程语言，其核心架构包括一个前端界面和后端服务。前端界面使用 React 或 Vue.js 等现代前端框架构建，提供用户友好的交互体验。后端服务则负责处理数据请求、存储和提供API接口。项目的亮点设计包括：互动式的路线图，允许用户通过点击节点来获取更多信息；社区驱动的资源，用户可以贡献自己的学习资源和经验；以及YouTube频道，提供视频教程和行业动态。这些设计使得developer-roadmap成为一个功能丰富、易于使用的职业发展工具。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的职业发展规划工具，如 LinkedIn Learning 或 Coursera 的职业路径规划功能。</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，developer-roadmap 可以帮助他们了解技术领域的最新动态，为审计工作提供技术背景。对于财务专业人士，这个项目可以帮助他们提升技术能力，更好地理解数字化转型的趋势。对于备考公务员的朋友，这个项目可以作为扩展知识面的工具，帮助他们了解和掌握更多的技术知识，提高竞争力。</p>
+  <span class="plink">▸ <a href="https://github.com/nilbuild/developer-roadmap">github.com/nilbuild/developer-roadmap</a></span>
+</div>
+
+<div class="card">
+  <div><span class="pname"><a href="https://github.com/jwasham/coding-interview-university">coding-interview-university</a></span>
+  　<span class="meta">jwasham</span></div>
+  <div class="meta"><span class="star">⭐ 365108</span> · 语言未知 · <span class="tag">algorithm</span><span class="tag">algorithms</span><span class="tag">coding-interview</span><span class="tag">coding-interviews</span><span class="tag">computer-science</span><span class="tag">data-structures</span></div>
+  <div class="times">
+    抓取 <b>2026/11/27 09:41</b> ｜ 仓库创建 <b>2016/06/06 10:34</b> ｜ 最近提交 <b>2026/11/08 00:03</b>（北京时间）
+  </div>
+  <h3>这是什么</h3>
+  <p>这是一个全面的计算机科学学习计划，旨在帮助学习者成为软件工程师。它最初是一个简短的学习主题待办事项列表，但随着时间的推移，已经发展成为一个庞大的列表。通过这个学习计划，学习者可以准备参加几乎所有软件公司的技术面试，包括亚马逊、Facebook、谷歌和微软等大型公司。这个计划提供了大量的学习资源，包括编程语言、数据结构、算法、系统设计等，旨在帮助学习者全面提高他们的技术能力。对于审计师来说，这个项目可以帮助他们了解软件工程的基本概念，这对于审计软件系统或与软件开发相关的财务流程非常有用。对于备考公务员的朋友来说，这个项目可以作为提高计算机科学知识的一个途径，尤其是在公务员考试中涉及技术相关职位时。</p>
+  <h3>怎么设计的</h3>
+  <p>这个项目的技术栈主要是基于文本的，没有特定的编程语言要求。核心架构是一个学习资源的集合，包括教程、练习题、项目案例等。工作机制是通过提供一系列的学习路径和资源，帮助学习者系统地学习计算机科学知识。亮点设计包括：1）学习路径的多样性，满足不同学习者的需求；2）丰富的学习资源，包括视频教程、文章、代码示例等；3）社区支持，学习者可以互相交流学习经验。</p>
+  <h3>类比成熟工具</h3>
+  <p>相当于开源版的软件工程师培训课程</p>
+  <h3>与你的关联</h3>
+  <p>对于审计师来说，这个项目可以帮助他们了解软件工程的基本概念，这对于审计软件系统或与软件开发相关的财务流程非常有用。对于备考公务员的朋友来说，这个项目可以作为提高计算机科学知识的一个途径，尤其是在公务员考试中涉及技术相关职位时。</p>
+  <span class="plink">▸ <a href="https://github.com/jwasham/coding-interview-university">github.com/jwasham/coding-interview-university</a></span>
+</div>
+
+
+<h2 class="sect"><span class="sem">📋</span>今日总结</h2>
+<div class="summary-card">今日项目列表中，build-your-own-x以重建技术学习编程的方式受到关注，Awesome和public-apis则分别以其丰富的学习资源和免费API集合受到欢迎。</div>
+<div class="footer">GitHub 每日热门 · 右下角可朗读全文</div>
+</div>
+<script>
+/* ===== 双画风切换（报纸风/财经风，记住选择） ===== */
+(function(){
+  var KEY='report_theme';
+  function set(t){
+    t=(t==='finance')?'finance':'paper';
+    document.body.classList.toggle('finance',t==='finance');
+    document.body.classList.toggle('paper',t!=='finance');
+    var b=document.getElementById('themeBtn');
+    if(b){b.textContent=t==='finance'?'📰 报纸风':'🎨 财经风';}
+    try{localStorage.setItem(KEY,t);}catch(e){}
+  }
+  var saved='paper';
+  try{saved=localStorage.getItem(KEY)||'paper';}catch(e){}
+  set(saved);
+  window.toggleTheme=function(){
+    set(document.body.classList.contains('finance')?'paper':'finance');
+    return false;
+  };
+})();
+(function(){
+  var KEY="scroll_y:"+location.pathname+location.search;
+  if("scrollRestoration" in history){history.scrollRestoration="manual";}
+  var t=0;
+  function save(){try{sessionStorage.setItem(KEY,String(window.scrollY));}catch(e){}}
+  window.addEventListener("scroll",function(){
+    if(!t){t=setTimeout(function(){t=0;save();},200);}
+  },{passive:true});
+  window.addEventListener("pagehide",save);
+  function restore(){var y=0;try{y=parseInt(sessionStorage.getItem(KEY)||"0",10);}catch(e){}
+    if(y>2){window.scrollTo(0,y);}}
+  restore();
+  window.addEventListener("load",function(){setTimeout(restore,60);setTimeout(restore,500);});
+})();
+/* ===== 朗读 ===== */
+var _ttsOn=false, _lastBlock=null;
+function _pickVoice(){
+  var vs=window.speechSynthesis.getVoices().filter(function(v){return /^zh/i.test(v.lang);});
+  var male=vs.filter(function(v){return /云希|Yunxi|云健|Yunjian|康康|Kangkang|云野|Yunye|男|male/i.test(v.name);});
+  return male[0]||vs[0]||null;
+}
+try{speechSynthesis.getVoices();}catch(e){}
+function _blocks(){
+  var host=document.querySelector(".sheet")||document.body;
+  return [].slice.call(host.children).filter(function(e){
+    if(e.tagName==="SCRIPT"||e.tagName==="STYLE"||e.id==="ttsBtn"||e.id==="themeBtn")return false;
+    return (e.innerText||"").trim().length>1;});
+}
+function _chunks(text){
+  text=(text||"").replace(/🔊\s*朗读|⏹\s*停止/g,"").replace(/\s+/g," ").trim();
+  return text.match(/[^。！？.!]{1,160}(?:[。！？.!]|$)/g)||[];
+}
+function _speakChunks(chunks){
+  speechSynthesis.cancel();
+  chunks.forEach(function(p){
+    var u=new SpeechSynthesisUtterance(p);
+    u.lang="zh-CN";u.rate=1;
+    var v=_pickVoice();if(v){u.voice=v;}
+    speechSynthesis.speak(u);
+  });
+  _ttsOn=true;
+  var btn=document.getElementById("ttsBtn");
+  btn.textContent="⏹ 停止";btn.className="stop";
+  var timer=setInterval(function(){
+    if(!speechSynthesis.speaking&&!speechSynthesis.pending){
+      clearInterval(timer);_ttsOn=false;_lastBlock=null;
+      btn.textContent="🔊 朗读";btn.className="";}
+  },1000);
+}
+function _readFrom(block){
+  var bs=_blocks(),i=bs.indexOf(block);
+  if(i<0){i=0;}
+  var text=bs.slice(i).map(function(e){return e.innerText||"";}).join(" ");
+  _lastBlock=block;
+  _speakChunks(_chunks(text));
+}
+function ttsToggle(){
+  if(!window.speechSynthesis){alert("当前浏览器不支持朗读");return false;}
+  var btn=document.getElementById("ttsBtn");
+  if(_ttsOn){speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    btn.textContent="🔊 朗读";btn.className="";return false;}
+  var sel=(window.getSelection?String(window.getSelection()):"").trim();
+  if(sel){_lastBlock=null;_speakChunks(_chunks(sel));return false;}
+  _readFrom(_blocks()[0]||document.body);
+  return false;
+}
+document.addEventListener("click",function(ev){
+  if(ev.target.closest("a,button"))return;
+  var host=ev.target.closest(".sheet > *");
+  if(!host)return;
+  var bs=_blocks();
+  if(bs.indexOf(host)<0)return;
+  if(_ttsOn&&_lastBlock===host){          /* 再点同一段：停止 */
+    speechSynthesis.cancel();_ttsOn=false;_lastBlock=null;
+    var btn=document.getElementById("ttsBtn");
+    btn.textContent="🔊 朗读";btn.className="";return;
+  }
+  if(_ttsOn){                              /* 朗读中点别的段：换起点 */
+    speechSynthesis.cancel();
+  }
+  _readFrom(host);
+});
+</script>
+</body></html>
